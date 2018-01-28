@@ -14,7 +14,7 @@ soup = BeautifulSoup(html_page, "html.parser")
 linksFound = []
 for link in soup.findAll('a', attrs={'href': re.compile("^http")}):
     linksFound.append(link.get('href'))
-print("\nTotal URL's is ", len(linksFound), "\n")
+print("\nTotal URL's Found:  ", len(linksFound), "\n")
 print(*linksFound,sep='\n')
 print("\n")
 
