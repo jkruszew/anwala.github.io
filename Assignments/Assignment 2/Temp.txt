@@ -1,0 +1,9 @@
+x <- 0 * 1:873
+mementos <- c(x,873,43,18,9,8,4,4,3,2,1,2,1,1,1,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1)
+max_num <- max(mementos)
+hist(mementos,breaks=max_num,axes=FALSE,ann=FALSE, ylim=c(0,5))
+title(main="URI / # Mementos", font.main="4")
+axis(1, at=9*0:240)
+axis(2, at=0:100)
+title(xlab="Number of Mementos")
+title(ylab="Frequency of Occurrence")
