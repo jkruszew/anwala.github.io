@@ -1,0 +1,2 @@
+myData = read.table("AgeMementoList.txt")
+plot(myData, xlab = "Number of Mementos", ylab = "Age (in days)", main = "Mementos/Age(days)")

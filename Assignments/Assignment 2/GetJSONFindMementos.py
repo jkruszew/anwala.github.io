@@ -1,7 +1,3 @@
-import matplotlib
-matplotlib.use('agg')
-import matplotlib.pyplot as plt
-import matplotlib.mlab as mlab
 import requests
 import re
 import json

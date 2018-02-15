@@ -6,6 +6,7 @@ import urllib.request
 import datetime
 from datetime import date
 
+
 def genericErrorInfo():
    import os, sys
    exc_type, exc_obj, exc_tb = sys.exc_info()
@@ -14,17 +15,65 @@ def genericErrorInfo():
    print('\tERROR:', errorMessage)
 
 
+def getCarbonDate(url,urlNum):
+    carbonURL = "http://localhost:8888/cd/"
+    carbonDateURL = carbonURL + url
+    carbonDateRequest = requests.get(carbonDateURL)
+    carbonDateData = json.loads(carbonDateRequest.text)
+    estDate = carbonDateData['estimated-creation-date']
+    try:
+        if estDate == '':
+            print(urlNum, ": No Date")
+            #print(carbonDateData, file=open("U" + str(urlNum) + "CarbonDate.json", "w+"))
+        else:
+            print(urlNum, ": ", str(estDate)[:10])
+            #print(carbonDateData, file=open("U"+ str(urlNum) + "CarbonDate.json", "w+"))
+        return str(estDate)[:10]
+    except:
+        genericErrorInfo()
+        return ''
+
+
+
+
+def getMementos(url, urlNum):
+    mementoURL = "http://memgator.cs.odu.edu/timemap/json/"
+    memURL = mementoURL + url
+
+    try:
+        memRequest = requests.get(memURL)
+
+        if memRequest.status_code != 200:
+            print(0)
+            #print("", file=open("U"+ str(urlNum) + "TimeMap.json", "w+"))
+            return 0
+        else:
+            jResponse = json.loads(memRequest.text)
+            print(len(jResponse['mementos']['list']))
+            #print(jResponse, file=open("U"+ str(urlNum) + "TimeMap.json", "w+"))
+            return len(jResponse['mementos']['list'])
+    except:
+        genericErrorInfo()
+        return 0
+
+
 def calculateDays(carbonDate):
-    now = datetime.datetime.now()
     year = int(carbonDate[0:4])
     month = int(carbonDate[5:7])
     day = int(carbonDate[8:10])
     cDate = date(year,month,day)
+
+    now = datetime.datetime.now()
     currentDate = date(now.year, now.month, now.day)
 
-    retval = currentDate - cDate
-    return retval
+    val = currentDate - cDate
 
+    retVal = str(val).split(' ')
+
+    if now.year == year and now.month == month and now.day == day:
+        retVal = str(1)
+
+    return int(retVal[0])
 
 
 with open("ModifiedURLList.txt") as ins:
@@ -32,67 +81,85 @@ with open("ModifiedURLList.txt") as ins:
     for line in ins:
         urlInput.append(line)
 
-carbonURL = "http://localhost:8888/cd/"
-#carbonJsonList = []
 carbonDateList = []
-carbonCounter = 0
-noCarbonCounter = 0
-
-mementoURL = "http://memgator.cs.odu.edu/timemap/json/"
 mementoList = []
-#mementoJsonList = []
+urlAge = []
+carbonDateWithmemAgeList = []
+carbonDateWithMemList = []
+noMementosCounter = 0
+noCarbonDateCounter = 0
+
 mementoCounter = 0
-noMementoCounter = 0
+carbonDateCounter = 0
 
-noMemWithCarbonIndexList = []
-
-index = 1
-for url in urlInput:
-    carbonDateURL = carbonURL + url
-    mem = requests.get(mementoURL+url)
-
-    carbonDateRequest = requests.get(carbonDateURL)
-    carbonDateData = carbonDateRequest.json()
-    # carbonJsonList.append(carbonDateData)
-    estDate = carbonDateData['estimated-creation-date']
-
-    if estDate == '':
-        carbonDateList.append(str(estDate))
-        print("No Date")
-    else:
-        carbonDateList.append(str(estDate)[0:10])
-        print(str(estDate)[:10])
-
-    if mem.status_code != 200:
-        mementoList.append(0)
-        print(0)
-    else:
-        jResponse = json.loads(mem.text)
-        mementoList.append(len(jResponse['mementos']['list']))
-        # mementoJsonList.append(jResponse)
-        print(len(jResponse['mementos']['list']))
+for urlNum in range(len(urlInput)):
+    carbonDateList.append(getCarbonDate(urlInput[urlNum], urlNum))
+    mementoList.append(getMementos(urlInput[urlNum], urlNum))
 
 
 for x in range(len(carbonDateList)):
-    if carbonDateList[x] == '':
-        noCarbonCounter += 1
-    else:
-        carbonCounter += 1
-        if mementoList[x] == 0:
-            noMemWithCarbonIndexList.append(x)
+    print(carbonDateList[x])
+    print(mementoList[x])
 
+for x in carbonDateList:
+    if x == '':
+        urlAge.append(1)
+    else:
+        urlAge.append(calculateDays(x))
+
+for x in range(len(urlAge)):
+    print(x, ": ", urlAge[x])
+
+print()
+
+for x in range(len(urlAge)):
+    if urlAge[x] == 1:
+        noCarbonDateCounter += 1
+    else:
+        carbonDateCounter += 1
 
     if mementoList[x] == 0:
-        noMementoCounter += 1
+        noMementosCounter += 1
     else:
         mementoCounter += 1
 
 
-daysLivedList = []
-for x in noMemWithCarbonIndexList:
-    days = calculateDays(carbonDateList[x])
-    daysLivedList.append(days)
+print()
 
-print("\n\n\n\n\n")
-for x in daysLivedList:
-    print(x)
+print("No Date: ", noCarbonDateCounter)
+print("Date:    ", carbonDateCounter)
+print("Total D: ", noCarbonDateCounter+carbonDateCounter)
+
+print()
+
+print("No Mem:  ", noMementosCounter)
+print("Mem:     ", mementoCounter)
+print("Total M: ", noMementosCounter+mementoCounter)
+
+for x in range(len(urlAge)):
+    if urlAge[x] > 1 and mementoList[x] > 0:
+        carbonDateWithmemAgeList.append(urlAge[x])
+        carbonDateWithMemList.append(mementoList[x])
+
+
+memAgeList = [[0 for x in range(len(carbonDateWithMemList))] for y in range(2)]
+
+for x in range(len(carbonDateWithMemList)):
+    memAgeList[0][x] = carbonDateWithMemList[x]
+    memAgeList[1][x] = carbonDateWithmemAgeList[x]
+
+
+print()
+print("Mementos\tAge")
+for x in range(len(carbonDateWithmemAgeList)):
+    print(memAgeList[0][x], "\t\t", memAgeList[1][x])
+    print(memAgeList[0][x], " ", memAgeList[1][x], file=open("MementoAgeList.txt", "a+"))
+
+print("Total URIs:          ", noMementosCounter+mementoCounter)
+print("No Mementos:         ", noMementosCounter)
+print("No Date Estimation:  ", noCarbonDateCounter)
+
+print("Total URIs:          ", noMementosCounter+mementoCounter, file=open("Part3.txt", "a+"))
+print("No Mementos:         ", noMementosCounter, file=open("Part3.txt", "a+"))
+print("No Date Estimation:  ", noCarbonDateCounter, file=open("Part3.txt", "a+"))
+

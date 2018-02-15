@@ -1,59 +1,71 @@
-# Import the necessary methods from different libraries
-import tweepy
-from tweepy.streaming import StreamListener
-from tweepy import OAuthHandler
-from tweepy import Stream
-import json
-import sys
-from sys import stdout
+import requests
+import urllib3
 
-# Variables that contains the user credentials to access Twitter API
-#access_token = "enter token here"
-#access_token_secret = "enter token here"
-#consumer_key = "enter key here"
-#consumer_secret = "enter key here"
-
-consumer_key = '5j7SmACEOyPsKN12MPXrPQbw4'
-consumer_secret = 'WrDMatcCi3P8lLHVgMQYW5LLMOLbc6gNd3wJxU4pPcrCnINYFG'
-access_token = '958478661920940032-ddyuERsryUYMYfIEdn50StAdDVegltk'
-access_token_secret = 'rheoQZNorAzfGqfuDmRh4iiuS3fmy99oslPfQcq4bnqHn'
-
-# Accessing tweepy API
-# api = tweepy.API(auth)
-
-# This is a basic listener that just prints received tweets to stdout.
-count = 100000000 # moved outside of class definition to avoid getting reset
-
-class StdOutListener(StreamListener):
-    def on_data(self, data):
-
-        decoded = json.loads(data)
-
-        global count # get the count
-        if count <= 0:
-            import sys
-            sys.exit()
-        else:
-            try:
-                for url in decoded["entities"]["urls"]:
-                    print(count, ':', "%s" % url["expanded_url"] + "\r\n")
-                    print("%s" % url["expanded_url"], file=open("InitialURLList.txt", "a"))
-                    count -= 1
-
-            except KeyError:
-                print(decoded.keys())
-
-    def on_error(self, status):
-        print(status)
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+def genericErrorInfo():
+   import os, sys
+   exc_type, exc_obj, exc_tb = sys.exc_info()
+   fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+   errorMessage = fname + ', ' + str(exc_tb.tb_lineno)  + ', ' + str(sys.exc_info())
+   #print('\tERROR:', errorMessage)
 
 
-if __name__ == '__main__':
+inputFile = "InitialURLList.txt"
+#inputFile = "Output.txt"
+tString = "https://twitter.com"
+inCount = 1
+with open(inputFile, "r") as ins:
+   urlInput = []
+   for line in ins:
+       if line[:19].lower() != tString:
+           urlInput.append(line)
+           #print("Reading input: ", inCount)
+           #inCount += 1
 
-    l = StdOutListener()
-    auth = OAuthHandler(consumer_key, consumer_secret)
-    auth.set_access_token(access_token, access_token_secret)
-    stream = Stream(auth, l)
 
-    stream.filter(track=['Olympics', 'Football', 'WorldCup', 'Soccer', 'Sports'])
+urlList = list(set(urlInput))
 
+count = 1
+for url in urlList:
+   print(count, ": ", url)
+   count += 1
 
+urlListExpanded = []
+
+count2 = 1
+urlCounter = 1
+goodUrlCounter = 0
+badUrlCounter = 0
+for url in urlList:
+   print("checking urls for status code and expanded url", urlCounter)
+   urlCounter += 1
+   try:
+       r = requests.get(url, verify=False, allow_redirects=True)
+       if int(r.status_code) == 200:
+           urlListExpanded.append(r.url)
+           goodUrlCounter += 1
+           print("url added to list, Status Code: ", r.status_code, "total urls added: ", goodUrlCounter)
+           print("\t", r.url)
+       else:
+           badUrlCounter += 1
+           print("url not added to list, Status Code: ", r.status_code, "total rejected urls: ", badUrlCounter)
+   except:
+       genericErrorInfo()
+       badUrlCounter += 1
+       print("Error Occurred, URL not Added to List total rejected urls: ", badUrlCounter)
+       continue
+   urlListExpanded = list(set(urlListExpanded))
+   if len(urlListExpanded) == 1000:
+       break
+
+urlListExpanded = list(set(urlListExpanded))
+for url in urlListExpanded:
+    print(url, file=open("ModifiedURLList.txt", "a"))
+
+'''
+for url in urlListExpanded:
+   print(count2, ": ", url)
+   print(url, file=open("ModifiedURLList.txt", "a"))
+   count2 += 1
+
+'''
