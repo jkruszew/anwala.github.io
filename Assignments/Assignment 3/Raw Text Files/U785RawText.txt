@@ -1,0 +1,19 @@
+Close
+Petya ransomware attack
+Last month, Pyeongchang Winter Olympics organizers were warned of impending cyber attacks aimed at disrupting the opening ceremony of South Korea's major sports spectacle and as anticipated , hackers did try to impede the live feed service, but couldn't make any big dent.
+Winter Olympics organizers confirmed the news to the media that cyber hackers targeted internet and television services, and to an extent succeeded in obstructing the live streaming, but no critical operations were compromised.
+As per latest reports, an investigation is being carried out from Friday (February 9), but so far there is major lead to pinpoint the origin of the cyber attack.
+Pyeongchang is just 50 miles (around 80 kilometers) from North Korean border, whose relations with the host South Korea has been cold since the peace treaty after 1950-53 war; but, recently, we witnessed a thaw in the relationship between the two, as both the countries marched alongside with United Korea flag during the opening ceremony.
+[Representational Image] Cyber Attack Alert: South Korea Winter Olympics falls prey to hackers, but no major threat In Picture: The 2018 PyeongChang Winter Olympics mascot Soohorang, Paralympics mascot Bandabi and the Olympic Rings are displayed at the Gyeongpodae beach in Gangneung, South Korea, October 31, 2017.REUTERS/Kim Hong-Ji
+Not sure, if that was a mere political stunt or a genuine progress in reconciliation between the two warring nations, but North Korea is still one of the suspects as it made news in December 2017 for wrong reasons.
+Pyongyang-based hackers were directly blamed for WannaCry, 2017's biggest cyber attack, which crippled several governments and corporate companies spanning more than 150 countries.
+Tech-major Microsoft and even the US government publically accused North Korea of stealing US National Intelligence Agency's tools (Eternal Blue) and attack global computer networks via WannaCry ransomware in May 2017.
+Read more: North Korea orchestrated deadly WannaCry cyber attacks on global governments and corporates: US
+However, Russia is also being viewed as the second suspect for Winter Olympics cyber attack as the country was disbarred from participating in Russian flag colors in the ongoing sporting event, due to government-sponsored doping in athletes during the last two Olympics.
+A total of 169 Russian personnel participated as Olympics Athletes from Russia (OAR), but in neutral plain dresses. 
+That being said, there is no official word on who is actually behind the attack and is likely to remain unknown, as the South Korea Olympics organizers, for reasons unknown, have confirmed that they won't be making the investigation public.
+"All issues were resolved and recovered yesterday morning," Pyeongchang organizing committee spokesman Sung Baik-you told reporters .
+"We know the cause of the problem but that kind of issues occurs frequently during the Games. We decided with the IOC we are not going to reveal the source (of the attack)," Baik-you added.
+Stay tuned. Follow us @IBTimesIN_Tech on Twitter for latest updates on Cybersecurity.
+Related
+

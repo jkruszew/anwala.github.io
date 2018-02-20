@@ -1,0 +1,17 @@
+Olympics tech off to a tough start with server attacks and expanded malware
+Author
+tweet
+Dive Brief:
+As athletes paraded through the opening ceremony of the Pyeongchang Winter Olympics on Friday, an unidentified actor hacked the organizing committee's servers, reports Yonhap News . The attack caused a "malfunction of the internet protocol televisions," so the committee shut down the servers — which also shut down the PyeongChang 2018 website — to prevent additional damage. The site was back online Saturday morning.
+The attack was not the only security event marring the opening week of the games. McAfee found "expanded capabilities" relating to the Gold Dragon fileless attacks targeting organizations associated with the Pyeongchang Olympics, according to a company announcement . 
+The new variant of the malware allows it to profile a targeted system and send the results to a control server. The initial PowerShell implant only had "basic data-gathering capabilities" to identify victims and set more malware on them.
+Dive Insight:
+The Winter Games this year are especially dangerous from a cybersecurity standpoint .
+Geopolitical tensions within the Korean peninsula and from other foreign actors such as Russia have many security experts on edge. And the conglomeration of disparate IT systems temporarily set up by the Olympics committee, its partners and sponsors and other visiting organizations have created a broad swathe of potentially exploitable endpoints for malicious actors. 
+McAfee first discovered the Gold Dragon malware in late December and disclosed it in early January. The company now believes that the implant "is the second-stage payload in the Olympics attack that [McAfee's] ATR discovered January 6."
+The facelessness of cyberattacks can be frustrating point for the event's organizers, and attributing the Gold Dragon and server attacks to specific actors will be a nearly impossible feat for the IOC. McAfee has posited that Gold Dragon's complexity and rapid deployment are hallmarks of a nation-state actor, but even if the culprit is found it could take months or years. 
+In the meantime, the organizers and organizations affiliated with Pyeongchang still have a lot of work ahead of them over the next few weeks.
+"It is clear attacks are ongoing and are likely to continue throughout the duration of the games. What is yet to be determined is if actors are working simply to gain disruption or if their motives are greater," according to McAfee, in a statement provided to CIO Dive.
+The real impact of these malware campaigns and other attacks may take months to fully realize. Visitors in Pyeonchang should remember to follow best security practices, especially not bringing company devices to the games and connecting to potentially vulnerable or compromised networks. 
+Recommended Reading:
+

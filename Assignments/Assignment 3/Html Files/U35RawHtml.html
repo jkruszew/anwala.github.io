@@ -1,0 +1,2311 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html class="no-js" dir="ltr" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"9c8be68c12","agent":"","transactionName":"ZVJSZRFXWUVWABJbX1wYdkQNVUNfWA1JXFVFRB5HClNARQ0NA0VDbVNVRQJfWw==","applicationID":"1793432","errorBeacon":"bam.nr-data.net","applicationTime":672}</script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        
+        
+
+        
+
+        
+        
+            <title>
+                Olympics tech off to a tough start with server attacks and expanded malware 
+             | CIO Dive</title>
+        
+        
+            <meta name="description" content="
+                    News, voices and jobs for CIOs.  Optimized for your mobile phone."/>
+        
+        
+            <meta name="sailthru.tags"
+                  content="cio,type-newspost,cio-security"/>
+        
+        
+
+        
+            <meta property="fb:pages" content="363726447349015">
+        
+        <!-- ====== FAVICONS ======= -->
+        
+            <!-- regular favicons -->
+            <link rel="shortcut icon" type="image/png" href="/static/images/favicons/favicon.ico?373409101117" />
+            <link rel="shortcut icon" type="image/png" sizes="16x16" href="/static/images/favicons/favicon-16.png?373409101117" />
+            <link rel="shortcut icon" type="image/png" sizes="32x32" href="/static/images/favicons/favicon-32.png?373409101117" />
+            <link rel="shortcut icon" type="image/png" sizes="96x96" href="/static/images/favicons/favicon-96.png?373409101117" />
+            <!-- apple touch favicon icons -->
+            <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/static/images/favicons/apple-touch-icon-57.png?373409101117">
+            <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/static/images/favicons/apple-touch-icon-60.png?373409101117">
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/images/favicons/apple-touch-icon-72.png?373409101117">
+            <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/static/images/favicons/apple-touch-icon-76.png?373409101117">
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/images/favicons/apple-touch-icon-114.png?373409101117">
+            <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/images/favicons/apple-touch-icon-144.png?373409101117">
+            <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/static/images/favicons/apple-touch-icon-152.png?373409101117">
+            <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/static/images/favicons/apple-touch-icon-180.png?373409101117">
+            <!-- ms tile favicon icons -->
+            <meta name="msapplication-TileColor" content="#ffffff">
+            <meta name="theme-color" content="#ffffff">
+            <meta name="msapplication-TileImage" content="/static/images/favicons/ms-tile-144.png?373409101117">
+        
+
+        
+            <link rel="alternate" type="application/rss+xml"
+                  title="Latest News Feed"
+                  href="https://www.ciodive.com/feeds/news/"/>
+        
+        
+            <link rel="canonical" href="https://www.ciodive.com/news/olympics-tech-off-to-a-tough-start-with-server-attacks-and-expanded-malware/516846/"/>
+
+            
+            
+
+        
+        
+    
+    <meta name="title" content="Olympics tech off to a tough start with server attacks and expanded malware " />
+    <meta name="medium" content="news" />
+    <meta name="date" content="2018-02-12" />
+
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:domain" content="CIO Dive">
+    
+        <meta name="twitter:site" content="@CIOdive">
+    
+
+    
+    <meta property="og:title" name="og:title" content="Olympics tech off to a tough start with server attacks and expanded malware " />
+    <meta property="og:site_name" name="og:site_name" content="CIO Dive" />
+    <meta property="og:type" name="og:type" content="article" />
+    <meta name="article_date_original" content="Monday, February 12, 2018, 08:54 AM" />
+    <meta property="og:url" name="og:url" content="https://www.ciodive.com/news/olympics-tech-off-to-a-tough-start-with-server-attacks-and-expanded-malware/516846/?utm_source=Sailthru&amp;utm_medium=email&amp;utm_campaign=Issue:%202018-02-12%20CIO%20Dive%20%5Bissue:14007%5D&amp;utm_term=CIO%20Dive%0A%0A" />
+    
+        
+            
+            <meta property="og:image" name="og:image" content="https://www.ciodive.com/user_media/cache/91/9a/919ad1e8e3a7d3dd04f7d53c68706b00.jpg" />
+        
+    
+    
+        <meta property="og:description" name="og:description" content="&quot;It is clear attacks are ongoing and are likely to continue throughout the duration of the games. What is yet to be determined is if actors are working simply to gain disruption or if their motives are greater,&quot; according to&nbsp;McAfee.
+" />
+    
+
+    
+    
+    <meta name="sailthru.date" content="2018-02-12T08:54:15" />
+    <meta name="sailthru.expire_date" content="2028-01-31T08:54:15" />
+    
+      <meta name="sailthru.author" content="Alex Hickey" />
+    
+    
+        
+            
+                <meta name="sailthru.image.full" content="https://www.ciodive.com/user_media/cache/57/d3/57d3f94a995fc68de83faae6f0fd6dc9.jpg" /> <!-- 770x364 -->
+            
+        
+        
+            
+                <meta name="sailthru.image.thumb" content="https://www.ciodive.com/user_media/cache/84/b6/84b6eb428995a69b3b6d62d8f927c6dd.jpg" /> <!-- 106x50 -->
+            
+        
+    
+    
+    
+    
+        <meta name="sailthru.description" content="&quot;It is clear attacks are ongoing and are likely to continue throughout the duration of the games. What is yet to be determined is if actors are working simply to gain disruption or if their motives are greater,&quot; according to&nbsp;McAfee.
+" />
+    
+
+    
+    
+
+
+        
+            <meta name="google-site-verification"
+                  content="6VjZsVYQpcEVP4OvAsZopUBfbZyXAtpDDL_yw4z1NGw"/>
+        
+
+        
+        
+        <link rel="stylesheet" href="/static/css/dive_app.css?012916130218">
+        <link rel="stylesheet" media="print" href="/static/css/print.css?373409101117">
+
+        
+<script src="//d2wy8f7a9ursnm.cloudfront.net/v4/bugsnag.js"></script>
+<script>
+    window.bugsnagClient = bugsnag({
+        apiKey: 'b78c0f8dcaa1b7ff5fb5bdf5f2a110db',
+        releaseStage: 'production',
+        notifyReleaseStages: [ 'qa', 'production' ]
+    })
+</script>
+
+
+        
+            <!-- Google Tag Manager -->
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5G56GNW');</script>
+            <!-- End Google Tag Manager -->
+        
+
+        
+        
+        <!--[if lt IE 10]>
+            <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <![endif]-->
+        <!--[if gte IE 10]><!-->
+            <script
+                src="https://code.jquery.com/jquery-2.2.4.min.js"
+                integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+                crossorigin="anonymous"></script>
+
+            
+            <script>
+            window.jQuery || document.write('<script src="/static/js/jquery_224.min.js"><\/script>')
+            </script>
+            
+            
+                <script>
+                    (function(d) {
+                        var config = {
+                            kitId: 'cty2hsa',
+                            scriptTimeout: 6000,
+                            async: true
+                        },
+                        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+                    })(document);
+                </script>
+            
+        <!--<![endif]-->
+
+        
+        <script src="/static/js/app.js?373409101117"></script>
+
+        
+        <script type="text/javascript" src="/static/js/responsive.js?373409101117"></script>
+
+        
+            <script type="text/javascript">
+                var divecounter_settings = {};
+                
+                    divecounter_settings.showSignupAd = true;
+                
+                
+            </script>
+        
+        <script type="text/javascript" src="/static/js/divecounter.js?513116080218"></script>
+
+        
+            <script src="//static.adzerk.net/ados.js" text="text/javascript"></script>
+            <script>
+                
+                window.ados = window.ados || {};
+                ados.run = ados.run || [];
+
+                
+                    ados.run.push(function () {
+                        var advert_keywords = "Security,security";
+                        if ((typeof divecounter !== "undefined") &&
+                                (divecounter.getData().is_subscriber)) {
+                            // Appears to be a current subscriber so add a keyword to identify them
+                            if (advert_keywords) {
+                                // there are existing keywords so add a comma at the end of the list
+                                advert_keywords = advert_keywords + ",";
+                            }
+                            // add the keyword to ID them as a newsletter subscriber
+                            advert_keywords = advert_keywords + "newsletter-subscriber";
+                        }
+                        ados_setKeywords(advert_keywords);
+                    });
+                
+
+                // this code runs when ad is loaded to count the impression
+                ados.run.push(function () {
+                    ados.on("ImpressionCounted", function(msg) {
+                        var counted_ad_id = msg.data.div;
+                        // this checks if each of the hybrid ads has been loaded and counted for impression
+                        if (counted_ad_id == 'advert_hybridad1_desktop', 'advert_hybridad1_mobile', 'advert_hybridad2_desktop', 'advert_hybridad3_desktop', 'advert_hybridad3_mobile', 'advert_hybridad4_desktop', 'advert_hybridad4_mobile') {
+                            // this adds the "no border" class if the ad is loaded
+                            $('#' + counted_ad_id).closest('.feed-item-ad').addClass('feed-item-ad-no-border');
+                        }
+                    });
+                });
+
+                
+                window.responsive_ads.set_config({
+
+                    desktop_ads_calls: function () {
+                        ados.isAsync = true;
+                        ados.writeInline = false;
+                        ados_add_placement(862, 17649, "advert_leaderboard", [4, 77]).setZone(6719);
+                        ados_add_placement(862, 17649, "advert_hybridad1_desktop", [5, 52]).setZone(160514);
+                        ados_add_placement(862, 17649, "advert_hybridad2_desktop", [5, 52]).setZone(160515);
+                        ados_add_placement(862, 17649, "advert_hybridad3_desktop", [5, 52]).setZone(160516);
+                        ados_add_placement(862, 17649, "advert_hybridad4_desktop", [5, 52]).setZone(162994);
+                        ados_load();
+                    },
+
+                    mobile_ads_calls: function () {
+                        ados.isAsync = true;
+                        ados.writeInline = false;
+                        ados_add_placement(862, 17649, "advert_hybridad1_mobile", [5, 52]).setZone(160514);
+                        ados_add_placement(862, 17649, "advert_hybridad3_mobile", [5, 52]).setZone(160516);
+                        ados_add_placement(862, 17649, "advert_hybridad4_mobile", [5, 52]).setZone(162994);
+                        ados_load();
+                    }
+                });
+
+                $(document).ready(function() {
+                    
+                    ados.run.push(function (){
+                        window.responsive_ads.set_prestitial_possible_cookie();
+                        window.responsive_ads.resize();
+                    });
+                });
+
+                
+                $(window).resize(function() {
+                    
+                    ados.run.push(function () {
+                        window.responsive_ads.resize();
+                    });
+                });
+            </script>
+        
+
+        <script type="text/javascript">
+        // Special unbounce signup thing for google traffic. Test with ?test_unbounce in the URL
+        // Note: divecounter must already be loaded. Only enabled on pages that would normally have signup ads
+        // Note: showSignupAd is always off if prestitial is enabled!
+        if ((typeof divecounter !== "undefined") && ($(window).width() > 640)) {
+          var test_unbounce = (window.location.href.indexOf("?test_unbounce")>=0);
+          var force_unbounce = (window.location.href.indexOf("signupbounce=1")>=0) ||
+                                (window.location.href.indexOf("utm_campaign=Linked-HR")>=0) ||
+                                (window.location.href.indexOf("utm_source=outbrain")>=0);
+          if (test_unbounce ||
+            force_unbounce ||
+            (document.referrer.match(/^https?:\/\/(www\.google\.|news\.google\.|t\.co|twitter\.com|www\.facebook\.com)/i) &&
+              divecounter.getOption('showSignupAd') && divecounter.canShow(1,1)) ) {
+            // dyanmically load ouibounce.js only on pages where its needed
+            $.getScript("/static/js/ouibounce.min.js?373409101117", function(){
+                // Once ouibounce.js loads, call the script
+                // We're reusing divecounter's modal instead of OuiBounce's modal code (that's why we pass it 'false')
+                var _ouibounce = ouibounce(false, {
+                  aggressive: test_unbounce, // ignore cookie in test mode
+                  cookieName: '_viewedOuiBounce', // underscored cookies should be ignored by Varnish
+                  callback: function() {
+                    divecounter_open_ad('Unbounce');
+                  }
+                });
+            });
+          } // end should show unbounce
+        } // end divecounter defined
+        </script>
+
+        
+            
+
+
+
+    <script type="text/javascript">
+        window._page_url_semaphore = 0; // how many async processes have the page URL "locked"
+         window._page_url_semaphore++; 
+         window._page_url_semaphore++; 
+
+        function attempt_clean_url(){
+            // only clean the URL if nobody is still waiting on it.
+            if (--window._page_url_semaphore <= 0) {
+                // nuke the UTM strings from the browser url bar if the browser supports it and if there was a utm in the url
+                if (window.history && window.history.replaceState && window.location.search && (window.location.search.indexOf('utm_') != -1)) {
+                        var currUrl = window.location.href;
+                        // remove the utm_ params and then a question mark or ampersand
+                        var newUrl = currUrl.replace(/utm_[a-z]+=[^&]*&?/gi, '').replace(/[\?&]+$/,'');
+                        window.history.replaceState({}, document.title, newUrl)
+                }
+            }
+        }
+    </script>
+
+
+    
+        <script type="text/javascript">
+            // Load analytics.js (universal analytics) first
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            // set all the variables that are per-session or per-visit
+            
+                ga(
+                    'create',
+                    'UA-19684343-4',
+                    'auto',
+                    {'name': 'orig'},
+                    {'siteSpeedSampleRate': 2}
+                );
+            
+
+            // Set the same variables for aggregate data profile
+            ga(
+                'create',
+                'UA-19684343-45',
+                'auto',
+                {'name': 'agg'},
+                {'siteSpeedSampleRate': 2}
+            );
+
+            
+            if ((typeof $ !== "undefined") && (typeof $.mobile !== "undefined")) {
+//                // see http://www.jongales.com/blog/2011/01/10/google-analytics-and-jquery-mobile/
+                $('[data-role=page]').live('pageshow', function (event, ui) {
+                try {
+
+                    // track pageview, taking into account the current url may be in the hash for mobile
+                    //  browsers that don't support history api. Will always start with a slash in this case
+                    var hashtag_section = location.hash;
+                    if (hashtag_section && (hashtag_section.slice(0,2) == '#/')) {
+                      ga('orig.send', 'pageview', {
+                        'page': hashtag_section.substr(1)
+                      });
+                      ga('agg.send', 'pageview', {
+                        'page': hashtag_section.substr(1)
+                      });
+                    } else {
+                      ga('orig.send', 'pageview');
+                      ga('agg.send', 'pageview');
+                    }
+                } catch(err) {
+                  if(window.console&&window.console.log){window.console.log('Error initializing GA', err);}
+                }
+            });
+          }
+          
+          else {
+            //GA.js for tracking outbound links
+            function trackOutboundLink(link, category, action, redirect) {
+              try{ ga('orig.send', 'event', category, action); } catch(err) {}
+              try{ ga('agg.send', 'event', category, action); } catch(err) {}
+              //Timer to prevent redirect before processing data - not necessary if opening tab in new window  
+              if(redirect){setTimeout(function(){document.location.href = link.href;}, 100);}
+            }
+            $(document).ready(function() {
+              $(".outboundlink").click(function() {
+                trackOutboundLink(this, 'outboundlink', this.link, this.target != '_blank');
+              });
+            });
+            ga('orig.send', 'pageview');
+            ga('agg.send', 'pageview');
+          }
+
+          // Actually track outbound links
+          var trackOutboundRegisterLink = function (url) {
+             ga('agg.send', 'event', 'event_register', url, 'Registered for event', {'hitCallback':
+               function () {
+                   document.location = url;
+               }
+             });
+          }
+          var trackOutboundWebsiteLink = function (url) {
+             // No need to manually change document.location; website opens in new tab
+             ga('agg.send', 'event', 'event_website', url, 'Visited event site');
+          }
+
+          // once we've sent everything on its merry way, then try to clean up the local url
+          attempt_clean_url();
+
+        </script>
+    
+
+    
+    
+        <!-- Start Mixpanel -->
+        <script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+        for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+        mixpanel.init("08fd38d945f3577b09226c184d101277");</script>
+        <!-- end Mixpanel -->
+
+        <script type="text/javascript">
+            
+            mixpanel.set_config({track_links_timeout: 500, track_pageview: false});
+            var superprops = {'site_name':'CIO Dive', 'flavour':''};
+            
+              superprops.divesite_is_staff = false;
+            
+
+            // read UID from sailthru cookie
+            function read_cookie(cookieName) {
+              var re = new RegExp('[; ]'+cookieName+'=([^\\s;]*)');
+              var sMatch = (' '+document.cookie).match(re);
+              if (cookieName && sMatch) return unescape(sMatch[1]);
+              return '';
+            }
+            var hid = read_cookie('sailthru_hid');
+            if (hid.length > 56) {
+              superprops.sailthru_hid = hid;
+              superprops.sailthru_user_id = hid.slice(32,56);
+            }
+            var divelink_cookie_id = parseInt(read_cookie('_divelink_cookie'));
+            if ( !isNaN(divelink_cookie_id) ) {
+              superprops.divelink_id = divelink_cookie_id;
+            }
+
+            mixpanel.register(superprops);
+
+            function mixpanel_track_pageview(event_name, more_props){
+              var event_name = event_name ? event_name : "pageview"; //default event name
+              var pathparts = window.location.pathname.split('/');
+              var pageview_props = {
+                url: window.location.href.replace(/[\?\#].*$/,''), // no parameters or tracking codes
+                full_url: window.location.href, // everything in URL bar
+                page_title: document.title,
+                // ignore pathparts[0] since it's always empty string
+                // special case: root of site is "/" not "" for url_path_part_1
+                url_path_part_1: (pathparts.length > 1) && (pathparts[1] !== "") ? pathparts[1] : "/",
+                url_path_part_2: pathparts.length > 2 ? pathparts[2] : "",
+                url_path_part_3: pathparts.length > 3 ? pathparts[3] : ""
+              }
+              
+              try {
+                  var divecounter_data = divecounter.getData();
+                  pageview_props['page_view_count'] = divecounter_data.hits;
+              }
+              catch (err) {
+                  // swallow errors and just log them to console (if console exists)
+                  window.console && console.log && console.log( "Error getting divecounter hit count", err);
+              }
+              for (var attrname in more_props) { if(more_props.hasOwnProperty(attrname)) pageview_props[attrname] = more_props[attrname]; }
+
+                mixpanel.track(event_name, pageview_props, attempt_clean_url);
+            }
+
+            // see http://www.jongales.com/blog/2011/01/10/google-analytics-and-jquery-mobile/
+            if ((typeof $ !== "undefined") && (typeof $.mobile !== "undefined")) {
+                // JQuery Mobile loaded on this site
+                $('[data-role=page]').live('pageshow', function (event, ui) {
+                  var pageview_props = {};
+                  try {
+                      pageview_props = $(this).data('pageview-props');
+                  } catch (e) { console.log("Error getting pageview_props",e); }
+
+                  if($(this).hasClass('err404')) {
+                    mixpanel_track_pageview("page not found", pageview_props);
+                  }
+                  else {
+                    mixpanel_track_pageview("pageview", pageview_props);
+                  }
+                });
+            }
+            else {
+                // desktop
+                var pageview_props = {"item_force_to_weekender": false, "topics": ["Security", "security"], "item_model_app": "news", "item_sponsored": false, "item_featured": false, "item_id": 516846, "item_pub_date": "2018-02-12T08:54:15", "item_authors": ["Alex Hickey"], "item_type": "newspost", "item_opinion": false, "item_model": "newspost", "item_touched": true};
+                // DIVE_PAGE_STATUS_CODE is defined in desktop 404.html page
+                if ((typeof DIVE_PAGE_STATUS_CODE !== 'undefined') && (DIVE_PAGE_STATUS_CODE == 404)) {
+                  mixpanel_track_pageview("page not found", pageview_props);
+                }
+                else {
+                  mixpanel_track_pageview("pageview", pageview_props);
+                }
+            }
+
+            // mixpanel special link tracking, ported from actions.js
+            $(document).ready(function(){
+              if ($(".topics-bar a").length > 0) {
+                mixpanel.track_links(".topics-bar a","Topics Drawer Click",function(elem){
+                  return {'topic': $(elem).text()};
+                });
+              }
+              setTimeout(function(){
+                // need to wait a little while for Sailthru code to load
+                if ($(".sailthruRecommendation a").length > 0){
+                  mixpanel.track_links(".sailthruRecommendation a","Recommendation Click", function(elem){
+                    var $elem = $(elem);
+                    return {'label': $elem.text().trim(), 'href':$elem.attr('href'), 'from_page':window.location.href, 'style':'concierge'}
+                  });
+                }
+              },500);
+            })
+        </script>
+    
+
+    
+
+
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            jQuery.browser = {};
+            (function () {
+                jQuery.browser.msie = false;
+                jQuery.browser.version = 0;
+                if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+                    jQuery.browser.msie = true;
+                    jQuery.browser.version = RegExp.$1;
+                }
+            })();
+        </script>
+        <!-- for modal signup form -->
+
+        <script type="text/javascript" src="/static/js/jquery.simplemodal.1.4.4.min.js?373409101117"></script>
+
+        
+
+        <style>
+
+            /* dynamic style overrides based on DB go here*/
+            
+        </style>
+
+        
+    
+
+    <meta name="sailthru.title" content="Olympics tech off to a tough start with server attacks and expanded malware " />
+    
+
+    
+        <meta name="news_keywords"
+              content="Security,security"/>
+    
+
+    
+    
+
+    <style>
+        #colorbox img {
+            max-width: 948px;
+            max-height: 1346px;
+        }
+
+        #colorbox figure {
+            margin: 0;
+        }
+
+    </style>
+    <link href="/static/css/colorbox.css?373409101117" rel="stylesheet"/>
+    <script type="text/javascript"
+            src="/static/js/jquery.colorbox-min.js?373409101117"></script>
+
+    
+    <script type="text/javascript">
+
+        /** Stolen from http://stackoverflow.com/questions/24816/escaping-html-strings-with-jquery **/
+        $(document).ready(function () {
+            //"Tweet this" pullquote sections
+
+            // This is used in the processing of 'tweet this' pull quotes
+            function escapeHtml(string) {
+                var entityMap = {
+                    "&": "&amp;",
+                    "<": "&lt;",
+                    ">": "&gt;",
+                    '"': '&quot;',
+                    "'": '&#39;',
+                    "/": '&#x2F;'
+                };
+                return String(string).replace(/[&<>"'\/]/g, function (s) {
+                    return entityMap[s];
+                });
+            }
+
+            // Process the twitter pullquote sections:
+            // * create the link
+            // * create the text ('tweet this quote') for the link
+            $(".pquote").each(function (index) {
+                var j_words;
+
+                if ($(this).data('twitter-text') != 'undefined') {
+                    j_words = $(this).children('.tweetwords').first();
+                } else {
+                    j_words = $(this).data('twitter-text');
+                }
+
+                var j_replace = $(this).children('.tweetquote').first();
+
+                var clean_text = escapeHtml(j_words.text());
+                var link_attributes = 'href="https://twitter.com/intent/tweet?text=' + clean_text + '%20https%3A//www.ciodive.com/news/olympics-tech-off-to-a-tough-start-with-server-attacks-and-expanded-malware/516846/%3Futm_source%3DSailthru%26utm_medium%3Demail%26utm_campaign%3DIssue%3A%25202018-02-12%2520CIO%2520Dive%2520%255Bissue%3A14007%255D%26utm_term%3DCIO%2520Dive%250A%250A' + '" class="popup share_mixpanel_event button twitter" data-sharebutton="tweet_quote" data-shareusing="twitter"';
+                var img = '<img src="/static/img/social_icons/twitter-follow-icon.png?373409101117" alt="Share on Twitter"/>';
+
+                var link = '<a ' + link_attributes + '>tweet this quote' + img + '</a>';
+                j_replace.html(link);
+            });
+        });
+
+
+
+        
+        
+    </script>
+    
+
+    
+
+    
+
+
+
+        
+        <!--[if lt IE 9]>
+
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+            <link rel="stylesheet"
+              href="/static/css/ie8-fixes.css?373409101117">
+        <![endif]-->
+
+    </head>
+
+
+    
+
+    <body class="
+    flush-top
+    
+    article-page news  topic-
+    security 
+    
+    
+    
+">
+
+        
+            <!-- Google Tag Manager (noscript) -->
+                <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5G56GNW" height="0" width="0" style="display:none;visibility:hidden">
+                </iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+        
+
+
+        
+        <div class="overlay"></div>
+
+        <!-- site notification -->
+        
+            
+        
+
+        <!-- leaderboard -->
+        
+        <div id="advert_leaderboard" class="desktop-leaderboard hide-small show-large">
+            
+        </div>
+        
+
+        <div class="page-container">
+            
+            
+            <header role="banner">
+                <nav id="top" class="site-menu">
+                    <div class="row">
+                        <!-- logo -->
+                        <div class="small-8 columns">
+                            <a href="/"><img class="pub-logo" src="https://d12v9rtnomnebu.cloudfront.net/divesite/logos/cio_linelogo_white.png" alt="website logo"></a>
+                            <!-- desktop menu, not visible on mobile/tablet -->
+                            <div class="desktop-menu-wrapper-main">
+                                <ul class="desktop-menu-main">
+                                    <li>
+                                        <a href="/">Home</a>
+                                    </li>
+                                    
+                                        <li>
+                                            <a href="/events/">Events</a>
+                                        </li>
+                                    
+                                    
+                                        <li>
+                                            <a href="/library/">Library</a>
+                                        </li>
+                                    
+                                    
+                                    
+                                    
+                                        <li>
+                                            <a href="/viewpoints/">Viewpoints</a>
+                                        </li>
+                                    
+                                    
+                                    <li class="topics-wrapper">
+                                        <a class="topic-bar-toggle">
+                                            Topics
+                                            <span class="topics-toggle-arrow"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!-- end desktop menu -->
+                        </div>
+                        <!-- wrapper for desktop menu and mobile menu toggle -->
+                        <div class="small-4 columns">
+                            <!-- mobile menu toggle icon, not visible on desktop -->
+                            <button class="mobile-menu-toggle">
+                                Menu
+                                <img src="/static/img/menu_icons/menu.svg?373409101117" alt="menu">
+                            </button>
+                            <!-- newsletter, courses and search, only shown on desktop -->
+                            <div class="desktop-menu-wrapper-sub">
+                                <ul class="desktop-menu-sub list-no-bullets">
+                                    
+                                    <li>
+                                        <a href="/signup/" class="signup-menu-item">
+                                            Newsletter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" class="search-toggle">
+                                            search
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="menu-search js-search-hide">
+                <div class="menu-search-inner-wrapper row"> 
+                    <form action="/search/" method="GET" data-ajax="false">
+                        <label for="search">
+                            <span class="screen-reader-text search">Search</span>
+                            <input id="search" type="search" name="q" placeholder="search" data-role="none">
+                        </label>
+                        <button type="submit" value="" data-role="none">
+                            <img src="/static/img/search_grey.png?373409101117" alt="search">
+                        </button>
+                        <span class="close">x</span>
+                    </form>
+                </div>
+            </div>
+            <nav class="topics-bar">
+                <ul>
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="/topic/IT-Strategy/">IT Strategy</a>
+                            </li>
+                        
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="/topic/cloud/">Cloud</a>
+                            </li>
+                        
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="/topic/security/">Security</a>
+                            </li>
+                        
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="/topic/big-data/">Big Data</a>
+                            </li>
+                        
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="/topic/ai/">AI</a>
+                            </li>
+                        
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="/topic/software/">Software</a>
+                            </li>
+                        
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="/topic/hardware/">Hardware</a>
+                            </li>
+                        
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="/topic/future-tech/">Future Tech</a>
+                            </li>
+                        
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="/topic/leadership-and-careers/">Leadership</a>
+                            </li>
+                        
+                    
+                        
+                        
+                            <li>
+                                <a class="" href="/topic/corporate/">Corporate</a>
+                            </li>
+                        
+                    
+                </ul>
+            </nav>
+            
+
+            
+            <div class="page-wrapper">
+
+                
+                <div class="search-overlay"></div>
+
+                <!-- logo for print -->
+                <div class="printed-branding">
+                    <span class="promoted-branded-copy">An article from</span>
+                    <img src="https://d12v9rtnomnebu.cloudfront.net/logo/printer_friendly/ciodive.jpg" alt="site logo"/>
+                </div>
+
+                <div class="page-inner-wrapper">
+
+                
+                
+                
+
+                
+
+                    <div class="row">
+                        <div class="medium-10 medium-centered large-12">
+                            <section id="main-content" class="main-content large-8 columns">
+
+                                
+                                    
+
+                                
+
+                                
+
+                                
+                                    
+                                    
+                                
+
+                                
+
+
+
+
+
+
+<article class="">
+        
+        
+            
+            
+                
+                
+                    
+                    <img itemprop="image" class="article-hero-img" alt="" src="/user_media/cache/3f/83/3f8383827b1ce6a58abd759c49baa108.jpg">
+                
+            
+        
+
+        
+        <div class="article-header"
+            
+                
+                
+                    
+                    style="background: url('/user_media/cache/3f/83/3f8383827b1ce6a58abd759c49baa108.jpg') no-repeat; background-size: cover; background-position: center;"
+                
+            
+            >
+
+            
+            <div class="article-title-wrapper">
+                
+                
+                        <span class="label label-post">Brief</span>
+                    
+                
+
+                <h1>
+                    Olympics tech off to a tough start with server attacks and expanded malware 
+                    
+                </h1>
+
+                
+
+            </div>
+        </div>
+
+        <div class="row">
+            
+            <div class="byline-large-2 columns">
+                <div class="article-byline">
+                    
+                    
+                        
+                        <div class="author">
+                            
+                            <h4 class="hide-small byline-show-large">Author</h4>
+                            
+                            <span class="byline-hide-large">By</span>
+
+                            
+                            
+                                
+                                    <div class="author-name">
+                                        
+                                        
+                                        
+                                        
+                                            <a rel="author" href="/editors/ahickey/">
+                                                Alex Hickey
+                                            </a>
+                                        
+                                        
+
+                                        
+                                        
+                                            <a href="https://www.twitter.com/its_ahickey" class="twitter hide-small byline-show-large">@its_ahickey</a>
+                                        
+                                    </div>
+                                
+                            
+                        </div>
+                    
+                    <div class="date">
+                        
+                            <span class="byline-hide-large"> • </span>
+                        
+
+                        
+                        <h4 class="hide-small byline-show-large">Published</h4>
+                        <span>Feb. 12, 2018</span>
+                    </div>
+                    <div class="social-share">
+                        <h4 class="hide-small byline-show-large">Share it</h4>
+                        <ul class="rrssb-buttons clearfix">
+                            <li class="rrssb-linkedin">
+                                <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//www.ciodive.com/news/olympics-tech-off-to-a-tough-start-with-server-attacks-and-expanded-malware/516846/%3Futm_source%3DSailthru%26utm_medium%3Demail%26utm_campaign%3DIssue%3A%25202018-02-12%2520CIO%2520Dive%2520%255Bissue%3A14007%255D%26utm_term%3DCIO%2520Dive%250A%250A&amp;title=Olympics%20tech%20off%20to%20a%20tough%20start%20with%20server%20attacks%20and%20expanded%20malware%20" class="popup share_mixpanel_event button" data-sharebutton="rrssb_share" data-shareusing="linkedin">
+                                    <span class="rrssb-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><path d="M25.424 15.887v8.447h-4.896v-7.882c0-1.98-.71-3.33-2.48-3.33-1.354 0-2.158.91-2.514 1.802-.13.315-.162.753-.162 1.194v8.216h-4.9s.067-13.35 0-14.73h4.9v2.087c-.01.017-.023.033-.033.05h.032v-.05c.65-1.002 1.812-2.435 4.414-2.435 3.222 0 5.638 2.106 5.638 6.632zM5.348 2.5c-1.676 0-2.772 1.093-2.772 2.54 0 1.42 1.066 2.538 2.717 2.546h.032c1.71 0 2.77-1.132 2.77-2.546C8.056 3.593 7.02 2.5 5.344 2.5h.005zm-2.48 21.834h4.896V9.604H2.867v14.73z"/></svg>
+                                    </span>
+                                    <span class="rrssb-text">post</span>
+                                </a>
+                            </li>
+                            <li class="rrssb-facebook">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.ciodive.com/news/olympics-tech-off-to-a-tough-start-with-server-attacks-and-expanded-malware/516846/%3Futm_source%3DSailthru%26utm_medium%3Demail%26utm_campaign%3DIssue%3A%25202018-02-12%2520CIO%2520Dive%2520%255Bissue%3A14007%255D%26utm_term%3DCIO%2520Dive%250A%250A" class="popup share_mixpanel_event button" data-sharebutton="rrssb_share" data-shareusing="facebook">
+                                    <span class="rrssb-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29"><path d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z"/></svg>
+                                    </span>
+                                  <span class="rrssb-text">share</span>
+                                </a>
+                            </li>
+                            <li class="rrssb-twitter">
+                                <a href="https://twitter.com/intent/tweet?text=Olympics%20tech%20off%20to%20a%20tough%20start%20with%20server%20attacks%20and%20expanded%20malware%20%20https%3A//www.ciodive.com/news/olympics-tech-off-to-a-tough-start-with-server-attacks-and-expanded-malware/516846/%3Futm_source%3DSailthru%26utm_medium%3Demail%26utm_campaign%3DIssue%3A%25202018-02-12%2520CIO%2520Dive%2520%255Bissue%3A14007%255D%26utm_term%3DCIO%2520Dive%250A%250A%20via%20@CIOdive" class="popup share_mixpanel_event button" data-sharebutton="rrssb_share" data-shareusing="twitter">
+                                    <span class="rrssb-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><path d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62a15.093 15.093 0 0 1-8.86-2.32c2.702.18 5.375-.648 7.507-2.32a5.417 5.417 0 0 1-4.49-3.64c.802.13 1.62.077 2.4-.154a5.416 5.416 0 0 1-4.412-5.11 5.43 5.43 0 0 0 2.168.387A5.416 5.416 0 0 1 2.89 4.498a15.09 15.09 0 0 0 10.913 5.573 5.185 5.185 0 0 1 3.434-6.48 5.18 5.18 0 0 1 5.546 1.682 9.076 9.076 0 0 0 3.33-1.317 5.038 5.038 0 0 1-2.4 2.942 9.068 9.068 0 0 0 3.02-.85 5.05 5.05 0 0 1-2.48 2.71z"/></svg>
+                                    </span>
+                                    <span class="rrssb-text">tweet</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="article-large-10 columns article-wrapper">
+                
+
+
+                <div class="print-wrapper"> 
+                    
+
+                    
+
+                    
+
+                    
+
+                    <div class="">
+                        
+
+<h3>Dive Brief:</h3>
+<ul>
+<li>As athletes paraded through the opening ceremony of the Pyeongchang Winter Olympics on Friday, an unidentified actor hacked the organizing committee's servers, <a href="http://english.yonhapnews.co.kr/news/2018/02/10/0200000000AEN20180210000500320.html" target="_blank">reports Yonhap News</a>.<strong> </strong>The attack caused a "malfunction of the internet protocol televisions," so the committee shut down the servers — which also shut down the PyeongChang 2018 website — to prevent additional damage. The site was back online Saturday morning.</li>
+<li>The attack was not the only security event marring the opening week of the games. McAfee found "expanded capabilities" relating to the Gold Dragon <a href="https://www.ciodive.com/news/security-on-thin-ice-hackers-target-2018-winter-olympics/514317/" target="_blank">fileless attacks targeting organizations</a> associated with the Pyeongchang Olympics, according to a <a href="https://securingtomorrow.mcafee.com/mcafee-labs/gold-dragon-widens-olympics-malware-attacks-gains-permanent-presence-on-victims-systems/" target="_blank">company announcement</a>. </li>
+<li>The new variant of the malware allows it to profile a targeted system and send the results to a control server. The initial PowerShell implant only had "basic data-gathering capabilities" to identify victims and set more malware on them.</li>
+</ul>
+
+<div class="hybrid-ad-wrapper show-small hide-large">
+<div class="hybrid-ad-inner-wrapper">
+<script type="text/javascript">
+                $(document).ready(function() {
+                    
+                    window.responsive_ads.prepend_hybrid_ad_html("#advert_hybridad1_mobile", '\u003Cp class\u003D\u0022story\u002Dbelow\u0022\u003EStory continues below\u003C/p\u003E', 1);
+                });
+            </script>
+<div id="advert_hybridad1_mobile">
+</div>
+</div>
+</div>
+<div class="hybrid-ad-wrapper hide-small show-large">
+<div class="hybrid-ad-inner-wrapper">
+<script type="text/javascript">
+                $(document).ready(function() {
+                    
+                    window.responsive_ads.prepend_hybrid_ad_html("#advert_hybridad2_desktop", '\u003Cp class\u003D\u0022story\u002Dbelow\u0022\u003EStory continues below\u003C/p\u003E', 1);
+                });
+            </script>
+<div id="advert_hybridad2_desktop">
+</div>
+</div>
+</div>
+<h3>Dive Insight:</h3>
+<p>The Winter Games this year are <a href="https://www.ciodive.com/news/will-the-greatest-feat-at-the-pyeongchang-olympics-be-staving-off-cyberatta/516577/" target="_blank">especially dangerous from a cybersecurity standpoint</a>.</p>
+<p>Geopolitical tensions within the Korean peninsula and from other foreign actors such as Russia have many security experts on edge. And the conglomeration of disparate IT systems temporarily set up by the Olympics committee, its partners and sponsors and other visiting organizations have created a broad swathe of potentially exploitable endpoints for malicious actors. </p>
+<p>McAfee first discovered the Gold Dragon malware in late December and disclosed it in early January. The company now believes that the implant "is the second-stage payload in the Olympics attack that [McAfee's] ATR discovered January 6."</p>
+<p>The facelessness of cyberattacks can be frustrating point for the event's organizers, and attributing the Gold Dragon and server attacks to specific actors will be a nearly impossible feat for the IOC. McAfee has posited that Gold Dragon's complexity and rapid deployment are hallmarks of a nation-state actor, but even if the culprit is found it could take months or years. </p>
+<p>In the meantime, the organizers and organizations affiliated with Pyeongchang still have a lot of work ahead of them over the next few weeks.</p>
+<p>"It is clear attacks are ongoing and are likely to continue throughout the duration of the games. What is yet to be determined is if actors are working simply to gain disruption or if their motives are greater," <span>according to McAfee,</span><span> in a statement provided to CIO Dive.</span></p>
+<p>The real impact of these malware campaigns and other attacks may take months to fully realize. Visitors in Pyeonchang should remember to follow best security practices, especially not bringing company devices to the games and connecting to potentially vulnerable or compromised networks. </p>
+
+                    </div>
+
+                    
+                    
+                        <div class="reading-list">
+                            
+
+                            <h3>Recommended Reading:</h3>
+                            <ul class="list-no-bullets">
+                                
+                                    <li>
+                                        <span class="label label-subtle">
+                                            <img src="https://www.google.com/s2/favicons?domain=https://www.ciodive.com/news/security-on-thin-ice-hackers-target-2018-winter-olympics/514317/">
+                                            
+                                                <span>CIO Dive</span>
+                                            
+                                        </span>
+                                        <a href="https://www.ciodive.com/news/security-on-thin-ice-hackers-target-2018-winter-olympics/514317/">
+                                                Security on thin ice: Hackers target 2018 Winter Olympics  <img src="/static/img/offsite_black.png?373409101117" class="off-site-link" alt="offsite link">
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <span class="label label-subtle">
+                                            <img src="https://www.google.com/s2/favicons?domain=https://securingtomorrow.mcafee.com/mcafee-labs/gold-dragon-widens-olympics-malware-attacks-gains-permanent-presence-on-victims-systems/">
+                                            
+                                                <span>McAfee</span>
+                                            
+                                        </span>
+                                        <a href="https://securingtomorrow.mcafee.com/mcafee-labs/gold-dragon-widens-olympics-malware-attacks-gains-permanent-presence-on-victims-systems/">
+                                                Gold Dragon Widens Olympics Malware Attacks, Gains Permanent Presence on Victims’ Systems<img src="/static/img/offsite_black.png?373409101117" class="off-site-link" alt="offsite link">
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <span class="label label-subtle">
+                                            <img src="https://www.google.com/s2/favicons?domain=http://english.yonhapnews.co.kr/news/2018/02/10/0200000000AEN20180210000500320.html">
+                                            
+                                                <span>Yonhap News Agency</span>
+                                            
+                                        </span>
+                                        <a href="http://english.yonhapnews.co.kr/news/2018/02/10/0200000000AEN20180210000500320.html">
+                                                (Olympics) PyeongChang organizers cyber-attacked during opening ceremony<img src="/static/img/offsite_black.png?373409101117" class="off-site-link" alt="offsite link">
+                                        </a>
+                                    </li>
+                                
+                                    <li>
+                                        <span class="label label-subtle">
+                                            <img src="https://www.google.com/s2/favicons?domain=https://www.ciodive.com/news/will-the-greatest-feat-at-the-pyeongchang-olympics-be-staving-off-cyberatta/516577/">
+                                            
+                                                <span>CIO Dive</span>
+                                            
+                                        </span>
+                                        <a href="https://www.ciodive.com/news/will-the-greatest-feat-at-the-pyeongchang-olympics-be-staving-off-cyberatta/516577/">
+                                                Will the greatest feat at the Pyeongchang Olympics be staving off cyberattacks?  <img src="/static/img/offsite_black.png?373409101117" class="off-site-link" alt="offsite link">
+                                        </a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    
+
+                    
+                    
+                        <div class='editor-box'>
+                            
+                                <p>Follow
+                                    
+                                    <span rel="author">
+                                        Alex Hickey
+                                    </span>
+                                    on
+                                    
+                                    
+                                        <a href="https://www.twitter.com/its_ahickey">
+                                            Twitter
+                                        </a>
+                                    
+                                </p>
+                            
+                        </div>
+                    
+
+                    
+                    
+
+                    <div class="post-article-wrapper">
+                        
+                        <div class="share-buttons">
+                            <ul class="rrssb-buttons clearfix">
+    <li class="rrssb-facebook">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.ciodive.com/news/olympics-tech-off-to-a-tough-start-with-server-attacks-and-expanded-malware/516846/%3Futm_source%3DSailthru%26utm_medium%3Demail%26utm_campaign%3DIssue%3A%25202018-02-12%2520CIO%2520Dive%2520%255Bissue%3A14007%255D%26utm_term%3DCIO%2520Dive%250A%250A" class="popup share_mixpanel_event button" data-sharebutton="rrssb_share" data-shareusing="facebook">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29"><path d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z"/></svg>
+            </span>
+          <span class="rrssb-text">share</span>
+        </a>
+    </li>
+    <li class="rrssb-twitter">
+        <a href="https://twitter.com/intent/tweet?text=Olympics%20tech%20off%20to%20a%20tough%20start%20with%20server%20attacks%20and%20expanded%20malware%20%20https%3A//www.ciodive.com/news/olympics-tech-off-to-a-tough-start-with-server-attacks-and-expanded-malware/516846/%3Futm_source%3DSailthru%26utm_medium%3Demail%26utm_campaign%3DIssue%3A%25202018-02-12%2520CIO%2520Dive%2520%255Bissue%3A14007%255D%26utm_term%3DCIO%2520Dive%250A%250A%20via%20@CIOdive" class="popup share_mixpanel_event button" data-sharebutton="rrssb_share" data-shareusing="twitter">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><path d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62a15.093 15.093 0 0 1-8.86-2.32c2.702.18 5.375-.648 7.507-2.32a5.417 5.417 0 0 1-4.49-3.64c.802.13 1.62.077 2.4-.154a5.416 5.416 0 0 1-4.412-5.11 5.43 5.43 0 0 0 2.168.387A5.416 5.416 0 0 1 2.89 4.498a15.09 15.09 0 0 0 10.913 5.573 5.185 5.185 0 0 1 3.434-6.48 5.18 5.18 0 0 1 5.546 1.682 9.076 9.076 0 0 0 3.33-1.317 5.038 5.038 0 0 1-2.4 2.942 9.068 9.068 0 0 0 3.02-.85 5.05 5.05 0 0 1-2.48 2.71z"/></svg>
+            </span>
+            <span class="rrssb-text">tweet</span>
+        </a>
+    </li>
+    <li class="rrssb-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A//www.ciodive.com/news/olympics-tech-off-to-a-tough-start-with-server-attacks-and-expanded-malware/516846/%3Futm_source%3DSailthru%26utm_medium%3Demail%26utm_campaign%3DIssue%3A%25202018-02-12%2520CIO%2520Dive%2520%255Bissue%3A14007%255D%26utm_term%3DCIO%2520Dive%250A%250A&amp;title=Olympics%20tech%20off%20to%20a%20tough%20start%20with%20server%20attacks%20and%20expanded%20malware%20" class="popup share_mixpanel_event button" data-sharebutton="rrssb_share" data-shareusing="linkedin">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><path d="M25.424 15.887v8.447h-4.896v-7.882c0-1.98-.71-3.33-2.48-3.33-1.354 0-2.158.91-2.514 1.802-.13.315-.162.753-.162 1.194v8.216h-4.9s.067-13.35 0-14.73h4.9v2.087c-.01.017-.023.033-.033.05h.032v-.05c.65-1.002 1.812-2.435 4.414-2.435 3.222 0 5.638 2.106 5.638 6.632zM5.348 2.5c-1.676 0-2.772 1.093-2.772 2.54 0 1.42 1.066 2.538 2.717 2.546h.032c1.71 0 2.77-1.132 2.77-2.546C8.056 3.593 7.02 2.5 5.344 2.5h.005zm-2.48 21.834h4.896V9.604H2.867v14.73z"/></svg>
+            </span>
+            <span class="rrssb-text">post</span>
+        </a>
+    </li>
+    <li class="rrssb-email">
+        <a href="/cdn-cgi/l/email-protection#91aec2e4f3fbf4f2e5acdefde8fce1f8f2e2b4a3a1e5f4f2f9b4a3a1fef7f7b4a3a1e5feb4a3a1f0b4a3a1e5fee4f6f9b4a3a1e2e5f0e3e5b4a3a1e6f8e5f9b4a3a1e2f4e3e7f4e3b4a3a1f0e5e5f0f2fae2b4a3a1f0fff5b4a3a1f4e9e1f0fff5f4f5b4a3a1fcf0fde6f0e3f4b4a3a1b7f0fce1aad3fef5e8acf9e5e5e1e2b4a2d0bebee6e6e6bff2f8fef5f8e7f4bff2fefcbefff4e6e2befefde8fce1f8f2e2bce5f4f2f9bcfef7f7bce5febcf0bce5fee4f6f9bce2e5f0e3e5bce6f8e5f9bce2f4e3e7f4e3bcf0e5e5f0f2fae2bcf0fff5bcf4e9e1f0fff5f4f5bcfcf0fde6f0e3f4bea4a0a7a9a5a7beb4a2d7e4e5fccee2fee4e3f2f4b4a2d5c2f0f8fde5f9e3e4b4a3a7e4e5fccefcf4f5f8e4fcb4a2d5f4fcf0f8fdb4a3a7e4e5fccef2f0fce1f0f8f6ffb4a2d5d8e2e2e4f4b4a2d0b4a3a4a3a1a3a1a0a9bca1a3bca0a3b4a3a4a3a1d2d8deb4a3a4a3a1d5f8e7f4b4a3a4a3a1b4a3a4a4d3f8e2e2e4f4b4a2d0a0a5a1a1a6b4a3a4a4d5b4a3a7e4e5fccee5f4e3fcb4a2d5d2d8deb4a3a4a3a1d5f8e7f4b4a3a4a1d0b4a3a4a1d0" class="share_mixpanel_event button" data-sharebutton="rrssb_share" data-shareusing="email">
+            <span class="rrssb-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.386 2.614H2.614A2.345 2.345 0 0 0 .279 4.961l-.01 14.078a2.353 2.353 0 0 0 2.346 2.347h18.771a2.354 2.354 0 0 0 2.347-2.347V4.961a2.356 2.356 0 0 0-2.347-2.347zm0 4.694L12 13.174 2.614 7.308V4.961L12 10.827l9.386-5.866v2.347z"/></svg>
+            </span>
+            <span class="rrssb-text">email</span>
+        </a>
+    </li>
+    <li class="rrssb-print">
+        <a href="javascript:window.print()" class="share_mixpanel_event button" data-sharebutton="rrssb_share" data-shareusing="print">
+            <span class="rrssb-icon">
+                <svg viewbox="0 0 24 24"><path fill="#000000" d="M18,3H6V7H18M19,12A1,1 0 0,1 18,11A1,1 0 0,1 19,10A1,1 0 0,1 20,11A1,1 0 0,1 19,12M16,19H8V14H16M19,8H5A3,3 0 0,0 2,11V17H6V21H18V17H22V11A3,3 0 0,0 19,8Z"></path></svg>
+            </span>
+            <span class="rrssb-text">print</span>
+        </a>
+    </li>
+</ul>
+
+                        </div>
+
+                        
+                        <div class="post-article-topics">
+                            
+                                
+                                    <span>Filed Under:</span>
+                                    
+                                        <a class="topic" href="/topic/security/">Security</a>
+                                        
+                                    
+                                
+                            
+                        </div>
+
+                        
+                        
+                            <div class="help-text">Top image credit:
+                                
+                                    <a href="https://commons.wikimedia.org/wiki/File:Olympic_flag.jpg" rel="nofollow" target="_blank">
+                                
+                                Wikimedia;  Smooth_O
+                                
+                                    </a>
+                                
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    
+
+    <!-- Display counter for SMT FB and LinkedIn shares -->
+    
+
+
+
+
+                            </section>
+                            <aside class="sidebar large-4 columns">
+                                
+    
+    
+    
+
+
+                                    
+<div class="hybrid-ad-wrapper hide-small show-large">
+    <div class="hybrid-ad-inner-wrapper">
+        
+        <div id="advert_hybridad1_desktop">
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+                                    
+                                        
+                                        
+
+
+<div class="signup sidebar-box hide-small show-large" data-box-priority="0">
+    <h3>GET THE NEWSLETTER</h3>
+    <p>Subscribe to <strong>CIO Dive</strong> to get the must-read news & insights in your inbox.</p>
+    
+
+
+
+ 
+    
+    
+
+            <form class="form-generic" name="signup" action="/signup/" method="POST" id="signup_right_sidebar">
+
+                
+
+                
+                
+                    <label for="id_c582_email" class="email-input js-email-input">
+                        <span class="screen-reader-text">Email:</span>
+                        <input class="email" id="id_c582_email" name="email" placeholder="Enter your work email" type="email" />
+                    </label>
+                
+
+                <input type="hidden" name="signup_box_location" value="sidebar">
+                
+                
+                    <input id="id_c582_signup_url" name="signup_url" type="hidden" value="https://www.ciodive.com/news/olympics-tech-off-to-a-tough-start-with-server-attacks-and-expanded-malware/516846/?utm_source=Sailthru&amp;utm_medium=email&amp;utm_campaign=Issue:%202018-02-12%20CIO%20Dive%20%5Bissue:14007%5D&amp;utm_term=CIO%20Dive%0A%0A" />
+                
+                    <input id="id_c582_js_enabled" name="js_enabled" type="hidden" value="0" />
+                
+
+                
+                
+                    
+                        
+                        <ul class="signup-list list-no-bullets">
+                            
+                                <li>
+                                    <span class="newsletter-title">CIO Dive</span>
+                                    
+                                        <p class="newsletter-description">Topics covered: IT strategy, cloud computing, security, big data, and much more.</p>
+                                    
+                                    
+                                        <span class="label label-subtle">Daily</span>
+                                    
+                                    
+                                        <a class="call-out-link" href="/user_media/thumbnails/newsletter_lists/CIODive_sample20151208.jpg" target="_blank">view sample</a>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                
+
+                
+                
+
+                
+                <button class="button email material full-width" type="submit" value="Sign up">Sign up</button>
+
+                
+                <label class="error email_error" style="display:none;">A valid email address is required.</label>
+                <label class="error newsletter-error" style="display:none;">Please select at least one newsletter.</label>
+
+                
+                <span class="help-text">
+                    We care about <a href="http://www.industrydive.com/privacy-policy/" target="_blank">your privacy</a>.
+                </span>
+            </form>
+    
+
+</div>
+
+                                        
+                                    
+
+                                    
+                                        
+
+
+
+    
+    <div class="sidebar-box" data-box-priority="2">
+        <h3><img src="/static/img/most-popular-icon.png?373409101117" class="sidebar-title-icon" />Most Popular</h3>
+        <ol class="image-first-story">
+            
+                
+                    <li>
+                        <!-- image --> 
+                        
+                            <a class="hide-small show-large" href="/news/white-house-allocates-80b-for-modernizing-it-cybersecurity/516961/">
+                                
+                                
+                                    <img src='/user_media/cache/5f/ac/5faccc2c7d696ab2041a7fe64d0cd756.jpg' alt="story image">
+                                
+                                
+                                <span class="first-number">1.</span>
+                            </a>
+                         
+
+                        
+
+
+	
+
+                        <a class="sidebar-list-title" href="/news/white-house-allocates-80b-for-modernizing-it-cybersecurity/516961/">White House allocates $80B for modernizing IT, cybersecurity</a> <!--Article Title-->
+                    </li>
+                
+            
+                
+                    <li>
+                        
+
+
+	
+
+                        <a class="sidebar-list-title" href="/news/blockchain-services-skyrocket-set-to-become-a-foundational-part-of-next/516841/">Blockchain services skyrocket, set to become a &#39;foundational&#39; part of next gen enterprise IT</a> <!--Article Title-->
+                    </li>
+                
+            
+                
+                    <li>
+                        
+
+
+	
+	    <span class="label label-opinion">Opinion</span>
+	
+
+                        <a class="sidebar-list-title" href="/news/better-cloud-enterprise-content-management-ux-is-changing-the-way-we-work/516907/">Better cloud enterprise content management UX is changing the way we work</a> <!--Article Title-->
+                    </li>
+                
+            
+                
+                    <li>
+                        
+
+
+	
+
+                        <a class="sidebar-list-title" href="/news/for-competitons-sake-walmart-turned-to-proprietary-cloud-model/517068/">For competiton&#39;s sake, Walmart turned to proprietary cloud model</a> <!--Article Title-->
+                    </li>
+                
+            
+                
+                    <li>
+                        
+
+
+	
+	    <span class="label label-strong-primary">Feature</span>
+	
+
+                        <a class="sidebar-list-title" href="/news/its-a-crunchy-competitive-grab-bag-of-chips-for-the-tech-industry/517293/">It&#39;s a crunchy, competitive, grab bag of chips for the tech industry</a> <!--Article Title-->
+                    </li>
+                
+            
+        </ol>
+    </div>
+    
+
+
+                                    
+
+                                    
+                                        
+
+
+
+
+    
+        <div class="sidebar-box" data-box-priority="3">
+            <h3><img src="/static/img/staff-picks-icon.png?373409101117" class="sidebar-title-icon" height="35px" />Staff Picks</h3>
+            <ul class="list-no-bullets">
+                
+                    <li>
+                        <a class="sidebar-list-title" href="/news/how-the-chip-industry-is-keeping-calm-during-a-meltdown/515809/">How the chip industry is keeping calm during a &#39;Meltdown&#39; </a> <!--Article Title-->
+                    </li>
+                
+                    <li>
+                        <a class="sidebar-list-title" href="/news/the-cio-dive-awards-for-2017/510776/">The CIO Dive Awards for 2017</a> <!--Article Title-->
+                    </li>
+                
+                    <li>
+                        <a class="sidebar-list-title" href="/news/7-experts-share-their-personal-cybersecurity-habits/436557/">7 experts share their personal cybersecurity habits</a> <!--Article Title-->
+                    </li>
+                
+                    <li>
+                        <a class="sidebar-list-title" href="/news/nfl-cio-making-the-2018-super-bowl-a-win-with-technology/516177/">NFL CIO: Making the 2018 Super Bowl a win with technology</a> <!--Article Title-->
+                    </li>
+                
+                    <li>
+                        <a class="sidebar-list-title" href="/news/big-data-what-you-need-to-know/445962/">Big Data — What you need to know</a> <!--Article Title-->
+                    </li>
+                
+            </ul>
+        </div>
+    
+
+
+                                    
+
+                                    
+
+                                    
+                                        
+                                            
+
+
+    
+        
+        <div class="sidebar-box hide-small show-large" data-box-priority="3">
+            <h3>What We're Reading</h3>
+
+            
+            
+
+                <ul class="list-no-bullets">
+                    
+                    
+                        
+                            <li>
+                                <img src="https://www.google.com/s2/favicons?domain=https%3A//techcrunch.com/2018/02/14/uber-could-be-profitable-if-it-wants-to-says-ceo/%3Fncid%3Drss%26utm_source%3Dtctwreshare%26utm_medium%3Dfeed%26utm_campaign%3DFeed%253A%2BTechcrunch%2B%2528TechCrunch%2529%26sr_share%3Dtwitter">
+                                <span class="label">TechCrunch</span>
+                                <a class="sidebar-list-title" href="https://techcrunch.com/2018/02/14/uber-could-be-profitable-if-it-wants-to-says-ceo/?ncid=rss&amp;utm_source=tctwreshare&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Techcrunch+%28TechCrunch%29&amp;sr_share=twitter" target="_blank">
+                                    Uber could be profitable if it wants to, says CEO
+                                    <img src="/static/img/offsite_black.png?373409101117" class="off-site-link" alt="offsite link">
+                                </a>
+                                <span class="label label-subtle">Feb. 16</span>
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                <img src="https://www.google.com/s2/favicons?domain=https%3A//www.politico.com/story/2018/02/15/white-house-blames-russia-for-massive-ukraine-cyberattack-638151">
+                                <span class="label">POLITICO</span>
+                                <a class="sidebar-list-title" href="https://www.politico.com/story/2018/02/15/white-house-blames-russia-for-massive-ukraine-cyberattack-638151" target="_blank">
+                                    White House blames Russia for massive Ukraine cyberattack
+                                    <img src="/static/img/offsite_black.png?373409101117" class="off-site-link" alt="offsite link">
+                                </a>
+                                <span class="label label-subtle">Feb. 16</span>
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                <img src="https://www.google.com/s2/favicons?domain=https%3A//www.nytimes.com/2018/02/15/technology/fcc-sinclair-ajit-pai.html">
+                                <span class="label">The New York Times</span>
+                                <a class="sidebar-list-title" href="https://www.nytimes.com/2018/02/15/technology/fcc-sinclair-ajit-pai.html" target="_blank">
+                                    F.C.C. Watchdog Looks Into Changes That Benefited Sinclair
+                                    <img src="/static/img/offsite_black.png?373409101117" class="off-site-link" alt="offsite link">
+                                </a>
+                                <span class="label label-subtle">Feb. 16</span>
+                            </li>
+                        
+                    
+                        
+                    
+                </ul>
+            
+            <a class="cta" href="/what-we-are-reading">View all</a>
+        </div>
+    
+
+
+                                        
+                                    
+
+                                    
+                                        
+
+
+
+    <div class="sidebar-box hide-small show-large" data-box-priority="6">
+        <h3><img src="/static/img/event-calendar-icon.png?373409101117" class="sidebar-title-icon" height="35"/>Events</h3>
+        <div class="sidebar-box-content">
+            <ul class="list-no-bullets">
+                
+                    <li>
+                        <a class="sidebar-list-title" href="/events/connected-security-expo-isc-west-sands-expo-las-vega-apr-11-2018-cio-dive/">Connected Security Expo @ ISC West</a>
+                        <span class="label label-subtle">Apr 11 &ndash; Apr 13, 2018</span>
+                        
+                            <br />
+                            <span class="label label-subtle">
+                                Sands Expo, Las Vegas, NV
+                            </span>
+                        
+                    </li>
+                
+                    <li>
+                        <a class="sidebar-list-title" href="/events/conveyux-feb-17-2018-cio-dive/">ConveyUX </a>
+                        <span class="label label-subtle">Feb 17 &ndash; Mar 1, 2018</span>
+                        
+                    </li>
+                
+                    <li>
+                        <a class="sidebar-list-title" href="/events/devnexus-feb-21-2018-cio-dive/">DevNexus </a>
+                        <span class="label label-subtle">Feb 21 &ndash; Feb 23, 2018</span>
+                        
+                    </li>
+                
+                    <li>
+                        <a class="sidebar-list-title" href="/events/container-world-2018-feb-26-2018-cio-dive/">Container World 2018</a>
+                        <span class="label label-subtle">Feb 26 &ndash; Feb 28, 2018</span>
+                        
+                    </li>
+                
+            </ul>
+            <a class="cta" href="/events/">View all events</a>
+        </div>
+    </div>
+
+
+                                    
+
+                                    
+                                        
+
+                                    
+
+                                    
+                                        
+
+
+
+
+
+
+                                    
+
+                                    
+                                        
+
+
+
+                                    
+
+                                    
+<div class="hybrid-ad-wrapper hide-small show-large">
+    <div class="hybrid-ad-inner-wrapper">
+        
+        <div id="advert_hybridad3_desktop">
+            
+        </div>
+    </div>
+</div>
+
+
+
+                            </aside>
+                        </div>
+                    </div>
+
+                
+
+                </div> <!-- ends page-inner-wrapper -->
+
+                <section class="pre-footer">
+                    
+    
+    
+        
+
+
+
+<section class="read-next-wrapper hide-small show-medium">
+    <div class="row">
+        <!-- using read-next-align to adjust for break point between 64 and 70rem -->
+        <div class="medium-10 read-next-align large-9 columns">
+            <h3>Read next</h3>
+            <ul class="feed editorial-content"> <!-- removes bullet -->
+                
+                    <li class="row">
+                        <div class="medium-5 columns">
+                            
+                                <a href="/news/its-a-crunchy-competitive-grab-bag-of-chips-for-the-tech-industry/517293/">
+                                    
+                                    
+                                        <img src='/user_media/cache/53/15/5315b818dc8320a7efc126ff20938017.jpg' alt="story image">
+                                    
+                                </a>
+                            
+                        </div>
+                        <div class="medium-7 columns">
+                            
+
+
+	
+	    <span class="label label-strong-primary">Feature</span>
+	
+
+                            <h4>
+                                <a href="/news/its-a-crunchy-competitive-grab-bag-of-chips-for-the-tech-industry/517293/" class="feed-title">
+                                    It&#39;s a crunchy, competitive, grab bag of chips for the tech industry
+                                </a>
+                            </h4>
+                            <p class="feed-description">
+                                Whose caching in on their chips? The field is complicated for anyone, so here&#39;s the quick who&#39;s who, what&#39;s new and hullabaloo of the chip industry&nbsp;in 2018.
+
+                            </p>
+                            
+                            <a class="label label-topic" href="/topic/hardware/">
+                                Hardware &amp; Infrastructure
+                            </a>
+                            
+                        </div>
+                    </li>
+                
+                    <li class="row">
+                        <div class="medium-5 columns">
+                            
+                                <a href="/news/hps-device-as-a-service-now-featuring-er-apple-products/517210/">
+                                    
+                                    
+                                        <img src='/user_media/cache/4c/18/4c183faa24ba540a01f88d2824f383b2.jpg' alt="story image">
+                                    
+                                </a>
+                            
+                        </div>
+                        <div class="medium-7 columns">
+                            
+
+
+	
+
+                            <h4>
+                                <a href="/news/hps-device-as-a-service-now-featuring-er-apple-products/517210/" class="feed-title">
+                                    HP&#39;s Device as a Service now featuring, er, Apple products
+                                </a>
+                            </h4>
+                            <p class="feed-description">
+                                Though&nbsp;at first glance&nbsp;it seems HP is pairing with a direct competitor, the company is realizing an opportunity. Apple is the de facto king of the mobile device world, and HP can tap into that market by providing support.
+
+                            </p>
+                            
+                            <a class="label label-topic" href="/topic/hardware/">
+                                Hardware &amp; Infrastructure
+                            </a>
+                            
+                        </div>
+                    </li>
+                
+                    <li class="row">
+                        <div class="medium-5 columns">
+                            
+                                <a href="/news/move-over-big-data-ai-is-now-the-exec-hype-word-of-the-season/517176/">
+                                    
+                                    
+                                        <img src='/user_media/cache/99/41/9941c0e65d936ec0588048c6c081bb80.jpg' alt="story image">
+                                    
+                                </a>
+                            
+                        </div>
+                        <div class="medium-7 columns">
+                            
+
+
+	
+
+                            <h4>
+                                <a href="/news/move-over-big-data-ai-is-now-the-exec-hype-word-of-the-season/517176/" class="feed-title">
+                                    Move over &#39;Big Data,&#39; &#39;AI&#39; is now the exec hype word of the season
+                                </a>
+                            </h4>
+                            <p class="feed-description">
+                                Data used to be considered the new oil, but companies were confronted with an inability to adequately analyze it all.&nbsp;For some, the promise of AI became the answer.
+
+                            </p>
+                            
+                            <a class="label label-topic" href="/topic/big-data/">
+                                Big Data
+                            </a>
+                            
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</section>
+
+    
+    
+    
+    <section class="signup call-out">
+        <div class="row">
+            <div class="large-9 medium-10 medium-centered columns">
+                <h3>Get CIO Dive in your inbox</h3>
+                <p class="subhead">The free newsletter covering the top industry headlines</p>
+                
+
+
+
+ 
+    
+    
+
+            <form class="form-generic" name="signup" action="/signup/" method="POST" id="signup_right_sidebar">
+
+                
+
+                
+                
+                    <label for="id_8c9cd0_email" class="email-input js-email-input">
+                        <span class="screen-reader-text">Email:</span>
+                        <input class="email" id="id_8c9cd0_email" name="email" placeholder="Enter your work email" type="email" />
+                    </label>
+                
+
+                <input type="hidden" name="signup_box_location" value="bottom">
+                
+                
+                    <input id="id_8c9cd0_signup_url" name="signup_url" type="hidden" value="https://www.ciodive.com/news/olympics-tech-off-to-a-tough-start-with-server-attacks-and-expanded-malware/516846/?utm_source=Sailthru&amp;utm_medium=email&amp;utm_campaign=Issue:%202018-02-12%20CIO%20Dive%20%5Bissue:14007%5D&amp;utm_term=CIO%20Dive%0A%0A" />
+                
+                    <input id="id_8c9cd0_js_enabled" name="js_enabled" type="hidden" value="0" />
+                
+
+                
+                
+                    
+                        
+                        <ul class="signup-list list-no-bullets">
+                            
+                                <li>
+                                    <span class="newsletter-title">CIO Dive</span>
+                                    
+                                        <p class="newsletter-description">Topics covered: IT strategy, cloud computing, security, big data, and much more.</p>
+                                    
+                                    
+                                        <span class="label label-subtle">Daily</span>
+                                    
+                                    
+                                        <a class="call-out-link" href="/user_media/thumbnails/newsletter_lists/CIODive_sample20151208.jpg" target="_blank">view sample</a>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                
+
+                
+                
+
+                
+                <button class="button email material full-width" type="submit" value="Sign up">Sign up</button>
+
+                
+                <label class="error email_error" style="display:none;">A valid email address is required.</label>
+                <label class="error newsletter-error" style="display:none;">Please select at least one newsletter.</label>
+
+                
+                <span class="help-text">
+                    We care about <a href="http://www.industrydive.com/privacy-policy/" target="_blank">your privacy</a>.
+                </span>
+            </form>
+    
+
+            </div>
+        </div>
+    </section>
+    
+
+                </section>
+
+                
+                <hr class="footer-hr">
+                <footer>
+                    <div class="custom-article-footer">
+                        <div class="row">
+                            <div class="medium-6 columns">
+                                <h4>Explore</h4>
+                                <div class="row">
+                                    <div class="small-6 columns">
+                                        <ul class="list-no-bullets">
+                                            
+                                            <li>
+                                                <a href="/submit-tip/">Submit A Tip</a>
+                                            </li>
+                                            <li>
+                                                <a href="/editors/">Editorial Team</a>
+                                            </li>
+                                            <li>
+                                                <a href="/about/">About</a>
+                                            </li>
+                                            <li>
+                                                <a href="/signup/">Newsletter</a>
+                                            </li>
+
+                                            
+                                        </ul>
+                                    </div>
+                                    <div class="small-6 columns">
+                                    <ul class="list-no-bullets">
+                                        
+                                            <li>
+                                                <a href="/press-release/">Press Releases</a>
+                                            </li>
+                                        
+                                        
+                                            <li>
+                                                <a href="/what-we-are-reading/">What We're Reading</a>
+                                            </li>
+                                        
+                                        
+                                            <li>
+                                                <a href="/advertise/">Advertising</a>
+                                            </li>
+                                        
+                                        <li>
+                                            
+                                            <a href="/feedback/">Contact</a> 
+                                        </li>
+                                        
+                                    </ul>
+                                    </div>
+                                </div>
+                                
+                                    <h4>Get the App</h4>
+                                    <ul class="list-no-bullets app-store-badges">
+                                        <li>
+                                            <a href="https://itunes.apple.com/us/app/utility-dive/id635374982?mt=8"><img src="/static/img/black_apple_badge.png?373409101117" border="0" alt="apple store badge" /></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://play.google.com/store/apps/details?id=com.utilitydive"><img src="/static/img/black_google_badge.png?373409101117" border="0" alt="google play badge" /></a>
+                                        </li>
+                                    </ul>
+                                
+                                <h4>Follow</h4>
+                                
+                                <a href="https://twitter.com/CIOdive" class="button social"><img src="/static/img/social_icons/twitter-follow-icon-black.png?373409101117" alt="Twitter"></a>
+                                
+
+                                
+                                <a href="https://www.facebook.com/CIOdive/" class="button social"><img src="/static/img/social_icons/facebook-follow-icon-black.png?373409101117" alt="Facebook"></a>
+                                
+
+                                
+                                <a href="https://www.linkedin.com/company/cio-dive-information-and-enterprise-technology-news" class="button social"><img src="/static/img/social_icons/linkedin-follow-icon-black.png?373409101117" alt="LinkedIn"></a>
+                                
+
+                                
+                                    <a href="https://www.ciodive.com/feeds/news/" class="button social"><img src="/static/img/social_icons/rss-follow-icon-black.png?373409101117" alt="LinkedIn"></a>
+                                
+                            </div>
+                                    <!-- Footer feedback form -->
+                            <form class="form-generic feedback" method="POST"
+                                          action="/feedback/"
+                                          onsubmit="javascript:$('#feedback-footer-canary').val('(blank)');$('#mixpanel_id').val(mixpanel.get_distinct_id());">
+                                <div class="medium-6 columns">
+                                    <div class="footer-section-wrapper">
+                                        <h4>Feedback</h4>
+                                        <label for="email" class="email-input">
+                                            <span class="screen-reader-text">Work Email:</span>
+                                            <input id="email" type="email" name="email" placeholder="Enter your work email" required/>
+                                        </label>
+                                        <label for="feedback">
+                                            <span class="screen-reader-text">Message:</span>
+                                            <textarea id="feedback" name="feedback" placeholder="Send us your feedback here" required></textarea>
+                                        </label>
+                                        <button type="submit" class="button material grey full-width">Submit</button>
+                                    </div>
+                                </div>
+                                <div style="display:none">
+                                    <label for="feedback-footer-canary">Please leave this field blank
+                                        <input id="feedback-footer-canary" type="text" name="canary"/>
+                                        <input id="mixpanel_id" type="text" name="mixpanel_id" value="blank"/>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </footer>
+                <hr class="footer-hr">
+                <div class="baseline-footer-wrapper">
+                    <!-- smt user footer --> 
+
+<div class="baseline-footer">
+    &copy; 2018 <a href="http://www.industrydive.com">Industry Dive</a>. All rights reserved. | View our <a href="http://www.industrydive.com/industries/">other publications</a>
+    | <a href="http://www.industrydive.com/privacy-policy/">Privacy policy</a>
+    | <a href="http://www.industrydive.com/terms-of-use/">Terms of use</a>
+    | <a href="http://www.industrydive.com/takedown-policy/">Take down policy</a>.
+</div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <!-- mobile menu, not visible on desktop, must go AFTER footer -->
+        
+        <nav class="mobile-menu">
+            <div class="mm-top-bar">
+                <button class="mobile-menu-toggle">
+                    <img src="/static/img/menu_icons/close_white.svg?373409101117" alt="menu"/>
+                </button>
+                <div class="mm-search">
+                    <form action="/search/" method="GET" data-ajax="false">
+                        <label for="search">
+                            <span class="screen-reader-text">Search</span>
+                            <input id="search" type="search" name="q" placeholder="search" data-role="none">
+                        </label>
+                        <button type="submit" value="" data-role="none">
+                            <img src="/static/img/menu_icons/search.svg?373409101117" alt="search">
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <ul class="mm-list list-no-bullets">
+                <li>
+                    <a href="/" class="">
+                        <img src="/static/img/menu_icons/home.svg?373409101117" width="20" height="20" alt="home">
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="mm-topics">
+                    <button>
+                        <img src="/static/img/menu_icons/topics.svg?373409101117" width="20" height="20" alt="topics"/>
+                        <span>Topics</span>
+                        <span class="topics-toggle-arrow">
+                            <img src="/static/img/menu_icons/chevron_down.svg?373409101117" alt="down arrow"/>
+                        </span>
+                    </button>
+                    <ul class="list-no-bullets">
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="/topic/IT-Strategy/">IT Strategy</a>
+                                </li>
+                            
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="/topic/cloud/">Cloud</a>
+                                </li>
+                            
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="/topic/security/">Security</a>
+                                </li>
+                            
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="/topic/big-data/">Big Data</a>
+                                </li>
+                            
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="/topic/ai/">AI</a>
+                                </li>
+                            
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="/topic/software/">Software</a>
+                                </li>
+                            
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="/topic/hardware/">Hardware</a>
+                                </li>
+                            
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="/topic/future-tech/">Future Tech</a>
+                                </li>
+                            
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="/topic/leadership-and-careers/">Leadership</a>
+                                </li>
+                            
+                        
+                            
+                            
+                                <li>
+                                    <a class="" href="/topic/corporate/">Corporate</a>
+                                </li>
+                            
+                        
+                    </ul>
+                </li>
+                
+                    <li>
+                        <a href="/events/" class="">
+                            <img src="/static/img/menu_icons/events.svg?373409101117" width="20" height="20" alt="events">
+                            <span>Events</span>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="/library/" class="">
+                            <img src="/static/img/menu_icons/library.svg?373409101117" width="20" height="20" alt="library">
+                            <span>Library</span>
+                        </a>
+                    </li>
+                
+                
+                
+                    <li>
+                        <a href="/viewpoints/">
+                            <img src="/static/img/menu_icons/viewpoints.svg?373409101117" width="20" height="20" alt="viewpoints">
+                            <span>Viewpoints</span>
+                        </a>
+                    </li>
+                
+
+                
+
+                
+
+            </ul>
+            
+                
+                <section class="signup mm-signup">
+                    <div class="row">
+                        <div class="columns">
+                            <h3>Get CIO Dive in your inbox</h3>
+                            <p class="subhead">The free newsletter covering the top industry headlines</p>
+                            
+
+
+
+ 
+    
+    
+
+            <form class="form-generic" name="signup" action="/signup/" method="POST" id="signup_right_sidebar">
+
+                
+
+                
+                
+                    <label for="id_37504a_email" class="email-input js-email-input">
+                        <span class="screen-reader-text">Email:</span>
+                        <input class="email" id="id_37504a_email" name="email" placeholder="Enter your work email" type="email" />
+                    </label>
+                
+
+                <input type="hidden" name="signup_box_location" value="integrated_menu">
+                
+                
+                    <input id="id_37504a_signup_url" name="signup_url" type="hidden" value="https://www.ciodive.com/news/olympics-tech-off-to-a-tough-start-with-server-attacks-and-expanded-malware/516846/?utm_source=Sailthru&amp;utm_medium=email&amp;utm_campaign=Issue:%202018-02-12%20CIO%20Dive%20%5Bissue:14007%5D&amp;utm_term=CIO%20Dive%0A%0A" />
+                
+                    <input id="id_37504a_js_enabled" name="js_enabled" type="hidden" value="0" />
+                
+
+                
+                
+                    
+                        
+                        <ul class="signup-list list-no-bullets">
+                            
+                                <li>
+                                    <span class="newsletter-title">CIO Dive</span>
+                                    
+                                        <p class="newsletter-description">Topics covered: IT strategy, cloud computing, security, big data, and much more.</p>
+                                    
+                                    
+                                        <span class="label label-subtle">Daily</span>
+                                    
+                                    
+                                        <a class="call-out-link" href="/user_media/thumbnails/newsletter_lists/CIODive_sample20151208.jpg" target="_blank">view sample</a>
+                                    
+                                </li>
+                            
+                        </ul>
+                    
+                
+
+                
+                
+
+                
+                <button class="button email material full-width" type="submit" value="Sign up">Sign up</button>
+
+                
+                <label class="error email_error" style="display:none;">A valid email address is required.</label>
+                <label class="error newsletter-error" style="display:none;">Please select at least one newsletter.</label>
+
+                
+                <span class="help-text">
+                    We care about <a href="http://www.industrydive.com/privacy-policy/" target="_blank">your privacy</a>.
+                </span>
+            </form>
+    
+
+                        </div>
+                    </div>
+                </section>
+            
+        </nav>
+        
+
+        
+    <script data-cfasync="false" src="/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script><script src="/static/js/news.js?373409101117" async></script>
+    
+
+
+        
+
+        
+            
+                <div id="advert_interstitial" class="modal_dialog" style="display:none; text-align:center;">
+                    <script>
+                        if (responsive_ads.should_show_interstitial()) {
+                            var load_prestitial = (
+                                (window.location.href.indexOf("?prestitial_test")>=0)
+                                || (document.cookie.indexOf("_prestitialViewed") == -1)
+                            ) && (window.location.href.indexOf("?prestitial_skip") == -1);
+
+                            if (load_prestitial) {
+                                // load the ad inline right at this spot
+                                window.ados = window.ados || {};
+                                ados.run = ados.run || [];
+                                ados.run.push(function() {
+                                    ados_addInlinePlacement(
+                                        862,
+                                        17649,
+                                        [
+                                            925, 5, 2224, 4, 10, 11, 2480, 2489,
+                                            2492, 569, 2525, 501, 2630, 1138, 191,
+                                            2668, 2678, 2716, 309, 2741, 2737, 929,
+                                            374, 828, 1638, 38, 2899, 46, 2923, 2936,
+                                            2953, 1129, 2997, 44, 3007, 3012, 3027, 1610,
+                                            3083, 3099, 3205
+                                        ]
+                                    ).setZone(
+                                       134976
+                                   ).setRedirectUrl('-optional-click-macro-').loadInline();
+                                });
+
+                                // Make the ad call immediately above, but wait until the page is
+                                // ready before trying to show the prestitial.
+                                $(document).ready(function() {
+                                    window.responsive_ads.attempt_popup(1);
+                                });
+                            }
+                        }
+                    </script>
+                </div>
+            
+        
+
+        
+    <script src="//platform.twitter.com/oct.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        if(typeof twttr !== "undefined") {
+            twttr.conversion.trackPid('l6guk', { tw_sale_amount: 0, tw_order_quantity: 0 });
+        } else {
+            window.console && console.log && console.log("twttr undefined; Unable to track twitter retargeting");
+        }
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l6guk&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0" />
+    <img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l6guk&amp;p_id=Twitter&amp;tw_sale_amount=0&amp;tw_order_quantity=0" />
+    </noscript>
+
+
+
+        
+
+        <!--[if lt IE 9]>
+            <script type="text/javascript" src="/static/js/rem.min.js?373409101117" ></script>
+        <![endif]-->
+
+         
+    
+    <!-- Sailthru Horizon -->
+
+
+<!-- <script type="text/javascript" src="https://ak.sail-horizon.com/horizon/v1.js"></script> -->
+<script src="https://ak.sail-horizon.com/spm/spm.v1.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        // Sailthru Personalization Engine Setup
+        var sailthru_setup = {
+            customerId: '12ab35a80530ffa5450add9c09f5de04',
+            domain: 'horizon.ciodive.com',
+            spider: true
+        };
+        
+        if (window.Sailthru) {
+            Sailthru.init(sailthru_setup);
+        }
+    });
+</script>
+
+
+
+        <script async type="text/javascript" src="/static/js/shared.js?373409101117"></script>
+
+        <script>
+            // Set cookie if we're on mobile app. Expire if we're not. This affects
+            // which template is used to display the site to the user.
+            $(document).ready(function() {
+                // Get integer value of mobileapp param from URL and default to 0 if it doesn't exist
+                var mobileapp = '';
+
+                // Set cookie if mobileapp is 1 or 2 or expire cookie if mobileapp == 0
+                if (mobileapp == '0') {
+                    document.cookie = 'mobileapp=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+                } else if (mobileapp == '1' || mobileapp == '2') {
+                    document.cookie = 'mobileapp=' + mobileapp + '; path=/;';
+                }
+            });
+        </script>
+    </body>
+</html>
+

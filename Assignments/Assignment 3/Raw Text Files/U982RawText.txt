@@ -1,0 +1,8 @@
+basic_close
+â»åç»ã¯ã¢ããªã§ã®ã¿è¦è´ã§ãã¾ã
+â ã¢ããªã®ããæ¹ã¯ãã¡ããã¯ãªãã¯
+ãã®ç«¯æ«ã§åç»ãåçãããã¨ã¯ã§ãã¾ãã
+{"ID":"35128","Title":"ãé«æ¨ç¾å¸ éã¡ãã«ï¼ãã¹ãã¼ãã¹ã±ã¼ãå¥³å­1500m","Subtitle":"","Description":"","Category":{"ID":"","Description":""},"DateTime":"2018-02-12T11:17:00.0000000Z","Images":[],"ContentType":"application/json","LinkTitle":"","Behaviors":["hasDiva"],"States":["isVideoLayout","isFinished"],"StateLabel":"1:59:09","Extensions":{"Diva" :{"VideoID":"35128","Url":"https://mobileapp.sports.nhk.or.jp/divaplayer/settings/{quality}/settings-mobile-replay-ja.xml","RelativeDeeplink":"","AbsoluteDeeplink":"","C1":"","C2":"","C3":"","C4":"","C5":"","SpoilerModeiOS":"SpoilerButton","MatchMode":true}},"Url":""}
+ãã¹ã¦è¦ã
+ã¹ãã¼ãã¹ã±ã¼ã ãã¤ã©ã¤ã
+

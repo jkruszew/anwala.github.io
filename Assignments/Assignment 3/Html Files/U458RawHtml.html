@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"><!-- static --><meta charset="utf-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationTime":99,"transactionName":"YQcBMkNVCBFZUBUMC1hNJRNfVxILV11OBBxaTAIWQUdIDF1EEksSXwcUFR9HEg1KWgQWXnMGChJeRg8DVGAVChZPMhYEXV0VCl1XJQQQUyYGElBdCjRRVhY=","licenseKey":"f0ffc42d90","errorBeacon":"bam.nr-data.net","queueTime":0,"agent":"","applicationID":"14914745","beacon":"bam.nr-data.net"}</script><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://static.texascommunitymedia.com/static/css/normalize.css"><link href="https://static.texascommunitymedia.com/static/css/style.css" rel="stylesheet" media="all"/><link rel="stylesheet" href="https://static.texascommunitymedia.com/static/css/grid.css"><title>TSWA Class 6A All-State Football Team - ET Varsity - East Texas Area</title><link href="https://static.texascommunitymedia.com/static/etv/font/font.css" rel="stylesheet" media="all"/><link rel="canonical" href="http://www.etvaristy.com/news/2018/feb/10/tswa-class-6a-all-state-football-team/" /><meta name="blitz" content="mu-10ba9b19-0c38fcd6-4c764ea6-9fa4649b"><link rel="apple-touch-icon" sizes="57x57" href="https://static.texascommunitymedia.com/static/etv/images/favicons/apple-touch-icon-57x57.png"><link rel="apple-touch-icon" sizes="60x60" href="https://static.texascommunitymedia.com/static/etv/images/favicons/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="https://static.texascommunitymedia.com/static/etv/images/favicons/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="https://static.texascommunitymedia.com/static/etv/images/favicons/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="https://static.texascommunitymedia.com/static/etv/images/favicons/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="https://static.texascommunitymedia.com/static/etv/images/favicons/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="https://static.texascommunitymedia.com/static/etv/images/favicons/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="https://static.texascommunitymedia.com/static/etv/images/favicons/apple-touch-icon-152x152.png"><link rel="apple-touch-icon" sizes="180x180" href="https://static.texascommunitymedia.com/static/etv/images/favicons/apple-touch-icon-180x180.png"><link rel="icon" type="image/png" href="https://static.texascommunitymedia.com/static/etv/images/favicons/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="https://static.texascommunitymedia.com/static/etv/images/favicons/android-chrome-192x192.png" sizes="192x192"><link rel="icon" type="image/png" href="https://static.texascommunitymedia.com/static/etv/images/favicons/favicon-96x96.png" sizes="96x96"><link rel="icon" type="image/png" href="https://static.texascommunitymedia.com/static/etv/images/favicons/favicon-16x16.png" sizes="16x16"><link rel="manifest" href="https://static.texascommunitymedia.com/static/etv/images/favicons/manifest.json"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-TileImage" content="https://static.texascommunitymedia.com/static/etv/images/favicons/mstile-144x144.png"><meta name="theme-color" content="#ffffff"><meta property="fb:app_id" content="215968801884996" /><meta property="og:type" content="article"/><meta property="og:url" content="http://www.etvarsity.com/news/2018/feb/10/tswa-class-6a-all-state-football-team/%0A"/><meta property="og:title" content="TSWA Class 6A All-State Football Team - ET Varsity"/><meta
+        property="og:image"
+        content="https://static.texascommunitymedia.com/static/etv/images/logos/default_share_logo.png"
+      /><meta property="fb:admins" content="admin"/><meta
+        property="og:description"
+        content="
+BRYAN – Listed is the 67th annual Collin Street Bakery/Texas Sports Writers Association Class 6A All-State Football Team for 2017: FIRST TEAM Offense Tackles – ...
+"
+      /><link rel="stylesheet" href="https://static.texascommunitymedia.com/static/etv/css/etv.css"><script>
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=215968801884996";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script><script src="https://static.texascommunitymedia.com/static/js/jquery.mobile.custom.min.js"></script><!-- Google Analytics --><script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-60026192-1', 'auto');
+        ga('send', 'pageview');
+        
+
+    </script><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script><script src="https://static.texascommunitymedia.com/static/plugins/carouFredSel/jquery.carouFredSel-6.2.1.js"></script><script type="text/javascript" language="javascript" src="https://static.texascommunitymedia.com/static/plugins/carouFredSel/helper-plugins/jquery.mousewheel.min.js"></script><script type="text/javascript" language="javascript" src="https://static.texascommunitymedia.com/static/plugins/carouFredSel/helper-plugins/jquery.touchSwipe.min.js"></script><script src="https://static.texascommunitymedia.com/static/plugins/foundation/js/vendor/modernizr.js"></script><script src="https://static.texascommunitymedia.com/static/js/nav.js"></script><script type="text/javascript">
+
+        function toggleSearch(){
+            var searchCon = $("#searchFormContainer");
+            if(!searchCon.hasClass('fixed'))
+                searchCon.addClass('fixed');
+            else
+                searchCon.removeClass('fixed');
+        }
+    </script><!-- homescreen reminder --><link rel="stylesheet" type="text/css" href="https://static.texascommunitymedia.com/static/plugins/addtohomescreen/style/addtohomescreen.css"><script src="https://static.texascommunitymedia.com/static/plugins/addtohomescreen/src/addtohomescreen.js"></script><script>
+    addToHomescreen({
+       /* Intrusive :-)
+        modal: true,
+       startDelay: 0,
+       lifespan: 0,
+       displayPace: 1,
+       maxDisplayCount: 0,*/
+       
+       skipFirstVisit: true,
+       maxDisplayCount: 1
+       
+    });
+</script><!-- homescreen reminder --><script type='text/javascript'>
+(function() {
+var useSSL = 'https:' == document.location.protocol;
+var src = (useSSL ? 'https:' : 'http:') +
+'//www.googletagservices.com/tag/js/gpt.js';
+document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+})();
+</script><script type='text/javascript'>
+googletag.cmd.push(function() {
+googletag.defineSlot('/8570/etv/news_leader', [728, 90], 'news_leader').addService(googletag.pubads());
+googletag.defineSlot('/8570/etv/news_monster', [[300, 250], [300, 600]], 'news_monster').addService(googletag.pubads());
+googletag.defineSlot('/8570/etv/mobile', [320, 50], 'default_mobile_leader').addService(googletag.pubads());
+googletag.defineSlot('/8570/etv/billboard', [950, 30], 'billboard_container').addService(googletag.pubads());
+googletag.defineSlot('/8570/tcm_skin', [1700, 1200], 'home_skin').addService(googletag.pubads());
+googletag.pubads().enableSyncRendering();
+googletag.pubads().collapseEmptyDivs();
+googletag.enableServices();
+});
+</script><link rel="stylesheet" href="https://static.texascommunitymedia.com/static/css/admin/news/editorialstory/story.css" type="text/css" /><link rel="stylesheet" href="https://static.texascommunitymedia.com/static/plugins/lightbox/nivo-lightbox.css" type="text/css" /><link rel="stylesheet" href="https://static.texascommunitymedia.com/static/plugins/lightbox/themes/default/default.css" type="text/css" /><script src="https://static.texascommunitymedia.com/static/plugins/lightbox/nivo-lightbox.js"></script><style>
+#story h1.headline{ 
+    color: #333;
+}
+
+</style><script src="https://static.texascommunitymedia.com/static/plugins/carouFredSel/jquery.carouFredSel-6.2.1.js"></script><script src="//platform.twitter.com/widgets.js" charset="utf-8"></script><!-- Google Surveys --><script type="text/javascript">
+        (function() {
+          var ARTICLE_URL = window.location.href;
+          var CONTENT_ID = 'everything';
+          document.write(
+            '<scr'+'ipt '+
+            'src="//survey.g.doubleclick.net/survey?site=_n4mk5nmlovr6gxmdnk3utixhqi'+
+            '&amp;url='+encodeURIComponent(ARTICLE_URL)+
+            (CONTENT_ID ? '&amp;cid='+encodeURIComponent(CONTENT_ID) : '')+
+            '&amp;random='+(new Date).getTime()+
+            '" type="text/javascript">'+'\x3C/scr'+'ipt>');
+        })();
+        </script><script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({article:'auto'});
+  !function (e, f, u) {
+    e.async = 1;
+    e.src = u;
+    f.parentNode.insertBefore(e, f);
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  'https://cdn.taboola.com/libtrc/advocatedigital-news-journal/loader.js');
+</script><style>
+    /* infogram hack */
+    @media only screen and (min-width: 900px) {
+        story iframe { max-width: 730px !important; }
+    } 
+    @media only screen and (min-width: 800px) and (max-width: 899px) {
+        story iframe { max-width: 600px !important; }
+    } 
+    @media only screen and (min-width: 800px) and (max-width: 899px) {
+        story iframe { max-width: 500px !important; }
+    } 
+    @media only screen and (min-width: 700px) and (max-width: 799px) {
+        story iframe { max-width: 450px !important; }
+    } 
+    @media only screen and (min-width: 600px) and (max-width: 699px) {
+        story iframe { max-width: 500px !important; }
+    } 
+    @media only screen and (min-width: 416px) and (max-width: 599px) {
+        story iframe { max-width: 400px !important; }
+    } 
+    @media only screen and (min-width: 377px) and (max-width: 415px) {
+        story iframe { max-width: 370px !important; }
+    } 
+    @media only screen and (min-width: 350px) and (max-width: 376px) {
+        story iframe { max-width: 330px !important; }
+    } 
+    @media only screen and (min-width: 319px) and (max-width: 349px) {
+        story iframe { max-width: 280px !important; }
+    } 
+    </style></head><body class="hide-extras antialiased"><!--[if lte IE 9]><div style="position:relative;width:100%;background-color:#E9DAB3;padding:10px;text-align:center;z-index:1;"><div id="no_script" style="margin:0 auto;"><span style="font-weight:bold;font-size:13px;padding-top:5px;">For a better viewing experience, Please <a href="http://windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank">download the latest Internet Explorer.</a><span></span></span></div></div><![endif]--><noscript><div style="position:fixed;bottom:0;width:100%;background-color:#E9DAB3;padding:10px;text-align:center;z-index:1;"><div id="no_script" style="margin:0 auto;"><span style="font-weight:bold;font-size:13px;padding-top:5px;">For a better experience, <a href="http://enable-javascript.com/" target="_blank">enable JavaScript</a> in your browser.<span></span></span></div></div></noscript><div class="off-canvas-wrap"><div class="inner-wrap"><!-- Powered By:
+
+ ▄▄▄      ▓█████▄  ███▄ ▄███▓
+▒████▄    ▒██▀ ██▌▓██▒▀█▀ ██▒
+▒██  ▀█▄  ░██   █▌▓██    ▓██░
+░██▄▄▄▄██ ░▓█▄   ▌▒██    ▒██
+ ▓█   ▓██▒░▒████▓ ▒██▒   ░██▒
+ ▒▒   ▓▒█░ ▒▒▓  ▒ ░ ▒░   ░  ░
+  ▒   ▒▒ ░ ░ ▒  ▒ ░  ░      ░
+  ░   ▒    ░ ░  ░ ░      ░
+      ░  ░   ░           ░
+           ░
+
+--><header><nav id="top-nav"><ul id="profile-nav"><li id="mini-logo"><a href="/" title="Go to homepage"><i class="icon-home"></i> ETV</a></li><li><a href="/accounts/login/?next=/news/2018/feb/10/tswa-class-6a-all-state-football-team/%0A" title="Log in">Log In</a></li><li class="has-sub-nav"><a  href="http://www.news-journal.com/reader-services/" target="_blank" title="Reader Services">Reader Services</a><ul class="sub-profile-nav"><li><a href="http://www.news-journal.com/reader-services/subscribers/" target="_blank">Subscribers</a></li><li><a href="http://www.news-journal.com/reader-services/subscribers/vacation/" target="_blank">Vacation Stop/Start</a></li></ul></li><li><a href="/newsletters/" target="_blank">Newsletters</a></li></ul><br style="clear: both;"/></nav><div><div id="middle-header-wrapper"><p id="current-time">Monday, February 19, 2018</p><a href="/" id="logo" title="ET Varsity"><img src="https://static.texascommunitymedia.com/static/etv/images/logos/logo-wht.png" height="100px"/></a><br/><div id="searchFormContainer"><form method="get" id="searchForm" action="/search/"><input name="q" class="search-input" type="text" placeholder="Search..." /><a class="search-submit" href="#" onclick="document.getElementById('searchForm').submit();"><i class="icon-search"></i></a><br style="clear:both;"/></form></div><br class="clearfix"/></div></div><div id="navy-overlay"></div><div id="nav-wrapper"><section id="navigation"><nav id="main-nav-new"><a id="main-nav-mobile-toggle" class="mobile-toggle" href="javascript:openLeftMenu();"><i class="icon-l icon-menu"></i>MENU</a><section class="menu-container"><ul class="menu"><li class="mobile-section-break"><a class="close" href="javascript:closeLeftMenu();">ET Varsity<span><i class="icon-l icon-cancel-squared"></i></span></a></li><li class="mobile-menu-only"><a href="/" title="Home"><i class="icon-l icon-home"></i>Home</a></li><li class="mobile-menu-only"><a href="/accounts/login/" title="Log in">Log In</a></li><li class="mobile-menu-only"><a href="/newsletter/">Newsletter</a></li><li class="mobile-section-break">SECTIONS</li><li class="has-sub"><a class="top" href="/news/local/" href="javscript">NEWS</a><ul class="sub"><li><a href="/news/sports/" title="local sports news">Latest Sports</a></li><li><a href="/news/sports/local/hsfootball/" title="football news">Football</a></li><li><a href="/news/sports/local/hsvolleyball/" title="Volleyball news">Volleyball</a></li><li><a href="/news/sports/local/hsbasketball/" title="Boy's Basketball news">Basketball</a></li><li><a href="/news/sports/local/hsbaseball/" title="Baseball news">Baseball</a></li><li><a href="/news/sports/local/hssoftball/" title="Softball news">Softball</a></li><!--<li><a href="/news/sports/local-sports/hssoccer/" title="Soccer news">Soccer</a></li>--><!--<li><a href="/news/sports/local-sports/hswrestling/" title="Wrestling news">Wrestling</a></li>--><!--<li><a href="/news/sports/local-sports/hsgolf/" title="Golf news">Golf</a></li>--><!--<li><a href="/news/sports/local-sports/hsswimming/" title="Swimming news">Swimming</a></li>--><li><a href="/news/sports/local/hscross-country/" title="Cross Country ">Cross Country</a></li><!--<li><a href="/news/sports/local-sports/hstrack/" title=" track s">Track</a></li>--><!--<li><a href="/news/sports/local-sports/hstennis/" title=" tennis news">Tennis</a></li>--></ul></li><li><a class="top" href="/sports/schools/">SCHOOLS</a></li><li class="has-sub"><a class="top" href="javascript:void(0);" title="Schedules">SCORES</a><ul class="sub"><li><a href="/sports/scores/football/2017-2018/2/" title="Football Results">Football</a></li><li><a href="/sports/scores/volleyball/" title="Volleyball Results">Volleyball</a></li></ul></li><li><a class="top" href="/galleries/latest/">GALLERIES</a></li><li><a class="top" href="/playeroftheweek/">PLAYER OF THE WEEK</a></li><li><a class="top" href="/news/sports/pro/" title="Pro Sports News">PRO</a></li><li><a class="top" target="_blank" href="/bestpreps/" title="Pro Sports News">BEST PREPS</a></li><li class="mobile-section-break">Texas Community Media</li><li class="mobile-menu-only"><a href="http://news-journal.com" title="Longview News Journal" target="_blank">News-Journal</a></li><li class="mobile-menu-only"><a href="http://marshallnewsmessenger.com" title="Marshall News Messenger" target="_blank">Marshall News Messenger</a></li><li class="mobile-menu-only"><a href="http://panolawatchman.com" title="Panola Watchman" target="_blank">Panola Watchman</a></li></ul></section></nav><nav id="secondary-nav"><section class="menu-container"><ul><li><a id="weather" href="/weather/"><i class=" weather-icon cloudy"></i>67&deg;
+                                        </a></li><li class="hide-for-mobile"><a class="first-item" href="https://www.facebook.com/ETVarsity" title="Facebook"><i class="icon-facebook-squared"></i></a></li><li class="hide-for-mobile"><a class="first-item" href="https://twitter.com/etvarsity" title="Twitter"><i class="icon-twitter"></i></a></li><li id="connect-menu"><a id="secondary-nav-mobile-toggle" class="mobile-toggle" href="javascript:openRightMenu();"><i class="icon-share-1"></i></a><div class="sub"><ul><li class="section-break"><a class="close" href="javascript:closeRightMenu();">SHARE THIS PAGE<span><i class="icon-l icon-cancel-squared"></i></span></a></li><script type="text/javascript">
+        function social_click(social_station)
+        {
+            var height = 626;
+            var width = 436;
+            var left = (screen.width/2)-(width/2);
+            var top = (screen.height/2)-(height/2);
+
+            var u = encodeURIComponent("http://etvar.co/s/n/431312");
+            var t = encodeURIComponent("TSWA Class 6A All-State Football Team");
+            var d="BRYAN – Listed is the 67th annual Collin Street Bakery/Texas Sports Writers Association Class 6A All-State Football Team for 2017: FIRST TEAM Offense Tackles – ...";
+            d=encodeURIComponent(d);
+            var m="";
+            m="https:";
+            m = encodeURIComponent(m);
+                
+            var fbURL = 'http://www.facebook.com/sharer.php?u='+ u +'&t='+ t;
+            var twURL = 'http://twitter.com/share?url='+ u +'&text='+ t + '&via=etvarsity';
+            var pnURL = 'http://www.pinterest.com/pin/create/button/?url='+ u +'&media=' + m + '&description=' + d + '';
+            var tbURL = 'http://www.tumblr.com/share?v=3&u='+ u + '&t=' + t;
+            var gpURL = 'https://plus.google.com/share?url='+ u;
+            
+            var windowSettings = 'toolbar=0, resizable=yes,status=0,width=' + width + ',height=' + height + ', top='+top+', left='+left;
+            
+            if (social_station == "fb"){
+                window.open(fbURL,'sharer', windowSettings);
+            }
+            else if(social_station == "tw"){
+                window.open(twURL,'sharer',windowSettings);
+            }
+            else if(social_station == "gp"){
+                window.open(gpURL,'',windowSettings);
+            }
+            else if(social_station == "pn"){
+                window.open(pnURL,'',windowSettings);
+            }
+            else if(social_station == "tb"){
+                window.open(tbURL,'',windowSettings);
+            }
+            return false;
+        }
+</script><li><a title="Facebook" class="fb_link" href="javascript:social_click('fb');"><i class="icon-facebook-squared"></i> Share</a></li><li><a class="twitter_link" href="javascript:social_click('tw');"><i class="icon-twitter"></i> Tweet</a></li><li><a class="gp_link" href="javascript:social_click('gp');" title="Google+"><i class="icon-gplus"></i> +1 It</a></li><li><a class="pinit_link" href="javascript:social_click('pn');" title="Pinterest"><i class="icon-pinterest"></i> Pin It</a></li><li><a class="tmblr_link" href="javascript:social_click('tb');" title="Tumblr"><i class="icon-tumblr"></i> Reblog</a></li><li><a href="mailto:"><i class="icon-l icon-mail"></i><span>&nbsp;&nbsp;Email</span></a></li><li><a href="javascript:window.print();"><i class="icon-l icon-print-1"></i><span>&nbsp;&nbsp;Print</span></a></li><li class="section-break">FOLLOW US ON</li><li><a class="first-item" href="https://www.facebook.com/ETVarsity" title="Facebook" target="_blank"><i class="icon-l icon-facebook-squared"></i>&nbsp;&nbsp;FACEBOOK
+                                                </a></li><li><a class="first-item" href="https://twitter.com/etvarsity" title="Twitter" target="_blank"><i class="icon-l icon-twitter"></i>&nbsp;&nbsp;TWITTER
+                                                </a></li><li><!--
+                                                <a class="first-item" href="http://www.pinterest.com/vicadvocate/" title="Twitter" target="_blank"><i class="icon-l icon-pinterest"></i>PINTEREST</a></li><li><a class="first-item" href="http://instagram.com/vicadvocate" title="Instagram" target="_blank"><i class="icon-l icon-instagram"></i>INSTAGRAM</a></li><li><a class="first-item" href="http://victoriaadvocate.tumblr.com/" title="Tumblr" target="_blank"><i class="icon-l icon-tumblr"></i>Tumblr</a></li><li><a class="first-item" href="#" title="Google+"><i class="icon-gplus"></i>&nbsp;&nbsp;GOOGLE+
+                                                </a></li>--></ul></div></li></ul></section></nav><br style="clear: both;"/></section></div></header><div id="section_background"><!-- home_siteskin --><div id='home_skin'><script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('home_skin'); });
+    </script></div><section id="wrapper" style=""><div class="ad-space w960 leaderboard"><!-- default_leader --><div id="news_leader" class="center" style='min-width:728px; height:90px;'><script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('news_leader'); });
+</script></div><a href="http://www.advocatedigitalmedia.com/" title="Advertise With Us" target="_blank">
+            Advertise with us
+        </a></div><div class="ad-space w960 billboard"><!-- default_billboard --><div id="billboard_container"><script type='text/javascript'>
+        googletag.cmd.push(function() { googletag.display('billboard_container'); });
+    </script></div></div><section id="content-wrapper" class="row"><section class="large-8 medium-8 columns small-12" style="padding:0px;"><article id="story-container trend-hide" style="background-color: #fff;"><div id="story" class="protected "><h1 class="headline">
+        TSWA Class 6A All-State Football Team
+        </h1><div id="bylines"><p><!-- No byline -->
+                
+                Feb. 10, 2018 at 9:23 p.m.<br/></p><div style="clear:left;"></div></div><ul class="inline-list share"><li><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://etvar.co/s/n/431312/"><i class="icon-facebook-squared"></i><span></span></a></li><li><a target="_blank" href="https://twitter.com/share?url=http://etvar.co/s/n/431312/&text=TSWA Class 6A All-State Football Team&via=etvarsity"><i class="icon-twitter"></i><span></span></a></li><li><a target="_blank" href="https://plus.google.com/share?url=http://etvar.co/s/n/431312/"><i class="icon-gplus"></i><span></span></a></li><li><a href="mailto:?subject=TSWA Class 6A All-State Football Team&body=Hello, I just read this and thought you might be interested. http://www.etvarsity.com/news/2018/feb/10/tswa-class-6a-all-state-football-team/%0A"><i class="icon-mail"></i><span></span></a></li><li><a href="javascript:window.print();"><i class="icon-print-1"></i><span></span></a></li><li><a href="#comments"><i class="icon-chat"></i><span id="fb_comment_count"></span></a></li></ul><div class="p402_premium trend-survey-container"><div id="media-container" class="p402_hide trend-hide"><br/></div><div id="story-content-wrapper" class="p402_hide trend-hide"><div id="story-content"><div class="markup"><div class="story-sidebar p402_hide trend-hide"></div><story><p><block class="main"></p></p><p><p><p></p></p><p><p></p></p></p><p><p>BRYAN – Listed is the 67th annual Collin Street Bakery/Texas Sports Writers Association Class 6A All-State Football Team for 2017:</p></p><p><p><p></p></p><p><p></p></p></p><p><p>FIRST TEAM</p></p><p><p>Offense</p></p><p><p>Tackles – Garrett Aylor, Austin Westlake, 6-4, 250, sr.; Kaitori Leveston, Waco Midway, 6-5, 290, sr.</p></p><p><p>Guards – Mason Grosser, Allen, 6-1, 315, sr.; Demarcus Marshall, Grand Prairie, 6-3, 333, sr.</p></p><p><p>Center – Joshua Jynes, DeSoto, 6-3, 310, sr.</p></p><p><p>Wide receivers –  Garrett Wilson, Lake Travis, 6-0, 178, jr.;  Stefan Cobbs, Keller Fossil Ridge, 6-2, 175, sr.; </p></p><p><p>Tight end – (tie) Jaylin Brown, Longview, 6-3, 210, sr.; Henry Teeter, San Angelo Central, 6-4, 202, sr.</p></p><p><p>Quarterback – Tanner Mordecai, Waco Midway, 6-2, 215, sr.</p></p><p><p>Running backs – Brock Sturges, Allen, 5-10, 200, sr.; Nakia Watson, Austin Westlake, 6-0, 225, sr.; Trenton Kennedy, Cy-Fair, 5-11, 215, sr.</p></p><p><p>Fullback – Theo Owens, Mansfield, 5-9, 200, sr. </p></p><p><p>Offensive player of the year - Mordecai, Waco Midway</p></p><p><p>All-purpose – Hudson Card, Lake Travis, 6-2, 170, soph.</p></p><p><p>Place-kicker – Caden Davis, Coppell, 6-1, 186, jr.<br></br></p></p><p><p>Defense</p></p><p><p>Linemen – Keondre Coburn, Spring Westfield, 6-2, 320, sr.; Oso Ifesinachukwu, Austin Vandegrift, 6-3, 240, sr.; Braden Cassity, Austin Westlake, 6-3, 245, sr.; Daymond Williams, Round Rock Cedar Ridge, 6-2, 230, sr.</p></p><p><p>Linebackers – Connor Lee, Flower Mound, 6-0, 215, sr.; Jake Yurachek, Friendswood, 6-1, 225, sr.; Jace Bobo, Cy-Fair, 6-0, 210, sr.; Patrick Atkinson, Cy-Fair, 5-11, 200, sr.</p></p><p><p>Secondary – Caden Sterns, Cibolo Steele, 6-3, 186, sr.; Jalen Carr, Longview, 5-10, 160, sr.; Erick Hallett, Cy-Fair, 5-11, 175, sr.;  Byron Hanspard, Jr., DeSoto, 6-1, 181, sr.</p></p><p><p>Defensive player of the year – Atkinson, Cy-Fair</p></p><p><p>Punter – Will Dupius, Katy Taylor, 6-5, 175, sr.</p></p><p><p>Kick returner – D'shawn Jamison, Houston Lamar, 5-10, 174, sr.</p></p><p><p>Utility – Sincere McCormick, Converse Judson, 5-10, 190,  jr.</p></p><p><p>Coach of the year – Ed Pustejovky, Cy-Fair</p></p><p><p><p></p></p><p><p></p></p></p><p><p><p></p></p><p><p></p></p></p><p><p>SECOND TEAM</p></p><p><p>Offense</p></p><p><p>Tackles – Connor Galvin, Katy, 6-7, 265, sr.; (tie) Mike Ruth, Coppell, 6-7, 300, sr.; Pila Siale, Euless Trinity, 6-2, 292, sr.; Jackson Kimble, Southlake Carroll, 6-5, 285, sr.</p></p><p><p>Guards – Luke Wilkin, Austin Westlake, 6-1, 235, sr.; Charlie Zeno, Cibolo Steele, 6-2, 285, sr.</p></p><p><p>Center – Matt Leehan, Southlake Carroll, 6-2, 270, sr.</p></p><p><p>Wide receivers – Cameron Thomas, Round Rock Westwood, 6-4, 200, sr.; C.J. Williams, Waco Midway, 6-1, 170, sr.; (tie) Tyreese Andrus, EP Montwood, 5-11, 165, sr.; Naveon Mitchell, Fort Bend Travis, 5-10, 175, sr.</p></p><p><p>Tight end – (tie) Ben Redding, Friendswood, 6-4, 215, sr.; Malcolm Epps, Spring Dekaney, 6-6, 218, sr.</p></p><p><p>Quarterback – Matthew Baldwin, Lake Travis, 6-3, 205, sr.</p></p><p><p>Running backs – Matt Gadek, McKinney, 5-10, 175, sr.; Simi Bakare, Round Rock Cedar Ridge, 6-0, 200, sr.; Isaiah Phillips, Lufkin, 5-9, 190, sr.</p></p><p><p>Fullback – Nick Reyes, El Paso Socorro, 5-5, 160, jr.</p></p><p><p>All-purpose – (tie) E.J. Smith, Dallas Jesuit, 5-10, 180, soph.; Montel Parker, Dickinson, 6-2, 195, sr. </p></p><p><p>Place-kicker – Gabriel Lozano, Austin Westlake, 5-11, 165, jr</p></p><p><p>Defense</p></p><p><p>Linemen – Jaxon Player, Waco Midway, 6-0, 285, sr.; Dominic Livingston, Aldine Davis, 6-3, 360, sr.; Terrance Newman, Duncanville, 6-1, 290, sr.; Moro Ojomo, Katy, 6-2, 270, sr.</p></p><p><p>Linebackers – Keyshawn Johnson, Duncanville, 6-2, 218, sr.; Isaiah Paul, SA Brennan, 6-2, 197, sr.; Jaylon Allen, Humble Atascocita, 6-3, 221, sr.; Preston Ellison, Odessa Permian, 6-3, 190, sr.</p></p><p><p>Secondary – Isaiah Humphries, Garland Sachse, 6-1, 190, sr.; Bryson Washington, C.E. King, 6-4, 210, soph.; RJ Mickens, Southlake Carroll, 6-2, 200, soph.; (tie) Travian Blaylock, Humble Atascocita, 6-1, 185, sr.; Cam'ron Jones, Mansfield, 6-0, 187, sr.</p></p><p><p>Punter – Alan Lerma, C.E. King, 5-10, 175, jr.</p></p><p><p>Kick returner – Kesean Carter, The Woodlands, 5-10, 146, sr.</p></p><p><p>Utility – Jamil Pittman, Vista Ridge, 6-0, 185, sr.</p></p><p><p><p></p></p><p><p></p></p></p><p><p>THIRD TEAM</p></p><p><p>Offense</p></p><p><p>Tackles – Colten Blanton, Cypress Ranch, 6-8, 285, sr.; (tie) Tommy Smith, Round Rock Cedar Ridge, 6-2, 290, sr.; Tyler Smith, North Crowley, 6-4, 285, jr. </p></p><p><p>Guards – Esteban Avila, South Grand Prairie, 6-4, 308, sr.; (tie) Brannon Brown, San Antonio O'Connor, 6-5, 295, jr.; Gunner Couch, San Angelo Central, 6-2, 280, jr.</p></p><p><p>Center – (tie) John Lanz, Denton Guyer, 6-3, 295, sr.; Ricky Leal, Keller Fossil Ridge, 6-0, 270, sr.</p></p><p><p>Wide receivers – Blake Jackson, Coppell, 5-10, 175, jr.; Fletcher Rosenbleeth, Dallas Jesuit, 5-8, 165, sr.</p></p><p><p>Tight end – Ben Sims, San Antonio Clark, 6-5, 241, sr.</p></p><p><p>Quarterback – Amryn Jeffrey, Fort Bend Travis, 6-1, 195, sr.</p></p><p><p>Running backs – Ean Beek, Katy Taylor, 5-10, 180, sr.; Brenden Brady, Cibolo Steele, 6-1, 180, sr.; James Fullbright, Waco Midway, 5-8, 190, jr.; Deondrick Glass, Katy, 5-11, 195, jr.</p></p><p><p>Fullback – (tie) Toby Harrah, Euless Trinity, 6-3, 200, sr.; Jacob Doddridge, Southlake Carroll, 6-3, 220, sr.</p></p><p><p>All-purpose – Brayden Willis, Arlington Martin, 6-4, 221, sr.</p></p><p><p>Place-kicker – Austin Garza, Edinburg Vela, 6-0, 175, sr.</p></p><p><p>Defense</p></p><p><p>Linemen – Jeremiah Gray, Dallas Skyline, 6-3, 215, sr.; Carter Breu, Schertz Clemens, 6-4, 230, sr.; Demarvin Leal, Converse Judson, 6-6, 280, jr.; Peyton Lewis, Cy-Fair, 6-1, 205, sr.</p></p><p><p>Linebackers – Chad Bailey, Fort Bend Ridge Point, 6-0, 225, sr.; Matt Girard, Keller Central, 6-0, 200, sr.; Ryan Thompson, Southlake Carroll, 6-0, 200, sr.; Isaiah Munoz, Euless Trinity, 6-0, 175, sr.</p></p><p><p>Secondary – Taj Bickham, Allen, 6-0, 163, sr.; Bryon Broussard, Dickinson, 5-11, 185, sr.; Ge'Mon Green, DeSoto, 6-3, 172, sr.; (tie) Jephaniah Lister, Longview, 5-9, 160, sr.; Tobias Harris, Pflugerville Hendrickson, 5-9, 175, sr.</p></p><p><p>Punter – Bubba Baxa, Pasadena Memorial, 6-0, 185, sr.</p></p><p><p>Kick returner – Brian Beto, Del Rio, 6-0, 190, sr.</p></p><p><p>Utility – Ty DeArman, Arlington Bowie, 5-11, 185, jr. </p></p><p><p><p></p></p><p><p></p></p></p><p><p><p></p></p><p><p></p></p></p><p><p><p></p></p><p><p></p></p></p><p><p><p></p></p><p><p></p></p></p><p><p><p></p></p></p><p><p>HONORABLE MENTION</p></p><p><p>Offense</p></p><p><p>Tackles – Matthew Altrock, Keller Fossil Ridge, 6-2, 270, sr.; Jayden Borjas, Edinburg Vela, 6-5, 280, jr.; Quynton Cole, Lufkin, 6-3, 280, sr.; Andrew Coker, Katy Taylor, 6-8, 310, jr.; Braeden Daniels, Hebron, 6-4, 280, sr.; Keynon Green, Humble Atascocita, 6-5, 325, jr.; Kolbe Harris, Converse Judson, 6-2, 240, sr.; Aaron Ramirez, McAllen Memorial, 6-1, 265, sr.; Nic Shores, Midland Lee, 6-6, 245, sr.; Tyler Worrell, Cinco Ranch, 6-3, 273, sr.; Weston Wright, New Braunfels, 6-6, 290, sr.</p></p><p><p>Guards – Alex Ederson, Keller Fossil Ridge, 6-4, 290, sr.; Hunter Hollis, Lufkin, 6-4, 296, sr.; John Kennedy, Westfield, 6-1, 280, sr.; Juan Montoya, Laredo Alexander, 6-4, 315, sr.; Dawson Reynolds, Odessa Permian, 6-3, 315, jr.</p></p><p><p>Centers – James Alvarez, Mesquite Horn, 5-10, 265, sr.; Jack Davis, Richardson Pearce, 6-3, 300, sr.; Jacob Holland, Arlington Martin, 6-2, 262, sr.; Josh Martinez, San Antonio Southwest, 5-9, 260, sr.; Mario Trevino, Weslaco East, 6-0, 260, soph.</p></p><p><p>Wide receivers  – Miles Battle, Cypress Creek, 6-4, 190, sr.; Trejan Bridges, Hebron, 6-3, 175, jr.; Caleb Chapman, Friendswood Clear Brook, 6-5, 210, sr.; Imiee Cooksey, Haltom, 5-10, 166, sr.; Jalen Hughes, San Antonio O'Connor, 5-10, 175, sr.; Julian Ortega-Jones, North Crowley, 6-2, 185, sr.; Nathan Sanchez, PSJA, 6-1, 160, sr.; Quinton Starks, San Antonio Warren, 5-11, 175, sr.; Peyton Sawyer, League City Clear Springs, 5-11, 160, sr.; Jaxon Smith, Rockwall, 6-1, 185, soph.; Isaiah Trevino, San Benito, 5-8, 145, sr.; Theo Wease, Allen, 6-3, 194, jr.</p></p><p><p>Tight ends – Mustapha Muhammad, Ridge Point, 6-5, 230, sr.; David Priebe, Waco Midway, 6-6, 212, sr.; Jyaire Shorter, Killeen Ellison, 6-2, 215, sr.; Kyle Wakefield, Lake Travis, 6-1, 210, sr.</p></p><p><p>Quarterbacks – Taylor Anderson, Austin Westlake, 5-10, 170, jr.; Cedarious Barfield, EP El Dorado, 6-0, 189, sr.; Prudy Calderon, San Marcos, 6-0, 194, sr.; Cobe Craft, Keller Fossil Ridge, 6-0, 195, sr.; D'Montae Davis, Arlington, 5-9, 180, sr.; L'Ravien Elia, Beaumont West Brook, 6-0, 185, jr.; Andrew Fernandez, EP Montwood, 6-0, 180, sr.; Terrance Gipson, Spring Westfield, 6-0, 190, jr.; Jermaine Givens, Mesquite Horn, 6-0, 190, jr.; Will Jennings, Round Rock Westwood, 6-0, 176, sr.; Maverick McIvor, San Angelo Central, 6-3, 195, jr.; Jalen Mayden, Garland Sachse, 6-2, 210, sr.; Brady McBride, Coppell, 6-1, 190, sr.; Erick Retta, San Benito, 5-8, 150, sr.; Roel Sanchez, SA O'Connor, 5-10, 180, sr.; Colby Standard, Midland Lee, 6-1, 175, sr.; Kewone Thomas, Lufkin, 6-2, 200, jr.; Grant Tisdale, Allen, 6-1, 204, jr.; Parker Towns, Dallas Jesuit, 6-3, 197, sr.; Tyler Vitt, SA MacArthur, 6-1, 205, sr.; Julon Williams, Converse Judson, 5-10, 182, sr.</p></p><p><p>Running backs – Christian Cole, Garland Sachse, 6-1, 205, sr.; Zachary Evans, North Shore, 6-1, 185, soph.; Caleb Gerber, EP Pebble Hills, 5-10, 170, ; Tyrone Harper, San Benito, 6-1, 195, sr.; Jaylin Hastings, San Antonio Jay, 5-8, 165, jr.; Calvin Hill, Baytown Sterling, 5-7, 175, jr.; Dana Jackson, Hendrickson, 5-9, 175, sr.; Courage Keihn, Euless Trinity, 5-10, 182, sr.; T.J. McDaniel, Southlake Carroll, 6-0, 180, jr.; Campbell Speights, McAllen Memorial, 5-9, 175, soph.; Jaquarion Turner, South Garland, 6-1, 195, jr.; Keilyn Williams, Longview, 5-5, 135, jr.</p></p><p><p>Fullbacks – Daniel Dobis, Montgomery, 5-10, 210, jr.; Grant Meek, Keller Central, 6-5, 210, sr.; Andrew Ramos, Fossil Ridge, 5-11, 190, sr.</p></p><p><p>Place-kicker – Barandon Amaya, Westfield, 5-10, 175, sr.; Bubba Baxa, Pasadena Memorial, 6-0, 185, sr.; Devin Brock, Keller Central,  jr.; Cameron Dicker, Lake Travis, 6-2, 207, sr.; Max Duque, Cy-Fair, 6-0, 180, sr.; Richard Garcia, Mesquite Horn, 5-10, 150, jr.; Griffin Kell, Arlington, 6-0, 165, jr.; Chris Kessler, Longview, 5-9, 160, sr.; Michael Lyssy, SA O'Connor, 5-10, 150, sr.; Seth Small, Katy, 5-11, 205, sr.; Alex Stadthaus, Austin Vandegrift, 6-2, 185, sr.; Nyle Tabat, Belton, 6-1, 215, sr.; Blair Zepeda, Plano East, 6-1, 185, sr.</p></p><p><p>All-purpose – A'Darius Carter, Longview, 6-3, 205, sr.</p></p><p><p>Defense</p></p><p><p>Linemen – Jacob Banda, Weslaco East, 6-1, 270, jr.; Jadarrion Blakemore, Longview, 5-11, 200, sr.; Travis Chatman, Euless Trinity, 6-3, 230, sr.; Sebastian Diaz, Brownsville Hanna, 5-10, 205, sr.; Nico Ezidore, Garland Naaman Forest, 6-1, 280, sr.; Izaiah Filikitonga, Euless Trinity, 6-3, 240, sr.; Harris Goode, FW Paschal, 5-11, 245, sr.; Jayden Jernigan, 6-1, 278, Allen, jr.; Matt Jones, Odessa Permian, 6-4, 220, jr.; C.J. Kuehler, Smithson Valley, 6-2, 225, sr.; Blake Kuithe, Cinco Ranch, 6-4, 243, sr.; Tyler Lacy, Garland Sachse, 6-4, 240, sr.; Jevon Leon, Alief Hastings, 6-2, 250, jr.; Michael Matus, Katy, 6-2, 240, sr.; Nathan Niedrauer, Tyler Lee, 6-1, 250, sr.; Otito Ogbonnia, Katy Taylor, 6-4, 285, sr.; Joseph Ossai, Oak Ridge, 6-4, 226, sr.; Viramontes Pippens-Redic, DeSoto, 6-0, 305, jr.; Ryan Reza, San Benito, 6-2, 185, sr.; Arnold Saidov, Keller Fossil Ridge, 6-3, 230, sr.; Troy Tubby, Richardson Pearce, 6-1, 220, sr.; Carl Williams, Lufkin, 6-5, 305, jr.; Victor Winston, Round Rock Cedar Ridge, 6-0, 220, sr.</p></p><p><p>Linebackers – Martrevious Allison, John Tyler, 6-2, 220, sr.; Manny Arguijo, Del Rio, 5-10, 200, sr.; Matthew Barnhill, Waco Midway, 6-0, 205, sr.; Freddy Cardenas, Weslaco East, 5-10, 190, jr.; Bostin Crisp, SA Southwest, 5-10, 210, Sr.; David Dickerson, Austin Westlake, 5-11, 195, sr.; Thomas Edwards, Coppell, 6-2, 210, sr.; Smith Essman, Midland, 10, 195, jr.; Kamryn Farrar, Dallas Skyline, 6-0, 200, jr.; Noah Gatton, San Angelo Central, 6-0, 195, sr.; Nathaniel Gracia, La Joya High, 6-1, 185, sr.; Brandon Hawkins, Georgetown, 6-3, 215, sr.; Tyler Jackson, DeSoto, 5-11, 221, sr.; X'Zavion McDonald, Arlington, 6-0, 225, jr.; Pierce McFarlane, Coppell, 6-0, 205, sr.;  Donovan Mutin, Klein Collins, 6-1, 220, sr.; Isaiah Nunez, Midland Lee, 6-3, 230, sr.; Alston Orji, Rockwall, 6-2, 230, sr.; Michael Parrish, Southlake Carroll, 6-0, 195, jr.; Tanner Reed, SA Johnson, 5-10, 180, sr.; Jacoby Roberts, Euless Trinity, 5-11, 195, sr. ; Bryce Robinson, Garland Sachse, 6-2, 230, jr.; Nathan Sanchez, McAllen Memorial, 5-11, 205, sr.; Richard Silva, Keller Central, 5-9, 200, soph.; Jackson Treadwell, Lufkin, 6-2, 200, sr.; Kevin Watts, Wylie, 5-11, 195, sr.; Jacob Zuber, Smithson Valley, 6-2, 210, sr.</p></p><p><p>Defensive backs – Ty Badciong, Lake Travis, 5-10, 170, sr.; Kyle Bell, Cy-Fair, 5-9, 165, sr.; Millard Bradford, SA O'Connor, 5-10,. 180, sr.; Brodrick Calhoun, Mesquite Horn, 5-11, 157,  sr.; Keelan Chilton, Arlington Martin, 5-10, 171, sr.; Daniel Enriquez, Edinburg Vela, 5-11, 170, jr.; Matthew Garcia, Brownsville Hanna, 5-8, 160, sr.; Spencer Gilliam, SA Reagan, 5-11, 177, sr.; Tyus Grayson, John Tyler, 5-10, 175, sr.; Jakobe Green, San Angelo Central, 6-0, 146, sr.; Xzaveir Guyton, Arlington, 6-1, 175, sr.; DeMarcus Hall, San Marcos, 5-11, 184, sr.; D'shawn Jamison, Houston Lamar, 5-10, 174, sr.; TKai Lloyd, Allen, 5-9, 166, sr.; Jonathan McGill, Coppell, 5-11, 170, jr.; Tre'von Moehrig-Woodard, Smithson Valley, 6-2, 200, sr.; Ben Montgomery, Katy Taylor, 6-0, 195, jr.;  Kelechi Nwachuku, McAllen Memorial, 6-2, 195, sr.; Nathan Parodi, Lake Travis, 5-9, 165, sr.; Mason Pierce, Smithson Valley, 5-10, 175, sr.; KeShon Rowe, Katy, 5-9, 178, sr.; Gage Smith, San Angelo Central, 5-10, 145, sr.; Darius Snow, Hebron, 6-2, 210, soph.; Cliffton Styles, Hendrickson, 6-0, 205, jr.; Jeron Thompson, Lufkin, 6-0, 175, soph.; Jaques Tyler, Schertz Clemens, 5-8, 165, sr.; Oric Walker, Mesquite Horn, 5-10, 165, sr.;   Rashad Wisdom, Converse Judson, 5-10, 190, jr.</p></p><p><p>Punters – Alec Brinton, Keller, 5-11, 190, sr.; Logan Claborn, Rockwall, 6-2, 175, jr.; Nick Falsone, SA Churchill, 5-9, 165. jr.; Gabriel Lozano, Austin Westlake, 5-11, 165, jr.; Seth Small, Katy, 5-11, 205, jr.; Clayton Stewart, Flower Mound, 6-2, 197, sr.</p></p><p><p>Utility – Juan Carlos Vargas, Weslaco East, 6-0, 175, sr.; Atanza Vongor, South Grand Prairie, 6-1, 220, sr.</p></p><p><p>Kick returners   – Michael Givens, John Tyler, 5-9, 175, sr.; Jacoby Hopkins, Houston Heights, 6-1, 205, sr.; Trevon Moehrig-Woodard, Smithson Valley, 6-2, 200, sr.</block></p></story></div><h4><b>SHARE</b></h4><ul class="inline-list share"><li><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://etvar.co/s/n/431312/"><i class="icon-facebook-squared"></i><span></span></a></li><li><a target="_blank" href="https://twitter.com/share?url=http://etvar.co/s/n/431312/&text=TSWA Class 6A All-State Football Team&via=etvarsity"><i class="icon-twitter"></i><span></span></a></li><li><a target="_blank" href="https://plus.google.com/share?url=http://etvar.co/s/n/431312/"><i class="icon-gplus"></i><span></span></a></li><li><a href="mailto:?subject=TSWA Class 6A All-State Football Team&body=Hello, I just read this and thought you might be interested. http://www.etvarsity.com/news/2018/feb/10/tswa-class-6a-all-state-football-team/%0A"><i class="icon-mail"></i><span></span></a></li><li><a href="javascript:window.print();"><i class="icon-print-1"></i><span></span></a></li><li><a href="#comments"><i class="icon-chat"></i><span id="fb_comment_count"></span></a></li></ul><a id="comments">Comments</a><div id="fb-root" class=" fb_reset"></div><div id="comment-wrapper"><div 
+        class="fb-comments" 
+        data-href="www.etvarsity.com/news/2018/feb/10/tswa-class-6a-all-state-football-team/%0A" 
+        data-num-posts="10"
+        data-width="100%"
+    ></div></div></div><script type="text/javascript"> 
+                  try { _402_Show(); } catch(e) {} 
+                </script><br class="clearfix"/></div></div><script type="text/javascript"> 
+          try { _402_Show(); } catch(e) {} 
+        </script></div></article></section><aside class="right-rail large-4 medium-4 small-12 columns" class="shadow" style="padding:0px;"><div class="ad-space w300"><div style="height:10px;"></div><!-- default_monster --><div id="monster" class="w300"><div id='news_monster'><script type='text/javascript'>
+            googletag.cmd.push(function() { googletag.display('news_monster'); });
+        </script></div></div></div><div class="module hide-on-print"><h3 class="title-break">Most Commented</h3><div class="popular related-stories" style="background:#fff;"><ul class="no-bullet" ><li><table><tbody><tr><td style="
+                        padding: .938em;
+                        background-color: #ececec;
+                    "><a href="/news/2018/feb/15/the-college-report-kilgores-conrod-scores-18-for-a/#comments" title="Go to comments" style="padding:0;display: inherit;"><b>01&nbsp;<i class="icon-chat"></i></b></a></td><td style="padding: .938em;"><a href="/news/2018/feb/15/the-college-report-kilgores-conrod-scores-18-for-a/" title="The College Report: Kilgore&#39;s Conrod scores 18  for A&amp;M-Commerce" style="padding:0;display: inherit;"><div class="sidebar-thumbnail"><img 
+                                src="https://static.texascommunitymedia.com/cache/28/93/2893e8874f182a36f7301803c3188ba8.jpg"
+                                alt="The College Report: Kilgore&#39;s Conrod scores 18  for A&amp;M-Commerce"
+                            /></div>
+                    
+                    The College Report: Kilgore&#39;s Conrod scores 18  for A&amp;M-Commerce
+                    <br class="clearfix"/></a></td></tr></tbody></table></li></ul></div></div><div id="twitter-module" class="module hide-on-print"><h3 class="title-break">Follow Us</h3><div style="padding:0 .938em;"><a class="twitter-timeline" href="https://twitter.com/etvarsity/lists/etvarsity" data-border-color="#373737" data-theme="dark" data-chrome="nofooter transparent" data-widget-id="567838472803602432"><span style="display:block;padding:.938em;text-align: center;">Loading Twitter<br/><img src="https://static.texascommunitymedia.com/static/img/icons/loading.gif" width="50" height="50"/></span></a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div></div><div class="module hide-on-print"><h3 class="title-break">Like Us</h3><div 
+        class="fb-like-box" 
+        data-href="https://www.facebook.com/etvarsity" 
+        data-width="100%" 
+        data-colorscheme="light" 
+        data-show-faces="false" 
+        data-header="false" 
+        data-stream="true" 
+        data-show-border="false"
+        style="background-color:rgba(255, 255, 255, .85);"
+    ></div></div></aside></section></section></div><footer><div class="row"><div class="large-4 medium-4 small-12 columns"><h5>Sports News</h5><ul class=""><li><a href="/news/sports/" title="local sports news">Latest Sports</a></li><li><a href="/news/sports/local/hsfootball/" title="football news">Football</a></li><li><a href="/news/sports/local/hsvolleyball/" title="Volleyball news">Volleyball</a></li><li><a href="/news/sports/local/hsbasketball/" title="Boy's Basketball news">Basketball</a></li><li><a href="/news/sports/local/hsbaseball/" title="Baseball news">Baseball</a></li><li><a href="/news/sports/local/hssoftball/" title="Softball news">Softball</a></li></ul></div><div class="large-4 medium-4 small-12 columns"><h5>Our Site</h5><ul class=""><li><a href="/about/">About Us</a></li><li><a href="/pickem/">Pigskin Pick'em</a></li><li><a href="/advertise-with-us/">Advertise</a></li><li><a href="/reader-services/privacy/" title="Privacy Policy">Privacy Policy</a></li><li><a href="/reader-services/terms-of-use/" title="Terms of Use">Terms of Use</a></li><li><a href="/reader-services/faq/" title="Terms of Use">Site FAQs</a></li></ul></div><div class="large-4 medium-4 small-12 columns"><h5>Services</h5><ul class=""><li><a href="http://www.news-journal.com/reader-services/" target="_blank">Reader Services</a></li><li><a href="http://www.mynewsonthego.com/longview-marshall/" target="_blank">Digital Edition</a></li></ul><h5>Connect</h5><ul class=""><li><a href="/contact/">Contact Us</a></li><li><a href="https://www.facebook.com/ETVarsity" target="_blank">Facebook</a></li><li><a href="https://twitter.com/etvarsity" target="_blank">Twitter</a></li><!--<li><a href="https://plus.google.com/s/Victoria%20Advocate" target="_blank">Google+</a></li>--></ul></div></div><p id="copyright"><b>&copy; Copyright 2018, Longview News-Journal, All Rights Reserved.</b><br/>
+        320 E. Methvin St. Longview, TX 75601 - Phone: <a href="tel:(903) 757-3311">(903) 757-3311</a></p></footer><p class="adm">Powered By
+    <a
+            href="http://www.affectdigital.com/"
+            target="_blank"
+            class="agency"
+            title="Affect Digital Media"
+    ><span class="white">Affect</span><span class="red">Digital</span><span class="grey">Media</span></a></p><div class='fb-root'></div><!-- trend --><script type="text/javascript"> 
+    console.log("VTO not active");
+    VTO_STATUS=0;
+    console.log("Initial VTO_STATUS: " + VTO_STATUS);
+    console.log("Initial VTO Cookie: " + document.cookie.indexOf("vto"));
+</script><script src="https://static.admtrend.com/static/js/lnj.trend.js" ></script><script> 
+function initTrend() {
+    console.log("Placeholder.")
+}
+if (document.cookie.indexOf("vto") > -1 || VTO_STATUS == 0) {
+    console.log("TrendPROD permitted")
+    function initTrend() {
+        $(document).ready(function(){ $('.trend-survey-container').trend({
+            skipable: true,
+            domain: "https://www.admtrend.com",
+            userName: "",
+            userDomain: "www.etvarsity.com",
+            primaryColor: "#007e46",
+            alternateAction: false,
+            loginURL: "/accounts/login/?next=/news/2018/feb/10/tswa-class-6a-all-state-football-team/
+"
+        });});
+    }
+} else {
+    console.log("TrendPROD not permitted");
+}    
+console.log("About to kick off TrendPROD");
+initTrend();
+console.log("TrendPROD was kicked off.");
+</script><!-- end trend --><script type="text/javascript">
+        function replaceMainPhoto(url, caption){
+            document.getElementById("story-media").innerHTML="<img src='" +  url + "' alt='" + caption + "'>"
+                + "<div class='caption'><p>" + caption + "</p></div>";
+        }
+        function parseXml(xml)
+        {
+           $("#fb_comment_count").html($(xml).find('commentsbox_count').text());
+        }
+        function getFacebookCommentCount(url, callback) {
+            $.ajax({
+                type: 'GET',
+                url: 'https://graph.facebook.com/restserver.php?method=links.getStats&urls=' + url,
+                crossDomain: true,
+                dataType: 'jsonp',
+                success: parseXml
+              });
+        }
+
+    $('.more').click( function(){
+        var currItem = $(this);
+        var parent = currItem.prev();
+        if (parent.height() == 200)
+        {
+            parent.animate({height:"100%"}, 100);
+            currItem.text('Hide');
+        }
+        else
+        {
+            parent.animate({height:"200px"}, 100);
+            currItem.text('Show More');
+        }
+    
+    });
+
+    </script><script src="https://static.texascommunitymedia.com/static/plugins/carouFredSel/jquery.carouFredSel-6.2.1-packed.js" type="text/javascript"></script><script src="https://static.texascommunitymedia.com/static/plugins/carouFredSel/helper-plugins/jquery.mousewheel.min.js" type="text/javascript"></script><script src="https://static.texascommunitymedia.com/static/plugins/carouFredSel/helper-plugins/jquery.touchSwipe.min.js" type="text/javascript"></script><script src="https://static.texascommunitymedia.com/static/plugins/modal/jquery.simplemodal.1.4.4.min.js" type="text/javascript"></script><div id="fb-root"></div><script>
+    $('.carousel-1').carouFredSel({
+        responsive: true,
+        circular: false,
+        auto: false,
+        items: {
+            visible: 1,
+            width: 640,
+            height: "56%"
+        },
+        scroll: {
+            fx: 'directscroll'
+        }
+    });
+
+    $('.carousel-1-thumbnails .thumbs').carouFredSel({
+        responsive: true,
+        circular: false,
+        infinite: false,
+        auto: false,
+        prev: '#prev',
+        next: '#next',
+        items: {
+            visible: {
+                min: 2,
+                max: 6
+            },
+            width: 150,
+            height: 130,
+        }
+    });
+
+    $('.carousel-1-thumbnails .thumbs a').click(function() {
+        $('.carousel-1').trigger('slideTo', '#' + this.href.split('#').pop() );
+        $('.carousel-1-thumbnails .thumbs a').removeClass('selected');
+        $(this).addClass('selected');
+        return false;
+    });
+</script><script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><script>
+    function showMedia(selectedElement){
+        var currentElem = selectedElement;
+        var href = selectedElement.attr('href');
+        var title = selectedElement.attr('title');
+        var mediaContainer = $('#media-container');
+    
+        // Image
+    
+        if(href != undefined){
+            if(href.match('\.(jpeg|jpg|gif|png)') != null){
+                var img = $('<img>', { src: href });
+                img.load(function() {
+                    mediaContainer.html(img);
+                    img.css({'max-height': img.height() + "px", 'max-width': img.width() + "px"});
+                    if (title != undefined){
+                        var caption = $('<p>', { class: 'caption'})
+                        caption.text(title);
+                        mediaContainer.append(caption);
+                    }
+                });
+
+            }
+            // Dynamically create video player here and place it in the media container
+            else if(href.match('\.(mp4|mpeg|flv|avi|ogg|mov)') != null){
+                var par = $('<p>');
+                par.text("This is a placeholder for the video.");
+                mediaContainer.html(par);
+              
+            }
+            // Video (Youtube/Vimeo)
+            else if(video = href.match(/(youtube|youtu|vimeo)\.(com|be)\/(watch\?v=([\w-]+)|([\w-]+))/)){
+                var src = '',
+                    classTerm = 'external-video';
+
+                if(video[1] == 'youtube'){
+                    src = 'http://www.youtube.com/v/'+ video[4];
+                    classTerm = 'video-youtube';
+                }
+                if(video[1] == 'youtu'){
+                    src = 'http://www.youtube.com/v/'+ video[3];
+                    classTerm = 'video-youtube';
+                }
+                if(video[1] == 'vimeo'){
+                    src = 'http://player.vimeo.com/video/'+ video[3];
+                    classTerm = 'video-vimeo';
+                }
+
+                if(src){
+                    var iframe = $('<iframe>', {
+                        src: src,
+                        'class': classTerm,
+                        frameborder: 0,
+                        vspace: 0,
+                        hspace: 0,
+                        scrolling: 'auto'
+                    });
+                    mediaContainer.html(iframe);
+                    iframe.load();
+                }
+            }
+            else {
+                var iframe = $('<iframe>', {
+                    src: href,
+                    'class': 'media-item',
+                    frameborder: 0,
+                    vspace: 0,
+                    hspace: 0,
+                    scrolling: 'auto'
+                });
+                mediaContainer.html(iframe);
+                iframe.load();
+            }
+        }
+    }
+</script><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+</script><div id="trend_actions"></div><script type="text/javascript">
+$(document).ready(function () { 
+    var windowWidth = $(window).width();
+    
+    if (windowWidth < 640){
+        $('.markup p').last().after($('.story-sidebar'));
+    }
+    $('div.thumbnails img').mouseenter( function(){
+        var index = $(this).index(this);
+        alert(index);
+        $('#carousel').trigger('slideTo', index);
+    });
+
+    $('.carousel-1').carouFredSel({
+        responsive: true,
+        circular: false,
+        auto: false,
+        items: {
+            visible: 1,
+            width: 640,
+            height: "56%"
+        },
+        scroll: {
+            fx: 'directscroll'
+        }
+    });
+
+    $('.carousel-1-thumbnails .thumbs').carouFredSel({
+        responsive: true,
+        circular: false,
+        infinite: false,
+        auto: false,
+        prev: '#prev',
+        next: '#next',
+        items: {
+            visible: {
+                min: 2,
+                max: 6
+            },
+            width: 150,
+            height: 130,
+        }
+    });
+
+    $('.carousel-1-thumbnails .thumbs a').click(function() {
+        $('.carousel-1').trigger('slideTo', '#' + this.href.split('#').pop() );
+        $('.carousel-1-thumbnails .thumbs a').removeClass('selected');
+        $(this).addClass('selected');
+        return false;
+    });
+
+
+    getFacebookCommentCount('http://www.etvarsity.com/news/2018/feb/10/tswa-class-6a-all-state-football-team/%0A', function(count) {
+      $('#fb_comment_count').html(count + '<br/>Co');
+    });
+    $('a.photo').nivoLightbox({
+        afterShowLightbox: function(lightbox){FB.XFBML.parse();},
+        onPrev: function(element){FB.XFBML.parse();},                // Callback when the lightbox gallery goes to previous item
+        onNext: function(element){FB.XFBML.parse();},  
+    });
+
+
+    
+
+    
+    // Image copy protection. LOL
+    $('.protected').on('contextmenu', 'img', function(e){ return false; });
+    $('.protected img').on('dragstart', function(event) { event.preventDefault(); });
+});
+</script></div></div></body>
+</html>
+

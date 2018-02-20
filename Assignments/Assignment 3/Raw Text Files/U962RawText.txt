@@ -1,0 +1,3 @@
+Notice:  Trying to get property of non-object in /home/watchtheyard/public_html/wp-content/themes/zox-news/header.php on line 125
+Watch The Yard
+

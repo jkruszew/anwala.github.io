@@ -1,0 +1,7 @@
+nickysielicki 7 days ago
+The only fact available here is that the internet went down at the Olympic grounds for a period of time. Nothing in the article about any sort of data leaks. If there was a "cyber-attack", it was a simple denial of service, not any sort of security breach, no scary videos being displayed on the televisions, etc.
+Now, what seems more reasonable to you:
+* The people responsible for handling internet services at the Olympic games were not prepared for the amount of traffic around the opening ceremonies, thus service returned after the opening ceremony.
+* This was actually a DDoS, a deliberate attack by some nation-state seeking petty retribution, but they only wanted to do it during the opening ceremony.
+Anyone who is not skeptical-by-default of anti-Russian stories in Western media has completely jumped the shark. If I was running the Olympics, the sole purpose of which is to display my country in a positive light, I'd certainly be looking for any excuse to cover up my incompetence. Much easier to say you're being "cyber-attacked" than it is to own up to the fact that you did a bad job ensuring that the Olympic grounds would have stable internet.
+

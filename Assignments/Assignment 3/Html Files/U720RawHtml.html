@@ -1,0 +1,2972 @@
+	<!DOCTYPE html>
+	<html lang="en">
+		<head>
+					<!-- VENDOR JS SNIPPETS AND OTHER "PIXELS" (t) -->
+		<!-- Optimizely  (code below inserted by optimizely script) -->
+		<!--script src="https://cdn.optimizely.com/js/5928120085.js"></script-->
+		
+		<!-- END OF VENDOR JAVASCRIPT SNIPPETS -->
+		
+		
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XA8FUFdXGwICUVRRBwQD"};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>		<!-- SEO tag 3-->
+		
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-24634340-2', 'auto');
+	ga('require', 'GTM-KMKV3L7');
+	ga('send', 'pageview');
+</script>
+
+	<meta name="robots" content="noindex,nofollow" />
+	<title>Rule of 4 by Coaches Clinic  | CoachTube</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="CoachTube, coaching videos, instructional videos, sports coaching, football, football tips, football videos, football instruction, football lessons, Rule of 4, Rob Rhodes">
+	<meta name="description" content='In this course Coach Singleton wil...'>
+	<!-- Facebook Open Graph 2 -->
+	<meta property="fb:admins" content="511931665">
+	<meta property="fb:app_id" content="1460403314186137">
+	<meta property="og:site_name" content="CoachTube">
+	<meta property="og:title" content="Rule of 4 by Coaches Clinic  | CoachTube">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content='https://coachtube.com/public/images/thumbs/very_big/Course/1625708.8f0907bf3a7fe06c2726f2c70b732cd6.jpg'>
+	<meta property="og:description" content="In this course Coach Singleton wil...">
+	<meta property="og:url" content="https://coachtube.com/course/football/rule-of-4/1625708?track=69bc25aaf173f5ad0759858e25069b84%0A%0A">
+	<!-- Twitter summary card 2 -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@thecoachtube">
+	<meta name="twitter:creator" content="@thecoachtube">
+	<meta name="twitter:title" content="Rule of 4 by Coaches Clinic  | CoachTube" />
+	<meta name="twitter:description" content="In this course Coach Singleton wil..." />
+	<meta name="twitter:image" content='https://coachtube.com/public/images/thumbs/very_big/Course/1625708.8f0907bf3a7fe06c2726f2c70b732cd6.jpg' />
+	
+	<!-- Google Search Card Product JSON data -->
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org/",
+			"@type": "Product",
+			"name": "Rule of 4 by Coaches Clinic  | CoachTube",
+			"id": "1625708",
+			"image": "https://coachtube.com/public/images/thumbs/very_big/Course/1625708.8f0907bf3a7fe06c2726f2c70b732cd6.jpg",
+			"description": "In this course Coach Singleton wil...",
+			"mpn": "1625708",
+			"brand": {
+				"@type": "Thing",
+				"name": "CoachTube"
+			},
+			"offers": {
+				"@type": "Offer",
+				"priceCurrency": "USD",
+				"price": "14.99",
+				"priceValidUntil": "2020-11-05",
+				"itemCondition": "new",
+				"availability": "in_stock",
+				"seller": {
+					"@type": "Organization",
+					"name": "CoachTube, Inc."
+				}
+			}
+		}
+	</script>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta name="google-site-verification" content="MEzDKepM5iO1-_0s2_CeeJdXox6K43EaV_PGQ__bFIc" />
+		<meta name="p:domain_verify" content="56c2285a857e6c49fa921dea86c6f7d2">
+			
+		    <link rel="icon" href="/public/newdesign1/img/CoachTube-Favicon.png" type="image/x-icon">
+
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css' />
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+	
+		<link href="/press/css/iGGepKAVKOfhYsDYAYeJawJJ.css" rel="stylesheet" type="text/css" charset="utf-8"></link>
+		<link href="/press/css/BPBLnsbICFRyZHSJBTSbHwJJ.css" rel="stylesheet" type="text/css" charset="utf-8"></link>
+
+					<link href="/press/css/NoEbSGnfWYCPZEfWiGGQNQJJ.css" rel="stylesheet" type="text/css" charset="utf-8"></link>
+					<link href="/press/css/aIfTYIzVnuELZmgfUXelCgJJ.css" rel="stylesheet" type="text/css" charset="utf-8"></link>
+			<link href="/press/css/uDdDAAvnBbWBCSCJbHmicQJJ.css" rel="stylesheet" type="text/css" charset="utf-8"></link>
+				<link href="/press/css/qJSACvJkSTbvdAkrEFcXUQJJ.css" rel="stylesheet" type="text/css" charset="utf-8"></link>
+		<link href="/press/css/VYZZFzBRgiqRnURDwFnEIwJJ.css" rel="stylesheet" type="text/css" charset="utf-8"></link>
+		<link href="/press/css/oEqwpdKLoXsFSRPlXpFWHQJJ.css" rel="stylesheet" type="text/css" charset="utf-8"></link>
+	
+		<script src="/press/js/ZveXPDzWTEEvihMyDJPBVAJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+		<script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
+		<script src="/public/newdesign1/js/clipboard.js"></script>	
+			<script src='https://www.google.com/recaptcha/api.js'></script>
+		</head>
+		<body>
+						<!-- GTM -->
+			<noscript>
+				<iframe src="//www.googletagmanager.com/ns.html?id=GTM-WHFBFP" height="0" width="0" style="display:none;visibility:hidden">
+				</iframe>
+			</noscript>
+			<script> 
+				(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','dataLayer','GTM-WHFBFP');
+			</script>
+	<div class="page">
+					<header id="header">
+    <div class="container hoverSubMenuHide">
+        <div class="header_left">
+            <div class="hamburger">
+                <div class="hamburger-inner">
+                    <div class="bar bar1 "></div>
+                    <div class="bar bar2 cross"></div>
+                    <div class="bar bar3 cross "></div>
+                    <div class="bar bar4 hide"></div> 
+                </div>
+                <span class="browse" style="display: none"> Browse Courses </span>
+            </div>
+            <form action="/search" role="search" id="small_device_old" class="search-bar-form top_search_bar">
+                <div class="input-group">
+                    <input type="text" value="" placeholder="Find Courses" class="form-control search-box" id="offlineCourseQ" name="q">
+                    <button type="submit" class="home-search-btn"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+            <a class="search_icon" href="#"><i class="fa fa-search"></i></a>
+        </div>
+
+        <div class="header_center carousel-caption-xs-m"> 
+            <a href="/"> <img alt="" src="/public/newdesign1/images/logo_new.png" class="img-responsive" /> </a> 
+        </div>
+
+        <div class="header_right">
+            <ul class="nav nav-pills carousel-caption1-xs-m">
+                                    <li><a href="/coach">Become a Coach</a></li>
+                    <li><a data-reload="/course/football/rule-of-4/1625708?track=69bc25aaf173f5ad0759858e25069b84%0A%0A" class="signupLBoxCls">SignUp</a></li>
+                    <li><a data-reload="/course/football/rule-of-4/1625708?track=69bc25aaf173f5ad0759858e25069b84%0A%0A" class="login_new loginLBoxCls">LogIn</a></li>
+                            </ul>
+        </div>
+    </div>
+</header>			            <div class="category-bar" style="display: none;">
+                <div class="category-list-wrap container">
+                    <ul class="nav-horizontal">
+                                                    <li class="nav-sport transparent" id="baseball">
+                                <ul class="exact-sport dropdown"></ul>
+                                <a class="nav-sport-item" href="/courses/baseball">
+                                    <span>Baseball</span>
+                                </a>
+                            </li>
+                                                    <li class="nav-sport transparent" id="football">
+                                <ul class="exact-sport dropdown"></ul>
+                                <a class="nav-sport-item" href="/courses/football">
+                                    <span>Football</span>
+                                </a>
+                            </li>
+                                                    <li class="nav-sport transparent" id="basketball">
+                                <ul class="exact-sport dropdown"></ul>
+                                <a class="nav-sport-item" href="/courses/basketball">
+                                    <span>Basketball</span>
+                                </a>
+                            </li>
+                                                    <li class="nav-sport transparent" id="lacrosse">
+                                <ul class="exact-sport dropdown"></ul>
+                                <a class="nav-sport-item" href="/courses/lacrosse">
+                                    <span>Lacrosse</span>
+                                </a>
+                            </li>
+                                                    <li class="nav-sport transparent" id="tennis">
+                                <ul class="exact-sport dropdown"></ul>
+                                <a class="nav-sport-item" href="/courses/tennis">
+                                    <span>Tennis</span>
+                                </a>
+                            </li>
+                                                    <li class="nav-sport transparent" id="track-and-field">
+                                <ul class="exact-sport dropdown"></ul>
+                                <a class="nav-sport-item" href="/courses/track-and-field">
+                                    <span>Track&nbsp;&amp;&nbsp;Field</span>
+                                </a>
+                            </li>
+                                                    <li class="nav-sport transparent" id="soccer">
+                                <ul class="exact-sport dropdown"></ul>
+                                <a class="nav-sport-item" href="/courses/soccer">
+                                    <span>Soccer</span>
+                                </a>
+                            </li>
+                                                    <li class="nav-sport transparent" id="hockey">
+                                <ul class="exact-sport dropdown"></ul>
+                                <a class="nav-sport-item" href="/courses/hockey">
+                                    <span>Hockey</span>
+                                </a>
+                            </li>
+                                                    <li class="nav-sport transparent" id="golf">
+                                <ul class="exact-sport dropdown"></ul>
+                                <a class="nav-sport-item" href="/courses/golf">
+                                    <span>Golf</span>
+                                </a>
+                            </li>
+                                                    <li class="nav-sport transparent" id="softball">
+                                <ul class="exact-sport dropdown"></ul>
+                                <a class="nav-sport-item" href="/courses/softball">
+                                    <span>Softball</span>
+                                </a>
+                            </li>
+                                                    <li class="nav-sport transparent" id="volleyball">
+                                <ul class="exact-sport dropdown"></ul>
+                                <a class="nav-sport-item" href="/courses/volleyball">
+                                    <span>Volleyball</span>
+                                </a>
+                            </li>
+                                                <li class="more-sports transparent">
+                            <span>More Sports</span>
+                            <ul class="all-sports dropdown two-column">
+                                                                        <li class="extra-sport hidden-sport">
+                                                                            <a id="zmain-menu-baseball" class="main-cat" href="/courses/baseball">
+                                            <span>Baseball</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport hidden-sport">
+                                                                            <a id="zmain-menu-basketball" class="main-cat" href="/courses/basketball">
+                                            <span>Basketball</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-cricket" class="main-cat" href="/courses/cricket">
+                                            <span>Cricket</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-disc-golf" class="main-cat" href="/courses/disc-golf">
+                                            <span>Disc Golf</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-esports" class="main-cat" href="/courses/esports">
+                                            <span>eSports</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-extreme-sports" class="main-cat" href="/courses/extreme-sports">
+                                            <span>Extreme Sports</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-fencing" class="main-cat" href="/courses/fencing">
+                                            <span>Fencing</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-field-hockey" class="main-cat" href="/courses/field-hockey">
+                                            <span>Field Hockey</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport hidden-sport">
+                                                                            <a id="zmain-menu-football" class="main-cat" href="/courses/football">
+                                            <span>Football</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport hidden-sport">
+                                                                            <a id="zmain-menu-golf" class="main-cat" href="/courses/golf">
+                                            <span>Golf</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-gymnastics" class="main-cat" href="/courses/gymnastics">
+                                            <span>Gymnastics</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-health-fitness" class="main-cat" href="/courses/health-fitness">
+                                            <span>Health & Fitness</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport hidden-sport">
+                                                                            <a id="zmain-menu-hockey" class="main-cat" href="/courses/hockey">
+                                            <span>Hockey</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport hidden-sport">
+                                                                            <a id="zmain-menu-lacrosse" class="main-cat" href="/courses/lacrosse">
+                                            <span>Lacrosse</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-martial-arts" class="main-cat" href="/courses/martial-arts">
+                                            <span>Martial Arts</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-mental-training" class="main-cat" href="/courses/mental-training">
+                                            <span>Mental Training</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-recreational" class="main-cat" href="/courses/recreational">
+                                            <span>Recreational</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-rugby" class="main-cat" href="/courses/rugby">
+                                            <span>Rugby</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-running" class="main-cat" href="/courses/running">
+                                            <span>Running</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-skating" class="main-cat" href="/courses/skating">
+                                            <span>Skating</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-skiing" class="main-cat" href="/courses/skiing">
+                                            <span>Skiing</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-snowboarding" class="main-cat" href="/courses/snowboarding">
+                                            <span>Snowboarding</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport hidden-sport">
+                                                                            <a id="zmain-menu-soccer" class="main-cat" href="/courses/soccer">
+                                            <span>Soccer</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport hidden-sport">
+                                                                            <a id="zmain-menu-softball" class="main-cat" href="/courses/softball">
+                                            <span>Softball</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-squash" class="main-cat" href="/courses/squash">
+                                            <span>Squash </span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-swimming" class="main-cat" href="/courses/swimming">
+                                            <span>Swimming</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport hidden-sport">
+                                                                            <a id="zmain-menu-tennis" class="main-cat" href="/courses/tennis">
+                                            <span>Tennis</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport hidden-sport">
+                                                                            <a id="zmain-menu-track-and-field" class="main-cat" href="/courses/track-and-field">
+                                            <span>Track and Field</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-ultimate-frisbee" class="main-cat" href="/courses/ultimate-frisbee">
+                                            <span>Ultimate Frisbee</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport hidden-sport">
+                                                                            <a id="zmain-menu-volleyball" class="main-cat" href="/courses/volleyball">
+                                            <span>Volleyball</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-wrestling" class="main-cat" href="/courses/wrestling">
+                                            <span>Wrestling</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-yoga" class="main-cat" href="/courses/yoga">
+                                            <span>Yoga</span>
+                                        </a>
+                                    </li>
+                                                                        <li class="extra-sport">
+                                                                            <a id="zmain-menu-youth-coaching" class="main-cat" href="/courses/youth-coaching">
+                                            <span>Youth Coaching</span>
+                                        </a>
+                                    </li>
+                                                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>				<div class="body-content"> 
+			<div class="content slide">
+				            <form class="search-bar-form top_search_bar" id="small_device" role="search" action="/search" style="display:none;">
+                <div class="form-group">
+                    <input type="text" name="q" id="offlineCourseQMain" class="form-control" placeholder="Find Courses" value="">
+                    <button class="home-search-btn" type="submit">
+                        <i class="fa fa-search" style="top: 8px; position: relative;"></i>
+                    </button>
+                </div>
+            </form>
+            <script>
+                window.onload = function() {
+                    if($) {
+                        var cycleBraker = false;
+                        $('.search-bar-form')
+                            .off('submit')
+                            .on('submit', function(e) {
+                                var self = $(this);
+                                if(cycleBraker) {
+                                    return;
+                                }
+                                e.preventDefault();
+                                if(mixpanel && mixpanel.track) {
+                                    if(self.hasClass('homepage-main-search')) {
+                                        mixpanel.track('Search Homepage', {
+                                            'Search Query': self.find('#offlineCourseQMain').val()
+                                        });
+                                    } else {
+                                        mixpanel.track('Search', {
+                                            'Search Query': self.find('#offlineCourseQMain').val()
+                                        });
+                                    }
+                                }
+                                cycleBraker = true;
+                                $(this).submit();
+                            });
+                    } else {
+                        console.log('jQuery library should be included into this page.');
+                    }
+                }
+            </script>				             <form action="javascript:void(0);">
+                <div class="modal fade" id="loginLBoxID" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal_body">
+                                <h3 class="modal-title text-center login-modal-title" id="myModalLabel">Login</h3>
+                                                                    <div class="input-wrapper">
+                                        <a class="loginfacebook loginwithsocialmedia" href="#" id="js-facebook-login" data-url="/users/login/facebook"><i class="fa fa-facebook"></i> Login with Facebook</a>
+                                    </div>
+                                    <div class="form-separator">
+                                        <p>or</p>
+                                    </div>
+                                                                <div id="loginErrorDivId" style="display: none;" class="alert-warning alert-dismissible fade in">
+                                    <button aria-label="Close" class="close" type="button" onclick="loginErrorDivIdClose();"><span aria-hidden="true">×</span></button>
+                                    <div id="loginErrorId"></div>
+                                </div>
+                                <div class="input-wrapper">
+                                    <div class="input-group login">
+                                        <input type="text" name="userlogin.username" class="form-control " id="userName" placeholder="Username or email">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                </div>
+                                <div class="input-wrapper last">
+                                    <div class="input-group login">
+                                        <input type="password" name="userlogin.password" class="form-control " id="Password" placeholder="Password">
+                                        <i class="fa fa-unlock-alt"></i>
+                                    </div>
+                                    <div class="input-wrapper text-left">
+                                                                                    <a class="link" href="/users/forgot_password">
+                                                                                    Forgot Your Password?
+                                        </a>
+                                    </div>
+                                </div>
+                                <button type="submit" onclick="loginFromLightBox(this)" class="btn btn-primary">Login</button>
+                                <p class="link sign-up">Don't have an account ? 
+                                                                            <a class="link signupLBoxCls">
+                                                                            Sign Up
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>					<div class="modal fade" id="signupLBoxID" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal_body">
+				<h3 class="modal-title text-center login-modal-title" id="myModalLabel">Sign up</h3>
+									<div class="input-wrapper">
+						<a class="loginfacebook loginwithsocialmedia" id="js-facebook-signup" href="#" data-url="/users/login/facebook"><i class="fa fa-facebook"></i> SIGN UP with Facebook</a>
+					</div>
+					<div class="form-separator">
+						<p>or</p>
+					</div>
+								<div id="signupErrorDivId" style="display: none;" role="alert" class="alert-warning alert-dismissible fade in">
+					<button aria-label="Close" class="close" type="button" onclick="signupErrorDivIdClose();"><span aria-hidden="true">×</span></button>
+					<div id="signupErrorId"></div>
+				</div>
+				<div class="input-wrapper">
+					<div class="input-group">
+						<input type="text" id="username" name="user.username" class="form-control" placeholder="Enter username">
+						<i class="fa fa-user"></i>
+					</div>
+				</div>
+				<div class="input-wrapper">
+					<div class="input-group">
+						<input type="text" id="email" name="user.email" class="form-control" placeholder="Enter email">
+						<i class="fa fa-envelope-o"></i>
+					</div>
+				</div>
+				<div class="input-wrapper">
+					<div class="input-group">
+						<input type="password" id="password" name="user.password" class="form-control" placeholder="Password">
+						<i class="fa fa-unlock-alt"></i>
+					</div>
+				</div>
+				<div class="input-wrapper">
+					<div class="input-group">
+						<input type="password" id="repassword" name="user.reenter.password" class="form-control" placeholder="Re-enter password">
+						<i class="fa fa-unlock-alt"></i>
+					</div>
+				</div>
+				<!--div class="input-wrapper last">
+					<div class="input-group">
+						<div class="g-recaptcha" data-sitekey="6Lcq0TYUAAAAAMu-zg_eoSU1jC4NGqH9SKk4nG1d"></div>
+					</div>
+				</div-->
+				<button type="button" onclick="signupFromLightBox(this)" class="btn btn-primary">Sign up</button>
+				<p class="link sign-up">Already have an account ? <a href="#" data-reload='/' class="link loginLBoxCls">Login</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+	div.g-recaptcha:first-child {
+		width:100%!important;
+	}
+</style>
+
+			</div>
+<script>
+	window.fbAsyncInit = function() {
+		FB.init({
+			appId      : 1460403314186137, // App ID 345996885411436
+			status     : true, // check login status
+			cookie     : true, // enable cookies to allow the server to access the session
+			xfbml      : true  // parse XFBML
+		});
+	};
+	// Load the SDK Asynchronously
+	(function(d){
+		var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement('script'); js.id = id; js.async = true;
+		js.src = "https://connect.facebook.net/en_US/all.js";
+		ref.parentNode.insertBefore(js, ref);
+	}(document));
+
+	function share() {
+		FB.ui({
+		method: 'share',
+		href: 'https://coachtube.com/course/football/rule-of-4/1625708?track=69bc25aaf173f5ad0759858e25069b84%0A%0A',
+		}, function(response){});
+	}
+</script>    <div class="modal fade" id="bookingCourseModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog booking-course-modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div id="jumbo" class="jumbotron">
+						<img src="/public/images/thumbs/very_big/Course/1625708.8f0907bf3a7fe06c2726f2c70b732cd6.jpg" width="100%" />
+					</div>
+				</div>
+		
+				<div class="modal-body">
+										<h3>Rule of 4</h3>
+					<p class="space-top">
+						In this course Coach Singleton will describe a simple offensive system he has used successfully at the High School level. Using the system he refers to as the "Rule of 4", he has simplified the learning curve for his players. Many coaches have 100s of concepts they want to install and use, but often times players have a difficult time executing them at a fast pace. Rule of 4: 4 Runs 4 Screens 4...					</p>
+
+					<div style="width:100%; text-align:center; margin-top:20px;">
+														<a href='http://coachtube.com/course/football/rule-of-4/1625708/checkout' id="courseBookUrlIdModal-prv" class="loginLBoxCls-prv btn btn-primary btn-large ">
+									<span>Book It for 
+
+
+    14,99 $
+</span>
+								</a>
+												</div>
+				</div>
+			</div>
+		</div>
+	</div>
+							
+<div class="modal fade" id="afterBookingCourseModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<!-- After Booking Modal -->
+	<div class="modal-dialog booking-course-modal">
+			<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<h3 class="spaced">Congratulations!</h3>
+						<h4 class="spaced">You just booked &#34;Rule of 4&#34;</h4>
+						<div id="jumbo" class="jumbotron">
+							<img src="/public/images/thumbs/very_big/Course/1625708.8f0907bf3a7fe06c2726f2c70b732cd6.jpg" width="100%" />
+						</div>
+					</div>
+					<div class="modal-body">
+						<div class="social-sharing-icons-wrap">
+								<div class="social-sharing-icons">
+									<ul>
+																					<li>
+												<a style="color:#3b5998;" tabindex="-1" href="javascript:share();" target="_blank">
+													<i class="fa fa-facebook-square fa-4x" style="font-size:4em;"></i>
+												</a>
+											</li>
+											<li>
+											<a rel='nofollow' style="color:#3cf;" href="https://twitter.com/intent/tweet?status=Check out this course I just booked on CoachTube%21 %2D %22Rule of 4%22 %7C https://coachtube.com/course/football/rule-of-4/1625708?track=69bc25aaf173f5ad0759858e25069b84%0A%0A &utm_source=twitter&utm_medium=referral&utm_campaign=ctshare ">
+												<i class="fa fa-twitter-square fa-4x" style="font-size:4em;"></i>
+											</a>
+											</li>
+																				</ul>
+								</div>
+						</div>
+						<h4>Ready to get started?</h4>
+						<div class='start-course-wrap'>
+													</div>
+					</div>
+			</div>
+	</div>
+</div>
+<div class="container coursepage">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="col-md-8 pull-left"> <!-- Begin Main 8 col row -->
+				<ol class="breadcrumb">
+					<li><a class="whitec" href="https://coachtube.com/courses/football" title="Football">Football</a></li>
+					<li class="active"><a href="https://coachtube.com/courses/football/team-offense">Team Offense</a></li>
+				</ol>
+				
+				<img  src="/public/images/thumbs/medium/User/321373.aa4a4c1e1beff94d7a20227f93bf45f8.jpg" alt="Rob Rhodes"  width="100" height="100" title="Rob Rhodes" class = " pull-left course-desc" />				
+				<h1 class="course-desc"> Rule of 4 <br>
+					<small>by <a href="/users/rob%20rhodes">Coaches Clinic </a> </small> 
+				</h1>
+
+								
+				<div id="jumbo" class="intro-video-container">
+					<div id="courseBannerId" class="intro-image" src="/public/images/thumbs/very_big/Course/1625708.8f0907bf3a7fe06c2726f2c70b732cd6.jpg" width="100%" style="position:relative;">
+						<img src="/public/images/thumbs/very_big/Course/1625708.8f0907bf3a7fe06c2726f2c70b732cd6.jpg" width="100%" />
+											</div>
+					<div id="IntroVideoBody" class="intro-video" width="100%" style="opacity:0;">
+											</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4 sidebar pull-right">
+									<div class="well sidebar-well">
+						
+													        <div class="price" id="booking-info">
+            <div>
+                <span class="price">
+                    
+                                                    
+
+
+    14,99 $
+                            </span>
+                        </div>
+                        <div>
+                            <a class="checkout-page-link" href="http://coachtube.com/course/football/rule-of-4/1625708/checkout">	
+                                        <button class="btn btn-primary " id="pricing">
+                        <i id="cart-icon" class="fa fa-shopping-cart fa-2x"></i>
+                        Book this Course
+                    </button>
+                </a>
+            </div>
+        </div>
+    												<div class="row actions">
+															<div class=" text-left">
+									<span id="show" class="btn-small js-bootstrap-tooltip js-ajax-statchange" data-addtitle="" data-addlabel="<i class='fa fa-tags'></i>"  data-addclass="v btn btn-small js-bootstrap-tooltip" data-removeclass="btn btn-small js-bootstrap-tooltip">
+										<i class="fa fa-tags">
+										</i> Use a Coupon
+									</span>
+								</div>
+														<div class="coupon_area" >
+								<span id="hide"><i class="fa fa-close"></i></span>
+								<p> Please enter your Coupon:</p>
+								<input type="text" name="coupon_code" />
+								<button type="button" id="applyCouponBtnId" class="btn btn-warning">
+									Apply Coupon
+								</button>
+								<span class="arrow-down"></span>
+							</div>
+							<div class=" text-left">
+																	<a href="#" class="btn btn-small signupLBoxCls">
+																	<i class="fa fa-eye"></i>
+									<span>Add to Watchlist</span>
+								</a>
+
+															</div>
+							<div class="text-left">
+								<div class="dropdown">
+									<a class="dropdown-toggle btn btn-small js-bootstrap-tooltip" type="button" id="sharemenu" data-toggle="dropdown" aria-expanded="true">
+										<i class="fa fa-share"></i> Share This Course
+									</a>
+									<ul class="dropdown-menu sharemenu" role="menu" aria-labelledby="sharemenu" style="list-style:none;padding-left:0;">
+																					<li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:share();" target="_blank"><i class="fa fa-facebook"></i><span class='st_facebook' displayText=''></span> Share on Facebook</a></li>
+											<li role="presentation"><a href="https://twitter.com/intent/tweet?status=Check out Rule of 4 by Coaches Clinic  https://coachtube.com/course/football/rule-of-4/1625708?track=69bc25aaf173f5ad0759858e25069b84%0A%0A &utm_source=twitter&utm_medium=referral&utm_campaign=ctshare ">
+												<i class="fa fa-twitter"></i> Share on Twitter</a>
+											</li>
+											
+																				</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+								<div class="row">
+					<div class="col-xs-12">
+						<div class="sidebar-well">
+														</div>
+							<div class="sidebar-well">
+							<table class="table borderless rating_section">
+								<tr>
+									<td class="hug-right"><b>Rating:</b></td>
+																		<td class="hug-left">
+																				  <img src="/public/newdesign1/CoachTube_files/star-gold.png" alt="star" style="max-height: 12px;">
+  <img src="/public/newdesign1/CoachTube_files/star-gold.png" alt="star" style="max-height: 12px;">
+  <img src="/public/newdesign1/CoachTube_files/star-gold.png" alt="star" style="max-height: 12px;">
+  <img src="/public/newdesign1/CoachTube_files/star-gold.png" alt="star" style="max-height: 12px;">
+  <img src="/public/newdesign1/CoachTube_files/star-gold.png" alt="star" style="max-height: 12px;">
+										(8)
+									</td>
+								</tr>
+								<tr>
+									<td class="hug-right"><b>Category:</b></td>
+									<td class="hug-left">Football/Team Offense</td>
+								</tr>
+																	<tr>
+										<td class="hug-right"><b>Bookings:</b></td>
+										<td class="hug-left">100</td>
+									</tr>
+																	<tr>
+										<td class="hug-right"><b>Duration:</b></td> 
+										<td class="hug-left video-duration" data-duration="6598"></td>
+									</tr>
+																	<tr>
+										<td class="hug-right"><b>
+																							Videos:
+																					</b></td>
+										<td class="hug-left">7</td>
+									</tr>
+															</table>
+							</div>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 sidebar-well" style="border:0 !important; padding-left:25px;">
+						<b>This Course Includes:</b>
+						<ul>
+							<li>Streaming from any device</li>
+							<li>Lifetime access</li>
+							<li>100% money back guarantee</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-8 col-xs-12">		
+				<div role="tabpanel">
+					<div class="tab-content">
+						<div role="tabpanel" id="about">
+							<h3 class="page-header">About this Course</h3>
+							<p class="tab_area">
+								<p>In this course <a href="http://coaches-clinic.com/featured-coaches/coach-slade-singleton/" target="_blank" rel="nofollow noopener">Coach Singleton</a> will describe a simple offensive system he has used successfully at the High School level.&nbsp; Using the system he refers to as the "Rule of 4", he has simplified the learning curve for his players.&nbsp; Many coaches have 100s of concepts they want to install and use, but often times players have a difficult time executing them at a fast pace.&nbsp;&nbsp;</p>
+<p><strong>Rule of 4:</strong></p>
+<p><em>4 Runs&nbsp;</em><br /><em>4 Screens&nbsp;</em><br /><em>4 Quicks&nbsp;</em><br /><em>4 Dropbacks&nbsp;</em></p>
+<p>Coach Singleton's teams practice these simple concepts until they are good at them and then they add window dressing to make them look different to the Defense.&nbsp; In this simple system, he is also able to add RPO Tags to the Run game, as well as Tag Pass routes to take advantage of defensive matchups.&nbsp;&nbsp;</p>							</p>
+							         <div class="chapter-contents" data-atter="false">
+	
+  	<h3 class="page-header">Course Contents </h3>
+	  
+					<strong style="font-weight: 500; font-size: 16px;">Introduction</strong> 
+				<table class="table table-hover cc-table course-chapter">
+				<tbody>
+								<tr>
+					<td class="text-center">1</td>
+					<td>
+																<a class="grayc" href="/course_lesson/rule-of-4/introduction/1625710" title="Introduction">
+											   <i class="fa fa-video-camera"></i>
+Introduction										</a>
+																<button class="btn btn-xs btn-success free-lesson-marker">Free</button>
+													<span class="lesson-duration">13:03</span>
+											</td>
+				</tr>
+									</tbody>
+					</table>
+								<strong style="font-weight: 500; font-size: 16px;">Screen Game</strong> 
+				<table class="table table-hover cc-table course-chapter">
+				<tbody>
+								<tr>
+					<td class="text-center">2</td>
+					<td>
+																<a class="bookCourseLBoxCls grayc  priced-course-lesson" href="#" title="Screen Game">
+											   <i class="fa fa-video-camera"></i>
+Screen Game										</a>
+																<span class="lesson-duration">18:40</span>
+											</td>
+				</tr>
+									</tbody>
+					</table>
+								<strong style="font-weight: 500; font-size: 16px;">Quick Game</strong> 
+				<table class="table table-hover cc-table course-chapter">
+				<tbody>
+								<tr>
+					<td class="text-center">3</td>
+					<td>
+																<a class="bookCourseLBoxCls grayc  priced-course-lesson" href="#" title="Quick Game">
+											   <i class="fa fa-video-camera"></i>
+Quick Game										</a>
+																<span class="lesson-duration">16:27</span>
+											</td>
+				</tr>
+									</tbody>
+					</table>
+								<strong style="font-weight: 500; font-size: 16px;">Dropback Game</strong> 
+				<table class="table table-hover cc-table course-chapter">
+				<tbody>
+								<tr>
+					<td class="text-center">4</td>
+					<td>
+																<a class="bookCourseLBoxCls grayc  priced-course-lesson" href="#" title="Dropback Game">
+											   <i class="fa fa-video-camera"></i>
+Dropback Game										</a>
+																<span class="lesson-duration">11:44</span>
+											</td>
+				</tr>
+									</tbody>
+					</table>
+								<strong style="font-weight: 500; font-size: 16px;">Run Game</strong> 
+				<table class="table table-hover cc-table course-chapter">
+				<tbody>
+								<tr>
+					<td class="text-center">5</td>
+					<td>
+																<a class="bookCourseLBoxCls grayc  priced-course-lesson" href="#" title="Run Game">
+											   <i class="fa fa-video-camera"></i>
+Run Game										</a>
+																<span class="lesson-duration">18:55</span>
+											</td>
+				</tr>
+									</tbody>
+					</table>
+								<strong style="font-weight: 500; font-size: 16px;">Tags</strong> 
+				<table class="table table-hover cc-table course-chapter">
+				<tbody>
+								<tr>
+					<td class="text-center">6</td>
+					<td>
+																<a class="bookCourseLBoxCls grayc  priced-course-lesson" href="#" title="Tags">
+											   <i class="fa fa-video-camera"></i>
+Tags										</a>
+																<span class="lesson-duration">04:02</span>
+											</td>
+				</tr>
+									</tbody>
+					</table>
+								<strong style="font-weight: 500; font-size: 16px;">Bonus Material</strong> 
+				<table class="table table-hover cc-table course-chapter">
+				<tbody>
+								<tr>
+					<td class="text-center">7</td>
+					<td>
+																<a class="bookCourseLBoxCls grayc  priced-course-lesson" href="#" title="Simple RPO">
+											   <i class="fa fa-video-camera"></i>
+Simple RPO										</a>
+																<span class="lesson-duration">27:07</span>
+											</td>
+				</tr>
+								<tr>
+					<td class="text-center">8</td>
+					<td>
+																<a class="bookCourseLBoxCls grayc  priced-course-lesson" href="#" title="Rule of 4 PDF">
+											   <i class="fa fa-download"></i>
+Rule of 4 PDF										</a>
+														</td>
+				</tr>
+						</tbody>
+	</table>
+</div>
+
+
+						</div>
+						<div role="tabpanel" id="coach-cred">
+							<h3 class="page-header">Coach Credentials</h3>
+							<p class="clearfix tab-panel-title">
+								<img  src="/public/images/thumbs/medium/User/321373.aa4a4c1e1beff94d7a20227f93bf45f8.jpg" alt="Rob Rhodes"  width="100" height="100" title="Rob Rhodes" class = " pull-left course-desc" />								<a href="/users/rob%20rhodes">
+									Coaches Clinic 								</a>
+								<small>Championships are Won in the Offseason</small>
+																	<a href="#" class="btn btn-primary btn-xs subscribe js-bootstrap-tooltip js-ajax-statchange signupLBoxCls" style="margin-top: 10px; width: 100px;">
+																	Follow
+								</a>
+							</p>
+							<p class="tab_area">
+								<p><a href="http://coaches-clinic.com/featured-coaches/coach-slade-singleton/" target="_blank" rel="nofollow noopener">Slade Singleton</a> has been coaching high school football for eight years. He takes pride in turning around struggling football programs. He has had three quarterbacks sign college scholarships. His offense in 2014 was ranked in the top 10 in North Carolina 3A and second in Western North Carolina.&nbsp; His teams have appeared in the state playoffs 2 times since 2014 with him as the offensive coordinator. He believes that being able to coach is his opportunity to change lives for the better; on and off of the field.&nbsp; He is married to Jessica and has three children; Natalie, Lilly, and Sean. He thanks God for the opportunity to be a coach and mentor to his athletes.</p>							</p>
+						</div>
+						<div role="tabpanel" id="ratings">
+							<div>
+								<h3 class="page-header">Ratings & Reviews &nbsp;
+									<span class="rating">
+																					<i class="fa fa-star"></i>
+																					<i class="fa fa-star"></i>
+																					<i class="fa fa-star"></i>
+																					<i class="fa fa-star"></i>
+																					<i class="fa fa-star"></i>
+																			</span>
+									<font>(8)</font>
+
+																	</h3>
+							</div>
+
+															<div class="col-md-4 col-xs-12 rating-avg-box">
+									<div class="row">
+										<div class="col-md-4 active-rating" id="rating-avg-stars">
+											  <img src="/public/newdesign1/CoachTube_files/star-gold.png" alt="star" style="max-height: 12px;">
+  <img src="/public/newdesign1/CoachTube_files/star-gold.png" alt="star" style="max-height: 12px;">
+  <img src="/public/newdesign1/CoachTube_files/star-gold.png" alt="star" style="max-height: 12px;">
+  <img src="/public/newdesign1/CoachTube_files/star-gold.png" alt="star" style="max-height: 12px;">
+  <img src="/public/newdesign1/CoachTube_files/star-gold.png" alt="star" style="max-height: 12px;">
+										</div>
+									</div>
+									<div class="pull-right" id="rating-review-count">
+										(8 Reviews)
+									</div>
+								</div>
+														<div style="clear:both"></div>
+						</div>
+						
+													<div class="user-reviews">
+								<div class="row">
+									<div class="col-xs-4 col-sm-2 col-md-2 ">
+										<a href="/users/jutclark18">
+											<img  src="/public/images/thumbs/medium_big/User/default_img.png" alt="jutclark18"  width="150" height="150" title="jutclark18" class = " img-square img-responsive pull-left" />										</a>
+										<button type-"button" class="btn btn-primary btn-xs">Follow</button>
+									</div>
+									<div class="col-xs-8 col-sm-10 col-md-8  reviewer-info">
+										<a href="/users/jutclark18">
+											jutclark18										</a>
+										<span class="rating">
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																					</span>
+										<p>
+											What Coach Singleton has done with his &quot;Rule of 4&quot;, can help any coach improve their offensive output.  This is a great way to streamline your offense and tailor your offense around what your team can be successful with.  With any no huddle tempo offense you want the ability to have your players play fast but also be able to window dress what you do.   The &quot;Rule of 4&quot;, is a tool that can make this happen.  The detail that is being spoke on in this course is worth every penny and I will incorporate the &quot;Rule of 4&quot; into my system moving forward.  Thank you coach for putting together a great product!<br/>
+											<span><span title='January 13, 2018 05:05:05 PM (Saturday) UTC'>Jan 13, 2018  05:05:05 PM</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+													<div class="user-reviews">
+								<div class="row">
+									<div class="col-xs-4 col-sm-2 col-md-2 ">
+										<a href="/users/coachbronk">
+											<img  src="/public/images/thumbs/medium_big/User/674686.723345bc06837be735a8d681f9fa4d86.jpg" alt="coachbronk"  width="150" height="150" title="coachbronk" class = " img-square img-responsive pull-left" />										</a>
+										<button type-"button" class="btn btn-primary btn-xs">Follow</button>
+									</div>
+									<div class="col-xs-8 col-sm-10 col-md-8  reviewer-info">
+										<a href="/users/coachbronk">
+											coachbronk 										</a>
+										<span class="rating">
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																					</span>
+										<p>
+											Coaches, this is a MUST!!! It&rsquo;s simple and concise. Installing your offense doesn&rsquo;t have to be complicated. Your kids, your offense and your program will benefit from this course.<br/>
+											<span><span title='January 13, 2018 07:49:46 PM (Saturday) UTC'>Jan 13, 2018  07:49:46 PM</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+													<div class="user-reviews">
+								<div class="row">
+									<div class="col-xs-4 col-sm-2 col-md-2 ">
+										<a href="/users/downriverwolfpack">
+											<img src='https://graph.facebook.com/1748046598539153/picture?type=normal&width=150&height=150' alt="Downriver Wolfpack"  width="150" height="150" title="Downriver Wolfpack" class = " img-square img-responsive pull-left" />										</a>
+										<button type-"button" class="btn btn-primary btn-xs">Follow</button>
+									</div>
+									<div class="col-xs-8 col-sm-10 col-md-8  reviewer-info">
+										<a href="/users/downriverwolfpack">
+											Downriver Wolfpack										</a>
+										<span class="rating">
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																					</span>
+										<p>
+											Coach Singleton does a great job explaining the hows &amp; whys of his system.  Clear and concise.  Best $ I have spent on football in a long time.  Keep up the good work Coach!<br/>
+											<span><span title='January 14, 2018 05:33:18 PM (Sunday) UTC'>Jan 14, 2018  05:33:18 PM</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+													<div class="user-reviews">
+								<div class="row">
+									<div class="col-xs-4 col-sm-2 col-md-2 ">
+										<a href="/users/coachmckiejr">
+											<img  src="/public/images/thumbs/medium_big/User/661883.cdb8a2a9cd72e6daa1ecc00f841a5549.jpg" alt="CoachMckiejr"  width="150" height="150" title="CoachMckiejr" class = " img-square img-responsive pull-left" />										</a>
+										<button type-"button" class="btn btn-primary btn-xs">Follow</button>
+									</div>
+									<div class="col-xs-8 col-sm-10 col-md-8  reviewer-info">
+										<a href="/users/coachmckiejr">
+											Ron McKie										</a>
+										<span class="rating">
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																					</span>
+										<p>
+											Coach Singleton has done it again. He has created a course that simplifies your offense while increasing your points. This course shows you how you don't need 1,000 plays in order to be successful. All you need is a couple of plays that you need to rep and your scoring will go through the roof. This is an amazing course that I think everyone should get.<br/>
+											<span><span title='January 15, 2018 02:04:25 PM (Monday) UTC'>Jan 15, 2018  02:04:25 PM</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+													<div class="user-reviews">
+								<div class="row">
+									<div class="col-xs-4 col-sm-2 col-md-2 ">
+										<a href="/users/mattsenneca">
+											<img  src="/public/images/thumbs/medium_big/User/default_img.png" alt="mattsenneca"  width="150" height="150" title="mattsenneca" class = " img-square img-responsive pull-left" />										</a>
+										<button type-"button" class="btn btn-primary btn-xs">Follow</button>
+									</div>
+									<div class="col-xs-8 col-sm-10 col-md-8  reviewer-info">
+										<a href="/users/mattsenneca">
+											mattsenneca										</a>
+										<span class="rating">
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																					</span>
+										<p>
+											Coach Singleton does a great job of simplifying spread concepts. His rule of 4 is helpful in trying to simplify your offense for your kids in order to play faster, but also gives you answers to what the defense is trying to do. I would recommend any coach looking to simplify their offense in order to play faster check out this course. Nice work Coach!<br/>
+											<span><span title='January 17, 2018 08:17:43 PM (Wednesday) UTC'>Jan 17, 2018  08:17:43 PM</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+													<div class="user-reviews">
+								<div class="row">
+									<div class="col-xs-4 col-sm-2 col-md-2 ">
+										<a href="/users/johncoachmaurek">
+											<img src='https://graph.facebook.com/10155207308114256/picture?type=normal&width=150&height=150' alt="John 'Coach' Maurek"  width="150" height="150" title="John 'Coach' Maurek" class = " img-square img-responsive pull-left" />										</a>
+										<button type-"button" class="btn btn-primary btn-xs">Follow</button>
+									</div>
+									<div class="col-xs-8 col-sm-10 col-md-8  reviewer-info">
+										<a href="/users/johncoachmaurek">
+											John Maurek										</a>
+										<span class="rating">
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																					</span>
+										<p>
+											Great!<br/>
+											<span><span title='January 18, 2018 01:09:57 AM (Thursday) UTC'>Jan 18, 2018  01:09:57 AM</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+													<div class="user-reviews">
+								<div class="row">
+									<div class="col-xs-4 col-sm-2 col-md-2 ">
+										<a href="/users/jayveewilliams">
+											<img  src="/public/images/thumbs/medium_big/User/default_img.png" alt="jayveewilliams"  width="150" height="150" title="jayveewilliams" class = " img-square img-responsive pull-left" />										</a>
+										<button type-"button" class="btn btn-primary btn-xs">Follow</button>
+									</div>
+									<div class="col-xs-8 col-sm-10 col-md-8  reviewer-info">
+										<a href="/users/jayveewilliams">
+											jayveewilliams										</a>
+										<span class="rating">
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																					</span>
+										<p>
+											Love how Coach Singleton made all concepts simple to understand. Whether you have coached for 1 or 10 years it is easy to follow. Keep up the great work Coach!<br/>
+											<span><span title='January 19, 2018 01:13:52 AM (Friday) UTC'>Jan 19, 2018  01:13:52 AM</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+													<div class="user-reviews">
+								<div class="row">
+									<div class="col-xs-4 col-sm-2 col-md-2 ">
+										<a href="/users/derrick_m_adams">
+											<img  src="/public/images/thumbs/medium_big/User/default_img.png" alt="derrick_m_adams"  width="150" height="150" title="derrick_m_adams" class = " img-square img-responsive pull-left" />										</a>
+										<button type-"button" class="btn btn-primary btn-xs">Follow</button>
+									</div>
+									<div class="col-xs-8 col-sm-10 col-md-8  reviewer-info">
+										<a href="/users/derrick_m_adams">
+											Derrick Adams										</a>
+										<span class="rating">
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																							<i class="fa fa-star"></i>
+																					</span>
+										<p>
+											Solid Video, Worth the buy!!!<br/>
+											<span><span title='February 14, 2018 05:03:30 PM (Wednesday) UTC'>Feb 14, 2018  05:03:30 PM</span></span>
+										</p>
+									</div>
+								</div>
+							</div>
+											</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			<div class="related-courses-tab">
+			<div class="col-md-12">
+				<p class="seemore">
+					<a href="https://coachtube.com/courses/football">
+						View all courses in "football"
+					</a>
+				</p>
+				<p class="text-center">
+					Related Courses
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+<!-- Helper modal to send invitation to the friends via email -->
+<div class="modal fade" id="emailToFriends" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 id="inviteModalLabel" class="modal-title">
+                                            Invite friends to view this course
+                                    </h4>
+            </div>
+            <div class="alert-success fade in pa modal-alert" id="inviteSuccessIndicator"  style="display: none;">
+                <h4><i class="fa fa-check"></i> Invite sent successfully!</h4>
+            </div>
+            <div class="alert-danger fade in pa modal-alert" id="inviteErrorIndicator"  style="display: none;">
+                <h4><i class="fa fa-check"></i><span id="inviteErrorIndicatorSpan"></span></h4>
+            </div>
+            <div class="modal_body" id="inviteModalBody">
+                <div class="input-group">
+                    <label for="Email address">Send this to...</label>
+                    <textarea id="inviteModalEmailsString" type="email" placeholder="Input email addresses here separated by semicolon (;)"  class="form-control"></textarea>
+                </div>
+                <div class="input-group">
+                    <label for="personal message">Personal Message:</label>
+                                                <textarea id="inviteModalMessage" type="text" class="form-control" placeholder="Hey come check out my new course on CoachTube."></textarea>
+                                        </div>
+            </div>
+            <div class="modal-footer" id="inviteModalFooter">
+                                    <button type="button" class="btn btn-primary" onclick='sendInvitationEmail("https://coachtube.com/course/football/rule-of-4/1625708?track=69bc25aaf173f5ad0759858e25069b84%0A%0A?utm_source=email&utm_medium=referral&utm_campaign=ctshare","Rule of 4", "", this);'>
+                                    Send Invitation
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    window.onload = function() {
+        var emailToFriendsModal = $('#emailToFriends');
+
+        function emptyEmailModal() {
+            emailToFriendsModal.find('textarea').val('');
+            emailToFriendsModal.find('.modal-alert').hide();
+        }
+        
+        emailToFriendsModal.on('hide.bs.modal', emptyEmailModal);
+    }
+</script>
+
+
+
+	 	<div id="rel-course-container">
+	 <div class="container">
+	   <div class="row">
+	     <div class="col-md-12">
+			  <div id="carousel-example-generic" class="row carousel slide" data-interval="false">
+			   <ul class="featured-content item active" id="three-related-courses">
+			    						  <li class="carousel_slide course-widget" data-index="0" data-id='1102712'>
+  <div class="course-card-info">
+
+			        <a class="course-card-image" href="https://coachtube.com/course/football/pro-style-spread-offense-system/1102712">
+              <img itemprop="image" src="/public/images/thumbs/big/Course/1102712.2fe839c3179e1b7fd1f6e2e8045d857a.jpg" alt="Pro Style Spread Offense System"  width="600" height="600" title="Pro Style Spread Offense System" class = " no-round-bot" />          </a>
+    
+    <a href="https://coachtube.com/course/football/pro-style-spread-offense-system/1102712" title="Pro Style Spread Offense System" class="card-desc desc-course-name">
+      Pro Style Spread Offense System    </a>
+    <div class="card-desc desc-coach-name">
+      <span class="by">by</span>
+      <a href="/users/jasonhahnstadt">
+        <span class="coach-name">Pro Style Spread Offense</span>
+      </a>
+    </div>
+    <div class="card-stats ">
+      <div class="card-rating">
+        <div class="review">
+                        <img src="/public/newdesign1/CoachTube_files/star-gold.png" alt="star" style="max-height: 12px;">
+  <img src="/public/newdesign1/CoachTube_files/star-gold.png" alt="star" style="max-height: 12px;">
+  <img src="/public/newdesign1/CoachTube_files/star-gold.png" alt="star" style="max-height: 12px;">
+  <img src="/public/newdesign1/CoachTube_files/star-gold.png" alt="star" style="max-height: 12px;">
+  <img src="/public/newdesign1/CoachTube_files/star-gold.png" alt="star" style="max-height: 12px;">
+ 
+                    </div>
+        <div class="view">
+          Views:
+          <span>2709</span>
+        </div>
+      </div>
+      <div class="card-price ">
+        <span>
+                        
+
+
+    199,00 $
+                    </span>
+      </div>
+    </div>
+      </div>
+</li>
+
+													<li class="carousel_slide spacer"></li>
+												  <li class="carousel_slide course-widget" data-index="0" data-id='1441251'>
+  <div class="course-card-info">
+
+			        <a class="course-card-image" href="https://coachtube.com/course/football/rpo-training-with-coach-mac/1441251">
+              <img itemprop="image" src="/public/images/thumbs/big/Course/1441251.5126cf49e9704351dd35eaacc5ccf89b.jpg" alt="RPO Training with Coach Mac"  width="600" height="600" title="RPO Training with Coach Mac" class = " no-round-bot" />          </a>
+    
+    <a href="https://coachtube.com/course/football/rpo-training-with-coach-mac/1441251" title="RPO Training with Coach Mac" class="card-desc desc-course-name">
+      RPO Training with Coach Mac    </a>
+    <div class="card-desc desc-coach-name">
+      <span class="by">by</span>
+      <a href="/users/thomas%20macpherson">
+        <span class="coach-name">Thomas MacPherson</span>
+      </a>
+    </div>
+    <div class="card-stats ">
+      <div class="card-rating">
+        <div class="review">
+                  </div>
+        <div class="view">
+          Views:
+          <span>756</span>
+        </div>
+      </div>
+      <div class="card-price ">
+        <span>
+                      Free                  </span>
+      </div>
+    </div>
+      </div>
+</li>
+
+													<li class="carousel_slide spacer"></li>
+												  <li class="carousel_slide course-widget" data-index="0" data-id='655966'>
+  <div class="course-card-info">
+
+			        <a class="course-card-image" href="https://coachtube.com/course/football/running-the-spread-offense/655966">
+              <img itemprop="image" src="/public/images/thumbs/big/Course/655966.636d6ca12427a7791b6f86eeadbc2b6a.jpg" alt="Running the Spread Offense"  width="600" height="600" title="Running the Spread Offense" class = " no-round-bot" />          </a>
+    
+    <a href="https://coachtube.com/course/football/running-the-spread-offense/655966" title="Running the Spread Offense" class="card-desc desc-course-name">
+      Running the Spread Offense    </a>
+    <div class="card-desc desc-coach-name">
+      <span class="by">by</span>
+      <a href="/users/rob%20rhodes">
+        <span class="coach-name">Coaches Clinic </span>
+      </a>
+    </div>
+    <div class="card-stats ">
+      <div class="card-rating">
+        <div class="review">
+                  </div>
+        <div class="view">
+          Views:
+          <span>2555</span>
+        </div>
+      </div>
+      <div class="card-price ">
+        <span>
+                        
+
+
+    19,99 $
+                    </span>
+      </div>
+    </div>
+      </div>
+</li>
+
+										</ul>
+
+				       </div>
+      </div>
+    </div>
+   </div>
+	</div>
+
+
+
+
+<script src="/press/js/XVCIBCXhXXnUCzKaldRkCQJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+<script src="/press/js/XisIlqOigjVCJZTXSPvbsAJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+
+<link href="/press/css/zeAZGgrmdFXZkWYcYwaAiAJJ.css" rel="stylesheet" type="text/css" charset="utf-8"></link>
+<script src="/press/js/SSgXybFnMoRzNVVClDQGhQJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+<script src="/press/js/BYhljVEXUZsZEEWIvWxNxQJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+
+<script>
+	if($) {
+		$(document).ready(function() {
+			$("#applyCouponBtnId").click(function() {
+				var value = $("input[name='coupon_code']").val();
+				if(value && value.trim() == "") {
+					alert("Please enter a coupon code");
+				} else {
+					$.ajax({
+						url:'/apply/coupons',
+						type:'POST',
+						data:{
+							cpnCode: $("input[name='coupon_code']").val(),
+							courseId: 1625708						},
+						success : function(data) {
+							if(isNaN(parseInt(data))) {
+								alert(data);
+							} else {
+								var originalPrice = '14.99';
+								var discountedPrice = Math.round(data);
+								var totalSavings = Math.round(originalPrice - discountedPrice);
+								var discount = Math.round(totalSavings/originalPrice*100);
+
+								alert(
+									'Coupon applied successfully!\n\nOriginal Price: $ ' +
+									originalPrice +
+									'\nDiscount: ' +
+									discount +
+									'%\nDiscounted Price: $ ' +
+									discountedPrice +
+									'\nTotal Savings: $ ' +
+									totalSavings);
+
+								var currentLoc = window.location.href;
+								var qMarkIndex = currentLoc.indexOf("?");
+								var hMarkIndex = currentLoc.indexOf("#");
+
+								if(qMarkIndex != -1) {
+									currentLoc = currentLoc.substring(0, qMarkIndex);
+								} else if(hMarkIndex != -1 && qMarkIndex == -1) {
+									currentLoc = currentLoc.substring(0, hMarkIndex);
+								}
+								var currLocWithCpnParam = currentLoc+'?cpnCode=' + $("input[name='coupon_code']").val();
+
+								window.location.href = currLocWithCpnParam;
+							}
+						}
+					});
+				}
+			});
+			
+							if((location.search == '?s=1') && openSignupLBox) {
+					openSignupLBox();
+				}
+					});
+	}
+</script>
+
+<script src="/public/newdesign1/js/md5.js"></script>
+<script>
+	function showSuccessMessage(element) {
+		if($ && element) {
+			var content = $(element).closest('.modal-body');
+			var message = content.find('p.copy-confirmation-message');
+			message.removeClass('hidden');
+		}
+	}
+
+	if($ && Clipboard) {
+		$(document).ready(function() {
+			var clipboard = new Clipboard('.clipboard-btn');
+			clipboard.on('success', function(e) {
+				showSuccessMessage(e.trigger);
+				e.clearSelection();
+			});
+		});
+	}
+</script>
+
+	<script>
+        $(document).ready(function() {
+            if(md5) {
+				var hash = md5(/*window.location.origin +*/ window.location.pathname); // excluded the origin because of domain differencies for WL projects 
+				//(if track no was created on CT domain and using on BB for example - hash would differ in that case) 
+				
+                var trackingCode = '69bc25aaf173f5ad0759858e25069b84
+
+';
+                
+                if(trackingCode && (trackingCode == hash)) {
+                    var href = $('.checkout-page-link').attr('href');
+                    $('.checkout-page-link').each(function() {
+                        var self = $(this);
+                        var href = self.attr('href');
+                        self.attr('href', href + (href.indexOf('cpnCode')==-1?'?':'&') + 'cml=' + trackingCode);
+                    });  
+                }
+            }
+        });
+    </script>
+<div class="modal fade" id="Getlink" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title">Copy & paste this link to share</h4>
+			</div>
+			<div class="modal-body">
+				<p class='copy-confirmation-message hidden'>The link is copied to the clipboard</p>
+				<p><input type="text" value="" id="getLinkTextId" class="coupon_code"/></p>
+				<button class="clipboard-btn" data-clipboard-target="#getLinkTextId">Copy link</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Get link popup to start sharing coupon-->
+<div class="modal fade" id="Getlink1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title">Copy & paste this link to share</h4>
+</div>
+<div class="modal-body">
+<p class='copy-confirmation-message hidden'>The link is copied to the clipboard</p>
+<p><input type="text" value="" id="getLinkTextId1" class="coupon_code"/></p>
+<button class="clipboard-btn" data-clipboard-target="#getLinkTextId1">Copy link</button>
+</div>
+</div>
+</div>
+</div>
+<!--End of Get link popup to start sharing coupon-->
+
+<!-- The Video Popup in course_page -->
+<div class="modal fade" id="videoPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" onclick="videoCloseBtnFunc();">
+<div id="v-modal-dialog" class="modal-dialog">
+<div id="videoPopupBody">
+</div>
+</div>
+</div>
+<!-- End Video Popup -->
+
+<!-- ////////////////////// FOOTER TEMPLATE START //////////////////////// -->
+    </div>
+        <footer id="footer">
+            <div id="footer-widget-area">
+                <div class="container">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <ul>
+                                                            <li><a href="/"><strong>&copy; 2016 CoachTube, Inc.</strong></a></li>
+                                <li><i class="fa fa-circle"></i><a href="/about">About Us</a></li>
+                                <li><i class="fa fa-circle"></i><a href="/coach">Coach</a></li>
+                                <li><i class="fa fa-circle"></i><a href="/coach#FAQs">FAQ</a></li>
+                                <li><i class="fa fa-circle"></i><a href="/supportyourcharity">Charity</a></li>
+                                <li><i class="fa fa-circle"></i><a href="/organizations">Organizations</a></li>
+                                <li><i class="fa fa-circle"></i><a href="/affiliate">Affiliate</a></li>
+                                <li><i class="fa fa-circle"></i><a target="_blank" href="http://blog.coachtube.com/">Blog</a></li>
+                                <li><i class="fa fa-circle"></i><a href="/terms">Terms</a></li>
+                                <li><i class="fa fa-circle"></i><a href="/privacy-policy">Privacy Policy</a></li>
+                                <li><i class="fa fa-circle"></i><a href="/about#Contact_us">Contact</a></li>
+                                                    </ul>
+                    </div>
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer-widget clearfix">
+                            <a target="_new" href="https://twitter.com/thecoachtube"><i class="fa fa-twitter circle"></i></a>
+                            <a target="_new" href="https://www.facebook.com/CoachTube"><i class="fa fa-facebook circle"></i></a>
+                            <a target="_new" href="https://instagram.com/coachtube"><i class="fa fa-instagram circle"></i></a>
+                        </div>
+                                    </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<!--Menu bar start here-->
+
+  <div class="mobile-menu">
+      <div class="mobile-menu-inner">
+          <ul>
+                        <li> <a class="main-cat" href="/courses"> <span><i class="fa fa-bullseye"></i> Recommended for You</span> </a> </li>
+                            <li><a id="main-menu-baseball" class="main-cat" href="/courses/baseball"><span>Baseball</span></a>
+                  </li>
+                            <li><a id="main-menu-basketball" class="main-cat" href="/courses/basketball"><span>Basketball</span></a>
+                  </li>
+                            <li><a id="main-menu-cricket" class="main-cat" href="/courses/cricket"><span>Cricket</span></a>
+                  </li>
+                            <li><a id="main-menu-disc-golf" class="main-cat" href="/courses/disc-golf"><span>Disc Golf</span></a>
+                  </li>
+                            <li><a id="main-menu-esports" class="main-cat" href="/courses/esports"><span>eSports</span></a>
+                  </li>
+                            <li><a id="main-menu-extreme-sports" class="main-cat" href="/courses/extreme-sports"><span>Extreme Sports</span></a>
+                  </li>
+                            <li><a id="main-menu-fencing" class="main-cat" href="/courses/fencing"><span>Fencing</span></a>
+                  </li>
+                            <li><a id="main-menu-field-hockey" class="main-cat" href="/courses/field-hockey"><span>Field Hockey</span></a>
+                  </li>
+                            <li><a id="main-menu-football" class="main-cat" href="/courses/football"><span>Football</span></a>
+                  </li>
+                            <li><a id="main-menu-golf" class="main-cat" href="/courses/golf"><span>Golf</span></a>
+                  </li>
+                            <li><a id="main-menu-gymnastics" class="main-cat" href="/courses/gymnastics"><span>Gymnastics</span></a>
+                  </li>
+                            <li><a id="main-menu-health-fitness" class="main-cat" href="/courses/health-fitness"><span>Health & Fitness</span></a>
+                  </li>
+                            <li><a id="main-menu-hockey" class="main-cat" href="/courses/hockey"><span>Hockey</span></a>
+                  </li>
+                            <li><a id="main-menu-lacrosse" class="main-cat" href="/courses/lacrosse"><span>Lacrosse</span></a>
+                  </li>
+                            <li><a id="main-menu-martial-arts" class="main-cat" href="/courses/martial-arts"><span>Martial Arts</span></a>
+                  </li>
+                            <li><a id="main-menu-mental-training" class="main-cat" href="/courses/mental-training"><span>Mental Training</span></a>
+                  </li>
+                            <li><a id="main-menu-recreational" class="main-cat" href="/courses/recreational"><span>Recreational</span></a>
+                  </li>
+                            <li><a id="main-menu-rugby" class="main-cat" href="/courses/rugby"><span>Rugby</span></a>
+                  </li>
+                            <li><a id="main-menu-running" class="main-cat" href="/courses/running"><span>Running</span></a>
+                  </li>
+                            <li><a id="main-menu-skating" class="main-cat" href="/courses/skating"><span>Skating</span></a>
+                  </li>
+                            <li><a id="main-menu-skiing" class="main-cat" href="/courses/skiing"><span>Skiing</span></a>
+                  </li>
+                            <li><a id="main-menu-snowboarding" class="main-cat" href="/courses/snowboarding"><span>Snowboarding</span></a>
+                  </li>
+                            <li><a id="main-menu-soccer" class="main-cat" href="/courses/soccer"><span>Soccer</span></a>
+                  </li>
+                            <li><a id="main-menu-softball" class="main-cat" href="/courses/softball"><span>Softball</span></a>
+                  </li>
+                            <li><a id="main-menu-squash" class="main-cat" href="/courses/squash"><span>Squash </span></a>
+                  </li>
+                            <li><a id="main-menu-swimming" class="main-cat" href="/courses/swimming"><span>Swimming</span></a>
+                  </li>
+                            <li><a id="main-menu-tennis" class="main-cat" href="/courses/tennis"><span>Tennis</span></a>
+                  </li>
+                            <li><a id="main-menu-track-and-field" class="main-cat" href="/courses/track-and-field"><span>Track and Field</span></a>
+                  </li>
+                            <li><a id="main-menu-ultimate-frisbee" class="main-cat" href="/courses/ultimate-frisbee"><span>Ultimate Frisbee</span></a>
+                  </li>
+                            <li><a id="main-menu-volleyball" class="main-cat" href="/courses/volleyball"><span>Volleyball</span></a>
+                  </li>
+                            <li><a id="main-menu-wrestling" class="main-cat" href="/courses/wrestling"><span>Wrestling</span></a>
+                  </li>
+                            <li><a id="main-menu-yoga" class="main-cat" href="/courses/yoga"><span>Yoga</span></a>
+                  </li>
+                            <li><a id="main-menu-youth-coaching" class="main-cat" href="/courses/youth-coaching"><span>Youth Coaching</span></a>
+                  </li>
+                      </ul>
+      </div>
+  </div>
+
+      <div id="baseball_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Baseball</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/baseball/baserunning">
+                <span>Baserunning</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/baseball/catching">
+                <span>Catching</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/baseball/drills">
+                <span>Drills</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/baseball/ebooks">
+                <span>Ebooks</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/baseball/fielding">
+                <span>Fielding</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/baseball/fundamentals">
+                <span>Fundamentals</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/baseball/hitting">
+                <span>Hitting</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/baseball/mental-practice">
+                <span>Mental Practice</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/baseball/pitching">
+                <span>Pitching</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/baseball/strength-conditioning">
+                <span>Strength & Conditioning</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/baseball/umpiring">
+                <span>Umpiring</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/baseball/youth-baseball">
+                <span>Youth Baseball</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="basketball_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Basketball</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/basketball/ball-handling">
+                <span>Ball Handling</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/basketball/defense">
+                <span>Defense</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/basketball/drills">
+                <span>Drills</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/basketball/ebooks">
+                <span>Ebooks</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/basketball/fundamentals">
+                <span>Fundamentals</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/basketball/offense">
+                <span>Offense</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/basketball/point-guard-training">
+                <span>Point Guard Training</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/basketball/post-play">
+                <span>Post Play</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/basketball/practice-planning">
+                <span>Practice Planning</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/basketball/shooting">
+                <span>Shooting</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/basketball/strategy">
+                <span>Strategy</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/basketball/womens-basketball">
+                <span>Women's Basketball</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/basketball/workouts">
+                <span>Workouts</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/basketball/youth-basketball">
+                <span>Youth Basketball</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="cricket_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Cricket</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/cricket/batting">
+                <span>Batting</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/cricket/bowling">
+                <span>Bowling</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/cricket/fielding">
+                <span>Fielding</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/cricket/fundamentals">
+                <span>Fundamentals</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="disc-golf_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Disc Golf</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/disc-golf/fundamentals">
+                <span>Fundamentals</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="esports_submenu" class="sub_menu">
+      <ul>
+        <li><h4>eSports</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/esports/fundamentals">
+                <span>Fundamentals</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/esports/starcraft">
+                <span>StarCraft</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="extreme-sports_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Extreme Sports</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/extreme-sports/motocross">
+                <span>Motocross</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/extreme-sports/skateboarding">
+                <span>Skateboarding</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/extreme-sports/wakeboarding">
+                <span>Wakeboarding</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/extreme-sports/water-skiing">
+                <span>Water Skiing</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="fencing_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Fencing</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/fencing/epee">
+                <span>Epee</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/fencing/foil">
+                <span>Foil</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/fencing/footwork">
+                <span>Footwork</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/fencing/fundamentals">
+                <span>Fundamentals</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/fencing/sabre">
+                <span>Sabre</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="field-hockey_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Field Hockey</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/field-hockey/coaching-field-hockey">
+                <span>Coaching Field Hockey</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/field-hockey/drills">
+                <span>Drills</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/field-hockey/fundamentals">
+                <span>Fundamentals</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/field-hockey/goalkeeping">
+                <span>Goalkeeping</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/field-hockey/penalty-corner-offense">
+                <span>Penalty Corner Offense</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/field-hockey/shooting">
+                <span>Shooting</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="football_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Football</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/football/defensive-backs">
+                <span>Defensive Backs</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/football/defensive-line">
+                <span>Defensive Line</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/football/drills">
+                <span>Drills</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/football/ebooks">
+                <span>Ebooks</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/football/eight-man">
+                <span>Eight-Man</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/football/fundamentals">
+                <span>Fundamentals</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/football/kicking">
+                <span>Kicking</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/football/linebacker">
+                <span>Linebacker</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/football/long-snapping">
+                <span>Long Snapping</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/football/offensive-line">
+                <span>Offensive Line</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/football/quarterback-training">
+                <span>Quarterback Training</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/football/receiver-skills">
+                <span>Receiver Skills</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/football/running-offense">
+                <span>Running Offense</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/football/special-teams">
+                <span>Special Teams</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/football/speed-agility">
+                <span>Speed & Agility</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/football/strategy">
+                <span>Strategy</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/football/tackling">
+                <span>Tackling</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/football/team-defense">
+                <span>Team Defense</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/football/team-offense">
+                <span>Team Offense</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/football/youth-football">
+                <span>Youth Football</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="golf_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Golf</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/golf/driving">
+                <span>Driving</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/golf/fundamentals">
+                <span>Fundamentals</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/golf/mental-game">
+                <span>Mental Game</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/golf/putting">
+                <span>Putting</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/golf/short-game">
+                <span>Short Game</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/golf/the-swing">
+                <span>The Swing</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="gymnastics_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Gymnastics</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/gymnastics/cheerleading">
+                <span>Cheerleading</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/gymnastics/coaching-youth-gymnastics">
+                <span>Coaching Youth Gymnastics</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/gymnastics/dance">
+                <span>Dance</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/gymnastics/skills-drills">
+                <span>Skills & Drills</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="health-fitness_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Health & Fitness</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/health-fitness/cycling">
+                <span>Cycling</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/health-fitness/flexibility">
+                <span>Flexibility</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/health-fitness/mental-training">
+                <span>Mental Training</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/health-fitness/nutrition">
+                <span>Nutrition</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/health-fitness/speed-training">
+                <span>Speed Training</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/health-fitness/strength-training">
+                <span>Strength Training</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/health-fitness/workouts">
+                <span>Workouts</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="hockey_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Hockey</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/hockey/coaching-hockey">
+                <span>Coaching Hockey</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/hockey/goaltending">
+                <span>Goaltending</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/hockey/player-development">
+                <span>Player Development</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/hockey/strength-conditioning">
+                <span>Strength & Conditioning</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/hockey/womens-hockey">
+                <span>Women's Hockey</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/hockey/youth-skills-drills">
+                <span>Youth Skills & Drills</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="lacrosse_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Lacrosse</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/lacrosse/box-lacrosse">
+                <span>Box Lacrosse</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/lacrosse/drills">
+                <span>Drills</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/lacrosse/fundamentals">
+                <span>Fundamentals</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/lacrosse/goalkeeping">
+                <span>Goalkeeping</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/lacrosse/midfielders">
+                <span>Midfielders</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/lacrosse/practice-planning">
+                <span>Practice Planning</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/lacrosse/shooting">
+                <span>Shooting</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/lacrosse/skill-development">
+                <span>Skill Development</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/lacrosse/strength-conditioning">
+                <span>Strength & Conditioning</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/lacrosse/womens-lacrosse">
+                <span>Women's Lacrosse</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="martial-arts_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Martial Arts</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/martial-arts/boxing">
+                <span>Boxing</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/martial-arts/brazilian-jiu-jitsu">
+                <span>Brazilian Jiu Jitsu</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/martial-arts/judo">
+                <span>Judo</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/martial-arts/karate">
+                <span>Karate</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/martial-arts/kickboxing">
+                <span>Kickboxing</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/martial-arts/mma">
+                <span>MMA</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/martial-arts/tai-chi">
+                <span>Tai Chi</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="mental-training_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Mental Training</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/mental-training/personal-development">
+                <span>Personal Development</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="recreational_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Recreational</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/recreational/scuba-diving">
+                <span>Scuba Diving</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="rugby_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Rugby</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/rugby/fundamentals">
+                <span>Fundamentals</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="running_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Running</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/running/fundamentals">
+                <span>Fundamentals</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="skating_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Skating</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/skating/ebooks">
+                <span>Ebooks</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="skiing_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Skiing</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/skiing/general">
+                <span>General</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="snowboarding_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Snowboarding</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/snowboarding/general">
+                <span>General</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="soccer_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Soccer</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/soccer/coaching-soccer">
+                <span>Coaching Soccer</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/soccer/coaching-youth-soccer">
+                <span>Coaching Youth Soccer</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/soccer/defense">
+                <span>Defense</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/soccer/drills">
+                <span>Drills</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/soccer/ebooks">
+                <span>Ebooks</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/soccer/fundamentals">
+                <span>Fundamentals</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/soccer/goalkeeping">
+                <span>Goalkeeping</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/soccer/skill-development">
+                <span>Skill Development</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/soccer/strategy">
+                <span>Strategy</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/soccer/strength-conditioning">
+                <span>Strength & Conditioning</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/soccer/tactics">
+                <span>Tactics</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="softball_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Softball</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/softball/baserunning">
+                <span>Baserunning</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/softball/catching">
+                <span>Catching</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/softball/coaching-softball">
+                <span>Coaching Softball</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/softball/drills">
+                <span>Drills</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/softball/ebooks">
+                <span>Ebooks</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/softball/fielding">
+                <span>Fielding</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/softball/fundamentals">
+                <span>Fundamentals</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/softball/hitting">
+                <span>Hitting</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/softball/pitching">
+                <span>Pitching</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/softball/strength-conditioning">
+                <span>Strength & Conditioning</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/softball/youth-skills-drills">
+                <span>Youth Skills & Drills</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="squash_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Squash </h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/squash/fundamentals">
+                <span>Fundamentals </span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="swimming_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Swimming</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/swimming/competitive-swimming">
+                <span>Competitive Swimming</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/swimming/fundamentals">
+                <span>Fundamentals</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/swimming/water-polo">
+                <span>Water Polo</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="tennis_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Tennis</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/tennis/coaching-tennis">
+                <span>Coaching Tennis</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/tennis/doubles">
+                <span>Doubles</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/tennis/drills">
+                <span>Drills</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/tennis/fundamentals">
+                <span>Fundamentals</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/tennis/serving">
+                <span>Serving</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/tennis/strategy">
+                <span>Strategy</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/tennis/strength-conditioning">
+                <span>Strength & Conditioning</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/tennis/stroke-instruction">
+                <span>Stroke Instruction</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/tennis/table-tennis">
+                <span>Table Tennis</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/tennis/tips">
+                <span>Tips</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="track-and-field_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Track and Field</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/track-and-field/coaching-track-field">
+                <span>Coaching Track & Field</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/track-and-field/discus">
+                <span>Discus</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/track-and-field/high-jump">
+                <span>High Jump</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/track-and-field/hurdles">
+                <span>Hurdles</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/track-and-field/javelin">
+                <span>Javelin</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/track-and-field/long-jump">
+                <span>Long Jump</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/track-and-field/pole-vaulting">
+                <span>Pole Vaulting</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/track-and-field/shot-put">
+                <span>Shot Put</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/track-and-field/sports-performance">
+                <span>Sports Performance</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/track-and-field/sprinting">
+                <span>Sprinting</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/track-and-field/strength-conditioning">
+                <span>Strength & Conditioning</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/track-and-field/triple-jump">
+                <span>Triple Jump</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="ultimate-frisbee_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Ultimate Frisbee</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/ultimate-frisbee/fundamentals">
+                <span>Fundamentals</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/ultimate-frisbee/skills-drills">
+                <span>Skills & Drills</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="volleyball_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Volleyball</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/volleyball/coaching-volleyball">
+                <span>Coaching Volleyball</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/volleyball/defense">
+                <span>Defense</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/volleyball/drills">
+                <span>Drills</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/volleyball/hitting-attacking">
+                <span>Hitting/Attacking</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/volleyball/passing">
+                <span>Passing</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/volleyball/serving">
+                <span>Serving</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/volleyball/setting">
+                <span>Setting</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/volleyball/strength-conditioning">
+                <span>Strength & Conditioning</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="wrestling_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Wrestling</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/wrestling/wrestling-moves">
+                <span>Wrestling Moves</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="yoga_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Yoga</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/yoga/core-training">
+                <span>Core Training</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/yoga/fundamentals">
+                <span>Fundamentals</span></a>
+            </li>
+              </ul>
+    </div>
+      <div id="youth-coaching_submenu" class="sub_menu">
+      <ul>
+        <li><h4>Youth Coaching</h4></li>
+                    <li>
+              <a class="main-cat" href="/courses/youth-coaching/coaching-parenting">
+                <span>Coaching & Parenting</span></a>
+            </li>
+                    <li>
+              <a class="main-cat" href="/courses/youth-coaching/sports-based-youth-development">
+                <span>Sports-Based Youth Development</span></a>
+            </li>
+              </ul>
+    </div>
+    <div class="all-available-sports" style="display-none">
+            <div id="baseball_main-category">
+                    <span data-subcategory="Baserunning" data-link="/courses/baseball/baserunning">
+            </span>
+                    <span data-subcategory="Catching" data-link="/courses/baseball/catching">
+            </span>
+                    <span data-subcategory="Drills" data-link="/courses/baseball/drills">
+            </span>
+                    <span data-subcategory="Ebooks" data-link="/courses/baseball/ebooks">
+            </span>
+                    <span data-subcategory="Fielding" data-link="/courses/baseball/fielding">
+            </span>
+                    <span data-subcategory="Fundamentals" data-link="/courses/baseball/fundamentals">
+            </span>
+                    <span data-subcategory="Hitting" data-link="/courses/baseball/hitting">
+            </span>
+                    <span data-subcategory="Mental Practice" data-link="/courses/baseball/mental-practice">
+            </span>
+                    <span data-subcategory="Pitching" data-link="/courses/baseball/pitching">
+            </span>
+                    <span data-subcategory="Strength & Conditioning" data-link="/courses/baseball/strength-conditioning">
+            </span>
+                    <span data-subcategory="Umpiring" data-link="/courses/baseball/umpiring">
+            </span>
+                    <span data-subcategory="Youth Baseball" data-link="/courses/baseball/youth-baseball">
+            </span>
+              </div>
+          <div id="basketball_main-category">
+                    <span data-subcategory="Ball Handling" data-link="/courses/basketball/ball-handling">
+            </span>
+                    <span data-subcategory="Defense" data-link="/courses/basketball/defense">
+            </span>
+                    <span data-subcategory="Drills" data-link="/courses/basketball/drills">
+            </span>
+                    <span data-subcategory="Ebooks" data-link="/courses/basketball/ebooks">
+            </span>
+                    <span data-subcategory="Fundamentals" data-link="/courses/basketball/fundamentals">
+            </span>
+                    <span data-subcategory="Offense" data-link="/courses/basketball/offense">
+            </span>
+                    <span data-subcategory="Point Guard Training" data-link="/courses/basketball/point-guard-training">
+            </span>
+                    <span data-subcategory="Post Play" data-link="/courses/basketball/post-play">
+            </span>
+                    <span data-subcategory="Practice Planning" data-link="/courses/basketball/practice-planning">
+            </span>
+                    <span data-subcategory="Shooting" data-link="/courses/basketball/shooting">
+            </span>
+                    <span data-subcategory="Strategy" data-link="/courses/basketball/strategy">
+            </span>
+                    <span data-subcategory="Women's Basketball" data-link="/courses/basketball/womens-basketball">
+            </span>
+                    <span data-subcategory="Workouts" data-link="/courses/basketball/workouts">
+            </span>
+                    <span data-subcategory="Youth Basketball" data-link="/courses/basketball/youth-basketball">
+            </span>
+              </div>
+          <div id="cricket_main-category">
+                    <span data-subcategory="Batting" data-link="/courses/cricket/batting">
+            </span>
+                    <span data-subcategory="Bowling" data-link="/courses/cricket/bowling">
+            </span>
+                    <span data-subcategory="Fielding" data-link="/courses/cricket/fielding">
+            </span>
+                    <span data-subcategory="Fundamentals" data-link="/courses/cricket/fundamentals">
+            </span>
+              </div>
+          <div id="disc-golf_main-category">
+                    <span data-subcategory="Fundamentals" data-link="/courses/disc-golf/fundamentals">
+            </span>
+              </div>
+          <div id="esports_main-category">
+                    <span data-subcategory="Fundamentals" data-link="/courses/esports/fundamentals">
+            </span>
+                    <span data-subcategory="StarCraft" data-link="/courses/esports/starcraft">
+            </span>
+              </div>
+          <div id="extreme-sports_main-category">
+                    <span data-subcategory="Motocross" data-link="/courses/extreme-sports/motocross">
+            </span>
+                    <span data-subcategory="Skateboarding" data-link="/courses/extreme-sports/skateboarding">
+            </span>
+                    <span data-subcategory="Wakeboarding" data-link="/courses/extreme-sports/wakeboarding">
+            </span>
+                    <span data-subcategory="Water Skiing" data-link="/courses/extreme-sports/water-skiing">
+            </span>
+              </div>
+          <div id="fencing_main-category">
+                    <span data-subcategory="Epee" data-link="/courses/fencing/epee">
+            </span>
+                    <span data-subcategory="Foil" data-link="/courses/fencing/foil">
+            </span>
+                    <span data-subcategory="Footwork" data-link="/courses/fencing/footwork">
+            </span>
+                    <span data-subcategory="Fundamentals" data-link="/courses/fencing/fundamentals">
+            </span>
+                    <span data-subcategory="Sabre" data-link="/courses/fencing/sabre">
+            </span>
+              </div>
+          <div id="field-hockey_main-category">
+                    <span data-subcategory="Coaching Field Hockey" data-link="/courses/field-hockey/coaching-field-hockey">
+            </span>
+                    <span data-subcategory="Drills" data-link="/courses/field-hockey/drills">
+            </span>
+                    <span data-subcategory="Fundamentals" data-link="/courses/field-hockey/fundamentals">
+            </span>
+                    <span data-subcategory="Goalkeeping" data-link="/courses/field-hockey/goalkeeping">
+            </span>
+                    <span data-subcategory="Penalty Corner Offense" data-link="/courses/field-hockey/penalty-corner-offense">
+            </span>
+                    <span data-subcategory="Shooting" data-link="/courses/field-hockey/shooting">
+            </span>
+              </div>
+          <div id="football_main-category">
+                    <span data-subcategory="Defensive Backs" data-link="/courses/football/defensive-backs">
+            </span>
+                    <span data-subcategory="Defensive Line" data-link="/courses/football/defensive-line">
+            </span>
+                    <span data-subcategory="Drills" data-link="/courses/football/drills">
+            </span>
+                    <span data-subcategory="Ebooks" data-link="/courses/football/ebooks">
+            </span>
+                    <span data-subcategory="Eight-Man" data-link="/courses/football/eight-man">
+            </span>
+                    <span data-subcategory="Fundamentals" data-link="/courses/football/fundamentals">
+            </span>
+                    <span data-subcategory="Kicking" data-link="/courses/football/kicking">
+            </span>
+                    <span data-subcategory="Linebacker" data-link="/courses/football/linebacker">
+            </span>
+                    <span data-subcategory="Long Snapping" data-link="/courses/football/long-snapping">
+            </span>
+                    <span data-subcategory="Offensive Line" data-link="/courses/football/offensive-line">
+            </span>
+                    <span data-subcategory="Quarterback Training" data-link="/courses/football/quarterback-training">
+            </span>
+                    <span data-subcategory="Receiver Skills" data-link="/courses/football/receiver-skills">
+            </span>
+                    <span data-subcategory="Running Offense" data-link="/courses/football/running-offense">
+            </span>
+                    <span data-subcategory="Special Teams" data-link="/courses/football/special-teams">
+            </span>
+                    <span data-subcategory="Speed & Agility" data-link="/courses/football/speed-agility">
+            </span>
+                    <span data-subcategory="Strategy" data-link="/courses/football/strategy">
+            </span>
+                    <span data-subcategory="Tackling" data-link="/courses/football/tackling">
+            </span>
+                    <span data-subcategory="Team Defense" data-link="/courses/football/team-defense">
+            </span>
+                    <span data-subcategory="Team Offense" data-link="/courses/football/team-offense">
+            </span>
+                    <span data-subcategory="Youth Football" data-link="/courses/football/youth-football">
+            </span>
+              </div>
+          <div id="golf_main-category">
+                    <span data-subcategory="Driving" data-link="/courses/golf/driving">
+            </span>
+                    <span data-subcategory="Fundamentals" data-link="/courses/golf/fundamentals">
+            </span>
+                    <span data-subcategory="Mental Game" data-link="/courses/golf/mental-game">
+            </span>
+                    <span data-subcategory="Putting" data-link="/courses/golf/putting">
+            </span>
+                    <span data-subcategory="Short Game" data-link="/courses/golf/short-game">
+            </span>
+                    <span data-subcategory="The Swing" data-link="/courses/golf/the-swing">
+            </span>
+              </div>
+          <div id="gymnastics_main-category">
+                    <span data-subcategory="Cheerleading" data-link="/courses/gymnastics/cheerleading">
+            </span>
+                    <span data-subcategory="Coaching Youth Gymnastics" data-link="/courses/gymnastics/coaching-youth-gymnastics">
+            </span>
+                    <span data-subcategory="Dance" data-link="/courses/gymnastics/dance">
+            </span>
+                    <span data-subcategory="Skills & Drills" data-link="/courses/gymnastics/skills-drills">
+            </span>
+              </div>
+          <div id="health-fitness_main-category">
+                    <span data-subcategory="Cycling" data-link="/courses/health-fitness/cycling">
+            </span>
+                    <span data-subcategory="Flexibility" data-link="/courses/health-fitness/flexibility">
+            </span>
+                    <span data-subcategory="Mental Training" data-link="/courses/health-fitness/mental-training">
+            </span>
+                    <span data-subcategory="Nutrition" data-link="/courses/health-fitness/nutrition">
+            </span>
+                    <span data-subcategory="Speed Training" data-link="/courses/health-fitness/speed-training">
+            </span>
+                    <span data-subcategory="Strength Training" data-link="/courses/health-fitness/strength-training">
+            </span>
+                    <span data-subcategory="Workouts" data-link="/courses/health-fitness/workouts">
+            </span>
+              </div>
+          <div id="hockey_main-category">
+                    <span data-subcategory="Coaching Hockey" data-link="/courses/hockey/coaching-hockey">
+            </span>
+                    <span data-subcategory="Goaltending" data-link="/courses/hockey/goaltending">
+            </span>
+                    <span data-subcategory="Player Development" data-link="/courses/hockey/player-development">
+            </span>
+                    <span data-subcategory="Strength & Conditioning" data-link="/courses/hockey/strength-conditioning">
+            </span>
+                    <span data-subcategory="Women's Hockey" data-link="/courses/hockey/womens-hockey">
+            </span>
+                    <span data-subcategory="Youth Skills & Drills" data-link="/courses/hockey/youth-skills-drills">
+            </span>
+              </div>
+          <div id="lacrosse_main-category">
+                    <span data-subcategory="Box Lacrosse" data-link="/courses/lacrosse/box-lacrosse">
+            </span>
+                    <span data-subcategory="Drills" data-link="/courses/lacrosse/drills">
+            </span>
+                    <span data-subcategory="Fundamentals" data-link="/courses/lacrosse/fundamentals">
+            </span>
+                    <span data-subcategory="Goalkeeping" data-link="/courses/lacrosse/goalkeeping">
+            </span>
+                    <span data-subcategory="Midfielders" data-link="/courses/lacrosse/midfielders">
+            </span>
+                    <span data-subcategory="Practice Planning" data-link="/courses/lacrosse/practice-planning">
+            </span>
+                    <span data-subcategory="Shooting" data-link="/courses/lacrosse/shooting">
+            </span>
+                    <span data-subcategory="Skill Development" data-link="/courses/lacrosse/skill-development">
+            </span>
+                    <span data-subcategory="Strength & Conditioning" data-link="/courses/lacrosse/strength-conditioning">
+            </span>
+                    <span data-subcategory="Women's Lacrosse" data-link="/courses/lacrosse/womens-lacrosse">
+            </span>
+              </div>
+          <div id="martial-arts_main-category">
+                    <span data-subcategory="Boxing" data-link="/courses/martial-arts/boxing">
+            </span>
+                    <span data-subcategory="Brazilian Jiu Jitsu" data-link="/courses/martial-arts/brazilian-jiu-jitsu">
+            </span>
+                    <span data-subcategory="Judo" data-link="/courses/martial-arts/judo">
+            </span>
+                    <span data-subcategory="Karate" data-link="/courses/martial-arts/karate">
+            </span>
+                    <span data-subcategory="Kickboxing" data-link="/courses/martial-arts/kickboxing">
+            </span>
+                    <span data-subcategory="MMA" data-link="/courses/martial-arts/mma">
+            </span>
+                    <span data-subcategory="Tai Chi" data-link="/courses/martial-arts/tai-chi">
+            </span>
+              </div>
+          <div id="mental-training_main-category">
+                    <span data-subcategory="Personal Development" data-link="/courses/mental-training/personal-development">
+            </span>
+              </div>
+          <div id="recreational_main-category">
+                    <span data-subcategory="Scuba Diving" data-link="/courses/recreational/scuba-diving">
+            </span>
+              </div>
+          <div id="rugby_main-category">
+                    <span data-subcategory="Fundamentals" data-link="/courses/rugby/fundamentals">
+            </span>
+              </div>
+          <div id="running_main-category">
+                    <span data-subcategory="Fundamentals" data-link="/courses/running/fundamentals">
+            </span>
+              </div>
+          <div id="skating_main-category">
+                    <span data-subcategory="Ebooks" data-link="/courses/skating/ebooks">
+            </span>
+              </div>
+          <div id="skiing_main-category">
+                    <span data-subcategory="General" data-link="/courses/skiing/general">
+            </span>
+              </div>
+          <div id="snowboarding_main-category">
+                    <span data-subcategory="General" data-link="/courses/snowboarding/general">
+            </span>
+              </div>
+          <div id="soccer_main-category">
+                    <span data-subcategory="Coaching Soccer" data-link="/courses/soccer/coaching-soccer">
+            </span>
+                    <span data-subcategory="Coaching Youth Soccer" data-link="/courses/soccer/coaching-youth-soccer">
+            </span>
+                    <span data-subcategory="Defense" data-link="/courses/soccer/defense">
+            </span>
+                    <span data-subcategory="Drills" data-link="/courses/soccer/drills">
+            </span>
+                    <span data-subcategory="Ebooks" data-link="/courses/soccer/ebooks">
+            </span>
+                    <span data-subcategory="Fundamentals" data-link="/courses/soccer/fundamentals">
+            </span>
+                    <span data-subcategory="Goalkeeping" data-link="/courses/soccer/goalkeeping">
+            </span>
+                    <span data-subcategory="Skill Development" data-link="/courses/soccer/skill-development">
+            </span>
+                    <span data-subcategory="Strategy" data-link="/courses/soccer/strategy">
+            </span>
+                    <span data-subcategory="Strength & Conditioning" data-link="/courses/soccer/strength-conditioning">
+            </span>
+                    <span data-subcategory="Tactics" data-link="/courses/soccer/tactics">
+            </span>
+              </div>
+          <div id="softball_main-category">
+                    <span data-subcategory="Baserunning" data-link="/courses/softball/baserunning">
+            </span>
+                    <span data-subcategory="Catching" data-link="/courses/softball/catching">
+            </span>
+                    <span data-subcategory="Coaching Softball" data-link="/courses/softball/coaching-softball">
+            </span>
+                    <span data-subcategory="Drills" data-link="/courses/softball/drills">
+            </span>
+                    <span data-subcategory="Ebooks" data-link="/courses/softball/ebooks">
+            </span>
+                    <span data-subcategory="Fielding" data-link="/courses/softball/fielding">
+            </span>
+                    <span data-subcategory="Fundamentals" data-link="/courses/softball/fundamentals">
+            </span>
+                    <span data-subcategory="Hitting" data-link="/courses/softball/hitting">
+            </span>
+                    <span data-subcategory="Pitching" data-link="/courses/softball/pitching">
+            </span>
+                    <span data-subcategory="Strength & Conditioning" data-link="/courses/softball/strength-conditioning">
+            </span>
+                    <span data-subcategory="Youth Skills & Drills" data-link="/courses/softball/youth-skills-drills">
+            </span>
+              </div>
+          <div id="squash_main-category">
+                    <span data-subcategory="Fundamentals " data-link="/courses/squash/fundamentals">
+            </span>
+              </div>
+          <div id="swimming_main-category">
+                    <span data-subcategory="Competitive Swimming" data-link="/courses/swimming/competitive-swimming">
+            </span>
+                    <span data-subcategory="Fundamentals" data-link="/courses/swimming/fundamentals">
+            </span>
+                    <span data-subcategory="Water Polo" data-link="/courses/swimming/water-polo">
+            </span>
+              </div>
+          <div id="tennis_main-category">
+                    <span data-subcategory="Coaching Tennis" data-link="/courses/tennis/coaching-tennis">
+            </span>
+                    <span data-subcategory="Doubles" data-link="/courses/tennis/doubles">
+            </span>
+                    <span data-subcategory="Drills" data-link="/courses/tennis/drills">
+            </span>
+                    <span data-subcategory="Fundamentals" data-link="/courses/tennis/fundamentals">
+            </span>
+                    <span data-subcategory="Serving" data-link="/courses/tennis/serving">
+            </span>
+                    <span data-subcategory="Strategy" data-link="/courses/tennis/strategy">
+            </span>
+                    <span data-subcategory="Strength & Conditioning" data-link="/courses/tennis/strength-conditioning">
+            </span>
+                    <span data-subcategory="Stroke Instruction" data-link="/courses/tennis/stroke-instruction">
+            </span>
+                    <span data-subcategory="Table Tennis" data-link="/courses/tennis/table-tennis">
+            </span>
+                    <span data-subcategory="Tips" data-link="/courses/tennis/tips">
+            </span>
+              </div>
+          <div id="track-and-field_main-category">
+                    <span data-subcategory="Coaching Track & Field" data-link="/courses/track-and-field/coaching-track-field">
+            </span>
+                    <span data-subcategory="Discus" data-link="/courses/track-and-field/discus">
+            </span>
+                    <span data-subcategory="High Jump" data-link="/courses/track-and-field/high-jump">
+            </span>
+                    <span data-subcategory="Hurdles" data-link="/courses/track-and-field/hurdles">
+            </span>
+                    <span data-subcategory="Javelin" data-link="/courses/track-and-field/javelin">
+            </span>
+                    <span data-subcategory="Long Jump" data-link="/courses/track-and-field/long-jump">
+            </span>
+                    <span data-subcategory="Pole Vaulting" data-link="/courses/track-and-field/pole-vaulting">
+            </span>
+                    <span data-subcategory="Shot Put" data-link="/courses/track-and-field/shot-put">
+            </span>
+                    <span data-subcategory="Sports Performance" data-link="/courses/track-and-field/sports-performance">
+            </span>
+                    <span data-subcategory="Sprinting" data-link="/courses/track-and-field/sprinting">
+            </span>
+                    <span data-subcategory="Strength & Conditioning" data-link="/courses/track-and-field/strength-conditioning">
+            </span>
+                    <span data-subcategory="Triple Jump" data-link="/courses/track-and-field/triple-jump">
+            </span>
+              </div>
+          <div id="ultimate-frisbee_main-category">
+                    <span data-subcategory="Fundamentals" data-link="/courses/ultimate-frisbee/fundamentals">
+            </span>
+                    <span data-subcategory="Skills & Drills" data-link="/courses/ultimate-frisbee/skills-drills">
+            </span>
+              </div>
+          <div id="volleyball_main-category">
+                    <span data-subcategory="Coaching Volleyball" data-link="/courses/volleyball/coaching-volleyball">
+            </span>
+                    <span data-subcategory="Defense" data-link="/courses/volleyball/defense">
+            </span>
+                    <span data-subcategory="Drills" data-link="/courses/volleyball/drills">
+            </span>
+                    <span data-subcategory="Hitting/Attacking" data-link="/courses/volleyball/hitting-attacking">
+            </span>
+                    <span data-subcategory="Passing" data-link="/courses/volleyball/passing">
+            </span>
+                    <span data-subcategory="Serving" data-link="/courses/volleyball/serving">
+            </span>
+                    <span data-subcategory="Setting" data-link="/courses/volleyball/setting">
+            </span>
+                    <span data-subcategory="Strength & Conditioning" data-link="/courses/volleyball/strength-conditioning">
+            </span>
+              </div>
+          <div id="wrestling_main-category">
+                    <span data-subcategory="Wrestling Moves" data-link="/courses/wrestling/wrestling-moves">
+            </span>
+              </div>
+          <div id="yoga_main-category">
+                    <span data-subcategory="Core Training" data-link="/courses/yoga/core-training">
+            </span>
+                    <span data-subcategory="Fundamentals" data-link="/courses/yoga/fundamentals">
+            </span>
+              </div>
+          <div id="youth-coaching_main-category">
+                    <span data-subcategory="Coaching & Parenting" data-link="/courses/youth-coaching/coaching-parenting">
+            </span>
+                    <span data-subcategory="Sports-Based Youth Development" data-link="/courses/youth-coaching/sports-based-youth-development">
+            </span>
+              </div>
+      </div>
+
+
+    <script src="/press/js/AlGueHYkpPTXRnRTuViWEAJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/press/js/KoAFRcmpgUDROuQDlFYIwAJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+<script src="/press/js/KNQPAxYRXWlyvaFTEFRvXQJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+
+<link href="/press/css/ePRfkEDECVETYCUImxvgDgJJ.css" rel="stylesheet" type="text/css" charset="utf-8"></link>
+<script src="/press/js/CtDDXgZBZYyNmMmADwfRTwJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+<script src="/press/js/ZAnAQbeVoBRZPJPphDzDQwJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+<script src="/press/js/ERivTPxdcnGDCjbWuwZjZwJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+<script src="/press/js/ruYBAAaBtGAfmaFQvBAiAwJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+<script src="/press/js/XuwYxUMsEnUoVYqrjApXPAJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+<script src="/press/js/XLENZRwrfWNVbznmDERvQQJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationID":"12553054","applicationTime":108,"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"c487ba2c86","transactionName":"NVcDNxFXDEMDWkQIXwwdMQ8CTyFfDE1CDlwOVxMiAEILXwwWcw5FEEEEEDx1DV4WS18NXAdATxUKUxV+B05lE1w=","agent":"","errorBeacon":"bam.nr-data.net"}</script>
+<script src="/press/js/SfIGnkIZEEjJWEUKCMRRCwJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+<script src="/press/js/XMcpYCAFdRrUXlyhugRkDwJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+<script src="/press/js/sWVumZxsmBbYOsfXUqNiDQJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+<script src="/press/js/JJSgZwpbzWtDXOLWSQowRwJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+<script src="/press/js/LnEVgHMcQhArEYtWRReHHQJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+
+
+<script src="/press/js/CBIWiECpkmnlXFCLWvSmpwJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+
+
+<!-- <input id="loginUID" value="0" type="hidden" /> -->
+
+<!-- start Mixpanel --><script type="text/javascript">(function(e,a){if(!a.__SV){var b=window;try{var c,l,i,j=b.location,g=j.hash;c=function(a,b){return(l=a.match(RegExp(b+"=([^&]*)")))?l[1]:null};g&&c(g,"state")&&(i=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===i.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(i.desiredHash||"",e.title,j.pathname+j.search)))}catch(m){}var k,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};k="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(h=0;h<k.length;h++)e(d,k[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+mixpanel.init('735b848690aee9aa77732fce11db647a');</script><!-- end Mixpanel -->
+
+
+
+<!-- Tracking payload common for all events (will refresh from session to session) -->
+<script type="text/javascript">
+    if($) {
+        $(document).ready(function() {
+            mixpanel.reset();
+
+                    });
+    }
+</script>
+
+    <script>
+			window.intercomSettings = {
+			app_id: 'pk0jokfc'
+		};
+	</script> 
+
+	<script>
+		var isNotMobile = (window.innerWidth > 768);
+		
+		if(isNotMobile) {
+			(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/pk0jokfc';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+
+			window.intercomSettings.widget = { 
+				activator: "#IntercomDefaultWidget" 
+			};
+		}
+	</script>
+<script>
+	    $('.checkout-page-link,.book-free')
+        .off('click.datalayer')
+        .on('click.datalayer', function(e) {
+            e.preventDefault();
+            window.dataLayer = window.dataLayer || [];
+            dataLayer.push({
+                'event': 'addToCart',
+                'ecommerce': {
+                    'currencyCode': 'USD',
+                    'add': {
+                        'products': [{
+                            'name': 'World Cup Soccer',    
+                            'id': '12345',
+                            'price': '15.00',
+                            'category': 'Soccer',
+                            'quantity': 1
+                        }]
+                    }
+                }
+            });
+            
+            window.location = $(this).attr('href');
+        });
+</script>
+
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="//cdn.datatables.net/1.10.7/css/jquery.dataTables.min.css">
+<script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<script src="/press/js/XisIlqOigjVCJZTXSPvbsAJJ.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+
+<script>
+// Twitter stuff
+window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+</script>

@@ -1,0 +1,9 @@
+You are here: Home / Cyber Threat / McAfee discovered ‘malicious documents’ targeting Winter Olympics ahead of opening ceremony ‘hack’
+McAfee discovered ‘malicious documents’ targeting Winter Olympics ahead of opening ceremony ‘hack’
+February 12, 2018 Tagged With: Cyber Attacks , Cyber Security , Hacking , Malware
+The opening ceremonies of the Winter Olympics were subject to an attack on Friday, with the PyeongChang Organizing Committee for the 2018 Olympic & Paralympic Games (POCOG) confirming it experienced a cyber attack that caused a malfunction of the internet protocol televisions (IPTVs) at the Main Press Centre,  Yonhap News  reported over the weekend.
+According to the South Korean publication, POCOG said its servers were hacked by an “unidentified attacker” during the ceremony, and that it shut down the servers — and, as a result, its website — to prevent further damage. The website, which was shut down during the opening ceremony held on Friday, was switched back on at around 8am local time on Saturday.
+While the details are mostly unknown, McAfee Advanced Threat Research senior analyst Ryan Sherstobitoff said his teams found a new variant of the malicious documents targeting the Winter Games a few days prior to the opening ceremonies. “The new document contained the same metadata properties as those related to Operation GoldDragon, and sought to gain persistence on systems owned by organisations involved with the Winter Games,” Sherstobitoff said.
+Read more about how the 2018 Winter Olympics opening ceremonies were briefly impacted when servers belonging to Olympic organisers were hacked on ZDNet .
+Share this:
+

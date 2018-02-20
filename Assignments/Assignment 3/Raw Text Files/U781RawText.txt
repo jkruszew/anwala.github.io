@@ -1,0 +1,39 @@
+, Movable Media
+Newsletter Sign-up
+Go behind the scenes with the team responsible for capturing the upcoming Olympic Winter Games PyeongChang 2018 in 360-degree, stereoscopic virtual reality.
+While people all over the world celebrated the holidays, a team of technical engineers braved harsh winter weather and tight deadlines in preparation for broadcasting the XXIII Olympic Winter Games in virtual reality (VR).
+For the first time ever, broadcasters around the world will be able to air more than 30 Olympic events in live or on-demand VR, bringing fans and viewers closer to the action than ever before. In the U.S., the VR content will be part of NBC’s Olympics coverage, available via the NBC Sports VR app.
+It will mark the largest VR sports event in history.
+“This is a pretty big deal,” said Sankar (Jay) Jayaram, founder of True VR  and chief technology officer at Intel Sports .
+“The whole world is watching, and when the torch is lit, and the music for the opening ceremonies starts, we have to be ready to go.”
+ 
+The team spent the first part of December onsite in PyeongChang, South Korea, conducting the test build for the system. It basically served as the first VR dress rehearsal for the Olympic Winter Games.
+Braving low temperatures and a wind chill that felt like 20 degrees below zero, the team came together and tested the equipment, confirming that it’s all systems go when PyeongChang 2018 opens on Feb. 9.
+[Read: Gear Up: How to Watch the Olympic Winter Games PyeongChang 2018 in Virtual Reality ]
+Assembling the Equipment
+Most of the actual building consisted of collecting the servers that will do the back-end processing of the video for the VR broadcast. The servers were sent over from the U.S., so the team got them up and running at the broadcast center in PyeongChang.
+“We had planned to take it all down and put it into storage because we weren’t sure the broadcast center was going to be ready,” said Blake Rowe, Intel True VR implementation manager.
+But it was completed ahead of schedule, which meant that everything the team assembled for the test build can now stay in place, saving valuable time when the team returns.
+The True VR team set up multiple camera pods that will capture the action in nine Olympic venues.
+A dizzying amount of video — more than a terabyte an hour from each pod — is then sent via fiber optic cables to a technical operations center, where it will be processed into the 360-degree and 3D stereoscopic footage that fans will see.
+“We were able to leave all of the infrastructures in place in our space,” Rowe said. “So, when we go back there in January, we’ve got two days back already that we had previously allocated to resetting everything up. And, we’re really looking forward to just jumping right back in where we left off.”
+Testing the Global Network
+One major goal of the test build was to evaluate True VR’s global distribution network. With virtually every country in the world having a rooting interest in at least some of the events, the team needed to ensure that the signal could reliably reach every corner of the globe.
+“We tested the video distribution going from PyeongChang to Singapore,” Rowe said, “and then from Singapore across the world. We had teams in India and California and Spain viewing the stream and performing tests.”
+In total, the signal was sent to 10 different areas around the world, and it passed all tests with flying colors.
+“We really looked at it from a global perspective, which validated our setup,” Rowe said. “It provided real, positive results.”
+Visiting the Venues
+One benefit of traveling to PyeongChang for the test build was that it gave members of the team an in-person look at the locations, allowing them to make adjustments to the setup of the True VR camera pods. Locations for the pods were first selected remotely, based on venue blueprints sent by Olympic organizers.
+“The best surprise for us was the new camera positions we found for hockey,” Rowe said. The pod will be placed right in between the benches of both teams, giving viewers the chance to see what it’s like to sit on either bench or to watch players jump on and off the ice during line changes.
+“You’ll be on the boards, closer than the announcers are,” Rowe said.
+The team also found some new camera positions with unique perspectives within the crowds in biathlon and cross-country skiing.
+“It’s not only about the experience that you can get from the broadcast, but the experience you would get if you were there at the venue,” Rowe explained. “So we’re approaching it through that lens — what are the camera positions that would make it so you can be at home and feel as if you were there.”
+What’s Left?
+Work still continues at a feverish pace to get PyeongChang and the surrounding area ready for the Olympic Winter Games. The Olympic venues won’t be fully wired up for communications until the end of the month, so the process of getting the signal from the venue to the broadcast center had to be simulated during the test build.
+That means the testing of some of the long fiber runs won’t take place until the True VR team returns.
+“The crew is going to be working pretty hard,” Rowe said. “We’re covering such a vast space.”
+The longest continuous run of fiber is 61.5 miles (99 km), from the downhill skiing venue to the broadcast center. The shortest run is just a 1.2 mile (2 km) fiber connecting the broadcast center to the sliding venue, where luge, bobsled and skeleton will be held.
+Still, even with the work continuing on the fiber network, the test build gave the team useful information. The True VR team returns to South Korea two weeks prior to the opening ceremonies on Feb. 9. To pull off this historic VR event, 39 team members will be onsite, bringing the Olympic Winter Games PyeongChang 2018 to the world — or rather, bringing the world to The Winter Olympics — virtually.
+[Download the NBC Sports VR app: Oculus/GearVR | Daydream |  Windows Mixed Reality |  Android | iOS ]
+Share This Article
+

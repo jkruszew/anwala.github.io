@@ -1,0 +1,33 @@
+RICE or MEAT Protocol for Acute Ligament Sprain Treatment
+September 29, 2010
+Tweet
+Some Food For Thought
+The RICE protocol is widely advocated in the treatment of acute soft tissue injuries, and is therefore frequently utilised in the acute phase following most sports injuries. Whilst RICE should still be used in the case of acute muscle strains, given the potential for adverse consequences such as compartment syndrome, there are some who are suggesting that the RICE protocol has reduced efficacy in the management of acute ligament (and even tendon) sprains.
+Why is this so? Read on to find out.
+Unlike muscle tissues which have a large vascular supply, ligaments (and normal tendons) are largely avascular. Reduced blood and nutrient supply means that ligaments are more prone to delayed or incomplete healing, and may frequently cause chronic problems in the athlete. This is the proposed reason why RICE is effective in the management of acute muscle injuries, yet MEAT is more effective in acute ligament sprains.
+RICE, Rest, Ice, Compression, Elevation
+It may be suggested that use of the RICE protocol could inhibit healing and therefore delay recovery in those with an acute ligament sprains. How each component may be disadvantageous to rehabilitation is discussed:
+REST – Whilst rest should more accurately be taken as âRelative Restâ, some take this to the extreme. Complete rest would be disadvantageous for the treatment of most acute soft tissue injuries. The issue with complete rest or immobilisation is discussed later in the post.
+ICE – now this is a tough one. The use of ice following acute soft tissue injuries is a staple of the sports medicine world, and I for one am not going to disagree with its use. However, I will say this. The research regarding the clinical effectiveness of ice/cryotherapy is significantly lacking, and icing acute ligament injuries may not be as cool as everyone thinks (Bleakley et al. 2004). It is possible that the decreases in metabolic rates secondary to cryotherapy will slow rates of healing, leading to a slower recovery and RTP.
+COMPRESSION – I can see no feasible reason why those who strongly advocate the MEAT principle for acute ligament injuries would not want to utilise compression, given thatÂ  the compression used does not lead to immobilisation.
+ELEVATION – whilst elevation could reduce oedema and oedema associated issues (e.g. chemically mediated pain), elevation of an injured limb will reduce the circulation of blood to the limb. It is possible that this could slow the rates of healing, effectively prolonging recovery.
+Overview Of RICE vs MEAT
+MEAT – Movement, Exercise, Analgesics, Treatments
+MOVEMENT – controlled movement of the affected limb can stimulate blood flow, reduce the formation of inappropriately aligned collagen fibres (scar tissue), and effectively improve recovery. This is shown by Cochrane review which displayed the improved recovery in patients with ankle ligament sprains treated with functional treatments rather than immobilisation (Kerkhoffs et al. 2002). These patients had improved satisfaction, less swelling, and quicker RTW or RTP.
+EXERCISE – whilst exercise is a broad term, this is closely linked to movement (as above).Â  Controlled and appropriately prescribed exercises, I am sure all sports physiotherapists would agree, have the potential to enhance recovery. This is also research backed, Bleakley et al (2010) showed that the addition of ankle AROM, strength and sensorimotor exercises to standard RICE treatments improved function and weight-bearing in patients following acute ankle sprain.
+ANALGESICS – these should be utilised to control acute pain. This however does not include the use of anti-inflammatory medications, which inhibit the normal process of healing. It is suggested that natural analgesics, such as proteolytic enzymes, can assist with recovery (Rathgeber, 1971; Deitrick, 1965). Athletes with high levels of pain could also use narcotics (i.e. codeine) or other pain relievers.
+TREATMENTS – this suggests that the athlete should seek treatments such as physiotherapy (or physiotherapy) who may also utilise other modalities with the aim of stimulating blood flow and healing. I doubt I have any challenge selling the role of PT in this case. Physiotherapy may include various forms of EPA, despite their frequent lack of evidence basis. In the elite athlete with strict return to play time-frames, you may decide to utilise additional treatments like prolotherapy .
+Conclusion
+It is important to state that there is no decent research comparing the two treatment protocols, and both have clear positives and negatives. This is just âfood for thoughtâ. I would think that the majority of sports physiotherapists would never blindly follow the RICE or MEAT protocols in the treatment of any acute soft tissue injuries. Furthermore, I would suggest that the âGold-Standardâ or universally accepted management of many acute conditions would utilise components of both the RICE and MEAT protocols.
+What are your thoughts? Comment here, or catch me on Twitter or Facebook .
+Links
+For your Sports Physiotherapy textbook and DVD needs be sure to check out our Online Store .
+References
+Bleakley C, McDonough S, MacAuley D. The use of ice in the treatment of acute soft-tissue injury: a systematic review of randomized controlled trials. Am J Sport Med. 2004; 32:251â261.
+Bleakley CT, OâConnor SR, Tully MA, Rocke LG, MacAuley D, Bradbury I, et al (2010). Effect of accelerated rehabilitation on function after ankle sprain: randomised controlled trial. BMJ 340
+Caring Medical and Rehabilitation Services (2010). MEAT vs RICE Treatments. Retrieved from http://www.caringmedical.com/symptoms/meatvsrice.asp
+Deitrick RE. Oral Proteolytic Enzymes in the treatment of athletic injuries: a double-blind study. Pa Med.1965;68:35-37.
+Rathgeber WF. The use of proteolytic enzymes (Chymoral) in sporting injuries. S Afr Med J. 1971;45:181-183.
+Kerkhoffs GMMJ, Rowe BH, Assendelft WJJ, Kelly KD, Struijs PAA, van Dijk CN. Immobilisation and functional treatment for acute lateral ankle ligament injuries in adults. Cochrane Database of Systematic Reviews 2002, Issue 3.
+Related Posts
+

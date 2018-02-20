@@ -1,0 +1,17 @@
+Winter Olympics Site Taken Out for 12 Hours
+Phil Muncaster UK / EMEA News Reporter , Infosecurity Magazine
+Follow @philmuncaster
+Visitors to the official website of the Winter Olympics were left high and dry over the weekend after a cyber-attack made it unavailable for around 12 hours.
+The incident happened shortly before the opening ceremony on Friday, with the issue only resolved by 8am the next day local time.
+Reports suggest Wi-Fi connectivity and televisions in the media center also went down ahead of the ceremony.
+Pyeongchang 2018 spokesperson Sung Baik-you confirmed the incident was a cyber-attack and that the cause was known.
+“They know what happened and this is a usual thing during the Olympic Games. We are not going to reveal the source,” he told reporters .
+“We are taking secure operations and, in line with best practice, we’re not going to comment on the issue because it is an issue that we are dealing with.”
+Given North Korea’s recent warming of ties with the south, all eyes are on Russia, whose Olympic committee and nearly 200 athletes were banned from the games back in December after being found guilty of widespread state-sponsored doping at the Sochi games.
+The Kremlin-linked Fancy Bear group has already been spott ed ramping up its information warfare efforts, aimed at discrediting the games.
+The website outage isn’t the only cyber-attack causing problems for event organizers.
+McAfee researchers have confirmed discovery of a new variant of malware being targeted at individuals within key organizations as part of Operation GoldDragon.
+“The new document contained the same metadata properties as those related to Operation GoldDragon and sought to gain persistence on systems owned by organizations involved with the Winter Games,” said senior analyst, Ryan Shertsobitoff.
+“It is clear attacks are ongoing and are likely to continue throughout the duration of the games, what is yet to be determined is if actors are working simply to gain disruption or if their motives are greater. McAfee analysts are continuing to monitor the situation.”
+Why Not Watch?
+

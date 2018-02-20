@@ -1,0 +1,19 @@
+Home / Sports Analytics / Playgineering Makes Sports Analytics Affordable
+Playgineering Makes Sports Analytics Affordable
+Pin It
+Updated: February 12, 2018
+Not every football club has pockets as deep as Real Madrid. Similarly, not every American football league has the tools available to coaches that the NFL has. Playgineering Systems wants to level the proverbial playing field. Led by CEO and founder, Richard Fomrats, the technology pioneers offer four different solutions for every professional sports team or league. They don’t see in-game analysis as a big-league luxury. Instead, they believe in analytics for everyone.
+Covering both indoor sports like ice hockey, handball, basketball, and floorball as well as outdoor sports like rugby and football, their proprietary technology allows them to offer a wide range of options from streaming content for fans at away games to real-time player and ball tracking.
+They project began because Fomrats wanted to explore goal line solutions for hockey. Anyone who has ever watched a hockey game or football match knows that millimeters can make a difference between a win and a loss. With a passion to solve a seemingly never-ending problem, Fomrats and his team began to seek out opinions of technology experts and those involved in the sports industry.
+They quickly discovered that merging such topics like Machine Learning, Computer Vision, and Artificial Intelligence, they could offer an increased entertainment value to teams and their fans. Fomrats also saw the growing market for analytics that could be offered to coaching and training staffs.
+4 Major Packages
+The team at Playgineering has since developed PlayAnalytics, PlayEntertainment, PlayEntertainment Lite, and PlayReferee. As the names imply, PlayAnalytics offers in-game, real-time statistics and tag-less player and ball (or puck) tracking. The non-intrusive nature of the tag-less system is what could realistically be the future of such player tracking, and is accomplished through IP camera technology.
+Both PlayEntertainment and its pared-down Lite version offer solutions for budget-friendly game filming, with the full version boasting of a fully automated, operator-free experience. Pushing the envelope, Playgineering allows teams to use robotic cameras in order to an HD streaming viewing experience, even if the team or federation doesn’t have a ton of manpower to employ for broadcasting the important match.
+Lastly, PlayReferee is the option that started it all. It connects in-net cameras for hockey and football to an operations room so that league officials can review and rule on any questionable calls. It removes any doubt that the on-court ref may have.
+The team at Playgineering brings customizable solutions to mid-level leagues that improve the quality of play and the entertainment level not only of those watching in the arena, but also those watching in the comfort of their living room.
+Fomrats told Sports Technology Today, “Pricing for real-time player and ball tracking that generates all the statistics and analytics on the coach’s tablet starts for less than $2000 per month according to our 2018 price list.” 
+Tackling North America
+They’ve already got projects that span Europe, Russia, and Asia and have opened up a field office in Chicago. Playgineering has already placed North America firmly on their radar for 2018. Canada’s ice hockey cultures dovetails well into Playgineering’s system and easy setup.
+When asked about medium to long-range goals, Fomrats stated they wanted to become the “a dominating worldwide provider of automated analytics in the small to medium sports market for 5 of the 10 most popular team sports.”
+If they can continue to make their technology affordable, they have a promising future. 
+

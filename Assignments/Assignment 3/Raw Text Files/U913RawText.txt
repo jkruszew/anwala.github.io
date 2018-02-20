@@ -1,0 +1,17 @@
+February 12, 2018 6:47 AM PST
+A scene from the opening ceremony of the PyeongChang 2018 Winter Olympic Games
+VCG/Getty
+Reports in January from cybersecurity company McAfee said that organizations associated with the Pyeongchang Winter Olympics were targeted by a hacking "campaign." Perhaps unsurprisingly, that wasn't the last cyberattack aimed at the Winter Olympics.
+Officials confirmed Sunday that the Winter Games were hit by a cyberattack during Friday's opening ceremony, though they opted not to reveal the attackers.
+"We know the cause of the problem but that kind of issue occurs frequently during the Games. We decided with the [International Olympics Committee] we are not going to reveal the source," Pyeongchang organizing committee spokesman Sung Baik-you told reporters, according to Reuters . "All issues were resolved and recovered [Saturday] morning."
+The attack crashed some of the Winter Games' internal servers as well as the public Wi-Fi , according to South Korea's Yonhap News Agency , which led to some people being unable to print out their tickets for the show. 
+The cyberattack was meant to cause chaos, and not driven by espionage or financial gains, security researchers from Cisco's Talos Intelligence Group said Monday after analyzing the data.
+The malware's codes showed that there was no data being siphoned from the Olympic games' servers, meaning that the attackers were not interested in stealing passwords or communications from officials during the global gathering.
+The 'Destructor' cyberattack
+One of the attacks, which Cisco is calling "Destructor," actually made sure no information could be taken, as the malware focused on deleting all data and copies of it on the Olympic servers. It attacked the recovery process and deleted all traces of the servers' memory, the researchers said. 
+"Wiping all available methods of recovery shows this attacker had no intention of leaving the machine useable," Cisco researchers Warren Mercer and Paul Rascagneres said in the blog post. "The sole purpose of this malware is to perform destruction of the host and leave the computer system offline."
+The attack's effects did not last long. Servers at the Olympic Games were back up within 12 hours.
+Further analysis of the attack suggested that the Winter Olympics' servers might have been compromised long before the opening ceremony. The malware was able to spread through the system because the hackers behind it had inside information, including usernames, passwords and server names, the researchers said. 
+It's still unclear who was behind the attacks, but the goal, based on the malware analysis, was to disrupt the Olympics.
+Related stories
+

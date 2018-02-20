@@ -1,0 +1,558 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Skrnsson takes gold in Uphill Nordic Skjord</title>
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1059.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://www.thedailymash.co.uk/wp-content/themes/mashtastic-new-front-2016/style.css?25-10-17-3" type="text/css" media="screen" />
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WL66BM');</script><link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+
+<script type='text/javascript' data-cfasync='false'>
+  //<![CDATA[
+    _SHR_SETTINGS = {"endpoints":{"local_recs_url":"http:\/\/www.thedailymash.co.uk\/wp-admin\/admin-ajax.php?action=shareaholic_permalink_related"},"url_components":{"year":"2018","monthnum":"02","day":"10","post_id":"144051","postname":"skrnsson-takes-gold-in-uphill-nordic-skjord-2","author":"nicename3"}};
+  //]]>
+</script>
+<script type='text/javascript' data-cfasync='false' src='//apps.shareaholic.com/assets/pub/shareaholic.js' data-shr-siteid='00084367554255f27c6033759db6e153' async='async'>
+</script>
+
+<meta name='shareaholic:site_name' content='The Daily Mash' />
+<meta name='shareaholic:language' content='en-US' />
+<meta name='shareaholic:url' content='http://www.thedailymash.co.uk/sport/sport-headlines/skrnsson-takes-gold-in-uphill-nordic-skjord-2-20180210144051' />
+<meta name='shareaholic:keywords' content='sport headlines, post' />
+<meta name='shareaholic:article_published_time' content='2018-02-10T07:50:41+00:00' />
+<meta name='shareaholic:article_modified_time' content='2018-02-15T13:54:27+00:00' />
+<meta name='shareaholic:shareable_page' content='true' />
+<meta name='shareaholic:article_author_name' content='NRafferty' />
+<meta name='shareaholic:site_id' content='00084367554255f27c6033759db6e153' />
+<meta name='shareaholic:wp_version' content='8.6.2' />
+<meta name='shareaholic:image' content='http://www.thedailymash.co.uk/images/stories/skier-copy.jpg' />
+
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.thedailymash.co.uk\/wp-includes\/js\/wp-emoji-release.min.js?ver=39ace10cceca567a800668f19189902e"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='eu-cookie-directive-css' href='http://www.thedailymash.co.uk/wp-content/plugins/eu-cookie-directive/style.css?ver=39ace10cceca567a800668f19189902e' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css' href='http://www.thedailymash.co.uk/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0' type='text/css' media='all' />
+<link rel='stylesheet' id='touchcarousel-frontend-css-css' href='http://www.thedailymash.co.uk/wp-content/plugins/touchcarousel/touchcarousel/touchcarousel.css?ver=39ace10cceca567a800668f19189902e' type='text/css' media='all' />
+<link rel='stylesheet' id='touchcarousel-skin-white-inside-css' href='http://www.thedailymash.co.uk/wp-content/plugins/touchcarousel/touchcarousel/white-inside-skin/white-inside-skin.css?ver=39ace10cceca567a800668f19189902e' type='text/css' media='all' />
+<link rel='stylesheet' id='touchcarousel-skin-minimal-light-css' href='http://www.thedailymash.co.uk/wp-content/plugins/touchcarousel/touchcarousel/minimal-light-skin/minimal-light-skin.css?ver=39ace10cceca567a800668f19189902e' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-email-css' href='http://www.thedailymash.co.uk/wp-content/plugins/wp-email/email-css.css?ver=2.67.5' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css' href='http://www.thedailymash.co.uk/wp-content/plugins/jetpack/css/jetpack.css?ver=5.8' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.thedailymash.co.uk/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://www.thedailymash.co.uk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://www.thedailymash.co.uk/wp-content/plugins/touchcarousel/touchcarousel/jquery.touchcarousel.min.js?ver=1.0'></script>
+<script type='text/javascript' src='http://www.thedailymash.co.uk/wp-content/themes/mashtastic-new-front-2016/js/main.js'></script>
+<link rel='https://api.w.org/' href='http://www.thedailymash.co.uk/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.thedailymash.co.uk/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.thedailymash.co.uk/wp-includes/wlwmanifest.xml" />
+<link rel='prev' title='Woman hires Mafia hitman to execute her if she doesn’t stick to diet' href='http://www.thedailymash.co.uk/news/health/woman-hires-mafia-hitman-to-execute-her-if-she-doesnt-stick-to-diet-20180209144119' />
+<link rel='next' title='Five quirky things to do instead of having a personality' href='http://www.thedailymash.co.uk/features/five-quirky-things-to-do-instead-of-having-a-personality-20180210144131' />
+<link rel="canonical" href="http://www.thedailymash.co.uk/sport/sport-headlines/skrnsson-takes-gold-in-uphill-nordic-skjord-2-20180210144051" />
+<link rel='shortlink' href='https://wp.me/p4OdUM-Btp' />
+<link rel="alternate" type="application/json+oembed" href="http://www.thedailymash.co.uk/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.thedailymash.co.uk%2Fsport%2Fsport-headlines%2Fskrnsson-takes-gold-in-uphill-nordic-skjord-2-20180210144051" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.thedailymash.co.uk/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.thedailymash.co.uk%2Fsport%2Fsport-headlines%2Fskrnsson-takes-gold-in-uphill-nordic-skjord-2-20180210144051&#038;format=xml" />
+<script>/* <![CDATA[ */ portfolio_slideshow = { options : {"psHash":false,"psLoader":false}, slideshows : new Array() }; /* ]]> */</script>
+<link rel='dns-prefetch' href='//v0.wordpress.com' />
+<style type='text/css'>img#wpstats{display:none}</style> <style type="text/css">
+		.touchcarousel.tc-layout-2 .touchcarousel-item {
+	width: 652px;
+	height: 270px;
+	position: relative;
+	background: #2c2d2e;
+	margin-right: 10px;
+	overflow: hidden;
+}
+.touchcarousel.tc-layout-2 .tc-desc {
+	width: 222px;
+	padding: 10px 15px;
+	color: #FFF;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	display: block;
+	float: left;
+}
+.touchcarousel.tc-layout-2 .tc-image-holder {
+	display: block;
+	width: 400px;
+	height: 270xp;
+	float: left;
+}
+.touchcarousel.tc-layout-2 h4 a {
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: bold;
+	color: #FFF;
+	border: 0;
+	text-decoration: none;
+}
+.touchcarousel.tc-layout-2 .tc-meta a,
+.touchcarousel.tc-layout-2 .tc-meta span {
+	font-size: 12px;
+	font-weight: normal;
+	color: #e3e5e3;
+	font-family: Georgia, serif;
+	font-style: italic;
+}
+.touchcarousel.tc-layout-2 span {
+	color: #FFF;
+}
+.touchcarousel.tc-layout-2 p {
+	color: #EEE;
+	font-size: 14px;
+	line-height: 16px;
+	margin: 7px 0 2px 0;
+	pading: 0;
+}
+.touchcarousel.tc-layout-2 a img {
+	max-width: none;
+	margin: 0;
+	padding: 0;
+}
+.touchcarousel.tc-layout-4 .touchcarousel-item {
+	width: 208px;
+	height: 250px;
+	margin-right: 14px;
+	position: relative;
+	overflow: hidden;
+	
+
+}
+.touchcarousel.tc-layout-4 .touchcarousel-item p {
+	margin: 0;
+	padding: 0;
+}
+.touchcarousel.tc-layout-4 .touchcarousel-item .color-block{
+        background: #ebf3f3;
+        padding-bottom:3px;
+}
+.touchcarousel.tc-layout-4 .touchcarousel-item a.tc-state {
+	display: block;
+	width: 208px;
+	min-height: 170px;
+	position: relative;
+	text-decoration: none;
+	color: #3e4245;
+	
+	-webkit-transition: color 0.2s ease-out; 
+    -moz-transition: color 0.2s ease-out;  
+    -ms-transition: color 0.2s ease-out; 
+    -o-transition: color 0.2s ease-out; 
+    transition: color 0.2s ease-out;
+}
+.touchcarousel.tc-layout-4 .touchcarousel-item img {
+	max-width: none;
+	border: 0;
+	margin: 0;
+}
+.touchcarousel.tc-layout-4 .touchcarousel-item img, 
+.touchcarousel.tc-layout-4 .touchcarousel-item h4,
+.touchcarousel.tc-layout-4 .touchcarousel-item span {
+	position: relative;
+	margin: 0;
+	padding: 0;	
+	border: 0;			
+}
+.touchcarousel.tc-layout-4 .tc-block {
+	margin: 0 0px 0px 0px
+}
+
+.touchcarousel.tc-layout-4 .touchcarousel-item h4 {
+	font-size: 14px;
+	line-height: 1.4em;
+	padding: 0;
+	text-decoration: none;
+	font-family: 'Helvetica Neue', Arial, serif;
+	
+
+}
+.touchcarousel.tc-layout-4 .touchcarousel-item a.tc-state:hover {
+	color: #13937a;
+}
+.touchcarousel.tc-layout-4 .touchcarousel-item span {
+	font-size: 12px;
+	color: #666;
+}
+		</style>
+
+<meta property="fb:app_id" content="240526712627663" />
+<meta property="og:url" content="http://www.thedailymash.co.uk/sport/sport-headlines/skrnsson-takes-gold-in-uphill-nordic-skjord-2-20180210144051?utm_campaign=shareaholic&#038;utm_medium=twitter&#038;utm_source=socialnetwork" />
+<meta property="og:title" content="Skrnsson takes gold in Uphill Nordic Skjord" />
+<meta property="og:site_name" content="The Daily Mash" />
+<meta property="og:description" content="FINLAND&#039;S Rinsu Skrnsson defended his Olympic title last night, taking gold in the 2x4000 Uphill Nordic Skjord." />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="http://www.thedailymash.co.uk/images/stories/skier-copy.jpg" />
+<meta property="og:image" content="http://www.thedailymash.co.uk/images/stories/skier-1.jpg" />
+<meta property="og:locale" content="en_us" />
+
+
+<script type="text/javascript" src="http://apis.google.com/js/plusone.js">
+  		{lang: 'en-GB'}
+	</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script><script type="text/javascript">stLight.options({publisher:'5ee42a3e-53b7-4909-b246-b8947d9d7a17'});</script>
+<!--[if lt IE 7]>
+		<link rel="stylesheet" type="text/css" href="css/lt7.css" media="all" />
+		<script type="text/javascript" src="js/ie-hover.js"></script>
+	<![endif]-->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1694257-1', 'auto');
+  ga('send', 'pageview');
+	</script>
+<script src="https://apis.google.com/js/platform.js" async defer>
+  {lang: 'en-GB'}
+</script>
+
+<script>(function(src){var a=document.createElement("script");a.type="text/javascript";a.async=true;a.src=src;var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})("https://experience.tinypass.com/xbuilder/experience/load?aid=zal9xGNryV");</script>
+<script language="javascript" type="text/javascript">
+	if (window!= top) top.location.href = location.href;
+	</script>
+<script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script>
+						var googletag = googletag || {};
+						googletag.cmd = googletag.cmd || [];
+					</script>
+<script>
+						googletag.cmd.push(function() {
+							googletag.defineSlot('/4183072/TheDailyMash_ROS_1x1', [1, 1], 'div-gpt-ad-1470952792486-0').addService(googletag.pubads());
+							googletag.defineSlot('/4183072/TheDailyMash_ROS_BANNER', [[1, 1], [728, 90], [320, 50], [320, 100], [970, 250]], 'div-gpt-ad-1470952792486-1').addService(googletag.pubads());
+							//googletag.defineSlot('/4183072/TheDailyMash_ROS_BANNER', [[1, 1], [728, 90], [320, 50], [970, 250]], 'div-gpt-ad-1470952792486-1').addService(googletag.pubads());
+							googletag.defineSlot('/4183072/TheDailyMash_ROS_MPU', [[300, 250], [300, 600]], 'div-gpt-ad-1470952792486-2').addService(googletag.pubads());
+							googletag.defineSlot('/4183072/TheDailyMash_ROS_BTF_MPU', [[300, 250], [300, 600]], 'div-gpt-ad-1470952792486-3').addService(googletag.pubads());
+							googletag.defineSlot('/4183072/TheDailyMash_ROS_Interscroller', [1, 1], 'div-gpt-ad-1470952792486-4').addService(googletag.pubads());
+							googletag.defineSlot('/4183072/TheDailyMash_ROS_InFeed', [1, 1], 'div-gpt-ad-1470952792486-5').addService(googletag.pubads()); // Test
+							googletag.pubads().enableSingleRequest();
+							googletag.pubads().collapseEmptyDivs();
+							googletag.enableServices();
+						});
+					</script>
+<li id="php_widget-44" class="widget php_widget hidden"><script type="text/javascript">
+  window._taboola = window._taboola || [];
+  !function (e, f, u) {
+    e.async = 1;
+    e.src = u;
+    f.parentNode.insertBefore(e, f);
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  'http://cdn.taboola.com/libtrc/thedailymash/loader.js');
+</script></li>
+</head>
+<body id='story'>
+
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NXKQV3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NXKQV3');</script>
+
+
+<script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "15546538" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=15546538&cv=2.0&cj=1" />
+</noscript>
+
+<div id="wrapper">
+<div id="header">
+<div class="MenuTriggerBox"><a href="#" class="MobileNavTrigger">&nbsp;</a></div>
+<a href="/" class="mobile_logo">the dailymash</a>
+<div class="MobileNav" id="MobileNav">
+<a href="#" class="MobileClose"></a>
+<div class="menu-mobile-menu-container"><ul id="menu-mobile-menu" class="menu"><li id="menu-item-103142" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-103142"><a href="http://www.thedailymash.co.uk/shop">Shop</a></li>
+<li id="menu-item-19971" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19971"><a href="http://www.thedailymash.co.uk/news/society">Society</a></li>
+<li id="menu-item-19972" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19972"><a href="http://www.thedailymash.co.uk/news/business">Business</a></li>
+<li id="menu-item-19973" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19973"><a href="http://www.thedailymash.co.uk/news/arts-entertainment">Arts &#038; Entertainment</a></li>
+<li id="menu-item-19974" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19974"><a href="http://www.thedailymash.co.uk/news/celebrity">Celebrity</a></li>
+<li id="menu-item-19975" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19975"><a href="http://www.thedailymash.co.uk/news/health">Health</a></li>
+<li id="menu-item-19976" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19976"><a href="http://www.thedailymash.co.uk/news/international">International</a></li>
+<li id="menu-item-19977" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19977"><a href="http://www.thedailymash.co.uk/news/science-technology">Science &#038; Technology</a></li>
+<li id="menu-item-19978" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-19978"><a href="http://www.thedailymash.co.uk/sport/sport-headlines">Sport</a></li>
+<li id="menu-item-19979" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19979"><a href="http://www.thedailymash.co.uk/politics/politics-headlines">Politics</a></li>
+<li id="menu-item-19985" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19985"><a href="http://www.thedailymash.co.uk/news/war">War</a></li>
+<li id="menu-item-19984" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19984"><a href="http://www.thedailymash.co.uk/news/environment">Environment</a></li>
+<li id="menu-item-19981" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19981"><a href="http://www.thedailymash.co.uk/animals/animals-headlines">Animals</a></li>
+<li id="menu-item-19980" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19980"><a href="http://www.thedailymash.co.uk/opinion/columnists">Columnists</a></li>
+<li id="menu-item-19982" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19982"><a href="http://www.thedailymash.co.uk/features/agony-aunt">Agony Aunt</a></li>
+<li id="menu-item-19983" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19983"><a href="http://www.thedailymash.co.uk/features/horoscopes">Horoscopes</a></li>
+<li id="menu-item-19986" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-19986"><a href="http://www.thedailymash.co.uk/news/in-pictures">In Pictures</a></li>
+</ul></div> </div>
+<div class="header_top">
+<div class="header_share">
+<div class="header_apps">
+<a href="http://itunes.apple.com/gb/app/the-daily-mash/id372388455?mt=8"><img src="/images/icons/apple.png" /></a>
+<a href="https://market.android.com/details?id=com.igprojects.dailymash"><img src="/images/icons/droid_50.jpg" /></a>
+</div>
+<div class="header_search">
+<div class="search_form">
+<form action="http://www.thedailymash.co.uk/" method="get">
+<fieldset>
+<span class="text">
+<input type="text" class="field" name="s" id="s" onblur="if(this.value=='') this.value='Search the mash';" onfocus="if(this.value=='Search the mash') this.value='';" value="Search the mash" />
+</span>
+<input type="submit" class="submit" id="searchsubmit" value="Search" />
+</fieldset>
+</form>
+</div>
+</div>
+<div class="share_buttons">
+<div class="header_google smService">
+<div class="g-follow" data-annotation="bubble" data-height="24" data-href="https://plus.google.com/111286782033201408330" data-rel="publisher"></div>
+</div>
+<div class="header_twitter smService">
+<a href="http://twitter.com/thedailymash" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false">Follow</a>
+<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+</div>
+<div class="header_facebook smService">
+<iframe src="http://www.facebook.com/plugins/like.php?app_id=120873814667108&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FThe-Daily-Mash%2F28373121592&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+</div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div id="top-banner" class="InSkinHide">
+<center>
+<ul><li id="mash-banner-widget-2" class="widget mash_banner"> 
+<div id='div-gpt-ad-1470952792486-0' style='height:1px; width:1px;'>
+<script>
+							googletag.cmd.push(function() { googletag.display('div-gpt-ad-1470952792486-0'); });
+						</script>
+</div>
+
+<div id='div-gpt-ad-1470952792486-1'>
+<script>
+							googletag.cmd.push(function() { googletag.display('div-gpt-ad-1470952792486-1'); });
+						</script>
+</div>
+</li>
+</ul>
+</center>
+</div>
+<div class="logo_container">
+<div class="header_weather">
+<img src='/wp-content/themes/mashtastic/images/weather2.png' /> <div class="weather-start">weather | </div> </div>
+<h1 class="logo"><a href="/">the dailymash</a></h1>
+<div class="header_date">
+Monday, 19 February 2018 </div>
+<div class="clear"></div>
+</div>
+<div class="navbar">
+<div class="menu-main-menu-container"><ul id="nav" class="menu"><li id="menu-item-10000" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="/">Home</a></li>
+<li id="menu-item-10001" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children havechild"><a href="http://www.thedailymash.co.uk/news">News</a><div class='drop'>
+<ul class="sub-menu">
+<li id="menu-item-10009" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.thedailymash.co.uk/news/society">Society</a></li>
+<li id="menu-item-10007" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.thedailymash.co.uk/news/international">International</a></li>
+<li id="menu-item-10010" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.thedailymash.co.uk/news/war">War</a></li>
+<li id="menu-item-10003" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.thedailymash.co.uk/news/business">Business</a></li>
+<li id="menu-item-10005" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.thedailymash.co.uk/news/environment">Environment</a></li>
+<li id="menu-item-10006" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.thedailymash.co.uk/news/health">Health</a></li>
+<li id="menu-item-10008" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.thedailymash.co.uk/news/science-technology">Science &#038; Technology</a></li>
+<li id="menu-item-10002" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.thedailymash.co.uk/news/arts-entertainment">Arts &#038; Entertainment</a></li>
+<li id="menu-item-10004" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.thedailymash.co.uk/news/celebrity">Celebrity</a></li>
+<li id="menu-item-42207" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.thedailymash.co.uk/news-in-pictures/news-briefly">News Briefly</a></li>
+</ul>
+</div>
+</li>
+<li id="menu-item-10014" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor"><a href="http://www.thedailymash.co.uk/sport">Sport</a></li>
+<li id="menu-item-10013" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.thedailymash.co.uk/politics">Politics</a></li>
+<li id="menu-item-10012" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.thedailymash.co.uk/opinion">Opinion</a></li>
+<li id="menu-item-10015" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.thedailymash.co.uk/features/agony-aunt">Agony Aunt</a></li>
+<li id="menu-item-10016" class="menu-item menu-item-type-taxonomy menu-item-object-category"><a href="http://www.thedailymash.co.uk/features/horoscopes">Psychic Bob</a></li>
+<li id="menu-item-10017" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="http://www.thedailymash.co.uk/shop">Shop</a></li>
+<li id="menu-item-10018" class="menu-item menu-item-type-custom menu-item-object-custom"><a href="http://thedailymashdates.co.uk/">Humping</a></li>
+<li id="menu-item-47860" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://www.thedailymash.co.uk/mash-books">Mash Books</a></li>
+</ul></div>
+</div>
+</div>
+<div id="main">
+<div id="content">
+<div class="NoMobile"><iframe src="http://www.facebook.com/plugins/like.php?app_id=120873814667108&amp;href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FThe-Daily-Mash%2F28373121592&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe><br /><br /></div>
+<div class="full_intro">
+<h2>Skrnsson takes gold in Uphill Nordic Skjord</h2>
+<div class="date">10-02-18</div>
+</div>
+<div class="fullstory">
+<p class="no-space"></p>
+<p><a href="http://www.thedailymash.co.uk/sport/sport-headlines/skrnsson-takes-gold-in-uphill-nordic-skjord-2-20180210144051/attachment/skier-2" rel="attachment wp-att-144052"><img class="alignnone size-full wp-image-144052" src="http://www.thedailymash.co.uk/images/stories/skier-1.jpg" alt="" width="425" height="290" srcset="http://www.thedailymash.co.uk/images/stories/skier-1.jpg 425w, http://www.thedailymash.co.uk/images/stories/skier-1-176x120.jpg 176w, http://www.thedailymash.co.uk/images/stories/skier-1-396x270.jpg 396w, http://www.thedailymash.co.uk/images/stories/skier-1-300x205.jpg 300w" sizes="(max-width: 425px) 100vw, 425px" /></a></p>
+<p><strong>FINLAND&#8217;S Rinsu Skrnsson defended his Olympic title last night, taking gold in the 2&#215;4000 Uphill Nordic Skjord.</strong></p>
+<p>Skrnsson finished the course in a time of 16 hours, 28 seconds and 14 trees, just two-one hundredths of a tree ahead of Swedish rival Grunter Halbordshmardonson.</p>
+<p>It completed a day of mixed fortunes for the Finns after Hedia Trykkso and Bippi Hylvs were disqualified from the Chamsark Ice Fluting after a flagrant triple byerk.</p>
+<p>Video replays revealed that when the Bilsu was roasted, Trykkso and Hylvs both had their trumschlack 15mm over the Bilsunterlandergeschaft line.</p>
+<p>Team captain Smatta Fanishuk said: &#8220;The girls have worked on their in-line byuutobarg for four years, only to double skrntarg as soon as the whistle was blown.</p>
+<p>&#8220;But we are delighted for Rinsu. He has been skjording since he was old enough to strap on a pair of kruntterappartongs.&#8221;</p>
+<p>Meanwhile an unpronounceable shadow has been cast over the games after a Norwegian competitor tested positive for moose adrenalin.</p>
+<p>Asbjorn Aasgjaraaabdye was stripped of his gold after breaking the world record in Endurance Husky Freggling with an incredible average of 8.72 hounds per kilometre.</p>
+<p>But despite Aasgjaraaabdye-gate the organisers insist the games have got off to a strong start with large audiences attending the Women&#8217;s Pjoostal Smerdvig and the much anticipated semi-final of upside down donkeys on ice.</p>
+<div id='home-read-more' class='read-more' style='margin-bottom:1px;'><div class='pager'><div class='prev'><a href="http://www.thedailymash.co.uk/features/five-quirky-things-to-do-instead-of-having-a-personality-20180210144131" rel="next">&lt;&nbsp;PREV</a></div><div class='next'><a href="http://www.thedailymash.co.uk/news/health/woman-hires-mafia-hitman-to-execute-her-if-she-doesnt-stick-to-diet-20180209144119" rel="prev">NEXT&nbsp;&gt;</a></div></div>
+</div> </div>
+<ul id="aside">
+<li id="php_widget-5" class="widget php_widget"><div id="share_top">
+<div class="icons">
+<p>Share:</p>
+<div class="share_this">
+<span class="st_sharethis" displayText=""></span>
+</div>
+<div class="email_button">
+<a href="http://www.thedailymash.co.uk/sport/sport-headlines/skrnsson-takes-gold-in-uphill-nordic-skjord-2-20180210144051/emailpopup/" onclick="email_popup(this.href); return false;" title="Email This Story" rel="nofollow"><img class="WP-EmailIcon" src="http://www.thedailymash.co.uk/wp-content/plugins/wp-email/images/email_famfamfam.png" alt="Email This Story" title="Email This Story" style="border: 0px;" /></a>
+</div>
+<div class="print_button">
+<a href="/?p=144051&print=1" target="_blank" onclick="window.open('/?p=144051&print=1','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=680,height=480,directories=no,location=no'); return false;" title="Print">
+<img src="http://www.thedailymash.co.uk/templates/ja_mercury/images/printButton.png" alt="Print" name="Print" align="middle" border="0" /></a>
+</div>
+<div class="clear"></div>
+</div>
+<SCRIPT LANGUAGE="JavaScript">document.write("<div class=\"fb_like\"><iframe src=\"http:\/\/www.facebook.com\/plugins\/like.php?href="+document.URL+"&layout=button_count&show_faces=false&width=80&action=like&font=verdana&colorscheme=light\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:200px; height:39px\" allowTransparency=\"true\"><\/iframe><\/div>");
+</SCRIPT>
+<div class="retweet_container">
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+</div>
+<div class="google_plus_one">
+<g:plusone size="medium"></g:plusone>
+</div>
+</div> </li>
+</ul>
+<ul id="bottom_modules">
+<li id="php_widget-64" class="widget php_widget"> 
+<div id='div-gpt-ad-1470952792486-5'>
+<script>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1470952792486-5'); });
+            </script>
+</div>
+</li>
+<li id="wysiwyg_widgets_widget-10" class="widget widget_wysiwyg_widgets_widget"><h2 class="widgettitle"><span class="widget-main-title"></span> </h2>
+<div class='shareaholic-canvas' data-app-id='13060298' data-app-id-name='' data-app='share_buttons' data-title='Skrnsson takes gold in Uphill Nordic Skjord' data-link='http://www.thedailymash.co.uk/sport/sport-headlines/skrnsson-takes-gold-in-uphill-nordic-skjord-2-20180210144051' data-summary='FINLAND&#039;S Rinsu Skrnsson defended his Olympic title last night, taking gold in the 2x4000 Uphill Nordic Skjord.'></div>
+</li>
+<li id="php_widget-47" class="widget php_widget double-column"><div class="TaboolaDesktop TestTD">
+<div id="taboola-below-article-thumbnails-desktop"></div>
+<script type="text/javascript">
+                window._taboola = window._taboola || [];
+                    _taboola.push({
+                        mode: 'thumbnails-e',
+                        container: 'taboola-below-article-thumbnails-desktop',
+                        placement: 'Below Article Thumbnails',
+                        target_type: 'mix'
+                    });
+            </script>
+</div>
+<div class="TaboolaMobile">
+<div id="taboola-below-article-thumbnails-mobile"></div>
+<script type="text/javascript">
+                    window._taboola = window._taboola || [];
+                        _taboola.push({
+                            mode: 'thumbnails-e',
+                            container: 'taboola-below-article-thumbnails-mobile',
+                            placement: 'Mobile Below Article Thumbnails',
+                            target_type: 'mix'
+                    });
+                </script>
+</div></li>
+<li id="advancedrecentposts-2" class="widget widget_advancedrecentposts box read-recently-box"><h3 class='vaults'>Latest stories</h3><ul class="advanced-recent-posts"><li><span class="date"></span> <a href="http://www.thedailymash.co.uk/news/health/men-in-public-toilet-only-washing-hands-because-someones-looking-20180218144474" title="Men in public toilet only washing hands because someone's looking">Men in public toilet only washing hands because someone's looking</a></li><li><span class="date"></span> <a href="http://www.thedailymash.co.uk/news/lifestyle/people-who-say-theres-no-such-thing-as-bad-weather-just-bad-clothing-wrong-20180217144495" title="People who say 'there's no such thing as bad weather just bad clothing' wrong">People who say 'there's no such thing as bad weather just bad clothing' wrong</a></li><li><span class="date"></span> <a href="http://www.thedailymash.co.uk/features/how-to-take-a-baby-out-in-public-without-offending-everyone-20180217144493" title="How to take a baby out in public without offending everyone">How to take a baby out in public without offending everyone</a></li><li><span class="date"></span> <a href="http://www.thedailymash.co.uk/news/lifestyle/woman-plans-agreeable-weekend-reading-great-big-book-about-shagging-20180216144436" title="Woman plans agreeable weekend reading lovely big book about shagging">Woman plans agreeable weekend reading lovely big book about shagging</a></li><li><span class="date"></span> <a href="http://www.thedailymash.co.uk/news/alcohol/club-night-ruined-by-comparing-drink-cost-to-asda-20180216144464" title="Club night ruined by comparing drink cost to Asda">Club night ruined by comparing drink cost to Asda</a></li><li><span class="date"></span> <a href="http://www.thedailymash.co.uk/news/media/man-absolutely-livid-about-news-hes-made-up-20180216144444" title="Man absolutely livid about news he’s made up">Man absolutely livid about news he’s made up</a></li><li><span class="date"></span> <a href="http://www.thedailymash.co.uk/news/society/man-discovers-toilet-roll-fairy-is-not-real-20180216144428" title="Man discovers toilet roll fairy is not real">Man discovers toilet roll fairy is not real</a></li><li><span class="date"></span> <a href="http://www.thedailymash.co.uk/news/science-technology/internet-was-huge-mistake-and-should-be-deleted-20180216144419" title="Internet was ‘huge mistake’ and should be deleted">Internet was ‘huge mistake’ and should be deleted</a></li><li><span class="date"></span> <a href="http://www.thedailymash.co.uk/news/arts-entertainment/preferring-the-remix-makes-me-special-20180215144388" title="'Preferring the remix makes me special'">'Preferring the remix makes me special'</a></li><li><span class="date"></span> <a href="http://www.thedailymash.co.uk/news/society/cool-teacher-totally-fine-with-appearance-of-cooler-teacher-20180215144383" title="Cool teacher 'totally fine' with appointment of cooler teacher">Cool teacher 'totally fine' with appointment of cooler teacher</a></li></ul></li>
+</ul>
+</div>
+<ul id="sidebar">
+<li id="mash-mpu1-widget-2" class="widget mash_mpu1 box ad-box"> 
+<div id='div-gpt-ad-1470952792486-2'>
+<script>
+							googletag.cmd.push(function() { googletag.display('div-gpt-ad-1470952792486-2'); });
+						</script>
+</div>
+</li>
+<li id="wysiwyg_widgets_widget-12" class="widget widget_wysiwyg_widgets_widget"><h2 class="widgettitle"><span class="widget-main-title"></span> </h2>
+<p><a href="http://www.moretvicar.com/collections/the-daily-mash?cc=dail-outside" rel="attachment wp-att-107428"><img class="aligncenter size-full wp-image-107428" src="http://www.thedailymash.co.uk/images/stories/o5.jpg" alt="Daily Mash t-shirt advert" width="320" height="256" /></a></p>
+</li>
+<li id="php_widget-6" class="widget php_widget ad-box"><div class="NoTablet"><iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FThe-Daily-Mash%2F28373121592&amp;width=293&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=false&amp;appId=120873814667108" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:293px; height:258px;" allowTransparency="true"></iframe></div></li>
+<li id="mash-mpu2-widget-2" class="widget mash_mpu2 box ad-box"> 
+<div id='div-gpt-ad-1470952792486-3'>
+<script>
+							googletag.cmd.push(function() { googletag.display('div-gpt-ad-1470952792486-3'); });
+						</script>
+</div>
+</li>
+<li id="mash-skyscraper-widget-2" class="widget mash_skyscraper ad-box"> </li>
+</ul>
+</div>
+<div id="footer">
+<ul class="footer-nav">
+<li><a href="/about/">About/Advertise</a></li>
+<li><a href="/contact/">Contact</a></li>
+<li><a href="/terms-and-conditions/">T &amp; C</a></li>
+<li><a href="/privacy-policy/">Privacy Policy</a></li>
+ <li><a href="http://www.thedailymash.co.uk/rss.xml">RSS</a></li>
+</ul>
+<span class="copy">Copyright &copy; Mashed Productions Ltd - <a title="Manchester Web Design" href="http://www.ohdigital.co.uk/">Website design</a> by OH Digital - This site is intended for over 18s only.<br />
+<a href="/?wptouch_switch=mobile&redirect=%2F">Switch to Mobile Site (mobile devices only)</a>.
+</span>
+
+</div>
+</div>
+
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+	_taboola.push({article:'auto'});
+  _taboola.push({flush: true});
+</script>
+
+
+<SCRIPT TYPE="text/javascript" SRC="http://loadeu.exelator.com/load/?p=504&c=1547567&g=015&ctg=&subctg=&kw="></SCRIPT>
+<div style="display:none">
+</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ecd_params = {"cookie_message":"Hey, we use cookies to personalise ads and content and provide all those social media things you love, not that you really care. You can read about it <a href=\"http:\/\/www.thedailymash.co.uk\/privacy-policy\">here<\/a> or click to get rid of this annoying box and carry on.","cookies":{"0":{"name":"wp-settings-3","group":"WordPress","description":""},"1":{"name":"wp-settings-time-3","group":"WordPress","description":""},"2":{"name":"wordpress_test_cookie","group":"WordPress","description":""},"3":{"name":"__utma","group":"Google Analytics","description":""},"4":{"name":"__utmb","group":"Google Analytics","description":""},"5":{"name":"__utmc","group":"Google Analytics","description":""},"6":{"name":"__utmv","group":"Google Analytics","description":""},"7":{"name":"__utmz","group":"Google Analytics","description":""},"9":{"name":"","group":"","description":""}}};
+var ecd_cookies = [{"name":"wp-settings-3","description":"","group":"WordPress"},{"name":"wp-settings-time-3","description":"","group":"WordPress"},{"name":"wordpress_test_cookie","description":"","group":"WordPress"},{"name":"__utma","description":"","group":"Google Analytics"},{"name":"__utmb","description":"","group":"Google Analytics"},{"name":"__utmc","description":"","group":"Google Analytics"},{"name":"__utmv","description":"","group":"Google Analytics"},{"name":"__utmz","description":"","group":"Google Analytics"}];
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.thedailymash.co.uk/wp-content/plugins/eu-cookie-directive/script.js'></script>
+<script type='text/javascript' src='http://www.thedailymash.co.uk/wp-content/themes/mashtastic2016/js/mobilenav.js?ver=39ace10cceca567a800668f19189902e'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"http:\/\/www.thedailymash.co.uk\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.thedailymash.co.uk/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.0'></script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201808'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var emailL10n = {"ajax_url":"http:\/\/www.thedailymash.co.uk\/wp-admin\/admin-ajax.php","max_allowed":"5","text_error":"The Following Error Occurs:","text_name_invalid":"- Your Name is empty\/invalid","text_email_invalid":"- Your Email is empty\/invalid","text_remarks_invalid":"- Your Remarks is invalid","text_friend_names_empty":"- Friend Name(s) is empty","text_friend_name_invalid":"- Friend Name is empty\/invalid: ","text_max_friend_names_allowed":"- Maximum 5 Friend Names allowed","text_friend_emails_empty":"- Friend Email(s) is empty","text_friend_email_invalid":"- Friend Email is invalid: ","text_max_friend_emails_allowed":"- Maximum 5 Friend Emails allowed","text_friends_tally":"- Friend Name(s) count does not tally with Friend Email(s) count","text_image_verify_empty":"- Image Verification is empty"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.thedailymash.co.uk/wp-content/plugins/wp-email/email-js.js?ver=2.67.5'></script>
+<script type='text/javascript' src='http://www.thedailymash.co.uk/wp-includes/js/wp-embed.min.js?ver=39ace10cceca567a800668f19189902e'></script>
+<script type='text/javascript' src='https://stats.wp.com/e-201808.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:5.8',blog:'71075236',post:'144051',tz:'0',srv:'www.thedailymash.co.uk'} ]);
+	_stq.push([ 'clickTrackerInit', '71075236', '144051' ]);
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"86533471d8","applicationID":"16815264","transactionName":"b1BQYEMHWRdTBkIKClYac1dFD1gKHRZfDQJUUA==","queueTime":0,"applicationTime":408,"atts":"QxdTFgsdShk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+

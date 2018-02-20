@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"c00168984a","applicationID":"19078704","transactionName":"eg5bRxYNDgpdRkpGQVAbT1YXTREOV0M=","queueTime":6,"applicationTime":10,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="fb:app_id" content="886518721424649"/>
+
+    <title>Who&#39;s on your soccer team? — QuizzStar</title>
+<meta name="author" content="QuizzStar" />
+<meta property="og:title" content="Who&#39;s on your soccer team?" />
+<meta property="og:description" content="It&#39;s time to reveal your dream squad! Click here." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://en.quizzstar.com/apps/598deb7e42362800e2a68e4a/" />
+<meta property="og:image" content="http://images.quizzstar.com/uploads/quiz/image/598deb7e42362800e2a68e4a/e33c9a30-abb1-466c-adbf-1d43300cce77.png" />
+<meta property="og:site_name" content="QuizzStar" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="800" />
+<meta property="og:image:height" content="420" />
+
+
+    <link rel="stylesheet" media="all" href="/assets/application-a088df93de94d31e56bb0d5a785510ed854c864d2c1fea7bf1c33c20681e0948.css" />
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="naKQMFLU3fM55+hIomDDINesczV6WDDeYAfV9pPn42TO0RFqQKE9oL1YtIK13yG5shK0vvXDjDXocjflpBtZNg==" />
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <script>
+      var EnvSettings = {
+        country_group: "US",
+        country: "US",
+        locale: "en",
+        experiment: "",
+        fbApiToken: "",
+        mobile: false,
+        show_related: true,
+        fb_settings: {
+          appId: 886518721424649,
+          cookie     : true,
+          xfbml      : true,
+          status: true,
+          version    : 'v2.11'
+        },
+        readyForAds: true,
+        initAds: false,
+        fb_script_locale: 'en_US',
+        pusherPublicKey: '4f8535a2b8ea9bf4cf4f',
+        taboola_position: '6',
+        page_type: 'landing'
+      }
+
+      window.taboola_src =                     '//cdn.taboola.com/libtrc/quizzstar-network/loader.js'
+            ;
+    </script>
+    	<script>
+		EnvSettings.quiz = {"id":"598deb7e42362800e2a68e4a","options":{}};
+	</script>
+
+    <script>
+        var do_not_track = false;
+    </script>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
+    <![endif]-->
+
+
+
+  </head>
+  <body class=" ">
+    <div class="mobile-sidebar">
+        <a href="/categories/5971b076ebb68179ceccc5c3 ">Fortune</a>
+        <a href="/categories/5971b083ebb68179ceccc5c4 ">Personality</a>
+        <a href="/categories/5971b09eebb68179ceccc5c5 ">Life &amp; Friends</a>
+        <a href="/categories/5971b0a4ebb68179ceccc5c6 ">Love</a>
+        <a href="/categories/5971b0a9ebb68179ceccc5c7 ">Funny</a>
+        <a href="/categories/5971b0bfebb68179ceccc5c8 ">Face it!</a>
+    </div>
+    <div class="navbar " id="main" style="">
+      <div class="container">
+        <a class="mobile-menu" href="javascript:;"></a>
+        <a class="navbar-brand" href="/"><div id="logo"></div></a>
+      </div>
+    </div>
+      <div class="navbar" id="categories">
+        <div class="container">
+            <span class="category"><a href="/categories/5971b076ebb68179ceccc5c3 ">Fortune</a></span>
+            <span class="category"><a href="/categories/5971b083ebb68179ceccc5c4 ">Personality</a></span>
+            <span class="category"><a href="/categories/5971b09eebb68179ceccc5c5 ">Life &amp; Friends</a></span>
+            <span class="category"><a href="/categories/5971b0a4ebb68179ceccc5c6 ">Love</a></span>
+            <span class="category"><a href="/categories/5971b0a9ebb68179ceccc5c7 ">Funny</a></span>
+            <span class="category"><a href="/categories/5971b0bfebb68179ceccc5c8 ">Face it!</a></span>
+        </div>
+      </div>
+
+    <div class="container" id="main-container">
+      
+
+<div class="row">
+	<div class="quiz-main">
+		<div class="ibox quiz-box">
+			<div class="splash-box">
+		<h1 class="max-height-lines quiz-title" data-max-lines="3">Who&#39;s on your soccer team?</h1>
+		<div class="start-page-content">
+			<div style="text-align:center" class="quiz-start-img-wrapper">
+	     <img class="quiz-start-img" src="http://images.quizzstar.com/uploads/quiz/start_image/598deb7e42362800e2a68e4a/medium_8d930559-9078-4d39-a54b-875c3bb4c9a3.png" alt="Medium 8d930559 9078 4d39 a54b 875c3bb4c9a3" />
+	    </div>
+					<div class="login-cta" style="white-space:nowrap;">
+			<span class="text-autofit">Please login with Facebook to see your result</span>
+		</div>
+		<div class="button-wrapper">
+			<a class="button start narrow-font text-autofit" href='/apps/598deb7e42362800e2a68e4a/start_new' ><img class="logo-f" src="/images/logo-f.png" alt="Logo f" />Login with Facebook</a>
+
+	  </div>
+
+			<div class="description">
+				<div class="description-inner">
+					<p>It&#39;s time to choose the friends that will make your perfect soccer squad! <br>
+Let&#39;s go!</p>
+
+					<span class="show-more-toggle">Show more</span>
+				</div>
+			</div>
+
+		</div>
+</div>
+
+
+			
+
+  <div id='div-gpt-ad-bottom-landing' class='gpt-ad ad-bottom'>
+  </div>
+
+
+
+
+			
+<div class="ads-taboola" style="padding: 0 5px;">
+  <div id="taboola-below-article-thumbnails"></div>
+  <script type="text/javascript">
+    window._taboola = window._taboola || [];
+    _taboola.push({
+      mode: 'thumbnails-a',
+      container: 'taboola-below-article-thumbnails',
+      placement: "taboola_desktop Below Article Thumbnails",
+      target_type: 'mix'
+    });
+  </script>
+</div>
+
+		</div>
+</div>
+	<div class="sidebar">
+		<div id="sidebar-related-quizzes">
+    <div class="quiz-holder">
+      <div class="ibox quiz-listing hover-highlight">
+        <a href="#">
+          <div class="wide-img-wrapper">
+            <div class="wide-img">
+              <img src="/images/spinner.gif">
+            </div>
+          </div>
+          <div class="animated-background"></div><div class="animated-background" style="width: 60%"></div>
+        </a>
+      </div>
+    </div>
+    <div class="quiz-holder">
+      <div class="ibox quiz-listing hover-highlight">
+        <a href="#">
+          <div class="wide-img-wrapper">
+            <div class="wide-img">
+              <img src="/images/spinner.gif">
+            </div>
+          </div>
+          <div class="animated-background"></div><div class="animated-background" style="width: 60%"></div>
+        </a>
+      </div>
+    </div>
+</div>
+
+	</div>
+</div>
+
+<div id="bottom-related-quizzes" class="row">
+		<div class="quiz-holder">
+			<div class="ibox quiz-listing hover-highlight">
+				<a href="#">
+					<div class="wide-img-wrapper">
+						<div class="wide-img">
+							<img src="/images/spinner.gif">
+						</div>
+					</div>
+					<div class="animated-background"></div><div class="animated-background" style="width: 60%"></div>
+				</a>
+			</div>
+		</div>
+		<div class="quiz-holder">
+			<div class="ibox quiz-listing hover-highlight">
+				<a href="#">
+					<div class="wide-img-wrapper">
+						<div class="wide-img">
+							<img src="/images/spinner.gif">
+						</div>
+					</div>
+					<div class="animated-background"></div><div class="animated-background" style="width: 60%"></div>
+				</a>
+			</div>
+		</div>
+		<div class="quiz-holder">
+			<div class="ibox quiz-listing hover-highlight">
+				<a href="#">
+					<div class="wide-img-wrapper">
+						<div class="wide-img">
+							<img src="/images/spinner.gif">
+						</div>
+					</div>
+					<div class="animated-background"></div><div class="animated-background" style="width: 60%"></div>
+				</a>
+			</div>
+		</div>
+		<div class="quiz-holder">
+			<div class="ibox quiz-listing hover-highlight">
+				<a href="#">
+					<div class="wide-img-wrapper">
+						<div class="wide-img">
+							<img src="/images/spinner.gif">
+						</div>
+					</div>
+					<div class="animated-background"></div><div class="animated-background" style="width: 60%"></div>
+				</a>
+			</div>
+		</div>
+		<div class="quiz-holder">
+			<div class="ibox quiz-listing hover-highlight">
+				<a href="#">
+					<div class="wide-img-wrapper">
+						<div class="wide-img">
+							<img src="/images/spinner.gif">
+						</div>
+					</div>
+					<div class="animated-background"></div><div class="animated-background" style="width: 60%"></div>
+				</a>
+			</div>
+		</div>
+		<div class="quiz-holder">
+			<div class="ibox quiz-listing hover-highlight">
+				<a href="#">
+					<div class="wide-img-wrapper">
+						<div class="wide-img">
+							<img src="/images/spinner.gif">
+						</div>
+					</div>
+					<div class="animated-background"></div><div class="animated-background" style="width: 60%"></div>
+				</a>
+			</div>
+		</div>
+		<div class="quiz-holder">
+			<div class="ibox quiz-listing hover-highlight">
+				<a href="#">
+					<div class="wide-img-wrapper">
+						<div class="wide-img">
+							<img src="/images/spinner.gif">
+						</div>
+					</div>
+					<div class="animated-background"></div><div class="animated-background" style="width: 60%"></div>
+				</a>
+			</div>
+		</div>
+		<div class="quiz-holder">
+			<div class="ibox quiz-listing hover-highlight">
+				<a href="#">
+					<div class="wide-img-wrapper">
+						<div class="wide-img">
+							<img src="/images/spinner.gif">
+						</div>
+					</div>
+					<div class="animated-background"></div><div class="animated-background" style="width: 60%"></div>
+				</a>
+			</div>
+		</div>
+		<div class="quiz-holder">
+			<div class="ibox quiz-listing hover-highlight">
+				<a href="#">
+					<div class="wide-img-wrapper">
+						<div class="wide-img">
+							<img src="/images/spinner.gif">
+						</div>
+					</div>
+					<div class="animated-background"></div><div class="animated-background" style="width: 60%"></div>
+				</a>
+			</div>
+		</div>
+		<div class="quiz-holder">
+			<div class="ibox quiz-listing hover-highlight">
+				<a href="#">
+					<div class="wide-img-wrapper">
+						<div class="wide-img">
+							<img src="/images/spinner.gif">
+						</div>
+					</div>
+					<div class="animated-background"></div><div class="animated-background" style="width: 60%"></div>
+				</a>
+			</div>
+		</div>
+</div>
+
+
+    </div> <!-- /container -->
+    <div class="footer">
+      <div class="container">
+        <div class="footer-item">
+          <p><b>Disclaimer:</b> All content is provided for entertainment purposes only!</p>
+        </div>
+        <div class="footer-item"><a href="/pages/privacy">Privacy Policy</a></div>
+        <div class="footer-item"><a href="/pages/terms">Terms of Service</a></div>
+        <div class="footer-item"><a href="/user/history">Delete App / Remove Account</a></div>
+        <div class="footer-item"><a href="/user/logout">Log Out</a></div>
+      </div>
+    </div>
+    <div id="loadingbar-frame"></div>
+
+
+  <script id="related-template" type="template">
+    {{#quizzes}}
+      <div class="quiz-holder">
+        <div class="ibox quiz-listing hover-highlight">
+          <a href="{{ href }}">
+            <div class="wide-img-wrapper">
+              <div class="wide-img">
+                <img data-src="{{ thumb }}" class="lazy" src="/images/spinner.gif" alt="{{ title }}">
+              </div>
+            </div>
+            <p>{{title}}</p>
+          </a>
+        </div>
+      </div>
+    {{/quizzes}}
+  </script>
+
+  <script>
+  AdSettings = {};
+  AdSettings.adUnits = [];
+  AdSettings.adSlotDefinitions = [];
+  </script>
+
+  <script src="/assets/quizzstar.com-be966e5efb6550c17c98316f980bc56606001ad1d39bfcf3fa97f1bfc5326dfe.js"></script>
+
+
+
+
+  <script type="text/javascript">
+  var pendingActions = [];
+  var pendingIntervalCounter = 0;
+  var pendingInterval = setInterval(function(){
+    console.log('interval', pendingIntervalCounter);
+    if('Tracking' in window) {
+      window.clearInterval(pendingInterval);
+      console.log('running pending actions');
+      for(var i = 0; i<pendingActions.length; i++) {
+        pendingActions[i]();
+      }
+      return;
+    }
+    ++pendingIntervalCounter;
+    if(pendingIntervalCounter == 5) {
+      throw new Error('not loaded after 500ms');
+    }
+    if(pendingIntervalCounter == 10) {
+      throw new Error('not loaded after 1000ms');
+    }
+    if(pendingIntervalCounter == 20) {
+      throw new Error('not loaded after 2000ms');
+    }
+    if(pendingIntervalCounter == 30) {
+      window.clearInterval(pendingInterval);
+      throw new Error('not loaded after 3000ms');
+    }
+  }, 100);
+
+
+
+    pendingActions.push(function(){ Tracking.analytics_send("UA-69391128-5"); console.log('analytics_send'); });
+
+
+
+  </script>
+  	<script>
+		if('Tracking' in window) {Tracking.quiz_view()} else {pendingActions.push(function() {Tracking.quiz_view(); console.log('quiz-view')})};
+	</script>
+
+
+    <script>
+  //QUIZZSTAR HB ADS
+
+  (function(){
+    var sizes = [];
+    var bids = [];
+    var code = 'div-gpt-ad-bottom-landing';
+
+      if(AdSettings.clientWidth > 768) {
+        sizes = [[300, 250], [336, 280]];
+      } else if(AdSettings.clientWidth > 360) {
+        sizes = [[300, 250], [336, 280]];
+      }
+      else {
+        sizes = [[300, 250]];
+      }
+      console.log('bottom',code,sizes, bids);
+
+    // APPNEXUS
+    bids.push({
+      bidder: 'appnexus',
+      params: {placementId: '12558771'}
+    });
+
+    // FAN
+    if(AdSettings.clientWidth < 768) {
+      bids.push({
+        bidder: 'audienceNetwork',
+        params: {placementId: '1427980717293025_1428110217280075'}
+      });
+    }
+
+    // OPENX
+      bids.push({
+        bidder: 'openx',
+        params: { unit: '539132073', delDomain: 'ldw-d.openx.net' }
+      });
+
+
+    AdSettings.adUnits.push({
+      code: code,
+      sizes: sizes,
+      bids: bids
+    });
+  })();
+
+  </script>
+
+    <script>
+      AdSettings.adSlotDefinitions.push(function() {
+        var status = "not_logged_in";
+        console.log('status',status);
+        googletag.defineSlot('/182469239/quizzstar_bottom_landing', [[728,90], [320,50]], 'div-gpt-ad-bottom-landing')
+        .setTargeting("user", status).addService(googletag.pubads())
+        .defineSizeMapping(AdSettings.sizeMappings.mappingBottom());
+      });
+  </script>
+
+  <script>
+    pendingActions.push(function(){ AdSettings.showAds(); console.log('showads')});
+  </script>
+
+
+
+  <script type="text/javascript">
+    window.user_quizzes_taken = [];
+  </script>
+  </body>
+</html>
+

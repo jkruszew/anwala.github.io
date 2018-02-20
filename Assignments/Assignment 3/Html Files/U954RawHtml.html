@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Page Not Found</title>
+        <script type="text/javascript" src="/js/jquery-1.3.1.min.js"></script>
+    </head>
+        <script>
+        $.ajax({
+            url: "/errorpage",
+            async: false,
+            success: function(data) {
+                document.write(data);
+            }
+       	});
+        </script>
+</html>

@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+<head>
+	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQMEU1BRDhAEUFVRAgkCVg=="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+	<!-- Static common meta tag for all the views -->
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width">
+		<meta name="taboola:kicker" content="MAKING IT KIER">
+	<meta name="taboola:headline" content="Kieran McGeeney admits Armagh were &#039;terrible&#039; in one-point win over Longford">
+	<meta name="taboola:image:medium" content="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/template-three-comp-inner-circle-8.jpg?strip=all&#038;quality=100&#038;w=300&#038;h=192&#038;crop=1">
+	<meta name="taboola:image:large" content="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/template-three-comp-inner-circle-8.jpg?strip=all&#038;quality=100&#038;w=620&#038;h=413&#038;crop=1">
+			<link rel='dns-prefetch' href='//optimized-by.rubiconproject.com'>
+	<link rel='dns-prefetch' href='//fastlane.rubiconproject.com'>
+	<link rel="preload" href="//www.googletagservices.com/tag/js/gpt.js" as="script">
+		<link rel="preload" href="//c.amazon-adsystem.com/aax2/apstag.js" as="script">
+		<link rel="preload" href="https://www.thesun.ie/wp-content/themes/thesun/js/head.js?v=1.4.0" as="script">
+<title>Kieran McGeeney admits Armagh were 'terrible' in one-point win over Longford</title>
+<!-- Jetpack Site Verification Tags -->
+<meta name="google-site-verification" content="dF_5do1BqHhEjrcZyL5fhdxXYQ61ipTQaTGYXuygfbg" />
+<meta name="msvalidate.01" content="E4359034FA254151A3AB2EFAC6D20D80" />
+<link rel='dns-prefetch' href='//cdn.livefyre.com' />
+<link rel='dns-prefetch' href='//www.googletagservices.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//secure.gravatar.com' />
+<link rel='dns-prefetch' href='//player.ooyala.com' />
+<link rel='dns-prefetch' href='//sb.scorecardresearch.com' />
+<link rel='dns-prefetch' href='//video.unrulymedia.com' />
+<link rel='dns-prefetch' href='//s.skimresources.com' />
+<link rel='dns-prefetch' href='//secure.widget.cloud.opta.net' />
+<link rel='dns-prefetch' href='//prod-sunbets-widgets.s3-eu-west-1.amazonaws.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="The Irish Sun &raquo; Feed" href="https://www.thesun.ie/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Irish Sun &raquo; Comments Feed" href="https://www.thesun.ie/comments/feed/" />
+<meta name='description' content='A SMASH-AND-GRAB victory for Armagh left manager Kieran McGeeney admitting: “We were terrible.”' />
+<meta name='keywords' content='Armagh GAA, Kieran McGeeney, Armagh v Longford' />
+<meta name='news_keywords' content='Armagh GAA, Kieran McGeeney, Armagh v Longford' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.thesun.ie\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.4"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='thesun-ooyala-skin-css'  href='//player.ooyala.com/static/v4/production/latest/skin-plugin/html5-skin.min.css?ver=v4' type='text/css' media='' />
+<link rel='stylesheet' id='all-css-2' href='https://www.thesun.ie/_static/??/wp-content/themes/thesun/css/swiper.css,/wp-content/themes/thesun/css/style.css?m=1518435827' type='text/css' media='all' />
+<style id='thesun-main-inline-css' type='text/css'>
+.async-hide { opacity: 0 !important; }
+</style>
+<link rel='stylesheet' id='thesun-fonts-css'  href='https://fonts.googleapis.com/css?family=Roboto%3A400%2C500%2C700%7CRoboto+Slab&#038;ver=4.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='thesun-opta-v3-css-css'  href='https://secure.widget.cloud.opta.net/v3/css/v3.football.opta-widgets.css?ver=4.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-6' href='https://www.thesun.ie/_static/??-eJyNjMsKgzAQRX+ocRQR3JR+SgmTEKcmM8FJEP/eB3ThpnR3LpxzYc0GhYvnAqmaHGsgVvj4ki3OkMTV6BV0sot31rntQuLQoOoDftdvYgQVJBtNlCB6G00i/uflUL586q/07IZubPuhb8cdOqtGmg==' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.thesun.ie/wp-content/plugins/livefyre-apps/assets/js/lfapps.js?m=1478608615g'></script>
+<script type='text/javascript' src='https://cdn.livefyre.com/Livefyre.js?ver=1.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var thesun_ad_settings = {"providers":[{"bidder":"rubicon","params":{"accountId":"7753","siteId":"15119","zoneId":"445790"}},{"bidder":"appnexus","params":{"placementId":"6546370"}},{"bidder":"amazon","params":{"accountId":"3360"}},{"bidder":"pubmatic","params":{"publisherId":"156034","adSlotPrefix":"TheSun"}},{"bidder":"indexExchange","params":{"siteID":"188806"}}],"prebid_timeout":"2000"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.thesun.ie/wp-content/themes/thesun/js/generic.js?ver=1.4.0'></script>
+<script type='text/javascript' async="async" src='//www.googletagservices.com/tag/js/gpt.js?ver=4.9.4'></script>
+<script type='text/javascript' src='https://www.thesun.ie/wp-content/themes/thesun/js/promise.min.js?m=1512473516g'></script>
+<script type='text/javascript' async="async" src='https://www.thesun.ie/wp-content/themes/thesun/js/vendor/prebid.min.js?ver=0.24.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var thesun_googletag = {"networkID":"3048","dfpSiteID":"d.thesun.ireland","sectionID":"sport\/gaa-football","path":"\/sport\/gaa-football\/2171471\/kieran-mcgeeney-admits-armagh-were-terrible-in-one-point-win-over-longford\/","sec_id":"8","sec":"art","topics":"null","kw":"kieran,mcgeeney,admits,armagh,were,terrible,in,onepoint,win,over,longford,by,orla,bannon,rory,grugan,kicked,a,lastgasp,winner,for,the,hosts,at,athletic,grounds,making,it,kier,gaafootball,sport","aid":"2171471","search":"null","article_type":"post","hide_ads":"","article_slug":"null"};
+var utag_data = {"page_site_name":"irish sun","amp_page_site_name":"the sun amp irish","page_site_region":"ireland","page_restrictions":"public","page_name":"article: Kieran McGeeney admits Armagh were 'terrible' in one-point win over Longford","page_section":"Sport","page_section_id":"18","page_section_2":"Sport:GAA Football","page_section_2_id":"8","page_type":"article","article_name":"Kieran McGeeney admits Armagh were 'terrible' in one-point win over Longford","article_publish_timestamp":"2018\/02\/12 08:48 Monday","article_id":"2171471","article_author":"Orla Bannon","article_id_type":"wordpress","article_tag_name":"","page_tags":"","article_publish_latest":"2018\/02\/12 08:48 Monday","article_name_latest":"Kieran McGeeney admits Armagh were \u2018terrible\u2019 in one-point win over Longford","article_kicker_name":"MAKING IT KIER"};
+var thesun_unruly_settings = {"site_id":"1076516"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+				!function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function(){q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
+
+				apstag.init({
+					pubID: 3360,
+					adServer: 'googletag',
+					bidTimeout: 2000
+				});
+			
+(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga( 'create', 'UA-100401456-6', { name: 'thesun', cookieDomain: 'auto' } );
+
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
+		var thesun_targeting = {};
+		var pbjs = pbjs || {};
+		pbjs.que = pbjs.que || [];
+</script>
+<script type='text/javascript' async="async" src='https://www.thesun.ie/wp-content/themes/thesun/js/head.js?ver=1.4.0'></script>
+<script type='text/javascript'>
+		var gs_channels="DEFAULT";
+		(function() {
+			var gsurl=window.location!=window.top.location?document.referrer:window.location;
+			var s=document.createElement('script');
+			s.async=true;
+			s.onload=function(){
+				// Add Grapeshot targeting for use in Brightcove or other requests where custom params are set.
+				window.cust_params = window.cust_params || "";
+				window.cust_params += encodeURIComponent("gs_cat=" + [gs_channels].join(",")) + "&";
+
+				googletag.cmd.push(function() {
+					googletag.pubads().setTargeting("gs_cat", gs_channels);
+				});
+			}
+			s.src='//newscorp.grapeshot.co.uk/thesun/channels.cgi?url=' +encodeURIComponent(gsurl);
+			document.head.appendChild(s);
+		})();
+</script>
+<script type='text/javascript' src='https://www.thesun.ie/_static/??-eJzTLy/QzcxLzilNSS3WzwKiwtLUokoopZdVrKOPT4FubmZ6UWJJql5uZh5McXJ+XklqXol+SUZqLlALkCouzQPp9MxNTE8tAiqzz7U1NDU0tzQ1NDExygIAhu0vLQ=='></script>
+<script type='text/javascript' async="async" src='https://video.unrulymedia.com/native/native-loader.js?ver=4.9.4'></script>
+<script type='text/javascript' src='https://www.thesun.ie/_static/??-eJzTLy/QTc7PK0nNK9EvyUjNTS0GUcWlefpZxfppQIm0xOTU/KTi1KKy1CK93Mw8vaxiHX18moAUSF8xXFNWsX2uraGJuYWZgYWZoWkWAPi3KpQ='></script>
+<link rel='https://api.w.org/' href='https://www.thesun.ie/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.thesun.ie/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.thesun.ie/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.4" />
+<link rel="canonical" href="https://www.thesun.ie/sport/gaa-football/2171471/kieran-mcgeeney-admits-armagh-were-terrible-in-one-point-win-over-longford/" />
+<link rel='shortlink' href='https://wp.me/p8bGIj-96TJ' />
+<link rel="alternate" type="application/json+oembed" href="https://www.thesun.ie/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thesun.ie%2Fsport%2Fgaa-football%2F2171471%2Fkieran-mcgeeney-admits-armagh-were-terrible-in-one-point-win-over-longford%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.thesun.ie/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.thesun.ie%2Fsport%2Fgaa-football%2F2171471%2Fkieran-mcgeeney-admits-armagh-were-terrible-in-one-point-win-over-longford%2F&#038;format=xml" />
+
+<link rel='dns-prefetch' href='//v0.wordpress.com'/>
+<style type='text/css'>img#wpstats{display:none}</style>	<script type="text/javascript">
+		document.cookie = "Ooyala=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+	</script>
+		<script type="text/javascript">
+		/* Tealium */
+		(function(a, b, c, d) {
+			a = "https://tags.tiqcdn.com/utag/newsinternational/thesun.irish.web.2/prod/utag.js";
+			b = document;
+			c = 'script';
+			d = b.createElement(c);
+			d.src = a;
+			d.type = 'text/java' + c;
+			d.async = true;
+			a = b.getElementsByTagName(c)[0];
+			a.parentNode.insertBefore(d, a);
+		})();
+	</script>
+	<link rel="amphtml" href="https://www.thesun.ie/sport/gaa-football/2171471/kieran-mcgeeney-admits-armagh-were-terrible-in-one-point-win-over-longford/amp/" />	<script type="text/javascript">
+		window._taboola = window._taboola || [];
+		_taboola.push({"article":"auto"});
+		!function (e, f, u, i) {
+			if (!document.getElementById(i)){
+				e.async = 1;
+				e.src = u;
+				e.id = i;
+				f.parentNode.insertBefore(e, f);
+			}
+		}(document.createElement('script'),
+			document.getElementsByTagName('script')[0],
+			'//cdn.taboola.com/libtrc/newsuk-theirishsun/loader.js',
+			'tb_loader_script');
+		if(window.performance && typeof window.performance.mark == 'function')
+		{window.performance.mark('tbl_ic');}
+	</script>
+	
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Kieran McGeeney admits Armagh were &#039;terrible&#039; in one-point win over Longford" />
+<meta property="og:url" content="https://www.thesun.ie/sport/gaa-football/2171471/kieran-mcgeeney-admits-armagh-were-terrible-in-one-point-win-over-longford/" />
+<meta property="og:description" content="A SMASH-AND-GRAB victory for Armagh left manager Kieran McGeeney admitting: “We were terrible.” Rory Grugan’s 75th-minute winner snatched two precious league points for the promotion chasers at the…" />
+<meta property="article:published_time" content="2018-02-12T08:48:34+00:00" />
+<meta property="article:modified_time" content="2018-02-12T08:48:34+00:00" />
+<meta property="og:site_name" content="The Irish Sun" />
+<meta property="og:image" content="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/template-three-comp-inner-circle-8.jpg?strip=all&#038;quality=100&#038;w=750&#038;h=500&#038;crop=1" />
+<meta property="og:image:width" content="750" />
+<meta property="og:image:height" content="500" />
+<meta name="twitter:text:title" content="Kieran McGeeney admits Armagh were &#8216;terrible&#8217; in one-point win over Longford" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="article:publisher" content="266785760017516" />
+<meta property="fb:app_id" content="144647118961553" />
+<meta name="twitter:site" content="@IrishSunOnline" />
+<meta property="og:locale" content="en_GB" />
+<meta name="robots" content="noarchive,noodp" />
+<meta property="p:domain_verify" content="f75c2680be91153324924a0074d7610d" />
+<meta property="article:author" content="http://www.facebook.com/IrishSunSport" />
+<meta property="fb:pages" content="266785760017516" />
+<link rel="icon" href="https://www.thesun.ie/wp-content/uploads/sites/3/2016/11/cropped-cropped-cropped-icon-e1459786005667-1.png?strip=all&#038;quality=100&#038;w=32" sizes="32x32" />
+<link rel="icon" href="https://www.thesun.ie/wp-content/uploads/sites/3/2016/11/cropped-cropped-cropped-icon-e1459786005667-1.png?strip=all&#038;quality=100&#038;w=192" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.thesun.ie/wp-content/uploads/sites/3/2016/11/cropped-cropped-cropped-icon-e1459786005667-1.png?strip=all&#038;quality=100&#038;w=180" />
+<meta name="msapplication-TileImage" content="https://www.thesun.ie/wp-content/uploads/sites/3/2016/11/cropped-cropped-cropped-icon-e1459786005667-1.png?strip=all&#038;quality=100&#038;w=270" />
+</head>
+
+<body class="post-template-default single single-post postid-2171471 single-format-standard">
+
+<a href="#main-content" class="screen-reader-text">Jump directly to the content</a>
+
+<div class="mobile-top-cover"></div>
+
+<div class="sun-container theme-main theme-sport">	<div class="sun-newsuk">
+
+		<div class="close open-newsuk for-mobile"></div>
+
+		<div class="sun-row">
+
+			<div class="col sun-col-6">
+
+				<div class="panel panel--slim">
+					<div class="panel--slim-left">
+						<p>News Corp is a network of leading companies in the worlds of diversified media, news, education, and information services.</p>
+					</div>
+					<div class="panel--slim-right">
+						<h3 class="panel__title">Follow The Sun</h3>
+
+						<div class="follow-sun">
+							<a href="https://www.facebook.com/theirishsun/" class="follow-facebook" target="_blank"><span class="icon icon-facebook"></span></a><a href="https://twitter.com/IrishSunOnline" class="follow-twitter" target="_blank"><span class="icon icon-twitter"></span></a>						</div>
+					</div>
+				</div>
+
+				<div class="panel for-mobile">
+					<h3 class="panel__title">Your Sun</h3>
+					<ul class="no-columns">
+						<li class="sign-in">
+							<a href="https://login.thesun.co.uk">Sign in</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="panel for-mobile">
+					<h3 class="panel__title">Editions</h3>
+						<ul class='no-columns'>
+					<li>
+				<a href="https://www.thesun.co.uk/">UK Edition</a>
+			</li>
+					<li>
+				<a href="https://www.thescottishsun.co.uk/">Scottish Sun</a>
+			</li>
+					<li>
+				<a href="https://www.dreamteamfc.com/c/">Dream Team</a>
+			</li>
+			</ul>
+					</div>
+
+				<div class="panel">
+					<h3 class="panel__title">The Sun</h3>
+					<ul id="menu-sun-network-service-menu" class="menu"><li id="menu-item-256645" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256645"><a href="https://www.thesun.co.uk">The Sun</a></li>
+<li id="menu-item-256646" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256646"><a href="https://www.thescottishsun.co.uk/">The Scottish Sun</a></li>
+<li id="menu-item-256648" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256648"><a href="https://www.dreamteamfc.com/">Dream Team</a></li>
+<li id="menu-item-256649" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256649"><a href="https://www.sunbets.co.uk">Sun Bets</a></li>
+<li id="menu-item-256651" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256651"><a href="http://www.thesun.co.uk/fabulous">Fabulous</a></li>
+<li id="menu-item-256652" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256652"><a href="http://favourite.thesun.co.uk">Sun Favourite</a></li>
+<li id="menu-item-256653" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256653"><a href="http://www.sunmotors.co.uk/">Sun Motors</a></li>
+<li id="menu-item-256654" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256654"><a href="http://www.sunbingo.co.uk/">Sun Bingo</a></li>
+<li id="menu-item-256655" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256655"><a href="http://thesun.inthepaper.co.uk/">Sun Gifts</a></li>
+</ul>				</div>
+
+				<div class="panel panel--half">
+					<h3 class="panel__title">News Corp</h3>
+					<ul id="menu-news-corp-service-menu" class="menu"><li id="menu-item-256631" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256631"><a href="http://www.wsj.com/">WSJ.com</a></li>
+<li id="menu-item-256632" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256632"><a href="http://nypost.com/">New York Post</a></li>
+<li id="menu-item-256634" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256634"><a href="http://www.theaustralian.com.au/">The Australian</a></li>
+<li id="menu-item-256635" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256635"><a href="http://www.news.com.au/">News.com.au</a></li>
+<li id="menu-item-256636" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256636"><a href="https://storyful.com/">Storyful</a></li>
+<li id="menu-item-256638" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256638"><a href="https://www.harpercollins.co.uk/">Harper Collins</a></li>
+<li id="menu-item-256642" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256642"><a href="https://www.realtor.com/">Realtor.com</a></li>
+</ul>				</div>
+
+				<div class="panel panel--half panal--services">
+					<h3 class="panel__title">Services</h3>
+		            <ul id="menu-footer-menu" class="menu"><li id="menu-item-256612" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256612"><a href="https://www.thesun.co.uk/sign-up-to-the-sun/">Sign Up To The Sun</a></li>
+<li id="menu-item-256613" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256613"><a href="https://www.thesun.co.uk/terms-and-conditions/">Terms and Conditions</a></li>
+<li id="menu-item-1927570" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1927570"><a href="https://www.thesun.ie/editorial-complaints/">Editorial Complaints</a></li>
+<li id="menu-item-256615" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256615"><a href="https://www.thesun.co.uk/admin/clarifications/">Clarifications and Corrections</a></li>
+<li id="menu-item-256616" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256616"><a href="https://www.thesun.co.uk/syndication/">Syndication</a></li>
+<li id="menu-item-256617" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256617"><a href="http://www.newsukadvertising.co.uk">Advertising</a></li>
+<li id="menu-item-256628" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256628"><a href="https://www.thesun.ie/contact-us/">Contact Us</a></li>
+<li id="menu-item-256619" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256619"><a href="http://help.thesun.co.uk/">Help Hub</a></li>
+</ul>				</div>
+
+				<span class="sun-newsuk__button open-newsuk">The Irish Sun, A News Ireland Company <span class="icon icon-arrow-down icon-arrow-down--dark"></span></span>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="sun-header-bg">
+		<span class="sun-header-bg-color"></span>
+		<div class="back-to-top">
+			<span class="icon icon-back-to-top"></span>
+			<span class="text-top">TOP</span>
+		</div>
+	</div>
+
+	<div class="sun-row sun-header--wrap">
+
+		<div class="col sun-col-2 no-gutters logo">
+			<a href="#" class="mobile-search toggle-mobile-search"><span class="icon icon-search"></span></a>
+
+			<div id="logo">
+				<a href="https://www.thesun.ie/" aria-label="Home">
+					<img
+						class="for-desktop for-tablet"
+						src="https://www.thesun.ie/wp-content/themes/theirishsun/images/sunmasthead.svg"
+						alt="The Irish Sun"
+					/>
+					<img
+						class="for-mobile"
+						src="https://www.thesun.ie/wp-content/themes/theirishsun/images/sunmasthead_mobile.svg"
+						alt="The Irish Sun"
+					/>
+				</a>
+			</div>
+
+			<div class="mobile-toggles open-newsuk">
+				<div class="mobile-toggle"></div>
+				<div class="mobile-toggle"></div>
+				<div class="mobile-toggle"></div>
+			</div>
+		</div>
+
+		<div class="col sun-col-2 no-gutters follow">
+
+			<div class="sign-in">
+				<a href="https://login.thesun.co.uk">Sign in <span class="icon icon-avatar"></span></a>
+			</div>
+
+			<div class="edition">
+				<a href="#" class="open-popup-box">Irish Sun <span class="icon icon-arrow-down"></span></a>
+
+				<div class="popup-box">
+					<span class="popup-box--close"></span>
+
+						<ul class=''>
+					<li>
+				<a href="https://www.thesun.co.uk/">UK Edition</a>
+			</li>
+					<li>
+				<a href="https://www.thescottishsun.co.uk/">Scottish Sun</a>
+			</li>
+					<li>
+				<a href="https://www.dreamteamfc.com/c/">Dream Team</a>
+			</li>
+			</ul>
+					</div>
+			</div>
+
+			<div class="search-bar">
+				<a href="#" class="open-popup-box">Search <span class="icon icon-search"></span></a>
+
+				<div class="popup-box">
+					<span class="popup-box--close"></span>
+
+					<form action="https://www.thesun.ie/">
+						<input type="text" placeholder="Search The Sun" name="s" />
+						<input type="submit" value="Search" />
+					</form>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="sun-row sun-header--search">
+
+		<div class="col sun-col-6 no-gutters">
+
+			<a href="#" class="close-search toggle-mobile-search"><span class="icon icon-close"></span></a>
+
+			<form action="https://www.thesun.ie/">
+				<input type="text" placeholder="Search The Sun" name="s" />
+			</form>
+
+		</div>
+
+	</div>
+
+	<div class="sun-row sun-header--nav">
+
+		<div class="sun-nav-heavy-rule"></div>
+
+		<div id="logo-mini">
+			<a href="https://www.thesun.ie/" aria-label="Home">
+				<img
+					class="for-desktop for-tablet"
+					src="https://www.thesun.ie/wp-content/themes/theirishsun/images/sunmasthead_mobile.svg"
+					alt="The Irish Sun"
+				/>
+			</a>
+		</div>
+
+		<div class="col sun-col-6 no-gutters swiper-container sun-header--nav-wrap">
+			<ul id="sun-menu" class="sun-menu swiper-wrapper"><li id="menu-item-241720" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-241720 swiper-slide theme-main"><a href="/">Home</a></li>
+<li id="menu-item-241770" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-241770 swiper-slide theme-football"><a href="https://www.thesun.ie/sport/football/">Football</a></li>
+<li id="menu-item-241719" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-241719 swiper-slide theme-sport active"><a href="https://www.thesun.ie/sport/">Sport</a></li>
+<li id="menu-item-250589" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-250589 swiper-slide theme-showbiz"><a href="https://www.thesun.ie/tvandshowbiz/">TV &#038; Showbiz</a></li>
+<li id="menu-item-241718" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-241718 swiper-slide theme-news"><a href="https://www.thesun.ie/news/">News</a></li>
+<li id="menu-item-1473549" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1473549 swiper-slide theme-fabulous"><a href="https://www.thesun.ie/fabulous/">Fabulous</a></li>
+<li id="menu-item-1492642" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1492642 swiper-slide theme-money"><a href="https://www.thesun.ie/money/">Money</a></li>
+<li id="menu-item-830394" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-830394 swiper-slide theme-motors"><a href="https://www.thesun.ie/motors/">Motors</a></li>
+<li id="menu-item-772415" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-772415 swiper-slide theme-travel"><a href="https://www.thesun.ie/travel/">Travel</a></li>
+<li id="menu-item-824948" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-824948 swiper-slide theme-tech"><a href="https://www.thesun.ie/tech/">Tech</a></li>
+<li id="menu-item-1473548" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1473548 swiper-slide theme-dear-deidre"><a href="https://www.thesun.ie/dear-deidre/">Dear Deidre</a></li>
+</ul>
+			<div class="swiper-button-prev swiper-button-disabled">
+				<span class="icon icon-arrow-left"></span>
+			</div>
+			<div class="swiper-button-next swiper-button-disabled">
+				<span class="icon icon-arrow-right"></span>
+			</div>
+		</div>
+
+	</div>
+
+<div class="sub-nav__mobile-head theme__background-color">
+	<span class="sub-nav__mobile-head-text">All Sport</span> <span class="icon icon-arrow-circled-down"></span>
+</div>
+
+<section class="sun-container sub-nav__container theme__background-color">
+	<div class="sun-row no-gutters">
+		<div class="col sun-col-6 no-gutters">
+			<div class="sub-nav">
+
+				<div class="swiper-container theme-main-secondary theme-sport-secondary">
+
+					<ul class="swiper-wrapper sub-nav__list">
+						<li class="active sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">							<a href="https://www.thesun.ie/sport/" class="theme--secondary__border-color">
+								All Sport							</a>
+						</li>
+						<li class=" sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">							<a href="https://www.thesun.ie/sport/football/" class="theme--secondary__border-color">
+								Football							</a>
+						</li>
+
+						<li class="active sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">							<a href="https://www.thesun.ie/sport/gaa-football/" class="theme--secondary__border-color">
+								GAA Football							</a>
+						</li>
+
+						<li class=" sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">							<a href="https://www.thesun.ie/sport/gaa-hurling/" class="theme--secondary__border-color">
+								GAA Hurling							</a>
+						</li>
+
+						<li class=" sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">							<a href="https://www.thesun.ie/sport/boxing/" class="theme--secondary__border-color">
+								Boxing							</a>
+						</li>
+
+						<li class=" sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">							<a href="https://www.thesun.ie/sport/mma/" class="theme--secondary__border-color">
+								MMA							</a>
+						</li>
+
+						<li class=" sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">							<a href="https://www.thesun.ie/sport/golf/" class="theme--secondary__border-color">
+								Golf							</a>
+						</li>
+
+						<li class=" sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">							<a href="https://www.thesun.ie/sport/motorsport/" class="theme--secondary__border-color">
+								Motorsport							</a>
+						</li>
+
+						<li class=" sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">							<a href="https://www.thesun.ie/sport/rugby-union/" class="theme--secondary__border-color">
+								Rugby Union							</a>
+						</li>
+
+						<li class=" sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">							<a href="https://www.thesun.ie/sport/tennis/" class="theme--secondary__border-color">
+								Tennis							</a>
+						</li>
+
+						<li class=" sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">							<a href="https://www.thesun.ie/sport/wwe/" class="theme--secondary__border-color">
+								WWE							</a>
+						</li>
+
+						<li class=" sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">							<a href="https://www.thesun.ie/sport/horse-racing/" class="theme--secondary__border-color">
+								Horse Racing							</a>
+						</li>
+
+						<li class=" sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">							<a href="https://www.thesun.ie/sport/cycling/" class="theme--secondary__border-color">
+								Cycling							</a>
+						</li>
+
+						<li class=" sub-nav__item swiper-slide theme__copy-color theme__border-color theme--secondary__background-before-color theme--secondary__background-color-mobile">							<a href="https://www.thesun.ie/sport/other-sports/" class="theme--secondary__border-color">
+								Other Sports							</a>
+						</li>
+
+											</ul><!-- .swiper-wrapper .sub-nav__list -->
+
+					<div class="swiper-button-prev theme--secondary__background-before-color theme__background-color swiper-button-disabled">
+						<span class="icon icon-arrow-left icon-arrow-left-white theme__background-color"></span>
+					</div>
+
+					<div class="swiper-button-next theme--secondary__background-before-color theme__background-color swiper-button-disabled">
+						<span class="icon icon-arrow-right icon-arrow-right-white theme__background-color"></span>
+					</div>
+
+				</div><!-- .swiper-container .{theme-slug}-secondary -->
+
+			</div><!-- .sub-nav -->
+		</div><!-- .col .sun-col-6 .no-gutters -->
+	</div><!-- sun-row .no-gutters -->
+</section><!-- .sun-container .sub-nav__container .theme__background-color -->
+
+	<div id="main-content" class="main-content-wrap theme-main has-section-nav" tabindex="-1">
+
+		
+		
+		
+<div class="billboard">
+	<div class="sun-row">
+		<div class="col sun-col-6">
+							<div class="dfp-ad" id="billboard">
+					<script type="text/javascript">
+						document.addEventListener('DOMContentLoaded', function () {
+							googletag.cmd.push( function() {
+								googletag.display( 'billboard' );
+							} );
+						});
+					</script>
+				</div>
+					</div>
+	</div>
+</div>
+
+		<section class="sun-container__article-section theme-sport">
+							<div class="sun-row">
+										<div class="col sun-col-4">
+
+														<article class="article">
+								<div id="header" class="dfp-ad advert--header"></div>
+
+								
+<header class="article__header">
+	<div class="article__strapline">
+	</div>
+
+	
+<section class="article__headline-section">
+			<span class="article__kicker theme__copy-color">MAKING IT KIER</span>
+		<h1 class="article__headline">Kieran McGeeney admits Armagh were &#8216;terrible&#8217; in one-point win over Longford</h1></section>
+
+		<div class="article__subdeck theme__border-color">
+		<p>Rory Grugan kicked a last-gasp winner for the hosts at the Athletic Grounds</p>
+	</div>
+	</header><!-- .article__header -->
+
+<div class="article__meta">
+
+	
+	<div class="article__name-date">
+					<div class="article__author">
+				<span class="article__author-name">
+					By Orla Bannon				</span>
+			</div>
+		
+		<div class="article__time">
+			<div class="article__published">
+				<span>12th February 2018,</span>
+				<span class="article__timestamp">8:48 am</span>
+			</div>
+
+				</div>
+
+	</div>
+</div><!-- .article__meta -->
+								<div class="article__content">
+									<p class="article__content article__content--intro">A SMASH-AND-GRAB victory for Armagh left manager Kieran McGeeney admitting: “We were terrible.”</p>
+<p>Rory Grugan’s 75th-minute winner snatched two precious league points for the promotion chasers at the Athletic Grounds.</p>
+<figure class="article__media">
+	<div class="article__media-img-container open-gallery" data-index="0">
+
+		<a href="#"><p><img class="wp-image-2171496 size-thesun-article-image" alt="Rory Grugan celebrates scoring his side&#8217;s winning point" src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/1453459-e1518424964333.jpg?strip=all&amp;w=698&quality=100" width="698" height="960" /></p></a>
+
+				<div class="article__credit">
+			Sportsfile		</div>
+		
+				<div class="article__gallery-count theme__background-color-rgba-80">
+			<a href=""><span class="article__gallery-count-value theme__copy-color">3</span></a>
+		</div>
+			</div>
+
+		<figcaption class="article__media-caption">
+		Rory Grugan celebrates scoring his side&#8217;s winning point	</figcaption>
+	</figure>
+
+<p>But Armagh boss ‘Geezer’ said: “I thought we were terrible. We had 34 shots compared to their 18 or 19 but we did not bring our shooting boots.</p>
+<p>“I suppose it’s a good sign that the team is coming on, they played so poorly and can still win a game.</p>
+<p>“Last year we were going really well at times, maybe five or six points up in games and ended up either drawing or losing them.</p>
+<p>“So it’s definitely a positive in that respect but I wouldn’t be jumping up and down about how we were shooting today.”</p>
+<p>Grugan and Ethan Rafferty missed a glut of chances but came up with the goods in the end.</p>
+<p>The latter’s controversial 69th-minute goal left 14-man Longford fuming.</p>
+<p>Defender Donal McElligott, who had scored a 58th-minute penalty, appeared to be pushed in the back during a late Armagh attack.</p>
+<figure class="article__media">
+	<div class="article__media-img-container open-gallery" data-index="1">
+
+		<a href="#"><p><img class="wp-image-2171497 size-thesun-article-image" alt="Rory Grugan scores the winning point" src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/1453458-e1518425033800.jpg?strip=all&amp;w=749&quality=100" width="749" height="960" /></p></a>
+
+				<div class="article__credit">
+			Sportsfile		</div>
+		
+				<div class="article__gallery-count theme__background-color-rgba-80">
+			<a href=""><span class="article__gallery-count-value theme__copy-color">3</span></a>
+		</div>
+			</div>
+
+		<figcaption class="article__media-caption">
+		Rory Grugan scores the winning point	</figcaption>
+	</figure>
+
+<p>But referee Noel Mooney waved play on and seconds later Rafferty stuck the ball inside the near post.</p>
+<p>That goal saw the scores levelled for the fourth time before Grugan’s last-gasp point put Armagh in front for the only time in the game.</p>
+<p>Longford boss Denis Connerton raged: “We feel we were really let down by the officials.</p>
+<p>“It’s not the first time this has happened to us.</p>
+<p>“You need a little bit more protection and you need the officials to perform at a better level than they did today. Our performance in itself was magnificent.”</p>
+<p>A wasteful Armagh shot eight second-half wides after Longford midfielder Andrew Farrell was shown a second yellow card in the 39th minute.</p>
+<p>The visitors will wonder how this game got away from them, having led 0-4 to 0-1 after the first quarter.</p>
+<figure class="article__media">
+	<div class="article__media-img-container open-gallery" data-index="2">
+
+		<a href="#"><p><img class="wp-image-2171499 size-thesun-article-image" alt="Armagh boss Kieran McGeeney" src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/1453389-e1518425092997.jpg?strip=all&amp;w=960&quality=100" width="960" height="689" /></p></a>
+
+				<div class="article__credit">
+			Sportsfile		</div>
+		
+				<div class="article__gallery-count theme__background-color-rgba-80">
+			<a href=""><span class="article__gallery-count-value theme__copy-color">3</span></a>
+		</div>
+			</div>
+
+		<figcaption class="article__media-caption">
+		Armagh boss Kieran McGeeney	</figcaption>
+	</figure>
+
+<p>Armagh then went 16 minutes without a score before landing three in three minutes through Stephen Sheridan, Grugan and Rafferty.</p>
+<p>Robbie Smyth led the Longford response, scoring three first-half points from frees.</p>
+<p>A long-range score from Armagh’s Ben Crealey made it 0-8 to 0-5 in Longford’s favour at the break.</p>
+<p>The teams drew level at nine points apiece in the 56th minute, with Rafferty and Gregory McCabe on target for Armagh.</p>
+<p>McElligot’s penalty — after Brendan Donaghy handled on the ground — stretched Longford clear again.</p>
+<p>But Armagh grabbed victory in dramatic fashion, scoring an unanswered 1-2 in the final minutes.</p>
+	<!--googleoff: all-->
+		<div class="sun-grid-container sun-grid-container--white">
+	
+	<div class="sun-row ">
+		<div class="col sun-col-6">
+
+			<div class="rail rail--classic  rail--trending theme-sport" data-slide-count="4" data-slide-count-tablet="4">				<div class="swiper-container">
+
+					<div class="rail__header">
+
+											<h3 class="rail__title theme__after-color">MOST READ SPORT</h3>
+
+											
+					
+					</div>
+
+					
+					<div class="swiper-pagination theme__swiper-pagination"></div>
+
+					<div class="swiper-wrapper">
+						
+<div class="rail__item swiper-slide">
+
+					<div class="rail__item-image">
+			<a href="https://www.thesun.ie/sport/gaa-football/2198560/galway-captain-damien-comer-suffers-double-heartbreak-as-grandfather-passes-away-after-sigerson-cup-final-loss/">
+				<div class="delayed-image-load-landscape" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/untitled-design-372.png?strip=all&#038;quality=100&#038;w=300&#038;h=192&#038;crop=1"></div>
+				<div class="delayed-image-load-mobile" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/untitled-design-372.png?strip=all&#038;quality=100&#038;w=300&#038;h=192&#038;crop=1"></div>
+			</a>
+					</div><!-- .rail__item-image -->
+	
+	<div class="rail__item-content">
+					<h3 class="rail__item-headline theme__copy-color">
+				&#039;Tough day&#039;			</h3>
+							<span class="rail__item-sub">
+				Galway captain Damien Comer suffered a double heartbreak yesterday			</span>
+			</div><!-- .rail__item-content -->
+	<div class="rail__item-gradient-light">
+
+	</div>
+	<a href="https://www.thesun.ie/sport/gaa-football/2198560/galway-captain-damien-comer-suffers-double-heartbreak-as-grandfather-passes-away-after-sigerson-cup-final-loss/" class="rail__item-anchor"></a>
+
+</div><!-- .rail__item .swiper-slide -->
+
+<div class="rail__item swiper-slide">
+
+					<div class="rail__item-image">
+			<a href="https://www.thesun.ie/sport/football/2199387/chelseas-champions-league-referee-tom-henning-ovrebo-admits-mistakes-in-barcelona-semi-final-cost-blues-a-place-in-2009-showpiece/">
+				<div class="delayed-image-load-landscape" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-tom-henning-ovrebo-2009-cl-1.jpg?strip=all&#038;quality=100&#038;w=300&#038;h=192&#038;crop=1"></div>
+				<div class="delayed-image-load-mobile" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-tom-henning-ovrebo-2009-cl-1.jpg?strip=all&#038;quality=100&#038;w=300&#038;h=192&#038;crop=1"></div>
+			</a>
+					</div><!-- .rail__item-image -->
+	
+	<div class="rail__item-content">
+					<h3 class="rail__item-headline theme__copy-color">
+				Guilty			</h3>
+							<span class="rail__item-sub">
+				Infamous ref Ovrebo admits blunders denied Chelsea 2009 Champions League final place			</span>
+			</div><!-- .rail__item-content -->
+	<div class="rail__item-gradient-light">
+
+	</div>
+	<a href="https://www.thesun.ie/sport/football/2199387/chelseas-champions-league-referee-tom-henning-ovrebo-admits-mistakes-in-barcelona-semi-final-cost-blues-a-place-in-2009-showpiece/" class="rail__item-anchor"></a>
+
+</div><!-- .rail__item .swiper-slide -->
+
+<div class="rail__item swiper-slide">
+
+					<div class="rail__item-image">
+			<a href="https://www.thesun.ie/sport/football/2197785/premiership-ace-saido-berahinos-fiancee-traps-his-lover-in-his-home-after-finding-her-there-on-valentines-day-then-calls-off-wedding/">
+				<div class="delayed-image-load-landscape" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/dk-composite-page81-1.jpg?strip=all&#038;quality=100&#038;w=300&#038;h=192&#038;crop=1"></div>
+				<div class="delayed-image-load-mobile" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/dk-composite-page81-1.jpg?strip=all&#038;quality=100&#038;w=300&#038;h=192&#038;crop=1"></div>
+			</a>
+					</div><!-- .rail__item-image -->
+	
+	<div class="rail__item-content">
+					<h3 class="rail__item-headline theme__copy-color">
+				&#039;OPEN THE DOOR YOU SL**&#039;			</h3>
+							<span class="rail__item-sub">
+				Prem ace&#039;s fiancee TRAPS mistress in home after catching them out			</span>
+			</div><!-- .rail__item-content -->
+	<div class="rail__item-gradient-light">
+
+	</div>
+	<a href="https://www.thesun.ie/sport/football/2197785/premiership-ace-saido-berahinos-fiancee-traps-his-lover-in-his-home-after-finding-her-there-on-valentines-day-then-calls-off-wedding/" class="rail__item-anchor"></a>
+
+</div><!-- .rail__item .swiper-slide -->
+
+<div class="rail__item swiper-slide">
+
+					<div class="rail__item-image">
+			<a href="https://www.thesun.ie/sport/boxing/2197319/groves-vs-eubank-jr-result-george-groves-defends-wba-super-middleweight-title-with-blood-splattered-points-victory-against-chris-eubank-jr/">
+				<div class="delayed-image-load-landscape" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-boxing-groves-win-1.jpg?strip=all&#038;quality=100&#038;w=300&#038;h=192&#038;crop=1"></div>
+				<div class="delayed-image-load-mobile" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-boxing-groves-win-1.jpg?strip=all&#038;quality=100&#038;w=300&#038;h=192&#038;crop=1"></div>
+			</a>
+					</div><!-- .rail__item-image -->
+	
+	<div class="rail__item-content">
+					<h3 class="rail__item-headline theme__copy-color">
+				SLING WARRIOR			</h3>
+							<span class="rail__item-sub">
+				Groves beats Eubank Jr in brutal and bloody Brit war despite shoulder injury			</span>
+			</div><!-- .rail__item-content -->
+	<div class="rail__item-gradient-light">
+
+	</div>
+	<a href="https://www.thesun.ie/sport/boxing/2197319/groves-vs-eubank-jr-result-george-groves-defends-wba-super-middleweight-title-with-blood-splattered-points-victory-against-chris-eubank-jr/" class="rail__item-anchor"></a>
+
+</div><!-- .rail__item .swiper-slide -->
+
+<div class="rail__item swiper-slide">
+
+					<div class="rail__item-image">
+			<a href="https://www.thesun.ie/sport/football/2198550/could-brazil-star-luan-be-the-man-liverpool-need-to-finally-replace-philippe-coutinho-in-the-summer-window/">
+				<div class="delayed-image-load-landscape" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-coutinho-luan-1.jpg?strip=all&#038;quality=100&#038;w=300&#038;h=192&#038;crop=1"></div>
+				<div class="delayed-image-load-mobile" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-coutinho-luan-1.jpg?strip=all&#038;quality=100&#038;w=300&#038;h=192&#038;crop=1"></div>
+			</a>
+					</div><!-- .rail__item-image -->
+	
+	<div class="rail__item-content">
+					<h3 class="rail__item-headline theme__copy-color">
+				You&#039;re the Luan			</h3>
+							<span class="rail__item-sub">
+				Could Brazil star Luan be the man Liverpool need to replace Coutinho?			</span>
+			</div><!-- .rail__item-content -->
+	<div class="rail__item-gradient-light">
+
+	</div>
+	<a href="https://www.thesun.ie/sport/football/2198550/could-brazil-star-luan-be-the-man-liverpool-need-to-finally-replace-philippe-coutinho-in-the-summer-window/" class="rail__item-anchor"></a>
+
+</div><!-- .rail__item .swiper-slide -->
+
+<div class="rail__item swiper-slide">
+
+					<div class="rail__item-image">
+			<a href="https://www.thesun.ie/sport/football/2200378/west-brom-boss-alan-pardew-has-two-games-to-save-job-after-taxi-gate-with-baggies-owner-furious-about-incident-and-poor-performances/">
+				<div class="delayed-image-load-landscape" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-pardew-taxi-lai-1.jpg?strip=all&#038;quality=100&#038;w=300&#038;h=192&#038;crop=1"></div>
+				<div class="delayed-image-load-mobile" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-pardew-taxi-lai-1.jpg?strip=all&#038;quality=100&#038;w=300&#038;h=192&#038;crop=1"></div>
+			</a>
+					</div><!-- .rail__item-image -->
+	
+	<div class="rail__item-content">
+					<h3 class="rail__item-headline theme__copy-color">
+				Taxi for Alan			</h3>
+							<span class="rail__item-sub">
+				Baggies boss Pardew given two games to save his job after &#039;taxi-gate&#039;			</span>
+			</div><!-- .rail__item-content -->
+	<div class="rail__item-gradient-light">
+
+	</div>
+	<a href="https://www.thesun.ie/sport/football/2200378/west-brom-boss-alan-pardew-has-two-games-to-save-job-after-taxi-gate-with-baggies-owner-furious-about-incident-and-poor-performances/" class="rail__item-anchor"></a>
+
+</div><!-- .rail__item .swiper-slide -->
+
+<div class="rail__item swiper-slide">
+
+					<div class="rail__item-image">
+			<a href="https://www.thesun.ie/sport/football/2199940/hawkeye-issue-apology-over-wrong-var-image-for-juan-matas-disallowed-goal/">
+				<div class="delayed-image-load-landscape" data-src="https://i1.wp.com/www.thesun.ie/wp-content/uploads/sites/3/2018/02/nintchdbpict0003859658842-1.jpg?crop=536px%2C118px%2C1148px%2C765px&#038;resize=300%2C192&#038;ssl=1"></div>
+				<div class="delayed-image-load-mobile" data-src="https://i1.wp.com/www.thesun.ie/wp-content/uploads/sites/3/2018/02/nintchdbpict0003859658842-1.jpg?crop=536px%2C118px%2C1148px%2C765px&#038;resize=300%2C192&#038;ssl=1"></div>
+			</a>
+							<!-- Add video indicator if article has feature video. -->
+				<div class="rail__item-play theme__background-color-rgba-80">
+					<span></span>
+				</div>
+					</div><!-- .rail__item-image -->
+	
+	<div class="rail__item-content">
+					<h3 class="rail__item-headline theme__copy-color">
+				GIVE AND TECH			</h3>
+							<span class="rail__item-sub">
+				Hawkeye issue apology for &#039;wobbly lines&#039; VAR image for Mata&#039;s disallowed goal			</span>
+			</div><!-- .rail__item-content -->
+	<div class="rail__item-gradient-light">
+
+	</div>
+	<a href="https://www.thesun.ie/sport/football/2199940/hawkeye-issue-apology-over-wrong-var-image-for-juan-matas-disallowed-goal/" class="rail__item-anchor"></a>
+
+</div><!-- .rail__item .swiper-slide -->
+
+<div class="rail__item swiper-slide">
+
+					<div class="rail__item-image">
+			<a href="https://www.thesun.ie/sport/football/2198735/manchester-city-ace-gabriel-jesus-closes-in-on-a-return-to-first-team-action-but-without-his-close-knit-entourage-who-were-refused-access-to-uk/">
+				<div class="delayed-image-load-landscape" data-src="https://i0.wp.com/www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-gabriel-jesus1-1.jpg?crop=0px%2C0px%2C620px%2C413px&#038;resize=300%2C192&#038;ssl=1"></div>
+				<div class="delayed-image-load-mobile" data-src="https://i0.wp.com/www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-gabriel-jesus1-1.jpg?crop=0px%2C0px%2C620px%2C413px&#038;resize=300%2C192&#038;ssl=1"></div>
+			</a>
+					</div><!-- .rail__item-image -->
+	
+	<div class="rail__item-content">
+					<h3 class="rail__item-headline theme__copy-color">
+				access denied			</h3>
+							<span class="rail__item-sub">
+				Jesus closes on return to action without stranded entourage stuck in Brazil			</span>
+			</div><!-- .rail__item-content -->
+	<div class="rail__item-gradient-light">
+
+	</div>
+	<a href="https://www.thesun.ie/sport/football/2198735/manchester-city-ace-gabriel-jesus-closes-in-on-a-return-to-first-team-action-but-without-his-close-knit-entourage-who-were-refused-access-to-uk/" class="rail__item-anchor"></a>
+
+</div><!-- .rail__item .swiper-slide -->
+
+<div class="rail__item swiper-slide">
+
+					<div class="rail__item-image">
+			<a href="https://www.thesun.ie/sport/2198176/derry-boss-kenny-shiels-unhappy-with-newly-promoted-waterfords-tactics-after-opening-night-loss/">
+				<div class="delayed-image-load-landscape" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/untitled-design-342.png?strip=all&#038;quality=100&#038;w=300&#038;h=192&#038;crop=1"></div>
+				<div class="delayed-image-load-mobile" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/untitled-design-342.png?strip=all&#038;quality=100&#038;w=300&#038;h=192&#038;crop=1"></div>
+			</a>
+					</div><!-- .rail__item-image -->
+	
+	<div class="rail__item-content">
+					<h3 class="rail__item-headline theme__copy-color">
+				Kenny&#039;s Fuming			</h3>
+							<span class="rail__item-sub">
+				Derry boss Kenny Shiels unhappy with newly-promoted Waterford&#039;s tactics			</span>
+			</div><!-- .rail__item-content -->
+	<div class="rail__item-gradient-light">
+
+	</div>
+	<a href="https://www.thesun.ie/sport/2198176/derry-boss-kenny-shiels-unhappy-with-newly-promoted-waterfords-tactics-after-opening-night-loss/" class="rail__item-anchor"></a>
+
+</div><!-- .rail__item .swiper-slide -->
+
+<div class="rail__item swiper-slide">
+
+					<div class="rail__item-image">
+			<a href="https://www.thesun.ie/sport/football/2199798/keith-long-praises-new-bohemians-signing-eoghan-stokes-for-putting-football-first/">
+				<div class="delayed-image-load-landscape" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/stokesy.png?strip=all&#038;quality=100&#038;w=300&#038;h=192&#038;crop=1"></div>
+				<div class="delayed-image-load-mobile" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/stokesy.png?strip=all&#038;quality=100&#038;w=300&#038;h=192&#038;crop=1"></div>
+			</a>
+					</div><!-- .rail__item-image -->
+	
+	<div class="rail__item-content">
+					<h3 class="rail__item-headline theme__copy-color">
+				STOKED			</h3>
+							<span class="rail__item-sub">
+				Keith Long praises new Bohemians signing Eoghan Stokes for putting football first			</span>
+			</div><!-- .rail__item-content -->
+	<div class="rail__item-gradient-light">
+
+	</div>
+	<a href="https://www.thesun.ie/sport/football/2199798/keith-long-praises-new-bohemians-signing-eoghan-stokes-for-putting-football-first/" class="rail__item-anchor"></a>
+
+</div><!-- .rail__item .swiper-slide -->
+					</div><!-- .swiper-wrapper -->
+
+					<div class="swiper-button-prev theme__background-color-rgba-80"></div>
+					<div class="swiper-button-next theme__background-color-rgba-80"></div>
+
+				</div><!-- .swiper-container -->
+			</div><!-- .rail .{rail} .swiper-video-rail .{theme-slug} -->
+
+		</div><!-- .col .sun-col-6 -->
+	</div><!-- .sun-row .{row} .rail-video-index-->
+	</div> <!-- .sun-grid-container .sun-grid-container--{color} -->
+	<!--googleon: all-->
+	
+								</div><!-- .article__content -->
+																<div class="tags tags--article">
+																	</div><!-- .tags .tags--article -->
+								
+<div class="advert--taboola advert--taboola--thumbnails-feed" id="widget-thesun_taboola_widget-2-advert"></div>
+<script type="text/javascript">
+	window._taboola = window._taboola || [];
+	_taboola.push({
+		mode: 'thumbnails-feed',
+		container: 'widget-thesun_taboola_widget-2-advert',
+		placement: 'Article Footer',
+		target_type: 'mix'
+	});
+</script>
+
+<div class="social social--article">
+
+		
+			<div class="social-share-buttons">
+		<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2171471" class="share-facebook sd-button share-icon no-text" href="https://www.thesun.ie/sport/gaa-football/2171471/kieran-mcgeeney-admits-armagh-were-terrible-in-one-point-win-over-longford/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2171471" class="share-twitter sd-button share-icon no-text" href="https://www.thesun.ie/sport/gaa-football/2171471/kieran-mcgeeney-admits-armagh-were-terrible-in-one-point-win-over-longford/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-jetpack-whatsapp"><a rel="nofollow" data-shared="" class="share-jetpack-whatsapp sd-button share-icon no-text" href="https://api.whatsapp.com/send?text=Kieran%20McGeeney%20admits%20Armagh%20were%20%27terrible%27%20in%20one-point%20win%20over%20Longford https%3A%2F%2Fwww.thesun.ie%2Fsport%2Fgaa-football%2F2171471%2Fkieran-mcgeeney-admits-armagh-were-terrible-in-one-point-win-over-longford%2F" target="_blank" title="Click to share on WhatsApp"><span></span><span class="sharing-screen-reader-text">Click to share on WhatsApp (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div>	</div>
+	
+		
+</div><!-- .social social--article -->
+
+							</article><!-- .article -->
+					</div><!-- .col sun-col-4/6 -->
+
+										<div id="sidebar" class="col sun-col-2 article-sidebar">
+						<aside id="thesun_dfp_ad_widget-9" class="widget widget_thesun_dfp_ad_widget"><div class="dfp-ad-container articlempu-container">
+	<div class="dfp-ad teaser-item teasermedium teasermedium--mpu inarticle articlempu" id="articlempu">
+		<script type="text/javascript">
+			(function() {
+				function _displayAd(){
+					googletag = googletag || {};
+					googletag.cmd = googletag.cmd || [];
+					googletag.cmd.push( function() {
+						googletag.display( "articlempu" );
+					} );
+				}
+							var element    = document.getElementById( "articlempu" );
+				var paragraphs = document.querySelectorAll('.article__content > p');
+				var target     = paragraphs.length >= 8 ? paragraphs[7] : null;
+
+				if(target) {
+					if(isMobile()) {
+						target.parentElement.insertBefore(element, target.nextSibling);
+						_displayAd();
+					} else {
+						var aside = element.closest('aside');
+						aside.parentNode.removeChild(aside);
+					}
+				}
+						})();
+		</script>
+	</div>
+</div>
+
+</aside><aside id="thesun_dfp_ad_widget-2" class="widget widget_thesun_dfp_ad_widget"><div class="dfp-ad-container mpu-container">
+	<div class="dfp-ad teaser-item teasermedium teasermedium--mpu mpu" id="mpu">
+		<script type="text/javascript">
+			(function() {
+				function _displayAd(){
+					googletag = googletag || {};
+					googletag.cmd = googletag.cmd || [];
+					googletag.cmd.push( function() {
+						googletag.display( "mpu" );
+					} );
+				}
+							_displayAd();
+						})();
+		</script>
+	</div>
+</div>
+
+</aside><aside id="thesun_taboola_widget-3" class="widget widget_thesun_taboola_widget">
+<div class="advert--taboola advert--taboola--organic-thumbnails-a" id="widget-thesun_taboola_widget-3-advert"></div>
+<script type="text/javascript">
+	window._taboola = window._taboola || [];
+	_taboola.push({
+		mode: 'organic-thumbnails-a',
+		container: 'widget-thesun_taboola_widget-3-advert',
+		placement: 'Right Rail Thumbnails - Organic',
+		target_type: 'mix'
+	});
+</script>
+</aside><aside id="thesun_dfp_ad_widget-3" class="widget widget_thesun_dfp_ad_widget"><div class="dfp-ad-container mpu2-container">
+	<div class="dfp-ad teaser-item teasermedium teasermedium--mpu mpu2" id="mpu2">
+		<script type="text/javascript">
+			(function() {
+				function _displayAd(){
+					googletag = googletag || {};
+					googletag.cmd = googletag.cmd || [];
+					googletag.cmd.push( function() {
+						googletag.display( "mpu2" );
+					} );
+				}
+							_displayAd();
+						})();
+		</script>
+	</div>
+</div>
+
+</aside><aside id="thesun_taboola_widget-4" class="widget widget_thesun_taboola_widget">
+<div class="advert--taboola advert--taboola--alternating-thumbnails-a" id="widget-thesun_taboola_widget-4-advert"></div>
+<script type="text/javascript">
+	window._taboola = window._taboola || [];
+	_taboola.push({
+		mode: 'alternating-thumbnails-a',
+		container: 'widget-thesun_taboola_widget-4-advert',
+		placement: 'Right Rail Thumbnails',
+		target_type: 'mix'
+	});
+</script>
+</aside><aside class="widget sidebar sidebar__section teaser theme-sport"><div class="sidebar__title__row"><h3 class="sidebar__title theme__after-color">most popular</h3></div><!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-sport" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.ie/sport/gaa-football/2198560/galway-captain-damien-comer-suffers-double-heartbreak-as-grandfather-passes-away-after-sigerson-cup-final-loss/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/untitled-design-372.png?strip=all&amp;quality=100&amp;w=150&amp;h=100&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/untitled-design-372.png?strip=all&amp;quality=100&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.ie/sport/gaa-football/2198560/galway-captain-damien-comer-suffers-double-heartbreak-as-grandfather-passes-away-after-sigerson-cup-final-loss/">
+					<h2 class="teaser__headline theme__copy-color">&#039;Tough day&#039;</h2>
+				
+		<p class="teaser__subdeck">
+			Galway captain Damien Comer suffered a double heartbreak yesterday		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.ie/sport/" class="theme__copy-color">
+				Sport				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.ie/sport/gaa-football/2198560/galway-captain-damien-comer-suffers-double-heartbreak-as-grandfather-passes-away-after-sigerson-cup-final-loss/">
+		<a href="https://www.thesun.ie/sport/gaa-football/2198560/galway-captain-damien-comer-suffers-double-heartbreak-as-grandfather-passes-away-after-sigerson-cup-final-loss/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.ie/sport/gaa-football/2198560/galway-captain-damien-comer-suffers-double-heartbreak-as-grandfather-passes-away-after-sigerson-cup-final-loss/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-sport" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.ie/sport/football/2199387/chelseas-champions-league-referee-tom-henning-ovrebo-admits-mistakes-in-barcelona-semi-final-cost-blues-a-place-in-2009-showpiece/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-tom-henning-ovrebo-2009-cl-1.jpg?strip=all&amp;quality=100&amp;w=150&amp;h=100&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-tom-henning-ovrebo-2009-cl-1.jpg?strip=all&amp;quality=100&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.ie/sport/football/2199387/chelseas-champions-league-referee-tom-henning-ovrebo-admits-mistakes-in-barcelona-semi-final-cost-blues-a-place-in-2009-showpiece/">
+					<h2 class="teaser__headline theme__copy-color">Guilty</h2>
+				
+		<p class="teaser__subdeck">
+			Infamous ref Ovrebo admits blunders denied Chelsea 2009 Champions League final place		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.ie/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+		<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.ie/sport/football/2199387/chelseas-champions-league-referee-tom-henning-ovrebo-admits-mistakes-in-barcelona-semi-final-cost-blues-a-place-in-2009-showpiece/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="333394" data-lf-article-id="2199387"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+	
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.ie/sport/football/2199387/chelseas-champions-league-referee-tom-henning-ovrebo-admits-mistakes-in-barcelona-semi-final-cost-blues-a-place-in-2009-showpiece/">
+		<a href="https://www.thesun.ie/sport/football/2199387/chelseas-champions-league-referee-tom-henning-ovrebo-admits-mistakes-in-barcelona-semi-final-cost-blues-a-place-in-2009-showpiece/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.ie/sport/football/2199387/chelseas-champions-league-referee-tom-henning-ovrebo-admits-mistakes-in-barcelona-semi-final-cost-blues-a-place-in-2009-showpiece/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-sport" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.ie/sport/football/2197785/premiership-ace-saido-berahinos-fiancee-traps-his-lover-in-his-home-after-finding-her-there-on-valentines-day-then-calls-off-wedding/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/dk-composite-page81-1.jpg?strip=all&amp;quality=100&amp;w=150&amp;h=100&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/dk-composite-page81-1.jpg?strip=all&amp;quality=100&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+			<!-- EXCLUSIVE TAG -->
+		<div class="teaser-slug">
+			<span class="teaser-slug__copy liveblog-teaser-slug-disable">Exclusive</span>
+		</div>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.ie/sport/football/2197785/premiership-ace-saido-berahinos-fiancee-traps-his-lover-in-his-home-after-finding-her-there-on-valentines-day-then-calls-off-wedding/">
+					<h2 class="teaser__headline theme__copy-color">&#039;OPEN THE DOOR YOU SL**&#039;</h2>
+				
+		<p class="teaser__subdeck">
+			Prem ace&#039;s fiancee TRAPS mistress in home after catching them out		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.ie/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+		<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.ie/sport/football/2197785/premiership-ace-saido-berahinos-fiancee-traps-his-lover-in-his-home-after-finding-her-there-on-valentines-day-then-calls-off-wedding/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="333394" data-lf-article-id="2197785"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+	
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.ie/sport/football/2197785/premiership-ace-saido-berahinos-fiancee-traps-his-lover-in-his-home-after-finding-her-there-on-valentines-day-then-calls-off-wedding/">
+		<a href="https://www.thesun.ie/sport/football/2197785/premiership-ace-saido-berahinos-fiancee-traps-his-lover-in-his-home-after-finding-her-there-on-valentines-day-then-calls-off-wedding/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.ie/sport/football/2197785/premiership-ace-saido-berahinos-fiancee-traps-his-lover-in-his-home-after-finding-her-there-on-valentines-day-then-calls-off-wedding/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-sport" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.ie/sport/boxing/2197319/groves-vs-eubank-jr-result-george-groves-defends-wba-super-middleweight-title-with-blood-splattered-points-victory-against-chris-eubank-jr/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-boxing-groves-win-1.jpg?strip=all&amp;quality=100&amp;w=150&amp;h=100&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-boxing-groves-win-1.jpg?strip=all&amp;quality=100&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.ie/sport/boxing/2197319/groves-vs-eubank-jr-result-george-groves-defends-wba-super-middleweight-title-with-blood-splattered-points-victory-against-chris-eubank-jr/">
+					<h2 class="teaser__headline theme__copy-color">SLING WARRIOR</h2>
+				
+		<p class="teaser__subdeck">
+			Groves beats Eubank Jr in brutal and bloody Brit war despite shoulder injury		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.ie/sport/" class="theme__copy-color">
+				Sport				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+		<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.ie/sport/boxing/2197319/groves-vs-eubank-jr-result-george-groves-defends-wba-super-middleweight-title-with-blood-splattered-points-victory-against-chris-eubank-jr/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="333394" data-lf-article-id="2197319"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+	
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.ie/sport/boxing/2197319/groves-vs-eubank-jr-result-george-groves-defends-wba-super-middleweight-title-with-blood-splattered-points-victory-against-chris-eubank-jr/">
+		<a href="https://www.thesun.ie/sport/boxing/2197319/groves-vs-eubank-jr-result-george-groves-defends-wba-super-middleweight-title-with-blood-splattered-points-victory-against-chris-eubank-jr/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.ie/sport/boxing/2197319/groves-vs-eubank-jr-result-george-groves-defends-wba-super-middleweight-title-with-blood-splattered-points-victory-against-chris-eubank-jr/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-sport" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.ie/sport/football/2198550/could-brazil-star-luan-be-the-man-liverpool-need-to-finally-replace-philippe-coutinho-in-the-summer-window/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-coutinho-luan-1.jpg?strip=all&amp;quality=100&amp;w=150&amp;h=100&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-coutinho-luan-1.jpg?strip=all&amp;quality=100&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+			<!-- EXCLUSIVE TAG -->
+		<div class="teaser-slug">
+			<span class="teaser-slug__copy liveblog-teaser-slug-disable">Feature</span>
+		</div>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.ie/sport/football/2198550/could-brazil-star-luan-be-the-man-liverpool-need-to-finally-replace-philippe-coutinho-in-the-summer-window/">
+					<h2 class="teaser__headline theme__copy-color">You&#039;re the Luan</h2>
+				
+		<p class="teaser__subdeck">
+			Could Brazil star Luan be the man Liverpool need to replace Coutinho?		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.ie/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+		<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.ie/sport/football/2198550/could-brazil-star-luan-be-the-man-liverpool-need-to-finally-replace-philippe-coutinho-in-the-summer-window/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="333394" data-lf-article-id="2198550"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+	
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.ie/sport/football/2198550/could-brazil-star-luan-be-the-man-liverpool-need-to-finally-replace-philippe-coutinho-in-the-summer-window/">
+		<a href="https://www.thesun.ie/sport/football/2198550/could-brazil-star-luan-be-the-man-liverpool-need-to-finally-replace-philippe-coutinho-in-the-summer-window/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.ie/sport/football/2198550/could-brazil-star-luan-be-the-man-liverpool-need-to-finally-replace-philippe-coutinho-in-the-summer-window/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-sport" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.ie/sport/football/2200378/west-brom-boss-alan-pardew-has-two-games-to-save-job-after-taxi-gate-with-baggies-owner-furious-about-incident-and-poor-performances/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-pardew-taxi-lai-1.jpg?strip=all&amp;quality=100&amp;w=150&amp;h=100&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-pardew-taxi-lai-1.jpg?strip=all&amp;quality=100&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+			<!-- EXCLUSIVE TAG -->
+		<div class="teaser-slug">
+			<span class="teaser-slug__copy liveblog-teaser-slug-disable">Exclusive</span>
+		</div>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.ie/sport/football/2200378/west-brom-boss-alan-pardew-has-two-games-to-save-job-after-taxi-gate-with-baggies-owner-furious-about-incident-and-poor-performances/">
+					<h2 class="teaser__headline theme__copy-color">Taxi for Alan</h2>
+				
+		<p class="teaser__subdeck">
+			Baggies boss Pardew given two games to save his job after &#039;taxi-gate&#039;		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.ie/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+		<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.ie/sport/football/2200378/west-brom-boss-alan-pardew-has-two-games-to-save-job-after-taxi-gate-with-baggies-owner-furious-about-incident-and-poor-performances/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="333394" data-lf-article-id="2200378"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+	
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.ie/sport/football/2200378/west-brom-boss-alan-pardew-has-two-games-to-save-job-after-taxi-gate-with-baggies-owner-furious-about-incident-and-poor-performances/">
+		<a href="https://www.thesun.ie/sport/football/2200378/west-brom-boss-alan-pardew-has-two-games-to-save-job-after-taxi-gate-with-baggies-owner-furious-about-incident-and-poor-performances/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.ie/sport/football/2200378/west-brom-boss-alan-pardew-has-two-games-to-save-job-after-taxi-gate-with-baggies-owner-furious-about-incident-and-poor-performances/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-sport" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.ie/sport/football/2199940/hawkeye-issue-apology-over-wrong-var-image-for-juan-matas-disallowed-goal/">
+					<div class="delayed-image-load-landscape" data-src="https://i1.wp.com/www.thesun.ie/wp-content/uploads/sites/3/2018/02/nintchdbpict0003859658842-1.jpg?crop=536px%2C118px%2C1148px%2C765px&amp;resize=150%2C100&amp;ssl=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://i1.wp.com/www.thesun.ie/wp-content/uploads/sites/3/2018/02/nintchdbpict0003859658842-1.jpg?crop=536px%2C118px%2C1148px%2C765px&amp;resize=620%2C413&amp;ssl=1"></div>
+			</a>
+				<!-- Add video indicator if article has feature video. -->
+		<div class="teaser__item-play theme__background-color-rgba-80">
+			<span></span>
+		</div>
+	</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.ie/sport/football/2199940/hawkeye-issue-apology-over-wrong-var-image-for-juan-matas-disallowed-goal/">
+					<h2 class="teaser__headline theme__copy-color">GIVE AND TECH</h2>
+				
+		<p class="teaser__subdeck">
+			Hawkeye issue apology for &#039;wobbly lines&#039; VAR image for Mata&#039;s disallowed goal		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.ie/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+		<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.ie/sport/football/2199940/hawkeye-issue-apology-over-wrong-var-image-for-juan-matas-disallowed-goal/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="333394" data-lf-article-id="2199940"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+	
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.ie/sport/football/2199940/hawkeye-issue-apology-over-wrong-var-image-for-juan-matas-disallowed-goal/">
+		<a href="https://www.thesun.ie/sport/football/2199940/hawkeye-issue-apology-over-wrong-var-image-for-juan-matas-disallowed-goal/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.ie/sport/football/2199940/hawkeye-issue-apology-over-wrong-var-image-for-juan-matas-disallowed-goal/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-sport" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.ie/sport/football/2198735/manchester-city-ace-gabriel-jesus-closes-in-on-a-return-to-first-team-action-but-without-his-close-knit-entourage-who-were-refused-access-to-uk/">
+					<div class="delayed-image-load-landscape" data-src="https://i0.wp.com/www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-gabriel-jesus1-1.jpg?crop=0px%2C0px%2C620px%2C413px&amp;resize=150%2C100&amp;ssl=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://i0.wp.com/www.thesun.ie/wp-content/uploads/sites/3/2018/02/sport-preview-gabriel-jesus1-1.jpg?crop=0px%2C0px%2C620px%2C413px&amp;resize=620%2C413&amp;ssl=1"></div>
+			</a>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.ie/sport/football/2198735/manchester-city-ace-gabriel-jesus-closes-in-on-a-return-to-first-team-action-but-without-his-close-knit-entourage-who-were-refused-access-to-uk/">
+					<h2 class="teaser__headline theme__copy-color">access denied</h2>
+				
+		<p class="teaser__subdeck">
+			Jesus closes on return to action without stranded entourage stuck in Brazil		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.ie/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+		<div class="article-data__item article-data__comment">
+		<a href="https://www.thesun.ie/sport/football/2198735/manchester-city-ace-gabriel-jesus-closes-in-on-a-return-to-first-team-action-but-without-his-close-knit-entourage-who-were-refused-access-to-uk/#comments">
+			<span class="icon icon-comment"></span>
+			<span class="livefyre-commentcount" data-lf-site-id="333394" data-lf-article-id="2198735"></span>
+		</a>
+	</div><!-- .article-data__item .article-data__comment -->
+	
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.ie/sport/football/2198735/manchester-city-ace-gabriel-jesus-closes-in-on-a-return-to-first-team-action-but-without-his-close-knit-entourage-who-were-refused-access-to-uk/">
+		<a href="https://www.thesun.ie/sport/football/2198735/manchester-city-ace-gabriel-jesus-closes-in-on-a-return-to-first-team-action-but-without-his-close-knit-entourage-who-were-refused-access-to-uk/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.ie/sport/football/2198735/manchester-city-ace-gabriel-jesus-closes-in-on-a-return-to-first-team-action-but-without-his-close-knit-entourage-who-were-refused-access-to-uk/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-sport" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.ie/sport/2198176/derry-boss-kenny-shiels-unhappy-with-newly-promoted-waterfords-tactics-after-opening-night-loss/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/untitled-design-342.png?strip=all&amp;quality=100&amp;w=150&amp;h=100&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/untitled-design-342.png?strip=all&amp;quality=100&amp;w=620&amp;h=413&amp;crop=1"></div>
+			</a>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.ie/sport/2198176/derry-boss-kenny-shiels-unhappy-with-newly-promoted-waterfords-tactics-after-opening-night-loss/">
+					<h2 class="teaser__headline theme__copy-color">Kenny&#039;s Fuming</h2>
+				
+		<p class="teaser__subdeck">
+			Derry boss Kenny Shiels unhappy with newly-promoted Waterford&#039;s tactics		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.ie/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.ie/sport/2198176/derry-boss-kenny-shiels-unhappy-with-newly-promoted-waterfords-tactics-after-opening-night-loss/">
+		<a href="https://www.thesun.ie/sport/2198176/derry-boss-kenny-shiels-unhappy-with-newly-promoted-waterfords-tactics-after-opening-night-loss/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.ie/sport/2198176/derry-boss-kenny-shiels-unhappy-with-newly-promoted-waterfords-tactics-after-opening-night-loss/"></a>
+
+</div>
+<!-- SMALL TEASER - 150PX -->
+<div class="teaser-item teaser__small theme-sport" >
+
+	<!-- TEASER IMAGE -->
+<div class="teaser__image-container" >
+	<div class="teaser-grad"></div>
+	<a href="https://www.thesun.ie/sport/football/2199798/keith-long-praises-new-bohemians-signing-eoghan-stokes-for-putting-football-first/">
+					<div class="delayed-image-load-landscape" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/stokesy.png?strip=all&amp;quality=100&amp;w=150&amp;h=100&amp;crop=1"></div>
+			<div class="delayed-image-load-mobile" data-src="https://www.thesun.ie/wp-content/uploads/sites/3/2018/02/stokesy.png?strip=all&amp;quality=100&amp;w=620&amp;h=367&amp;crop=1"></div>
+			</a>
+		</div>
+
+	
+<div class="teaser__copy-container">
+	<a class="text-anchor-wrap" href="https://www.thesun.ie/sport/football/2199798/keith-long-praises-new-bohemians-signing-eoghan-stokes-for-putting-football-first/">
+					<h2 class="teaser__headline theme__copy-color">STOKED</h2>
+				
+		<p class="teaser__subdeck">
+			Keith Long praises new Bohemians signing Eoghan Stokes for putting football first		</p>
+
+			</a>
+</div><!-- .teaser__copy-container -->
+
+	
+<div class="article-data teaser__social">
+
+			<div class="article-data__item article-data__tag">
+						<a href="https://www.thesun.ie/sport/football/" class="theme__copy-color">
+				Football				<span class="icon icon-arrow-right"></span>
+			</a>
+		</div><!-- .article-data__item .article-data__tag -->
+	
+	
+	<div class="article-data__item article-data__share" data-url="https://www.thesun.ie/sport/football/2199798/keith-long-praises-new-bohemians-signing-eoghan-stokes-for-putting-football-first/">
+		<a href="https://www.thesun.ie/sport/football/2199798/keith-long-praises-new-bohemians-signing-eoghan-stokes-for-putting-football-first/">
+			<svg class="article-data__svg article-share" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="5661.3 2202.8 2294.7 1835.8" enable-background="new 5661.3 2202.8 2294.7 1835.8" xml:space="preserve">
+				<path fill="#E92129" d="M7038.1,4038.5v-458.9c0,0-917.9-229.5-1376.8,458.9c0-755.9,620.9-1376.8,1376.8-1376.8v-458.9l917.9,917.9
+				L7038.1,4038.5z" />
+			</svg>
+			<span class="share-count"></span>
+		</a>
+	</div><!-- .article-data__item article-data__share -->
+
+</div><!-- .article-data teaser__social -->
+
+<a class="teaser-anchor" href="https://www.thesun.ie/sport/football/2199798/keith-long-praises-new-bohemians-signing-eoghan-stokes-for-putting-football-first/"></a>
+
+</div>
+</aside>					</div><!-- .col sun-col-2 -->
+					
+				</div><!-- .sun-row -->
+			
+			 
+<div class="billboard secondary">
+	<div class="sun-row">
+		<div class="col sun-col-6">
+							<div class="dfp-ad" id="billboard2">
+					<script type="text/javascript">
+						document.addEventListener('DOMContentLoaded', function () {
+							googletag.cmd.push( function() {
+								googletag.display( 'billboard2' );
+							} );
+						});
+					</script>
+				</div>
+					</div>
+	</div>
+</div>
+
+		</section><!--. sun-container__article-section theme-sport -->
+
+	</div><!-- .main-content-wrap -->
+
+		<div class="gallery-popup">
+		<a href="#" class="close-gallery"><span class="icon icon-close"></span></a>
+
+		<div class="gallery-image-load-cover"></div>
+		<div class="gallery-container">
+			<div class="swiper-container">
+				<div class="swiper-wrapper"></div>
+
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div><!-- .swiper-container -->
+		</div><!-- .gallery-container -->
+
+		<div class="swiper-caption">
+			<div class="swiper-caption-toggle"><span class="arrow"></span></div>
+
+			<div class="swiper-pagination"></div>
+
+			<span class="swiper-caption-list"></span>
+
+			<div class="sharingButtons social social--gallery">
+					<div class="social-share-buttons">
+		<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-2171471" class="share-facebook sd-button share-icon no-text" href="https://www.thesun.ie/sport/gaa-football/2171471/kieran-mcgeeney-admits-armagh-were-terrible-in-one-point-win-over-longford/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-2171471" class="share-twitter sd-button share-icon no-text" href="https://www.thesun.ie/sport/gaa-football/2171471/kieran-mcgeeney-admits-armagh-were-terrible-in-one-point-win-over-longford/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-jetpack-whatsapp"><a rel="nofollow" data-shared="" class="share-jetpack-whatsapp sd-button share-icon no-text" href="https://api.whatsapp.com/send?text=Kieran%20McGeeney%20admits%20Armagh%20were%20%27terrible%27%20in%20one-point%20win%20over%20Longford https%3A%2F%2Fwww.thesun.ie%2Fsport%2Fgaa-football%2F2171471%2Fkieran-mcgeeney-admits-armagh-were-terrible-in-one-point-win-over-longford%2F" target="_blank" title="Click to share on WhatsApp"><span></span><span class="sharing-screen-reader-text">Click to share on WhatsApp (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div>	</div>
+				</div>
+		</div><!-- .swiper-caption -->
+	</div><!-- .gallery-popup -->
+
+ 
+<div class="billboard secondary">
+	<div class="sun-row">
+		<div class="col sun-col-6">
+							<div class="dfp-ad" id="billboard2">
+					<script type="text/javascript">
+						document.addEventListener('DOMContentLoaded', function () {
+							googletag.cmd.push( function() {
+								googletag.display( 'billboard2' );
+							} );
+						});
+					</script>
+				</div>
+					</div>
+	</div>
+</div>
+
+<div id="cookie-bar">
+    <div class="sun-row">
+        <div class="col sun-col-6">
+            <p>By continuing to use the site, you agree to the use of cookies. You can change this and find out more by following <a href="http://www.newsprivacy.co.uk/single/">this link</a></p>
+            <a class="accept-cookies">Close</a>
+        </div>
+    </div>
+</div>
+
+</div><!-- .sun-container .theme -->
+
+<div class="dfp-ad" id="pixel">
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function () {
+			googletag = googletag || {};
+			googletag.cmd = googletag.cmd || [];
+			googletag.cmd.push( function() {
+				googletag.display( 'pixel' );
+			} );
+		});
+	</script>
+</div>
+<div class="dfp-ad" id="pixelSkin">
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function () {
+			googletag = googletag || {};
+			googletag.cmd = googletag.cmd || [];
+			googletag.cmd.push( function() {
+				googletag.display( 'pixelSkin' );
+			} );
+		});
+	</script>
+</div>
+<div class="dfp-ad" id="pixelTeads">
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function () {
+			googletag = googletag || {};
+			googletag.cmd = googletag.cmd || [];
+			googletag.cmd.push( function() {
+				googletag.display( 'pixelTeads' );
+			} );
+		});
+	</script>
+</div>
+
+<footer>
+
+	<div class="sun-row">
+		<div class="col sun-col-2 footer-follow">
+			<h3 class="footer-title-follow">Follow The Sun</h3>
+
+			<div class="follow-sun">
+				<a href="https://www.facebook.com/theirishsun/" class="follow-facebook" target="_blank"><span class="icon icon-facebook"></span></a><a href="https://twitter.com/IrishSunOnline" class="follow-twitter" target="_blank"><span class="icon icon-twitter"></span></a>			</div>
+		</div>
+
+		<div class="col sun-col-4 footer-nav">
+			<h3 class="footer-title-services">Services</h3>
+			<ul id="menu-footer-menu" class="menu"><li id="menu-item-256612" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256612"><a href="https://www.thesun.co.uk/sign-up-to-the-sun/">Sign Up To The Sun</a></li>
+<li id="menu-item-256613" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256613"><a href="https://www.thesun.co.uk/terms-and-conditions/">Terms and Conditions</a></li>
+<li id="menu-item-1927570" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1927570"><a href="https://www.thesun.ie/editorial-complaints/">Editorial Complaints</a></li>
+<li id="menu-item-256615" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256615"><a href="https://www.thesun.co.uk/admin/clarifications/">Clarifications and Corrections</a></li>
+<li id="menu-item-256616" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256616"><a href="https://www.thesun.co.uk/syndication/">Syndication</a></li>
+<li id="menu-item-256617" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256617"><a href="http://www.newsukadvertising.co.uk">Advertising</a></li>
+<li id="menu-item-256628" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256628"><a href="https://www.thesun.ie/contact-us/">Contact Us</a></li>
+<li id="menu-item-256619" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-256619"><a href="http://help.thesun.co.uk/">Help Hub</a></li>
+</ul>		</div>
+
+		<div class="col sun-col-2 footer-col-dummy"></div>
+
+		<div class="col sun-col-4">
+			<div class="terms">
+				<p>&copy;News Group Newspapers Limited in England No. 679215 Registered office: 1 London Bridge Street, London, SE1 9GF. "The Sun", "Sun", "Sun Online" are registered trademarks or trade names of News Group Newspapers Limited. This service is provided on News Group Newspapers' Limited's <a href="https://www.thesun.co.uk/terms-and-conditions/">Standard Terms and Conditions</a> in accordance with our <a href="http://www.newsprivacy.co.uk/">Privacy &amp; Cookie Policy</a>. To inquire about a licence to reproduce material, visit our <a href="https://www.thesun.co.uk/syndication/">Syndication</a> site. View our online Press Pack. For other inquiries <a href="https://www.thesun.ie/contact-us/">Contact Us</a>. To see all content on The Sun, please use the Site Map. The Sun website is regulated by the <a href="https://www.thesun.co.uk/editorial-complaints/">Independent Press Standards Organisation (IPSO)</a></p>
+			</div>
+		</div>
+	</div><!-- .sun-row -->
+
+</footer>
+
+	<div style="display:none">
+	</div>
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="thesun.ie"></div>
+</div>
+<script data-cfasync="false">
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.setAttribute('data-cfasync', 'false'); e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
+		<script type="application/ld+json">
+		{"@context":"http:\/\/schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.thesun.ie\/sport\/gaa-football\/2171471\/kieran-mcgeeney-admits-armagh-were-terrible-in-one-point-win-over-longford\/"},"headline":"Kieran McGeeney admits Armagh were \u2018terrible\u2019 in one-point win over Longford","url":"http:\/\/www.thesun.ie\/sport\/gaa-football\/2171471\/kieran-mcgeeney-admits-armagh-were-terrible-in-one-point-win-over-longford\/","thumbnailUrl":"https:\/\/www.thesun.ie\/wp-content\/uploads\/sites\/3\/2018\/02\/template-three-comp-inner-circle-8.jpg?strip=all&#038;quality=100&#038;w=750&#038;h=500&#038;crop=1","image":{"@type":"ImageObject","url":"https:\/\/www.thesun.ie\/wp-content\/uploads\/sites\/3\/2018\/02\/template-three-comp-inner-circle-8.jpg?strip=all&#038;quality=100&#038;w=750&#038;h=500&#038;crop=1","width":750,"height":500},"dateCreated":"2018-02-12T08:48:34Z","datePublished":"2018-02-12T08:48:34+00:00","dateModified":"2018-02-12T08:48:34+00:00","articleSection":"Sport","author":{"@type":"Person","name":"Orla Bannon"},"publisher":{"@type":"Organization","name":"The Irish Sun","url":"https:\/\/www.thesun.ie","logo":{"@type":"ImageObject","url":"https:\/\/www.thesun.ie\/wp-content\/themes\/theirishsun\/images\/the-sun-structured-data-logo.jpg","width":139,"height":60}},"keywords":["Section: Sport:GAA Football"],"description":"Rory Grugan kicked a last-gasp winner for the hosts at the Athletic Grounds","name":"Kieran McGeeney admits Armagh were \u2018terrible\u2019 in one-point win over Longford"}		</script>
+			<script>
+		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+			n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+			n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+			t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+			document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+		fbq('init', '752905198150451');
+		fbq('track', "PageView");
+	</script>
+
+	<noscript>
+		<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=752905198150451&ev=PageView&noscript=1" />
+	</noscript>
+
+		<script type="text/javascript">
+		window._taboola = window._taboola || [];
+		_taboola.push({flush: true});
+	</script>
+	
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/www.thesun.ie\/sport\/gaa-football\/2171471\/kieran-mcgeeney-admits-armagh-were-terrible-in-one-point-win-over-longford\/":2171471};
+	</script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201808'></script>
+<script type='text/javascript' src='https://secure.gravatar.com/js/gprofiles.js?ver=2018Febaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.thesun.ie/wp-content/mu-plugins/jetpack/modules/wpgroho.js?m=1491538273g'></script>
+<script type='text/javascript' src='//player.ooyala.com/static/v4/production/latest/core.min.js?ver=v4'></script>
+<script type='text/javascript' src='//player.ooyala.com/static/v4/production/latest/skin-plugin/html5-skin.min.js?ver=v4'></script>
+<script type='text/javascript' src='//player.ooyala.com/static/v4/production/latest/video-plugin/main_html5.min.js?ver=v4'></script>
+<script type='text/javascript' src='//player.ooyala.com/static/v4/production/latest/video-plugin/osmf_flash.min.js?ver=v4'></script>
+<script type='text/javascript' src='//player.ooyala.com/static/v4/production/latest/ad-plugin/google_ima.min.js?ver=v4'></script>
+<script type='text/javascript' src='//sb.scorecardresearch.com/c2/plugins/streamingtag_plugin_ooyalav4.js?ver=4.9.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var thesun_main_settings = {"loginlink":"https:\/\/login.thesun.co.uk"};
+var galleryData = [{"img":"https:\/\/www.thesun.ie\/wp-content\/uploads\/sites\/3\/2018\/02\/1453459-e1518424964333.jpg?strip=all&quality=100&w=698","caption":"Rory Grugan celebrates scoring his side's winning point","credit":"Sportsfile"},{"img":"https:\/\/www.thesun.ie\/wp-content\/uploads\/sites\/3\/2018\/02\/1453458-e1518425033800.jpg?strip=all&quality=100&w=749","caption":"Rory Grugan scores the winning point","credit":"Sportsfile"},{"img":"https:\/\/www.thesun.ie\/wp-content\/uploads\/sites\/3\/2018\/02\/1453389-e1518425092997.jpg?strip=all&quality=100&w=960","caption":"Armagh boss Kieran McGeeney","credit":"Sportsfile"}];
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var thesunOoyalaSettings = {"pcode":"5nbWk6UPHAPHIpkunRhFyQE8fR1e","playerBrandingId":"NDcyOWI0M2YyMDdkN2YwODU5Mzc5MDUz","skinUrl":"\/\/player.ooyala.com\/static\/v4\/production\/latest\/skin-plugin\/skin.json"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.thesun.ie/_static/??-eJzTLy/QTc7PK0nNK9EvyUjNTS0GUcWlefpZxfrF5ZkFqUV6uZl5elnFOvr4lOYmEqGoLDMlNZ+gqtTcpNSUYqAy+1xbQ1NDM0MLI0tD8ywAVFk+FQ=='></script>
+<script type='text/javascript' async="async" defer src='//s.skimresources.com/js/34784X1028065.skimlinks.js?ver=4.9.4'></script>
+<script type='text/javascript' src='https://www.thesun.ie/wp-content/themes/thesun/js/gsa.js?m=1502364673g'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var opta_settings = {"subscription_id":"6b7abd03b9bef15d0461b05b0cc5d8a4","language":"en_GB","timezone":"Europe\/London"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://secure.widget.cloud.opta.net/v3/v3.opta-widgets.js?ver=4.9.4'></script>
+<script type='text/javascript' async="async" src='https://prod-sunbets-widgets.s3-eu-west-1.amazonaws.com/static/sunbet/betsense.min.js?ver=4.9.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.thesun.ie/_static/??/wp-includes/js/wp-embed.min.js,/wp-content/mu-plugins/jetpack/_inc/build/sharedaddy/sharing.min.js?m=1517951441j'></script>
+<script type='text/javascript'>
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+</script>
+<script type='text/javascript' src='https://stats.wp.com/e-201808.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:5.8',blog:'120996491',post:'2171471',tz:'0',srv:'www.thesun.ie'} ]);
+	_stq.push([ 'clickTrackerInit', '120996491', '2171471' ]);
+</script>
+<script src="https://ap.lijit.com/www/sovrn_beacon_standalone/sovrn_standalone_beacon.js?iid=247572" id="sBeacon" async></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"3aaf38205d","applicationID":"44435850","transactionName":"NlJSYUIEXhdTBkUPXQ8YcVZEDF8KHRZYCFUUW1FH","queueTime":0,"applicationTime":160,"atts":"GhVFFwoeTUgQBBNcSRxK","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+

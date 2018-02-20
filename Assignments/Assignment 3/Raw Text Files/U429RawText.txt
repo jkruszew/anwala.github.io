@@ -1,0 +1,30 @@
+Winter Olympics, televisions, and 'smart' sex toys may be under cyber attack
+Here are the things that were reportedly vulnerable to cyber criminals this week
+02/09/2018 |
+print
+By Amy Martyn
+Amy Martyn is a writer and investigative reporter now based in San Diego by way of Tijuana, BC, Dallas, TX and Los Angeles, CA. She primarily writes about how consumers, taxpayers and businesses are affected by corporate and government policies.   Read Full Bio→
+If it connects to the internet, it’s vulnerable to hacking. That’s the ongoing message that cyber-security experts have been giving, which may not seem particularly helpful knowing that everything connects to the internet.
+But breaches aren’t inevitable. Corporations like Equifax could have protected their customer’s data through encryption (but didn’t), and consumers can avoid potential high-risk devices and services or take additional precautions when they do.
+Below is a list of the obvious, the frightening, and the absurd things recently reported to be at risk of getting hacked.
+Winter Olympics
+The Department of Homeland Security issued a warning to Americans in Pyeongchang to be mindful of so-called “cyber activists” and cyber criminals.
+“At high-profile events, cyber activists may take advantage of the large audience to spread their message,” the warning says.  “Cyber criminals may attempt to steal personally identifiable information or harvest users’ credentials for financial gain. There is also the possibility that mobile or other communications will be monitored.”
+The agency advises Americans watching the games in person to switch off their Wifi and Bluetooth connections when not in use, avoid using password-only websites on public wireless networks, regularly update mobile software, and create strong passwords, which is about the same advice security experts have already been giving consumers.
+Televisions
+Has a ghost been turning on your television in the middle of the night? Maybe it’s just a bored teenager taunting you from his basement.
+Consumer Reports found that Samsung  television sets, Roku devices, and other smart TVs could be easily manipulated thousands of miles away by “a relatively unsophisticated hacker,” according to their review of security features on the devices.
+While owners of smart TVs can change their settings to improve security, they can’t escape the risk of a hack altogether. Even agreeing to the device’s privacy policies and terms of service, a necessary step in using it, triggers “a significant amount of data collection.”
+Passport numbers
+The Equifax hack was even worse than the credit agency has been letting on, according to an investigative report published by Sen Elizabeth Warren (D-Mass).
+Warren charged Wednesday that Equifax had failed to reveal numerous other security breaches, noting one instance in which an unknown number of passport numbers were accessed by hackers. It was a claim that Equifax quickly denied in news reports.
+But after The New York Post obtained a copy of a letter Equifax sent the senator, admitting as such, the company clarified its position. An Equifax spokesperson told the Post that “the easiest way to understand this is that there was a field labeled passports with no actual data in it.”
+The spokesperson denied that any passport numbers were actually stolen.
+Smart vibrators
+Researchers at SEC Consult found that a smart sex toy called Vibratissimo, which connects to smartphones via bluetooth, could be easily hacked via a “quick control” feature that allows use of the toy remotely.
+SEC Consult also reported that passwords and other sensitive data could be stolen through the product’s accompanying online application, which ZDNet reports has as many as 100,000 users.
+This is apparently an ongoing problem plaguing the smart sex toy industry. A PornHub-sponsored project called the Internet of Dongs is currently attempting to study all “smart” sex toys to look for potential security flaws.
+Stay up to date with important consumer news:
+Oops! something went wrong, mind trying again?
+Subscribe Now
+

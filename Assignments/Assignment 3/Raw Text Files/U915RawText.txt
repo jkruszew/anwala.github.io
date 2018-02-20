@@ -1,0 +1,4 @@
+GetHTML.py, 33, (
+, SSLError(MaxRetryError("HTTPSConnectionPool(host='khorda1.com', port=443): Max retries exceeded with url: /news/wind-ice-and-cold-are-making-this-olympics-too-wintry/%0A (Caused by SSLError(SSLError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:777)'),))",),),
+)
+

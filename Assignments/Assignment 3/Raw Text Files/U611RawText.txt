@@ -1,0 +1,39 @@
+3 More companies like BlitzPredict to come?
+Gambling is as old as money itself, but technology continues to push the industry forward in new ways.
+The decentralized infrastructure of blockchain has a number of applications in gaming, some of which are still being hashed out. The technology is just starting to take hold in the sports betting space, too.
+US-based startup  BlitzPredict is set to bring one of the first blockchain-based products to the sports betting market.
+What is BlitzPredict?
+At its core, BlitzPredict is a social and utility platform for the online sports betting community. It’s not a sportsbook itself, but it provides tools and liquidity for bettors around the world.
+In a white paper, BlitzPredict describes itself like this:
+BlitzPredict is a global platform under development applying fintech solutions to provide function and liquidity to users of blockchain prediction markets and sportsbooks.
+“Essentially, we want to harness the power of blockchain technology to improve the sports betting experience,” CEO Brett Richey said.
+The platform claims that it can solve a number of problems that currently trouble bettors:
+Bettors have to manually shop around for the best lines
+Cashouts can take days or weeks to process
+Betting syndicates compete against each other
+Touts aren’t held accountable for their predictions
+Features of BlitzPredict
+BPZ cryptocurrency
+The platform is based around a proprietary cryptocurrency called BPZ. The digital coin is the key that unlocks BiltzPredict’s suite of blockchain features.
+BPZ is the vehicle for operating on the BlitzPredict site and wagering at its partner books. The platform uses the popular Bancor Protocol for continuous liquidity and conversions between other coins on the network.
+BPZ launched a pre-sale in January before an initial coin offering (ICO) now slated for this month. BlitzPredict will release a total of a billion BPZ tokens, with a hard cap of 10,000 Ethereum. The first five percent was reserved for seed investors, and another 30 percent (300 million BPZ) will be released through the ICO.
+Aggregator
+On its face, BlitzPredict is an aggregator of sportsbooks and prediction markets. It is a betting marketplace, essentially.
+The aggregator constantly refreshes lines from partner betting markets to provide users with the best available odds. That means bettors may see different point spreads for the two sides of the same game.
+BlitzPay
+Transaction speed is one of the key benefits of cryptocurrency transactions. Rather than routing payments through a series of processors and banks, crypto transactions can be carried out almost instantaneously by the platform itself.
+BlitzPay is the cashiering system that allows users to collect their winnings immediately after an event concludes. Bets made using BPZ automatically include BlitzPay functionality on the back end of the transaction.
+Smart contracts
+Smart contracts essentially allow bettors to make if/then wagers.
+For example, a user could create a smart contract which would activate a bet if the point spread drops below seven points. Bettors can shadow other successful BlitzPredict bettors and trends with these smart contracts, too.
+More companies like BlitzPredict to come?
+The legalization of daily fantasy sports has spawned a number of sidecar DFS companies across the US. There are a few startup platforms, content and strategy sites by the dozen, and an established network of affiliate sites.
+Richey is part of the DFS marketplace, too. His first product, called BiltzPick, is a lineup optimizer that works with FanDuel and DraftKings . According to Richey, though, BlitzPredict was always the end goal.
+“I started BlitzPick with the ultimate goal of preparing for legalized sports betting in the US,” he said. “However, the DFS market cooled off while the crypto markets were taking off, so we decided to make the move in early 2017.”
+Sports betting remains federally illegal for the time being, but that could change with the upcoming ruling in Christie vs. NCAA . Should it open up in the US, companies like BlitzPredict will be poised to take early advantage of a budding market. And modern financial technology has the potential to make gambling transactions as smooth as ever.
+“Gambling is one of the best-use cases for blockchain technology,” Richey said.
+Tweet
+Sign Up For The Grove Report – US Online Gambling Industry Insights Delivered To Your Inbox:
+Eric Ramsey - Eric is a reporter and writer covering poker, sports betting, and DFS. He comes from a poker background, formerly on staff at PokerNews and the World Poker Tour.
+Related Items
+

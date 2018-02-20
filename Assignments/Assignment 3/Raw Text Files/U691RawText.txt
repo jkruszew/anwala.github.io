@@ -1,0 +1,5 @@
+Allow up to 5 recipients
+Recipient Email *
+Send up to 5 emails, separate emails with a comma
+Sender Email *
+
