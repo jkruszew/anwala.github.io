@@ -1,0 +1,17 @@
+Mean: 542.6734693877551
+stdDiv:  539.43373852397
+Median: 396.0
+Anwala: 98
+
+{
+plot(d1, type = "n", xlim=c(0,100), ylim=c(0,4000))
+plot(d2, col="red", type = "p", xlim=c(0,100), ylim=c(0,4000), xlab = "Friends", ylab="No. of Friends")
+lines(d1, type = "l", xlim=c(0,100), ylim=c(0,4000))
+text(10, 98, labels="Anwala", cex= 0.7, pos = 1)
+text(49, 396, labels="Median", cex= 0.7, pos = 1)
+text(62, 539.43373852397, labels="Std Dev", cex= 0.7, pos = 1)
+text(63, 542.67346938776, labels="Mean", cex= 0.7, pos = 3)
+}
+
+
+
