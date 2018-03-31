@@ -1,0 +1,172 @@
+100|Fargo (1996)|14-Feb-1997||http://us.imdb.com/M/title-exact?Fargo%20(1996)|0|0|0|0|0|0|1|0|1|0|0|0|0|0|0|0|1|0|0
+
+1073|Shallow Grave (1994)|01-Jan-1994||http://us.imdb.com/Title?Shallow+Grave+(1994)|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0|0
+
+11|Seven (Se7en) (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?Se7en%20(1995)|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|1|0|0
+
+1211|Blue Sky (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Blue%20Sky%20(1994)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|1|0|0|0|0
+
+127|Godfather, The (1972)|01-Jan-1972||http://us.imdb.com/M/title-exact?Godfather,%20The%20(1972)|0|1|0|0|0|0|1|0|1|0|0|0|0|0|0|0|0|0|0
+
+134|Citizen Kane (1941)|01-Jan-1941||http://us.imdb.com/M/title-exact?Citizen%20Kane%20(1941)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+151|Willy Wonka and the Chocolate Factory (1971)|01-Jan-1971||http://us.imdb.com/M/title-exact?Willy%20Wonka%20and%20the%20Chocolate%20Factory%20(1971)|0|0|1|0|1|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+153|Fish Called Wanda, A (1988)|01-Jan-1988||http://us.imdb.com/M/title-exact?Fish%20Called%20Wanda,%20A%20(1988)|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+154|Monty Python's Life of Brian (1979)|01-Jan-1979||http://us.imdb.com/M/title-exact?Life%20of%20Brian%20(1979)|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+156|Reservoir Dogs (1992)|01-Jan-1992||http://us.imdb.com/M/title-exact?Reservoir%20Dogs%20(1992)|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|1|0|0
+
+157|Platoon (1986)|01-Jan-1986||http://us.imdb.com/M/title-exact?Platoon%20(1986)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|1|0
+
+168|Monty Python and the Holy Grail (1974)|01-Jan-1974||http://us.imdb.com/M/title-exact?Monty%20Python%20and%20the%20Holy%20Grail%20(1974)|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+170|Cinema Paradiso (1988)|01-Jan-1988||http://us.imdb.com/M/title-exact?Nuovo%20cinema%20Paradiso%20(1988)|0|0|0|0|0|1|0|0|1|0|0|0|0|0|1|0|0|0|0
+
+177|Good, The Bad and The Ugly, The (1966)|01-Jan-1966||http://us.imdb.com/M/title-exact?Buono,%20il%20brutto,%20il%20cattivo,%20Il%20(1966)|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1
+
+179|Clockwork Orange, A (1971)|01-Jan-1971||http://us.imdb.com/M/title-exact?Clockwork%20Orange,%20A%20(1971)|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0|0|0
+
+180|Apocalypse Now (1979)|01-Jan-1979||http://us.imdb.com/M/title-exact?Apocalypse%20Now%20(1979)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|1|0
+
+182|GoodFellas (1990)|01-Jan-1990||http://us.imdb.com/M/title-exact?GoodFellas%20(1990)|0|0|0|0|0|0|1|0|1|0|0|0|0|0|0|0|0|0|0
+
+183|Alien (1979)|01-Jan-1979||http://us.imdb.com/M/title-exact?Alien%20(1979)|0|1|0|0|0|0|0|0|0|0|0|1|0|0|0|1|1|0|0
+
+185|Psycho (1960)|01-Jan-1960||http://us.imdb.com/M/title-exact?Psycho%20(1960)|0|0|0|0|0|0|0|0|0|0|0|1|0|0|1|0|1|0|0
+
+190|Henry V (1989)|01-Jan-1989||http://us.imdb.com/M/title-exact?Henry%20V%20(1989)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|1|0
+
+191|Amadeus (1984)|01-Jan-1984||http://us.imdb.com/M/title-exact?Amadeus%20(1984)|0|0|0|0|0|0|0|0|1|0|0|0|0|1|0|0|0|0|0
+
+193|Right Stuff, The (1983)|01-Jan-1983||http://us.imdb.com/M/title-exact?Right%20Stuff,%20The%20(1983)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+203|Unforgiven (1992)|01-Jan-1992||http://us.imdb.com/M/title-exact?Unforgiven%20(1992)|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1
+
+209|This Is Spinal Tap (1984)|01-Jan-1984||http://us.imdb.com/M/title-exact?This%20Is%20Spinal%20Tap%20(1984)|0|0|0|0|0|1|0|0|1|0|0|0|1|0|0|0|0|0|0
+
+211|M*A*S*H (1970)|01-Jan-1970||http://us.imdb.com/M/title-exact?MASH%20(1970)|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|1|0
+
+214|Pink Floyd - The Wall (1982)|01-Jan-1982||http://us.imdb.com/M/title-exact?Pink%20Floyd%20-%20The%20Wall%20(1982)|0|0|0|0|0|0|0|0|1|0|0|0|1|0|0|0|0|1|0
+
+223|Sling Blade (1996)|22-Nov-1996||http://us.imdb.com/M/title-exact?Sling%20Blade%20(1996)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|1|0|0
+
+23|Taxi Driver (1976)|16-Feb-1996||http://us.imdb.com/M/title-exact?Taxi%20Driver%20(1976)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|1|0|0
+
+234|Jaws (1975)|01-Jan-1975||http://us.imdb.com/M/title-exact?Jaws%20(1975)|0|1|0|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0
+
+238|Raising Arizona (1987)|01-Jan-1987||http://us.imdb.com/M/title-exact?Raising%20Arizona%20(1987)|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+258|Contact (1997)|11-Jul-1997||http://us.imdb.com/Title?Contact+(1997/I)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|1|0|0|0
+
+317|In the Name of the Father (1993)|01-Jan-1993||http://us.imdb.com/M/title-exact?In%20the%20Name%20of%20the%20Father%20(1993)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+318|Schindler's List (1993)|01-Jan-1993||http://us.imdb.com/M/title-exact?Schindler's%20List%20(1993)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|1|0
+
+32|Crumb (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Crumb%20(1994)|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0
+
+347|Wag the Dog (1997)|09-Jan-1998||http://us.imdb.com/M/title-exact?imdb-title-120885|0|0|0|0|0|1|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+357|One Flew Over the Cuckoo's Nest (1975)|01-Jan-1975||http://us.imdb.com/M/title-exact?One%20Flew%20Over%20the%20Cuckoo's%20Nest%20(1975)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+390|Fear of a Black Hat (1993)|01-Jan-1993||http://us.imdb.com/M/title-exact?Fear%20of%20a%20Black%20Hat%20(1993)|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+425|Bob Roberts (1992)|01-Jan-1992||http://us.imdb.com/M/title-exact?Bob%20Roberts%20(1992)|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+428|Harold and Maude (1971)|01-Jan-1971||http://us.imdb.com/M/title-exact?Harold%20and%20Maude%20(1971)|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+436|American Werewolf in London, An (1981)|01-Jan-1981||http://us.imdb.com/M/title-exact?American%20Werewolf%20in%20London,%20An%20(1981)|0|0|0|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0
+
+448|Omen, The (1976)|01-Jan-1976||http://us.imdb.com/M/title-exact?Omen,%20The%20(1976)|0|0|0|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0
+
+45|Eat Drink Man Woman (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Yinshi%20Nan%20Nu%20(1994)|0|0|0|0|0|1|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+464|Vanya on 42nd Street (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Vanya%20on%2042nd%20Street%20(1994)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+465|Jungle Book, The (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Jungle%20Book,%20The%20(1994)|0|0|1|0|1|0|0|0|0|0|0|0|0|0|1|0|0|0|0
+
+47|Ed Wood (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Ed%20Wood%20(1994)|0|0|0|0|0|1|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+474|Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1963)|01-Jan-1963||http://us.imdb.com/M/title-exact?Dr.%20Strangelove%20or:%20How%20I%20Learned%20to%20Stop%20Worrying%20and%20Love%20the%20Bomb%20(1963)|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0|1|0
+
+475|Trainspotting (1996)|19-Jul-1996||http://us.imdb.com/Title?Trainspotting+(1996)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+483|Casablanca (1942)|01-Jan-1942||http://us.imdb.com/M/title-exact?Casablanca%20(1942)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|1|0|0|1|0
+
+484|Maltese Falcon, The (1941)|01-Jan-1941||http://us.imdb.com/M/title-exact?Maltese%20Falcon,%20The%20(1941)|0|0|0|0|0|0|0|0|0|0|1|0|0|1|0|0|0|0|0
+
+50|Star Wars (1977)|01-Jan-1977||http://us.imdb.com/M/title-exact?Star%20Wars%20(1977)|0|1|1|0|0|0|0|0|0|0|0|0|0|0|1|1|0|1|0
+
+504|Bonnie and Clyde (1967)|01-Jan-1967||http://us.imdb.com/M/title-exact?Bonnie%20and%20Clyde%20(1967)|0|0|0|0|0|0|1|0|1|0|0|0|0|0|0|0|0|0|0
+
+506|Rebel Without a Cause (1955)|01-Jan-1955||http://us.imdb.com/M/title-exact?Rebel%20Without%20a%20Cause%20(1955)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+508|People vs. Larry Flynt, The (1996)|27-Dec-1996||http://us.imdb.com/M/title-exact?People%20vs.%20Larry%20Flynt,%20The%20(1996)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+509|My Left Foot (1989)|01-Jan-1989||http://us.imdb.com/M/title-exact?My%20Left%20Foot%20(1989)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+510|Magnificent Seven, The (1954)|01-Jan-1954||http://us.imdb.com/M/title-exact?Shichinin%20no%20samurai%20(1954)|0|1|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|1
+
+518|Miller's Crossing (1990)|01-Jan-1990||http://us.imdb.com/M/title-exact?Miller's%20Crossing%20(1990)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+52|Madness of King George, The (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Madness%20of%20King%20George,%20The%20(1994)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+525|Big Sleep, The (1946)|01-Jan-1946||http://us.imdb.com/M/title-exact?Big%20Sleep,%20The%20(1946)|0|0|0|0|0|0|0|0|0|0|1|0|0|1|0|0|0|0|0
+
+527|Gandhi (1982)|01-Jan-1982||http://us.imdb.com/M/title-exact?Gandhi%20(1982)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+528|Killing Fields, The (1984)|01-Jan-1984||http://us.imdb.com/M/title-exact?Killing%20Fields,%20The%20(1984)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|1|0
+
+549|Rob Roy (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?Rob%20Roy%20(1995)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|1|0|0|1|0
+
+56|Pulp Fiction (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Pulp%20Fiction%20(1994)|0|0|0|0|0|0|1|0|1|0|0|0|0|0|0|0|0|0|0
+
+58|Quiz Show (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Quiz%20Show%20(1994)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+589|Wild Bunch, The (1969)|01-Jan-1969||http://us.imdb.com/M/title-exact?Wild%20Bunch,%20The%20(1969)|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1
+
+61|Three Colors: White (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Trzy%20kolory:%20Bialy%20(1994)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+631|Crying Game, The (1992)|01-Jan-1992||http://us.imdb.com/M/title-exact?Crying%20Game,%20The%20(1992)|0|1|0|0|0|0|0|0|1|0|0|0|0|0|1|0|0|1|0
+
+64|Shawshank Redemption, The (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Shawshank%20Redemption,%20The%20(1994)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+644|Thin Blue Line, The (1988)|01-Jan-1988||http://us.imdb.com/M/title-exact?Thin%20Blue%20Line,%20The%20(1988)|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0
+
+646|Once Upon a Time in the West (1969)|01-Jan-1969||http://us.imdb.com/M/title-exact?C'era%20una%20volta%20il%20west%20(1969)|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1
+
+647|Ran (1985)|01-Jan-1985||http://us.imdb.com/M/title-exact?Ran%20(1985)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|1|0
+
+650|Seventh Seal, The (Sjunde inseglet, Det) (1957)|01-Jan-1957||http://us.imdb.com/M/title-exact?Sjunde%20inseglet,%20Det%20(1957)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+651|Glory (1989)|01-Jan-1989||http://us.imdb.com/M/title-exact?Glory%20(1989)|0|1|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|1|0
+
+654|Chinatown (1974)|01-Jan-1974||http://us.imdb.com/M/title-exact?Chinatown%20(1974)|0|0|0|0|0|0|0|0|0|0|1|0|0|1|0|0|1|0|0
+
+657|Manchurian Candidate, The (1962)|01-Jan-1962||http://us.imdb.com/M/title-exact?Manchurian%20Candidate,%20The%20(1962)|0|0|0|0|0|0|0|0|0|0|1|0|0|0|0|0|1|0|0
+
+727|Immortal Beloved (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Immortal%20Beloved%20(1994)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|1|0|0|0|0
+
+735|Philadelphia (1993)|01-Jan-1993||http://us.imdb.com/M/title-exact?Philadelphia%20(1993)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+736|Shadowlands (1993)|01-Jan-1993||http://us.imdb.com/M/title-exact?Shadowlands%20(1993)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|1|0|0|0|0
+
+8|Babe (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?Babe%20(1995)|0|0|0|0|1|1|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+813|Celluloid Closet, The (1995)|15-Mar-1996||http://us.imdb.com/M/title-exact?Celluloid%20Closet,%20The%20(1995)|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0
+
+86|Remains of the Day, The (1993)|01-Jan-1993||http://us.imdb.com/M/title-exact?Remains%20of%20the%20Day,%20The%20(1993)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+9|Dead Man Walking (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?Dead%20Man%20Walking%20(1995)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+91|Nightmare Before Christmas, The (1993)|01-Jan-1993||http://us.imdb.com/M/title-exact?Nightmare%20Before%20Christmas,%20The%20(1993)|0|0|0|0|1|1|0|0|0|0|0|0|1|0|0|0|0|0|0
+
+921|Farewell My Concubine (1993)|01-Jan-1993||http://us.imdb.com/M/title-exact?Ba%20Wang%20Bie%20Ji%20(1993)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|1|0|0|0|0
+
+923|Raise the Red Lantern (1991)|01-Jan-1991||http://us.imdb.com/M/title-exact?Da%20Hong%20Deng%20Long%20Gao%20Gao%20Gua%20(1991)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+949|How to Make an American Quilt (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?How%20to%20Make%20an%20American%20Quilt%20(1995)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|1|0|0|0|0
+
+959|Dazed and Confused (1993)|01-Jan-1993||http://us.imdb.com/M/title-exact?Dazed%20and%20Confused%20(1993)|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+

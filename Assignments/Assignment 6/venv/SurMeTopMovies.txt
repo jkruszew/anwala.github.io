@@ -1,0 +1,48 @@
+1|Toy Story (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?Toy%20Story%20(1995)|0|0|0|1|1|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+1129|Chungking Express (1994)|16-Feb-1996||http://us.imdb.com/M/title-exact?Chongqing%20Senlin%20(1994)|0|0|0|0|0|0|0|0|1|0|0|0|0|1|1|0|0|0|0
+
+15|Mr. Holland's Opus (1995)|29-Jan-1996||http://us.imdb.com/M/title-exact?Mr.%20Holland's%20Opus%20(1995)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+169|Wrong Trousers, The (1993)|01-Jan-1993||http://us.imdb.com/M/title-exact?Wrong%20Trousers,%20The%20(1993)|0|0|0|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+189|Grand Day Out, A (1992)|01-Jan-1992||http://us.imdb.com/M/title-exact?Grand%20Day%20Out,%20A%20(1992)|0|0|0|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+216|When Harry Met Sally... (1989)|01-Jan-1989||http://us.imdb.com/M/title-exact?When%20Harry%20Met%20Sally...%20(1989)|0|0|0|0|0|1|0|0|0|0|0|0|0|0|1|0|0|0|0
+
+237|Jerry Maguire (1996)|13-Dec-1996||http://us.imdb.com/M/title-exact?Jerry%20Maguire%20(1996)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|1|0|0|0|0
+
+251|Shall We Dance? (1996)|11-Jul-1997||http://us.imdb.com/M/title-exact?Shall%20we%20DANSU%3F%20%281996%29|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+258|Contact (1997)|11-Jul-1997||http://us.imdb.com/Title?Contact+(1997/I)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|1|0|0|0
+
+275|Sense and Sensibility (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?Sense%20and%20Sensibility%20(1995)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|1|0|0|0|0
+
+28|Apollo 13 (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?Apollo%2013%20(1995)|0|1|0|0|0|0|0|0|1|0|0|0|0|0|0|0|1|0|0
+
+304|Fly Away Home (1996)|13-Sep-1996||http://us.imdb.com/M/title-exact?Fly%20Away%20Home%20(1996)|0|0|1|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+408|Close Shave, A (1995)|28-Apr-1996||http://us.imdb.com/M/title-exact?Close%20Shave,%20A%20(1995)|0|0|0|1|0|1|0|0|0|0|0|0|0|0|0|0|1|0|0
+
+477|Matilda (1996)|02-Aug-1996||http://us.imdb.com/M/title-exact?Matilda%20(1996)|0|0|0|0|1|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+496|It's a Wonderful Life (1946)|01-Jan-1946||http://us.imdb.com/M/title-exact?It's%20a%20Wonderful%20Life%20(1946)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+588|Beauty and the Beast (1991)|01-Jan-1991||http://us.imdb.com/M/title-exact?Beauty%20and%20the%20Beast%20(1991)|0|0|0|1|1|0|0|0|0|0|0|0|1|0|0|0|0|0|0
+
+69|Forrest Gump (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Forrest%20Gump%20(1994)|0|0|0|0|0|1|0|0|0|0|0|0|0|0|1|0|0|1|0
+
+709|Strictly Ballroom (1992)|01-Jan-1992||http://us.imdb.com/M/title-exact?Strictly%20Ballroom%20(1992)|0|0|0|0|0|1|0|0|0|0|0|0|0|0|1|0|0|0|0
+
+71|Lion King, The (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Lion%20King,%20The%20(1994)|0|0|0|1|1|0|0|0|0|0|0|0|1|0|0|0|0|0|0
+
+8|Babe (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?Babe%20(1995)|0|0|0|0|1|1|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+83|Much Ado About Nothing (1993)|01-Jan-1993||http://us.imdb.com/M/title-exact?Much%20Ado%20About%20Nothing%20(1993)|0|0|0|0|0|1|0|0|0|0|0|0|0|0|1|0|0|0|0
+
+86|Remains of the Day, The (1993)|01-Jan-1993||http://us.imdb.com/M/title-exact?Remains%20of%20the%20Day,%20The%20(1993)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+892|Flubber (1997)|01-Jan-1997||http://us.imdb.com/M/title-exact?imdb-title-119137|0|0|0|0|1|1|0|0|0|1|0|0|0|0|0|0|0|0|0
+
+949|How to Make an American Quilt (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?How%20to%20Make%20an%20American%20Quilt%20(1995)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|1|0|0|0|0
+

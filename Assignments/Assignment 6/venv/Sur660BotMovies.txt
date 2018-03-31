@@ -1,0 +1,50 @@
+1074|Reality Bites (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Reality%20Bites%20(1994)|0|0|0|0|0|1|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+1178|Major Payne (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Major%20Payne%20(1994)|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+1181|Low Down Dirty Shame, A (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Low%20Down%20Dirty%20Shame,%20A%20(1994)|0|1|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+1183|Cowboy Way, The (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Cowboy%20Way,%20The%20(1994)|0|1|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+120|Striptease (1996)|28-Jun-1996||http://us.imdb.com/M/title-exact?Striptease%20(1996)|0|0|0|0|0|1|1|0|0|0|0|0|0|0|0|0|0|0|0
+
+122|Cable Guy, The (1996)|14-Jun-1996||http://us.imdb.com/M/title-exact?Cable%20Guy,%20The%20(1996)|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+1419|Highlander III: The Sorcerer (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Highlander%20III:%20The%20Sorcerer%20(1994)|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0|0|0
+
+159|Basic Instinct (1992)|01-Jan-1992||http://us.imdb.com/M/title-exact?Basic%20Instinct%20(1992)|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0|0|1|0|0
+
+161|Top Gun (1986)|01-Jan-1986||http://us.imdb.com/M/title-exact?Top%20Gun%20(1986)|0|1|0|0|0|0|0|0|0|0|0|0|0|0|1|0|0|0|0
+
+17|From Dusk Till Dawn (1996)|05-Feb-1996||http://us.imdb.com/M/title-exact?From%20Dusk%20Till%20Dawn%20(1996)|0|1|0|0|0|1|1|0|0|0|0|1|0|0|0|0|1|0|0
+
+219|Nightmare on Elm Street, A (1984)|01-Jan-1984||http://us.imdb.com/M/title-exact?Nightmare%20on%20Elm%20Street,%20A%20(1984)|0|0|0|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0
+
+254|Batman & Robin (1997)|20-Jun-1997||http://us.imdb.com/M/title-exact?Batman+%26+Robin+(1997)|0|1|1|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0
+
+3|Four Rooms (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?Four%20Rooms%20(1995)|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|1|0|0
+
+366|Dangerous Minds (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?Dangerous%20Minds%20(1995)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+41|Billy Madison (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?Billy%20Madison%20(1995)|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+456|Beverly Hills Ninja (1997)|17-Jan-1997||http://us.imdb.com/M/title-exact?Beverly%20Hills%20Ninja%20(1997)|0|1|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+56|Pulp Fiction (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Pulp%20Fiction%20(1994)|0|0|0|0|0|0|1|0|1|0|0|0|0|0|0|0|0|0|0
+
+640|Cook the Thief His Wife & Her Lover, The (1989)|01-Jan-1989||http://us.imdb.com/M/title-exact?Cook%20the%20Thief%20His%20Wife%20&%20Her%20Lover,%20The%20(1989)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+658|Pump Up the Volume (1990)|01-Jan-1990||http://us.imdb.com/M/title-exact?Pump%20Up%20the%20Volume%20(1990)|0|0|0|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0
+
+67|Ace Ventura: Pet Detective (1994)|01-Jan-1994||http://us.imdb.com/M/title-exact?Ace%20Ventura:%20Pet%20Detective%20(1994)|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+722|Nine Months (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?Nine%20Months%20(1995)|0|0|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+786|Perez Family, The (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?Perez%20Family,%20The%20(1995)|0|0|0|0|0|1|0|0|0|0|0|0|0|0|1|0|0|0|0
+
+80|Hot Shots! Part Deux (1993)|01-Jan-1993||http://us.imdb.com/M/title-exact?Hot%20Shots!%20Part%20Deux%20(1993)|0|1|0|0|0|1|0|0|0|0|0|0|0|0|0|0|0|1|0
+
+890|Mortal Kombat: Annihilation (1997)|01-Jan-1997||http://us.imdb.com/M/title-exact?Mortal+Kombat%3A+Annihilation+(1997)|0|1|1|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0
+
+996|Big Green, The (1995)|01-Jan-1995||http://us.imdb.com/M/title-exact?Big%20Green,%20The%20(1995)|0|0|0|0|1|1|0|0|0|0|0|0|0|0|0|0|0|0|0
+

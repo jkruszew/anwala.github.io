@@ -1,0 +1,26 @@
+94|Fargo (1996)|5
+94|Shallow Grave (1994)|5
+94|Seven (Se7en) (1995)|5
+94|Phenomenon (1996)|1
+94|Devil's Own, The (1997)|1
+94|Doom Generation, The (1995)|1
+103|Spitfire Grill, The (1996)|5
+103|My Best Friend's Wedding (1997)|5
+103|Star Wars (1977)|5
+103|Speed 2: Cruise Control (1997)|1
+660|Willy Wonka and the Chocolate Factory (1971)|5
+660|Monty Python and the Holy Grail (1974)|5
+660|Princess Bride, The (1987)|5
+660|Reality Bites (1994)|1
+660|Major Payne (1994)|1
+660|Low Down Dirty Shame, A (1994)|1
+757|Raiders of the Lost Ark (1981)|5
+757|Aliens (1986)|5
+757|Unforgiven (1992)|5
+757|Cable Guy, The (1996)|1
+771|Toy Story (1995)|5
+771|Chungking Express (1994)|5
+771|Mr. Holland's Opus (1995)|5
+771|Die Hard (1988)|1
+771|Graduate, The (1967)|1
+771|Unforgiven (1992)|1

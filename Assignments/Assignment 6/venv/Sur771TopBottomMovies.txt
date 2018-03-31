@@ -1,0 +1,32 @@
+771|Toy Story (1995)|5
+771|Chungking Express (1994)|5
+771|Mr. Holland's Opus (1995)|5
+771|Wrong Trousers, The (1993)|5
+771|Grand Day Out, A (1992)|5
+771|When Harry Met Sally... (1989)|5
+771|Jerry Maguire (1996)|5
+771|Shall We Dance? (1996)|5
+771|Contact (1997)|5
+771|Sense and Sensibility (1995)|5
+771|Apollo 13 (1995)|5
+771|Fly Away Home (1996)|5
+771|Close Shave, A (1995)|5
+771|Matilda (1996)|5
+771|It's a Wonderful Life (1946)|5
+771|Beauty and the Beast (1991)|5
+771|Forrest Gump (1994)|5
+771|Strictly Ballroom (1992)|5
+771|Lion King, The (1994)|5
+771|Babe (1995)|5
+771|Much Ado About Nothing (1993)|5
+771|Remains of the Day, The (1993)|5
+771|Flubber (1997)|5
+771|How to Make an American Quilt (1995)|5
+771|Die Hard (1988)|1
+771|Graduate, The (1967)|1
+771|Unforgiven (1992)|1
+771|Last of the Mohicans, The (1992)|1
+771|Get Shorty (1995)|1
+771|Fugitive, The (1993)|1
+771|Dances with Wolves (1990)|1
+771|Silence of the Lambs, The (1991)|1
