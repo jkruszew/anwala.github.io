@@ -1,0 +1,13 @@
+Your work was received!
+
+You successfully submitted your coursework. Each time you submit coursework, you receive a unique confirmation ID to verify when your submission was received. You can view your submission receipts on your My Grades page.
+
+Submission details:
+Submission confirmation ID: 7110dd6495ae4696badb4d3eaf11cd0b
+Title of course: COMPUTATIONAL METH & SOFTWARE
+Course ID: 201720_SPRING_CS417_32300
+Title of coursework: Midterm Exam
+Date/time of submission: Mar 19, 2018 3:20 AM
+Size of written submission: 0bytes
+Size and name of files received: Question 1.jpg (3,423.1kb) Question 2.jpg (3,343kb) Question 4.jpg (3,191.5kb) Question 5 Cont.jpg (3,375.3kb) Question 5.jpg (3,295kb) 
+Unique Item ID (for administrator use only): _387898_1

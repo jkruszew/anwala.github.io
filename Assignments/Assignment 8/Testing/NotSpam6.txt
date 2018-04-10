@@ -1,0 +1,17 @@
+*************************************
+The ODU CS Systems Group seeks to grow its team by finding hardworking undergraduate students adept to meet the requirements of a fast-paced and ever-changing environment in various fields of technology involving Systems Administration. In this position, you will obtain hands-on experience in working with IT infrastructure that supports services utilized by ODU Computer Science faculty and students.
+
+Students will have the opportunity to obtain expertise with the following fields:
+    - Linux & Windows Administration
+    - Network Administration
+    - DevOps & Full Stack Development
+    - And more...
+
+Basic knowledge of computer hardware, troubleshooting, and networking is required.
+
+If interested in finding more information about the position, please visit https://systems.cs.odu.edu or submit an application today by visiting http://cs.odu.edu/apply
+
+PLEASE NOTE: Applicants must also have two or more years left towards their undergraduate degree and must be enrolled in a Computer Science or Information Technology related program.
+
+    --ODUCS Systems Group
+*************************************

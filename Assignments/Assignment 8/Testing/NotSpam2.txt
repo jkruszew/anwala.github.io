@@ -1,0 +1,12 @@
+To get to the hosting website go to https://www.mywindowshosting.com/ and click "customer login" at the top
+Username: mtk297
+Password: blahblah123
+
+After you login you can click on the control panel to view the server details
+
+
+
+Then click the "Databases" tab at the top and then the "MSSQL Database"
+
+
+The username and password you will need for the scripts for designing the webpage are listed there too.

@@ -1,0 +1,35 @@
+
+Yahoo
+Hi jonathan,
+
+We sent a (code) to +1 (757) 818-5920 which was used to sign in to your Yahoo account.
+
+This sign in attempt was made on:
+
+Date and Time:
+
+April 5, 2018 1:33:09 PM PDT
+Estimated Location:
+
+Virginia, United States
+Device:
+
+chrome, ubuntu
+
+(IP Address: 108.11.176.163)
+
+If this was you, you're all set.
+
+If this wasn't you:
+
+Review your account activity and remove the devices and apps that you don’t recognize.
+https://login.yahoo.com/account/activity
+Review your phone numbers and email addresses and remove the ones that don’t belong to you.
+https://login.yahoo.com/account/security?
+Thanks,
+
+Yahoo
+
+We will never ask you for your password in an email. If you don’t trust a link in an email, go directly to the normal sign in page via yahoo.com.
+
+*Location is approximate based on the IP address it originated from.

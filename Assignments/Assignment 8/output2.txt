@@ -1,0 +1,6 @@
+       Neg Pos
+True:   9   5
+False:  5   1
+
+Precision:  0.8333333333333334
+Recall:  0.5
