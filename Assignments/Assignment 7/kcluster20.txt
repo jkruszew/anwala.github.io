@@ -1,0 +1,47 @@
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+Centroid  1 :
+['turnitup!', 'Radiohead Bootlegs', 'Abu Everyday', 'Indie, Rock And Other Great Music', 'THE HUB']
+Centroid  2 :
+['Fools Rush In', 'guardtheguardians', 'Unexpectedly Bart (King!)', 'The Nosebleed Section', 'Friday Night Dream', 'Year 13 coursework', 'fractalpress.gr', 'kaleidoscopekanvas-KK', 'A Music History by Wayne R. Flower', 'SEVEN1878', 'You Should Be In Sweden', 'Music-Drop Magazine']
+Centroid  3 :
+['The Cheat Codes For Drugs', 'The Themes of My Life', "Andrea Jesse's Favorite Songs"]
+Centroid  4 :
+['Lost in the Shuffle', 'Green Eggs and Ham Mondays 8-10am', "It'll Glow On You", '60@60 Sounding Booth', 'Spotirama', 'IoTube     :)', 'persona mia', 'Diskomoderator Kondratieff', 'adrianoblog', 'LOST  PLACES', 'Desolation Row Records', 'mattgarman', 'The Campus Buzz on WSOU']
+Centroid  5 :
+[]
+Centroid  6 :
+['Yestermorrow', 'Kinky Adventures of Nikkij']
+Centroid  7 :
+['MAGGOT CAVIAR', 'Everything Starts With an A...', 'Bleak Bliss', 'These Hungry Times']
+Centroid  8 :
+['F-Measure', 'SPIN IT RECORDS Moncton 467A Main Street Moncton NB CANADA', "An Earful O' Wax: Guided by Voices/Robert Pollard Song by Song Review"]
+Centroid  9 :
+['Diagnosis: No Radio', 'Stories From the City, Stories From the Sea', 'For the Other Things', 'RingtoneLirik.com : Download Mp3 Ringtones for Cell Phone']
+Centroid  10 :
+['PALMIRA A PISTA TRES', 'earenjoy', 'MUSIC LYRCS', 'Web Science and Digital Libraries Research Group', 'You might feel the same']
+Centroid  11 :
+['ORGANMYTH', 'A H T A P O T', "MarkFisher's-MusicReview", 'What Am I Doing?']
+Centroid  12 :
+['Eli Jace', '*Sixeyes: by Alan Williamson', "Captain Panda's Local & Independent Music Showcase", 'The Stark Online', 'FOLK IS NOT HAPPY', '300 Vinyl Challenge 2017', 'Friday Night Record Party', 'Dust and Water Studios', 'Skiptrack music', 'Too Poppy', "Paul's Winnipeg", 'Floorshime Zipper Boots', 'The Ideal Copy', 'Cakes and Guns', '|[Tu queres ver isto]|', 'The Music Binge', 'Coyote Doc Music Co-op', 'Parish Radio', '"DANCING IN CIRCLES"']
+Centroid  13 :
+['INDIEohren.!']
+Centroid  14 :
+['CardrossManiac2', 'Out And Down In The Colonies', 'T H E V O I D S', 'SEM REGRAS']
+Centroid  15 :
+['unter diesem gesichtspunkt', 'dazey rosie', 'Words', 'Stonehill Sketchbook', 'a duchess nonethelesss', "Avidd Wallows' Blog", 'Luke And The Real Blog', 'Sonology', "She's mad but she's magic. There's no lie in her fire.", 'The Stearns Family', 'What A Wonderful World', 'Unfini...', 'nonsense a la mode', 'The Crum Family Blog', 'bittersweet', 'Hidden Missives', 'Incarnate Green', 'Rants from the Pants']
+Centroid  16 :
+['Primitive Offerings', 'CLOUDBUSTING', 'Tears of silence', "Riley Haas' blog", 'Now I am become Death, the destroyer of worlds', 'Kid F', 'the fast break of champions', 'My Life From A to Z', 'GLI Press', 'Lyrically Speaking', 'But we still have the radio!', '(Insert World Problem Here) Sucks.', 'This Is Not Going To Last', 'Compton Novels', 'Angie Dynamo', '2+2=5?', 'tumbleweed', "Morgan's Blog", "isyeli's", 'Flippism Is The Key', 'Nothing But Ordinary Glances At Extraordinary Things', 'She May Be Naked', 'Mark Wynn', 'Alex Denney', 'One Stunning Single Egg', 'funky little demons', 'the traveling neighborhood', 'hello my name is justin.', 'Mile In Mine', 'New Amusements', 'hmmhannahmary', 'Happy Accidents', 'Make Up, Music & Fashion']
+Centroid  17 :
+[]
+Centroid  18 :
+['Hojee Pojee', 'Myopiamuse', 'Stephanie Veto Photography', 'curiouscollage', 'Ian Hill Stuff', 'TheNorthernGirl Games', 'KiDCHAIR', 'Aiming to misbehave']
+Centroid  19 :
+['.', "Radio Rithard's Folkways", 'www.doginasweater.com Live Show Review Archive', 'Check Out These Bands.', 'ALL MY BROTHERS AND SISTERS', 'Steel City Rust', 'macthemost', 'PSI LAB', 'My Name Is Blue Canary', 'DaveCromwell Writes', 'The Jeopardy of Contentment', 'Helen McCookerybook', 'Broken Biscuit Records', 'the roofy leak', 'Earthly Pleasures', 'from a voice plantation', 'Hip In Detroit', 'anearful', 'Some Call It Noise....', 'Pithy Title Here', 'my music world', 'Cuz Music Rocks', 'Wyoming Beat', 'The Fleshy Fresh', 'Did Not Chart', 'no gift for the gab', "MarkEOrtega's Journalism Portfolio", 'Stereo Pills', 'Tony J. Cocuzza', 'Playing Favorites', 'The Run-Out Groove']
+Centroid  20 :
+['A2 MEDIA COURSEWORK JOINT BLOG', 'simone goes', 'Info CPNS', 'Advanced Portfolio - Josh Pamfilo - Candidate Number 2186 - Centre Number 16607 - A2 Media Studies', 'Media Coursework', 'sweeping the kitchen', 'Who needs a TV?', 'DE ALTERNATIEVE MUZIEKMAN', 'Index Video', "Faland'hoje", 'Paulina Gamero. Media Studies A2']
