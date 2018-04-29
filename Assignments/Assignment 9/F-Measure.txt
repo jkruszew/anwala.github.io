@@ -1,0 +1,48 @@
+Nearest Neighbors For  F-Measure (k =  1 )
+	 F-Measure 	---	 1.0
+
+Nearest Neighbors For  F-Measure (k =  2 )
+	 F-Measure 	---	 1.0
+	 SPIN IT RECORDS Moncton 467A Main Street Moncton NB CANADA 	---	 0.5488766405456125
+
+Nearest Neighbors For  F-Measure (k =  5 )
+	 F-Measure 	---	 1.0
+	 SPIN IT RECORDS Moncton 467A Main Street Moncton NB CANADA 	---	 0.5488766405456125
+	 CardrossManiac2 	---	 0.5364194539091759
+	 Aiming to misbehave 	---	 0.5093344205413922
+	 DaveCromwell Writes 	---	 0.5082421990442522
+
+Nearest Neighbors For  F-Measure (k =  10 )
+	 F-Measure 	---	 1.0
+	 SPIN IT RECORDS Moncton 467A Main Street Moncton NB CANADA 	---	 0.5488766405456125
+	 CardrossManiac2 	---	 0.5364194539091759
+	 Aiming to misbehave 	---	 0.5093344205413922
+	 DaveCromwell Writes 	---	 0.5082421990442522
+	 An Earful O' Wax: Guided by Voices/Robert Pollard Song by Song Review 	---	 0.5023645584139084
+	 anearful 	---	 0.48710283966496754
+	 Did Not Chart 	---	 0.4854710444844903
+	 Some Call It Noise.... 	---	 0.48456658417633036
+	 www.doginasweater.com Live Show Review Archive 	---	 0.4831422438529425
+
+Nearest Neighbors For  F-Measure (k =  20 )
+	 F-Measure 	---	 1.0
+	 SPIN IT RECORDS Moncton 467A Main Street Moncton NB CANADA 	---	 0.5488766405456125
+	 CardrossManiac2 	---	 0.5364194539091759
+	 Aiming to misbehave 	---	 0.5093344205413922
+	 DaveCromwell Writes 	---	 0.5082421990442522
+	 An Earful O' Wax: Guided by Voices/Robert Pollard Song by Song Review 	---	 0.5023645584139084
+	 anearful 	---	 0.48710283966496754
+	 Did Not Chart 	---	 0.4854710444844903
+	 Some Call It Noise.... 	---	 0.48456658417633036
+	 www.doginasweater.com Live Show Review Archive 	---	 0.4831422438529425
+	 Pithy Title Here 	---	 0.4819072532311679
+	 KiDCHAIR 	---	 0.4809614068348924
+	 But we still have the radio! 	---	 0.47551104412829964
+	 Steel City Rust 	---	 0.4721668445353179
+	 no gift for the gab 	---	 0.4644220792202309
+	 The Jeopardy of Contentment 	---	 0.4625928559161551
+	 New Amusements 	---	 0.45745440164624046
+	 Alex Denney 	---	 0.4560278594323271
+	 . 	---	 0.4543454120951963
+	 Captain Panda's Local & Independent Music Showcase 	---	 0.44882457850233337
+

@@ -1,0 +1,48 @@
+Nearest Neighbors For  Web Science and Digital Libraries Research Group (k =  1 )
+	 Web Science and Digital Libraries Research Group 	---	 1.0000000000000002
+
+Nearest Neighbors For  Web Science and Digital Libraries Research Group (k =  2 )
+	 Web Science and Digital Libraries Research Group 	---	 1.0000000000000002
+	 Incarnate Green 	---	 0.433889628316346
+
+Nearest Neighbors For  Web Science and Digital Libraries Research Group (k =  5 )
+	 Web Science and Digital Libraries Research Group 	---	 1.0000000000000002
+	 Incarnate Green 	---	 0.433889628316346
+	 unter diesem gesichtspunkt 	---	 0.4187882585487863
+	 She May Be Naked 	---	 0.3933834312650245
+	 Diagnosis: No Radio 	---	 0.3841392139673862
+
+Nearest Neighbors For  Web Science and Digital Libraries Research Group (k =  10 )
+	 Web Science and Digital Libraries Research Group 	---	 1.0000000000000002
+	 Incarnate Green 	---	 0.433889628316346
+	 unter diesem gesichtspunkt 	---	 0.4187882585487863
+	 She May Be Naked 	---	 0.3933834312650245
+	 Diagnosis: No Radio 	---	 0.3841392139673862
+	 Myopiamuse 	---	 0.37728813563134356
+	 Alex Denney 	---	 0.37531231256173553
+	 What Am I Doing? 	---	 0.3624092807291731
+	 macthemost 	---	 0.353610925796832
+	 Nothing But Ordinary Glances At Extraordinary Things 	---	 0.3486411654676039
+
+Nearest Neighbors For  Web Science and Digital Libraries Research Group (k =  20 )
+	 Web Science and Digital Libraries Research Group 	---	 1.0000000000000002
+	 Incarnate Green 	---	 0.433889628316346
+	 unter diesem gesichtspunkt 	---	 0.4187882585487863
+	 She May Be Naked 	---	 0.3933834312650245
+	 Diagnosis: No Radio 	---	 0.3841392139673862
+	 Myopiamuse 	---	 0.37728813563134356
+	 Alex Denney 	---	 0.37531231256173553
+	 What Am I Doing? 	---	 0.3624092807291731
+	 macthemost 	---	 0.353610925796832
+	 Nothing But Ordinary Glances At Extraordinary Things 	---	 0.3486411654676039
+	 PSI LAB 	---	 0.3470911186991868
+	 Pithy Title Here 	---	 0.3444527690209942
+	 New Amusements 	---	 0.34392511529205627
+	 TheNorthernGirl Games 	---	 0.3427565920536201
+	 Morgan's Blog 	---	 0.3416823695716178
+	 Mile In Mine 	---	 0.3407172356703865
+	 hello my name is justin. 	---	 0.3388839917011042
+	 Avidd Wallows' Blog 	---	 0.3384818036530709
+	 Sonology 	---	 0.3377118665450277
+	 anearful 	---	 0.33458194967943805
+

@@ -1,0 +1,11 @@
+//Plots graph to make negatives visable on graph
+{
+plot(d1, type = "n", xlim=c(0,999), ylim=c(-8,28))
+lines(d1, type = "l", xlim=c(0,999), ylim=c(-8,28))
+}
+//Plots graph to show max range
+{
+plot(d1, type = "n", xlim=c(0,999), ylim=c(-8,14200))
+lines(d1, type = "l", xlim=c(0,999), ylim=c(-8,14200))
+}
+
